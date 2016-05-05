@@ -6,6 +6,7 @@ The Foundry @ Time Inc.
 html, body {
 	font-size: 10px;
 }
+
 /* Navigation Styles*/
 nav {
 	position: fixed;
@@ -35,6 +36,10 @@ nav {
 .nav-cca {
 	background-image: url("../images/FPO_CCA.jpg");
 }
+.nav-sca {
+	background-image: url("../images/FPO_SCA.jpg");
+	background-position: +100px;
+}
 .nav-rule {
 	width: .08%;
 	height: 100%;
@@ -63,6 +68,44 @@ nav {
 	height: 4px;
 	background-color: rgba(250,192,221,1);
 }
+
+/* Navigation Hover Styles */
+.nav-hover-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: +2;
+	width: 100%;
+	color: rgba(255,255,255,1);
+	text-align: center;
+	font-family: 'Brandon Grotesque', sans-serif;
+	font-weight: 900;
+	font-size: 20px;
+}
+.nav-hover-menu {
+	width: 33.28%;
+	background-color: rgba(5,187,255,1);
+	padding-top: 10px;
+}
+.nav-dropdown {
+	font-family: 'Brandon Grotesque', sans-serif;
+	font-weight: 300;
+	font-size: 1.1em;
+	max-width: 80%;
+	padding: 10px 10% 0px 10%;
+}
+.nav-dropdown li {
+	padding: 20px 0px;
+	box-shadow: 0px 10px 6px -5px rgba(0,0,0,.1);
+}
+	/* Hover State Activations*/
+/*.nav-hover-nca {
+	display: none;
+}
+.nav-nca:hover .nav-hover-nca {
+	display: block;
+}*/
+
 
 /* Utility Styles*/
 .clearfix:after {
