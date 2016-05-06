@@ -7,6 +7,129 @@ html, body {
 	font-size: 10px;
 }
 
+body {
+	font-family: 'Brandon Grotesque', sans-serif;
+}
+
+.italc {
+	font-style: italic;
+}
+
+/* MAIN HERO */
+
+.main-hero {
+	background-image: url("../images/FPO-main-southern-hero-bg.jpg");
+	background-size: cover;
+}
+
+/* DROPDOWN */
+
+.sticky-nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 5000!important;
+}
+
+.sticky-nav:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.dropdown {
+	width: 33.33%;
+	display: inline-block;
+	float: left;
+}
+
+.btn {
+	width: 100%;
+	border-radius: 0;
+	border: none;
+	background-color: #94e2ff;
+	padding: 8px;
+	margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.dropdown-menu {
+	width: 100%;
+	margin: 0;
+	border-radius: 0;
+	border: none;
+}
+
+
+/* TOC */
+
+.toc .row .col-md-4{
+	height: 600px;
+	border-bottom: 4px solid rgba(235,4,120,1);
+}
+
+.toc .row .col-md-4:first-child,
+.toc .row .col-md-4:last-child {
+	background: #f1fbff;
+}
+
+.toc .row .col-md-4:nth-child(2) {
+	background: #fff;
+}
+
+/* REGION HERO */
+
+.region-hero {
+	background-image: url("../images/FPO-region-northern-hero-bg.jpg");
+	background-size: cover;
+}
+
+.container-fluid.article {
+	height: 800px;
+	width: 90%;
+}
+
+
+/* General Styles */
+
+h1 {
+	text-transform: uppercase;
+	font-size: 52px;
+	line-height: 50px;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 26px;
+	color: #eb0478;
+	padding-top: 4px;
+}
+
+p {
+	font-size: 19px;
+	line-height: 32px;
+	padding: 0 0 38px 0;
+	font-weight: 400;
+	color: #524F4F;
+}
+
+.begin-content {
+	padding-top: 50px;
+}
+
+.blogger-info-box {
+	max-width: 750px;
+}
+
+.article .row {
+	padding-top: 60px;
+}
+
 /* Navigation Styles*/
 nav {
 	position: fixed;
