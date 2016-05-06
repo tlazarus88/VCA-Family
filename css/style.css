@@ -43,13 +43,14 @@ body {
 	float: left;
 }
 
-.btn {
+.sticky-nav .btn {
 	width: 100%;
 	border-radius: 0;
 	border: none;
 	background-color: #94e2ff;
 	padding: 8px;
 	margin: 0;
+	font-family: 'Brandon Grotesque', sans-serif;
 }
 
 .dropdown:hover .dropdown-menu {
