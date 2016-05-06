@@ -29,6 +29,8 @@ body {
 	top: 0;
 	width: 100%;
 	z-index: 5000!important;
+	box-shadow: 0 7px 8px rgba(0,0,0,.12);
+	text-align: center;
 }
 
 .sticky-nav:after {
@@ -38,7 +40,7 @@ body {
 }
 
 .dropdown {
-	width: 33.33%;
+	width: 33.28%;
 	display: inline-block;
 	float: left;
 }
@@ -47,10 +49,39 @@ body {
 	width: 100%;
 	border-radius: 0;
 	border: none;
-	background-color: #94e2ff;
+	background-color: rgba(5,187,255,1);
+	background-blend-mode: screen;
+	background-size: 100%;
 	padding: 8px;
 	margin: 0;
 	font-family: 'Brandon Grotesque', sans-serif;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+.nav-nca {
+	background-image: url("../images/FPO_NCA.jpg");
+}
+.nav-cca {
+	background-image: url("../images/FPO_CCA.jpg");
+}
+.nav-sca {
+	background-image: url("../images/FPO_SCA.jpg");
+	background-position: 0px 200px;
+}
+
+.nav-explore {
+	font-weight: 500;
+	font-size: 15px;
+	letter-spacing: .5em;
+}
+
+.nav-rule {
+	width: .08%;
+	height: 100%;
+	display: block;
+	float: left;
+	background-color: rgba(255,255,255,1);
 }
 
 .dropdown:hover .dropdown-menu {
@@ -154,16 +185,7 @@ nav {
 	font-size: 20px;
 	color: rgba(0,0,0,1);
 }
-.nav-nca {
-	background-image: url("../images/FPO_NCA.jpg");
-}
-.nav-cca {
-	background-image: url("../images/FPO_CCA.jpg");
-}
-.nav-sca {
-	background-image: url("../images/FPO_SCA.jpg");
-	background-position: +100px;
-}
+
 .nav-rule {
 	width: .08%;
 	height: 100%;
