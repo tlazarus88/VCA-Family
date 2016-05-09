@@ -54,7 +54,8 @@ body {
 	border: none;
 	background-color: rgba(5,187,255,1);
 	background-blend-mode: screen;
-	background-size: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
 	margin: 0;
 	padding: 0;
 	font-family: 'Brandon Grotesque', sans-serif;
@@ -77,7 +78,7 @@ body {
 }
 
 .nav-cca {
-	background-image: url("../images/FPO_CCA.jpg");
+	background-image: url("../images/Nav/770x45/GettyImages-184084521.jpg");
 }
 
 .nav-cca:hover {
@@ -85,8 +86,7 @@ body {
 }
 
 .nav-sca {
-	background-image: url("../images/FPO_SCA.jpg");
-	background-position: 0px 200px;
+	background-image: url("../images/Nav/770x45/GettyImages-152627362.jpg");
 }
 
 .nav-sca:hover {
@@ -109,6 +109,10 @@ body {
 
 .dropdown:hover {
 	color: rgba(255,255,255,1);
+}
+
+.dropdown:hover .caret {
+	visibility: hidden;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -203,9 +207,13 @@ body {
 
 /* TOC */
 
-.toc .row .col-md-4 {
+.toc .row {
 	height: 100%;
 	border-bottom: 4px solid rgba(235,4,120,1);
+	background-color: rgba(241,251,255,1);
+}
+
+.toc .row .col-md-4 {
 	background-color: rgba(241,251,255,1);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -223,6 +231,21 @@ body {
 
 .toc .row .toc-nca:hover {
 	background-image: url("../images/Nav/770x388/GettyImages-517877952.png");
+}
+
+.toc .row .toc-cca {
+	background-image: url("../images/Nav/770x388/GettyImages-184084521_screen.png");
+}
+
+.toc .row .toc-cca:hover {
+	background-image: url("../images/Nav/770x388/GettyImages-184084521.png");
+}
+.toc .row .toc-sca {
+	background-image: url("../images/Nav/770x388/GettyImages-152627362_screen.png");
+}
+
+.toc .row .toc-sca:hover {
+	background-image: url("../images/Nav/770x388/GettyImages-152627362.png");
 }
 
 ul.toc-menu {
