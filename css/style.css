@@ -69,7 +69,7 @@ body {
 }
 
 .nav-nca {
-	background-image: url("../images/FPO_NCA.jpg");
+	background-image: url("../images/Nav/770x45/GettyImages-517877952.jpg");
 }
 
 .nav-nca:hover {
@@ -206,16 +206,36 @@ body {
 .toc .row .col-md-4 {
 	height: 100%;
 	border-bottom: 4px solid rgba(235,4,120,1);
-	position: relative;
+	background-color: rgba(241,251,255,1);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transition: all 1s ease;
+	margin-top: -112px;
+}
+
+.toc .row .col-md-4:hover {
+	background-color: rgba(255,255,255,1);
+}
+
+.toc .row .toc-nca {
+	background-image: url("../images/Nav/770x388/GettyImages-517877952_screen.png");
+}
+
+.toc .row .toc-nca:hover {
+	background-image: url("../images/Nav/770x388/GettyImages-517877952.png");
 }
 
 ul.toc-menu {
 	text-align: center;
+	position: relative;
+	z-index: +1;
 }
+
 ul.toc-menu li {
 	display: block;
 	font-size: 20px;
 }
+
 ul.toc-menu li a {
 	display: block;
 	padding: 15px 0;
@@ -223,6 +243,7 @@ ul.toc-menu li a {
 	color: rgba(0,0,0,1);
 	text-decoration: none;
 }
+
 ul.toc-menu li a:hover {
 	color: rgba(235,4,120,1);
 	text-decoration: none;
@@ -230,16 +251,18 @@ ul.toc-menu li a:hover {
 
 ul.toc-menu .nav-explore {
 	margin-top: 20px;
+	color: rgba(255,255,255,1);
+	text-shadow: 0px 2px 6px rgba(0,0,0,.55);
 }
 ul.toc-menu .toc-region {
 	box-shadow: 0px 10px 6px -5px rgba(0,0,0,.1);
 	width: 50%;
 	margin: 10px 25%;
 	padding: 10px;
-	background-color: rgba(5,187,255,1);
+	background-color: rgba(255,255,255,1);
 	font-weight: 900;
 	font-size: 20px;
-	color: rgba(255,255,255,1);
+	color: rgba(5,187,255,1);
 }
 ul.toc-menu .blogger-circle {
 	width: 150px;
@@ -281,16 +304,7 @@ ul.toc-menu .divider {
 	max-width: 80%;
 	height: 10px;
 	margin: -30px 10% 0px 10%;
-	background-color: #f1fbff;
-}
-
-.toc .row .col-md-4:first-child,
-.toc .row .col-md-4:last-child {
-	background: #f1fbff;
-}
-
-.toc .row .col-md-4:nth-child(2) {
-	background: #fff;
+	background-color: rgba(241,251,255,0);
 }
 
 /* General Styles */
