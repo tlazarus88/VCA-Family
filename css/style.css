@@ -20,7 +20,59 @@ body {
 .main-hero {
 	background-image: url("../images/FPO-main-southern-hero-bg.jpg");
 	background-size: cover;
+	text-align: center;
+	position: relative;
 }
+
+/* Title SVG Styles */
+
+.title-trtmnt {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width:875px;
+	margin-top:-2%;
+	-webkit-filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.12));
+	filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.12));
+}
+.state {
+	font-size:64px;
+	font-weight:900;
+	text-transform:uppercase;
+}
+.of {
+	font-size:28.7225px;
+	font-weight:300;
+}
+.play {
+	font-size:66px;
+	letter-spacing:7px;
+	text-transform:uppercase;
+	font-weight:900;
+}
+.southern {
+	fill:#EE0077;
+	font-size:22px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	font-weight:900;
+}
+.california {
+	fill:#EE0077;
+	font-weight:300;
+	font-size:24px;
+	letter-spacing:1.5px;
+	text-transform:uppercase;
+}
+.dek {
+	font-weight:300;
+	font-size:17px;
+}
+.st0{fill:#FFFFFF;}
+.st1{fill:none;stroke:#EE0077;stroke-width:0.75;stroke-miterlimit:10;}
+.st6{fill:none;stroke:#05BBFF;stroke-width:2.5;stroke-miterlimit:10;}
+.st9{fill:none;}
 
 /* DROPDOWN */
 
