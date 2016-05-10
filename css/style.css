@@ -460,6 +460,70 @@ p {
 	background-repeat: no-repeat;
 }
 
+/* Article Styles */
+
+.article h1 {
+	text-align: center;
+}
+
+.article h2 {
+	text-align: center;
+}
+
+.article .col-md-12 p {
+	margin-top: 50px;
+	text-align: center;
+}
+
+ul.scroll-list {
+	position: relative;
+	width: 100%;
+}
+
+.scroll-list-box {
+	width: 100%;
+	background-color: rgba(255,255,255,.95);
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+	border: 2px solid rgba(5,187,255,1);
+	margin-bottom: 100%;
+}
+
+.scroll-list-box:first-of-type {
+	margin-top: 50%;
+}
+
+.scroll-list-box p {
+	clear: both;
+	padding: 25px;
+}
+
+.box-header {
+	width: 100%;
+	display: inline-block;
+	float: left;
+	font-weight: 500;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 25px;
+	border-bottom: 1px solid rgba(5,187,255,1);
+}
+
+.one-line {
+	line-height: 25px;
+}
+
+.box-header-num {
+	float: left;
+	font-weight: 900;
+	font-size: 50px;
+	color: rgba(235,4,120,1);
+	padding-right: 25px;
+	margin-right: 25px;
+	border-right: 1px solid rgba(5,187,255,1);
+}
 
 /* Utility Styles*/
 .clearfix:after {
