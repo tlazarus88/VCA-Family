@@ -1,6 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.7 413.8">
-	<style type="text/css">  
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 692.7 413.8" style="enable-background:new 0 0 692.7 413.8;" xml:space="preserve">
+<style type="text/css">
 	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#EE0077;stroke-width:0.75;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#05BBFF;stroke-width:2.5;stroke-miterlimit:10;}
+	.st3{fill:#EE0077;}
 	.st4{display:none;fill:#FFFFFF;}
 	.st5{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
 	.st6{font-family:'BrandonGrotesque-BlackItalic';}
@@ -10,13 +16,37 @@
 	.st10{font-size:59.8613px;}
 	.st11{letter-spacing:5;}
 	.st12{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-	</style>
-	<polygon class="st4" points="701.9 206.2 344.3 418.5 -12.7 206.2 344.6 -6.1 "/>
-	<polygon class="st5" points="683.5 206.5 345.1 407.4 7.3 206.5 345.4 5.6 "/>
-	<text transform="matrix(1 0 0 1 147.7531 200.4431)" class="st6 st7 st8">Northern</text>
-	<text transform="matrix(1 0 0 1 141.9746 260.7898)" class="st9 st10 st11">California</text>
-	<polygon class="st12" points="682.5 205.5 344.1 406.4 6.3 205.5 344.4 4.6 "/>
-	<text transform="matrix(1 0 0 1 146.7531 199.4431)" class="st0 st6 st7 st8">Northern</text>
-	<text transform="matrix(1 0 0 1 140.9746 259.7898)" class="st0 st9 st10 st11">California</text>
-	<polygon class="st0" points="330.5 380.8 359.2 380.8 344.8 388.9 "/>
+</style>
+<g id="MAIN_HERO">
+	<g id="XMLID_110_">
+		<polygon id="XMLID_3_" class="st0" points="-99.1,206.2 -456.7,418.5 -813.7,206.2 -456.4,-6.1 		"/>
+		<polygon id="XMLID_5_" class="st1" points="-118.5,206.2 -456.9,407.1 -794.7,206.2 -456.6,5.3 		"/>
+		
+			<text id="XMLID_68_" transform="matrix(1 0 0 1 -546.6166 115.4948)" style="font-family:'BrandonGrotesque-Black'; font-size:64px;">state</text>
+		
+			<text id="XMLID_70_" transform="matrix(1 0 0 1 -546.5687 196.4055)" style="font-family:'BrandonGrotesque-Black'; font-size:66px; letter-spacing:7;">play</text>
+		<line id="XMLID_10_" class="st2" x1="-539.9" y1="134.2" x2="-479.9" y2="134.2"/>
+		<line id="XMLID_12_" class="st2" x1="-432.9" y1="134.2" x2="-372.9" y2="134.2"/>
+		
+			<text id="XMLID_11_" transform="matrix(1 0 0 1 -468.1301 141.5936)" style="font-family:'BrandonGrotesque-LightItalic'; font-size:28.7225px;">of</text>
+		<rect id="XMLID_13_" x="-649.2" y="219.6" style="fill:none;" width="385.5" height="68.2"/>
+		<text id="XMLID_14_" transform="matrix(1 0 0 1 -633.2935 231.4712)"><tspan x="0" y="0" style="font-family:'BrandonGrotesque-Light'; font-size:17px;">Discover why a trip to California makes the ultimate </tspan><tspan x="-13.1" y="20" style="font-family:'BrandonGrotesque-Light'; font-size:17px;">family vacation. Explore northern, central, and southern </tspan><tspan x="88.4" y="40" style="font-family:'BrandonGrotesque-Light'; font-size:17px;">California’s places to play.</tspan></text>
+		
+			<text id="XMLID_15_" transform="matrix(1 0 0 1 -535.7523 350.4905)" class="st3" style="font-family:'BrandonGrotesque-Light'; font-size:24px; letter-spacing:1;">California</text>
+		<text id="XMLID_16_" transform="matrix(1 0 0 1 -527.1636 317.1588)" class="st3 st6" style="font-size:22px; letter-spacing:1;">southern</text>
+		<rect id="XMLID_17_" x="-534" y="293.6" class="st1" width="155.2" height="31.5"/>
+		<polygon id="XMLID_19_" points="-395.7,306.7 -385.9,306.7 -390.8,302 		"/>
+		<polygon id="XMLID_20_" points="-395.7,311.4 -385.9,311.4 -390.8,316.1 		"/>
+		<polygon id="XMLID_21_" points="-470.8,380.8 -442,380.8 -456.5,388.9 		"/>
+	</g>
+</g>
+<g id="REGION_HERO">
+	<polygon id="XMLID_84_" class="st4" points="701.9,206.2 344.3,418.5 -12.7,206.2 344.6,-6.1 	"/>
+	<polygon id="XMLID_129_" class="st5" points="683.5,206.5 345.1,407.4 7.3,206.5 345.4,5.6 	"/>
+	<text id="XMLID_132_" transform="matrix(1 0 0 1 147.7531 200.4431)" class="st6 st7 st8">Northern</text>
+	<text id="XMLID_131_" transform="matrix(1 0 0 1 141.9746 260.7898)" class="st9 st10 st11">California</text>
+	<polygon id="XMLID_83_" class="st12" points="682.5,205.5 344.1,406.4 6.3,205.5 344.4,4.6 	"/>
+	<text id="XMLID_82_" transform="matrix(1 0 0 1 146.7531 199.4431)" class="st0 st6 st7 st8">Northern</text>
+	<text id="XMLID_81_" transform="matrix(1 0 0 1 140.9746 259.7898)" class="st0 st9 st10 st11">California</text>
+</g>
 </svg>

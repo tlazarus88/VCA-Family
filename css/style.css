@@ -30,6 +30,8 @@ body {
 	position:absolute;
 	top:50%;
 	left:50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	width:875px;
 	margin-top:-2%;
@@ -444,13 +446,22 @@ p {
 /* Region hero */
 
 .region-hero {
-	background-image: url("../images/FPO-region-northern-hero-bg.jpg");
 	background-size: cover;
 	position: relative;
+	overflow: hidden;
 }
-
 .region-hero video#nrthrn-hero {
-	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 50!important;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
 }
 
 /* Region Hero SVG Styles */
@@ -459,8 +470,11 @@ p {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%,-50%);
 	width: 875px;
+	z-index: 100!important;
 }
 .region-hero-title .region-loc {
 	font-weight: 900;
@@ -471,16 +485,16 @@ p {
 	fill: #FFFFFF;
 }
 .region-hero-title .state {
-	font-weight: 400;
+	font-weight: 300;
 	text-transform: uppercase;
 	font-size:59.8613px;
-	letter-spacing:5px;
+	letter-spacing:5.25px;
 	fill: #FFFFFF;
 }
 .region-hero-title .shad {
 	fill: #000000;
 	filter: url(#pictureFilter);
-	opacity: .5;
+	opacity: .8;
 }
 .region-hero-title .diamond {
 	fill:none;
@@ -491,7 +505,7 @@ p {
 .region-hero-title .diamond.shad {
 	stroke:#000000;
 	filter: url(#pictureFilter);
-	opacity: .5;
+	opacity: .8;
 }
 
 /* Blog Post Styles */
