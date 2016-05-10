@@ -1,3 +1,16 @@
+// Window CSS Resize Fix
+
+jQuery(function($){
+var windowWidth = $(window).width();
+
+$(window).resize(function() {
+    if(windowWidth != $(window).width()){
+    	location.reload();
+    	return;
+    	}
+	});
+});
+
 // Nav Stickiness Swap
 
 scrollIntervalID = setInterval(stickIt, 10);
