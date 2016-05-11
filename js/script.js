@@ -31,3 +31,19 @@ function stickIt() {
     $('#toc').css('visibility','visible');
   }
 };
+
+// Roadtrip Stickiness
+
+scrollIntervalID = setInterval(roadCirc, 10)
+
+function roadCirc() {
+
+  var $roadList = $('#list-roadtrip');   
+  var bottomRoadList = $roadList.offset().top;           
+
+  if ($(window).scrollTop() >= (bottomRoadList)) {
+  	$('#roadtrip-circle').css('position', 'fixed');
+  } else {
+  	$('#roadtrip-circle').css('position', 'absolute');
+  }
+};
