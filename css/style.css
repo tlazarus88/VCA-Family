@@ -516,6 +516,99 @@ p {
 	background-repeat: no-repeat;
 }
 
+/* Slideshow/Accordion Styles */ 
+
+#photo-op {
+	margin-bottom: 800px;
+}
+#photo-op a:link,
+#photo-op a:hover,
+#photo-op a:active,
+#photo-op a:visited {
+	text-decoration: none;
+}
+.hideContentWrap {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #05bbff;
+	width: 950px;
+	margin: 0 auto 1px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+#photo-op a:first-child .hideContentWrap {
+	background-image: url("../images/photo-op/burney1.jpg");
+}
+#photo-op a:nth-child(2) .hideContentWrap {
+	background-image: url("../images/photo-op/shasta1.jpg");
+}
+#photo-op a:nth-child(3) .hideContentWrap {
+	background-image: url("../images/photo-op/mendocino1.jpg");
+}
+#photo-op a:nth-child(4) .hideContentWrap {
+	background-image: url("../images/photo-op/eureka2.jpg");
+}
+.hideContentWrap .hideContentHeader {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 32px;
+	letter-spacing: 3px;
+	background-color: rgba(5,187,255,.8);
+	padding: 25px 25px 18px 25px;
+	position:relative;
+	z-index: 50!important;
+	text-shadow: 0px 2px 4px rgba(0,0,0,.4);
+	transition: all .5s ease-in-out;
+}
+.hideContentWrap .hideContentHeader:hover {
+	cursor: pointer;
+}
+.hideContentHeader.active {
+    background-color: rgba(5,187,255,0);
+    text-shadow: 0px 1px 4px rgba(0,0,0,.8);
+}
+.hideContentWrap .hideContent {
+	height: 80vh;
+	display: none;
+}
+.hideContentWrap .hideContent .text-box {
+	background-color:rgba(255,255,255,1);
+	position:absolute;
+	z-index:1!important;
+	bottom:0;
+	margin:0 10px 10px 10px;
+}
+.hideContentWrap .hideContent .text-box p {
+	padding:15px 20px;
+	font-size:17px;
+	line-height:22px;
+	font-weight: 400;
+}
+.indicator {
+    display: inline-block;
+    position: absolute;
+    left: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    transition: all .5s ease-in-out;
+    width: 22px; height: 22px;
+    margin-right: 6px;
+}
+.indicator img {
+	width: 100%;
+	height: auto;
+}
+.indicator.rotate {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+/* IE 9 */
+    -webkit-transform: rotate(45deg);
+/* Safari and Chrome */
+}
 
 /* Utility Styles*/
 .clearfix:after {
