@@ -638,7 +638,7 @@ ul.scroll-list {
 	z-index: +2;
 }
 
-#roadtrip-circle {
+.roadtrip-circle {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -646,7 +646,6 @@ ul.scroll-list {
 	width: 800px;
 	height: 800px;
 	margin: 0 auto;
-	background-color: black;
 /*	background-image: url("../images/FPO_NCA.jpg");
 	background-size: 100%;*/
 	-moz-border-radius: 50%;
