@@ -480,23 +480,42 @@ ul.scroll-list {
 	width: 100%;
 }
 
+[class*="parallax-bg__"] {
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+.parallax-bg__empty {
+	background-image: none;
+	box-shadow: none;
+
+}
+.parallax-bg__myers {
+	background-image: url(../images/Article_Roadtrip/alamy_RM_bp6amt.jpg);
+}
+
 .scroll-list-box {
 	width: 100%;
 	background-color: rgba(255,255,255,.95);
-	-webkit-box-shadow: 0 10px 6px -6px #777;
-	   -moz-box-shadow: 0 10px 6px -6px #777;
-	        box-shadow: 0 10px 6px -6px #777;
+	-webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,.5);
+	   -moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,.5);
+	        box-shadow: 0 10px 6px -6px rgba(0,0,0,.5);
 	border: 2px solid rgba(5,187,255,1);
 	margin-bottom: 100%;
+	float: left;
 }
 
 .scroll-list-box:first-of-type {
 	margin-top: 50%;
 }
 
-.scroll-list-box p {
+.article .col-md-12 .scroll-list-box p {
 	clear: both;
 	padding: 25px;
+	text-align: left;
 }
 
 .box-header {
