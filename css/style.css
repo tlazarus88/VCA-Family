@@ -428,7 +428,6 @@ p {
 	font-weight: 300;
 	color: #524F4F;
 }
-
 .begin-content {
 	padding-top: 50px;
 }
@@ -460,6 +459,55 @@ p {
 	background-repeat: no-repeat;
 }
 
+/* Slideshow/Accordion Styles */ 
+
+.accordion-wrap {
+	width: 80%;
+	margin: 0 auto 500px;
+	text-align: center;
+}
+.accordion-wrap img {
+	width: 100%;
+}
+.accordion-wrap a.hideContentWrap {
+	margin: 1px 0;
+	background-color: #05bbff;
+	display: block;
+	text-decoration: none;
+}
+.accordion-wrap a.hideContentWrap:hover {cursor: pointer;}
+.accordion-wrap h3.hideContentHeader {
+    display: block;
+    padding: 25px 25px 18px 25px;
+    color: white;
+    transition: all .15s ease-in-out;
+    text-transform: uppercase;
+}
+.accordion-wrap h3:before {
+	display: block; 
+	content: " "; 
+	margin-top: -585px; 
+	height: 585px; 
+	visibility: hidden;
+}
+.accordion-wrap .hideContent {
+	display: none;
+}
+.accordion-wrap .indicator {
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    transition: all .5s ease-in-out;
+}
+.accordion-wrap .indicator.rotate {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+/* IE 9 */
+    -webkit-transform: rotate(45deg);
+/* Safari and Chrome */
+}
 
 /* Utility Styles*/
 .clearfix:after {
