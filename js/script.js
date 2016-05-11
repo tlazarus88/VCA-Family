@@ -1,5 +1,12 @@
 jQuery(document).ready(function($) {
 
+// Full Page 
+
+vpw = $(window).width();
+vph = $(window).height();
+
+$('.full-page').height(vph);
+
 // Nav Stickiness Swap
 
 scrollIntervalID = setInterval(stickIt, 10);

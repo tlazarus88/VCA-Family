@@ -440,6 +440,12 @@ p {
 	padding-bottom: 60px;
 	position: relative;
 }
+a:link,
+a:hover,
+a:active,
+a:visited {
+	text-decoration: none;
+}
 
 /* Region hero */
 
@@ -534,7 +540,7 @@ p {
 	position: relative;
 	z-index: 50!important;
 }
-.bg-img-container-wrap#photo-op {
+.bg-img-container-wrap.northern {
 	background-image: url("../images/section-bg-triangle.jpg");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -548,15 +554,6 @@ p {
 
 /* Slideshow/Accordion Styles */ 
 
-#photo-op {
-	margin-bottom: 800px;
-}
-#photo-op a:link,
-#photo-op a:hover,
-#photo-op a:active,
-#photo-op a:visited {
-	text-decoration: none;
-}
 .hideContentWrap {
 	background-size: cover;
 	background-position: center;
@@ -603,6 +600,9 @@ p {
 .hideContentWrap .hideContent {
 	height: 80vh;
 	display: none;
+}
+.hideContentWrap .hideContent h4 {
+	color: #000;
 }
 .hideContentWrap .hideContent .text-box {
 	background-color:rgba(255,255,255,1);
