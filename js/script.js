@@ -1,3 +1,7 @@
+// Document Ready
+
+jQuery(document).ready(function($) {
+
 // Window CSS Resize Fix
 
 jQuery(function($){
@@ -47,3 +51,45 @@ function roadCirc() {
   	$('#roadtrip-circle').css('position', 'absolute');
   }
 };
+
+
+// Accordion
+
+// $('.hideContentHeader').prepend('<span class="indicator">+</span> ');
+$('.hideContentHeader').prepend('<span class="indicator"><img src="images/plus-x-icon-wh.png"></span> ');
+
+$('.hideContentHeader').click(function() {
+    $(this).parent().find('.hideContent').slideToggle("slow");
+});
+
+$('.hideContentHeader').click(function() {
+    $(this).toggleClass("active");
+});
+
+$('.hideContentHeader').click(function() {
+    $(this).find('.indicator').toggleClass("rotate");
+});
+
+// Smooth Scrolling 
+// includes offset for #sticky-nav
+
+$(function() {
+
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top-44
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+
+
+
+});
