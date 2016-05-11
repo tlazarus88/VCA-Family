@@ -461,47 +461,91 @@ p {
 
 /* Slideshow/Accordion Styles */ 
 
-.accordion-wrap {
-	width: 80%;
-	margin: 0 auto 500px;
-	text-align: center;
+#photo-op {
+	margin-bottom: 800px;
 }
-.accordion-wrap img {
-	width: 100%;
-}
-.accordion-wrap a.hideContentWrap {
-	margin: 1px 0;
-	background-color: #05bbff;
-	display: block;
+#photo-op a:link,
+#photo-op a:hover,
+#photo-op a:active,
+#photo-op a:visited {
 	text-decoration: none;
 }
-.accordion-wrap a.hideContentWrap:hover {cursor: pointer;}
-.accordion-wrap h3.hideContentHeader {
-    display: block;
-    padding: 25px 25px 18px 25px;
-    color: white;
-    transition: all .15s ease-in-out;
-    text-transform: uppercase;
+.hideContentWrap {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #05bbff;
+	width: 950px;
+	margin: 0 auto 1px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
 }
-.accordion-wrap h3:before {
-	display: block; 
-	content: " "; 
-	margin-top: -585px; 
-	height: 585px; 
-	visibility: hidden;
+#photo-op a:first-child .hideContentWrap {
+	background-image: url("../images/photo-op/burney1.jpg");
 }
-.accordion-wrap .hideContent {
+#photo-op a:nth-child(2) .hideContentWrap {
+	background-image: url("../images/photo-op/shasta1.jpg");
+}
+#photo-op a:nth-child(3) .hideContentWrap {
+	background-image: url("../images/photo-op/mendocino1.jpg");
+}
+#photo-op a:nth-child(4) .hideContentWrap {
+	background-image: url("../images/photo-op/eureka2.jpg");
+}
+.hideContentWrap .hideContentHeader {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 32px;
+	letter-spacing: 3px;
+	background-color: rgba(5,187,255,.8);
+	padding: 25px 25px 18px 25px;
+	position:relative;
+	z-index: 50!important;
+	text-shadow: 0px 2px 4px rgba(0,0,0,.4);
+	transition: all .5s ease-in-out;
+}
+.hideContentWrap .hideContentHeader:hover {
+	cursor: pointer;
+}
+.hideContentHeader.active {
+    background-color: rgba(5,187,255,0);
+    text-shadow: 0px 1px 4px rgba(0,0,0,.8);
+}
+.hideContentWrap .hideContent {
+	height: 80vh;
 	display: none;
 }
-.accordion-wrap .indicator {
+.hideContentWrap .hideContent .text-box {
+	background-color:rgba(255,255,255,1);
+	position:absolute;
+	z-index:1!important;
+	bottom:0;
+	margin:0 10px 10px 10px;
+}
+.hideContentWrap .hideContent .text-box p {
+	padding:15px 20px;
+	font-size:17px;
+	line-height:22px;
+	font-weight: 400;
+}
+.indicator {
     display: inline-block;
-    padding: 5px;
+    position: absolute;
+    left: 25px;
     text-align: center;
     font-size: 30px;
     font-weight: 100;
     transition: all .5s ease-in-out;
+    width: 22px; height: 22px;
+    margin-right: 6px;
 }
-.accordion-wrap .indicator.rotate {
+.indicator img {
+	width: 100%;
+	height: auto;
+}
+.indicator.rotate {
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
 /* IE 9 */
