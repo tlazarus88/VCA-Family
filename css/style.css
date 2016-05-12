@@ -645,6 +645,11 @@ ul.scroll-list {
 
 /* Specific Article Styles */
 
+#article-roadtrip {
+	padding-bottom: 0;
+	margin-bottom: -25px;
+}
+
 #article-roadtrip .container-fluid.article {
 	width: 100%;
 	padding-left: 0px;
