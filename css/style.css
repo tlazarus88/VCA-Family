@@ -552,6 +552,145 @@ a:visited {
 	font-size: 21px;
 }
 
+/* Article Styles */
+
+.article h1 {
+	text-align: center;
+}
+
+.article h2 {
+	text-align: center;
+}
+
+.article .col-md-12 p {
+	margin-top: 50px;
+	text-align: center;
+}
+
+ul.scroll-list {
+	position: relative;
+	width: 100%;
+	height: 100v;
+}
+
+[class*="parallax-bg__"] {
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+.parallax-bg__empty {
+	background-image: none;
+	box-shadow: none;
+
+}
+.parallax-bg__myers {
+	background-image: url(../images/Article_Roadtrip/alamy_RM_bp6amt.jpg);
+}
+
+.scroll-list-box {
+	width: 100%;
+	background-color: rgba(255,255,255,.95);
+	-webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,.5);
+	   -moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,.5);
+	        box-shadow: 0 10px 6px -6px rgba(0,0,0,.5);
+	border: 2px solid rgba(5,187,255,1);
+	margin-bottom: 50%;
+	float: left;
+	position: relative;
+	z-index: +1;
+}
+
+.scroll-list-box:first-of-type {
+	margin-top: 50%;
+}
+
+.article .col-md-12 .scroll-list-box p {
+	clear: both;
+	padding: 25px;
+	text-align: left;
+}
+
+.box-header {
+	width: 100%;
+	display: inline-block;
+	float: left;
+	font-weight: 500;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-bottom: 1px solid rgba(5,187,255,1);
+}
+
+.one-line {
+	line-height: 25px;
+}
+
+.box-header-num {
+	float: left;
+	font-weight: 900;
+	font-size: 50px;
+	color: rgba(235,4,120,1);
+	padding: 25px;
+	margin-right: 25px;
+	border-right: 1px solid rgba(5,187,255,1);
+}
+
+.box-header .stop-name {
+	display: block;
+	padding: 25px 0;
+}
+
+/* Specific Article Styles */
+
+#article-roadtrip .container-fluid.article {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#article-roadtrip .col-md-12.article-head {
+	width: 90%;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#list-roadtrip {
+	margin-top: 0px;
+}
+
+#article-roadtrip .scroll-list .col-md-6 {
+	margin-left: 5%;
+	margin-right: 5%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: +2;
+}
+
+.roadtrip-circle {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) !important;
+	left: 50%;
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+/*	background-image: url("../images/FPO_NCA.jpg");
+	background-size: 100%;*/
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 8px rgba(235,4,120,1);
+	z-index: +1;
+}
+
 /* Slideshow/Accordion Styles */ 
 
 .hideContentWrap {
