@@ -391,13 +391,15 @@ h1 {
 	font-size: 52px;
 	line-height: 49px;
 	font-weight: 600;
+	text-align: center;
 }
 h2 {
-	font-size: 22px;
-	font-weight: 500;
-	line-height: 34px;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 30px;
 	color: #eb0478;
-	padding-top: 4px;
+	padding: 16px 0 60px;
+	text-align: center;
 }
 h3 {
 	font-size: 32px;
@@ -432,15 +434,17 @@ p {
 }
 .container-fluid.article {
 	width: 90%;
+	max-width: 1200px;
 }
-.begin-content {
-	padding-top: 50px;
+.bg-img-container-wrap {
+	padding-bottom: 60px;
+	position: relative;
 }
-.blogger-info-box {
-	max-width: 750px;
-}
-.article .row {
-	padding-top: 60px;
+a:link,
+a:hover,
+a:active,
+a:visited {
+	text-decoration: none;
 }
 
 /* Region hero */
@@ -514,6 +518,38 @@ p {
 	background-image: url("../images/FPO_Brandi_BG_img.jpg");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
+}
+.container-fluid.article.blogger-post h1,
+.container-fluid.article.blogger-post h2 {
+	text-align: left;
+}
+.container-fluid.article.blogger-post h2 {
+	font-size: 22px;
+}
+.blogger-info-box {
+	max-width: 750px;
+}
+
+/* Section Header Styles*/
+
+.section-marker {
+	display: block;
+	height:50px;
+	width: auto;
+	margin: 0 auto -25px;
+	position: relative;
+	z-index: 50!important;
+}
+.bg-img-container-wrap.northern {
+	background-image: url("../images/section-bg-triangle.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.container-fluid.article h1 {
+	padding-top: 100px;
+}
+.container-fluid.article h2 {
+	font-size: 21px;
 }
 
 /* Article Styles */
@@ -657,15 +693,6 @@ ul.scroll-list {
 
 /* Slideshow/Accordion Styles */ 
 
-#photo-op {
-	margin-bottom: 800px;
-}
-#photo-op a:link,
-#photo-op a:hover,
-#photo-op a:active,
-#photo-op a:visited {
-	text-decoration: none;
-}
 .hideContentWrap {
 	background-size: cover;
 	background-position: center;
@@ -677,16 +704,16 @@ ul.scroll-list {
 	text-align: center;
 	overflow: hidden;
 }
-#photo-op a:first-child .hideContentWrap {
+#photo-op a .hideContentWrap#burney {
 	background-image: url("../images/photo-op/burney1.jpg");
 }
-#photo-op a:nth-child(2) .hideContentWrap {
+#photo-op a .hideContentWrap#shasta {
 	background-image: url("../images/photo-op/shasta1.jpg");
 }
-#photo-op a:nth-child(3) .hideContentWrap {
+#photo-op a .hideContentWrap#mendocino {
 	background-image: url("../images/photo-op/mendocino1.jpg");
 }
-#photo-op a:nth-child(4) .hideContentWrap {
+#photo-op a .hideContentWrap#eureka {
 	background-image: url("../images/photo-op/eureka2.jpg");
 }
 .hideContentWrap .hideContentHeader {
@@ -696,7 +723,7 @@ ul.scroll-list {
 	font-size: 32px;
 	letter-spacing: 3px;
 	background-color: rgba(5,187,255,.8);
-	padding: 25px 25px 18px 25px;
+	padding: 25px 25px 22px 25px;
 	position:relative;
 	z-index: 50!important;
 	text-shadow: 0px 2px 4px rgba(0,0,0,.4);
@@ -712,6 +739,9 @@ ul.scroll-list {
 .hideContentWrap .hideContent {
 	height: 80vh;
 	display: none;
+}
+.hideContentWrap .hideContent h4 {
+	color: #000;
 }
 .hideContentWrap .hideContent .text-box {
 	background-color:rgba(255,255,255,1);
