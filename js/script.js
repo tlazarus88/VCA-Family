@@ -1,4 +1,19 @@
+// Document Ready
+
 jQuery(document).ready(function($) {
+
+// Window CSS Resize Fix
+
+jQuery(function($){
+var windowWidth = $(window).width();
+
+$(window).resize(function() {
+    if(windowWidth != $(window).width()){
+    	location.reload();
+    	return;
+    	}
+	});
+});
 
 // Nav Stickiness Swap
 
@@ -20,6 +35,66 @@ function stickIt() {
     $('#toc').css('visibility','visible');
   }
 };
+
+// Roadtrip Stickiness
+
+scrollIntervalID = setInterval(roadCirc, 10)
+
+function roadCirc() {
+  $('#roadtrip-circle-2').css('visibility', 'hidden');
+
+  var $roadList = $('#list-roadtrip');   
+  var topRoadList = $roadList.offset().top;
+
+  var $endRoadList = $('#last-roadtrip');   
+  var bottomRoadList = $endRoadList.offset().top + $endRoadList.outerHeight(true);
+
+  if ($(window).scrollTop() >= (topRoadList)) {
+  	$('#roadtrip-circle-1').css('position', 'fixed');
+  } else {
+  	$('#roadtrip-circle-1').css('position', 'absolute');
+  };
+
+  if ($(window).scrollTop() >= (bottomRoadList)) {
+  	$('#roadtrip-circle-1').css('position', 'absolute');
+  	$('#roadtrip-circle-2').css('visibility', 'visible');
+  };
+
+};
+
+// Roadtrip Map
+
+var map;
+
+function init_map(){
+	var myOptions = {
+		zoom:15,
+		center:new google.maps.LatLng(40.6813578,-73.97733169999998),
+		mapTypeId: google.maps.MapTypeId.SATELLITE,
+		scrollwheel: false
+	};
+	map = new google.maps.Map(document.getElementById("roadtrip-circle-1"), myOptions);
+	marker = new google.maps.Marker({
+		map: map,
+		position: new google.maps.LatLng(40.6813578,-73.97733169999998)
+	});
+  // Alter Roadtrip Image
+
+  scrollIntervalID = setInterval(mapZoom, 10)
+
+  function mapZoom(){
+    if ($(window).scrollTop() >= ($('#roadtrip-2').offset().top + $('#roadtrip-2').outerHeight(true))) {
+      myOptions = {zoom: 20}
+    }
+  };
+};
+
+google.maps.event.addDomListener(window, 'load', init_map);
+google.maps.event.addDomListener(window, "resize", function() {
+ 	var center = map.getCenter();
+ 	google.maps.event.trigger(map, "resize");
+ 	map.setCenter(center);
+ });
 
 // Accordion
 
