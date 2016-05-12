@@ -651,6 +651,7 @@ ul.scroll-list {
 	padding-right: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
+	max-width: none;
 }
 
 #article-roadtrip .col-md-12.article-head {
