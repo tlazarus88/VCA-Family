@@ -573,6 +573,7 @@ p {
 .hideContentWrap .hideContent {
 	height: 80vh;
 	display: none;
+	max-height: 750px;
 }
 .hideContentWrap .hideContent .text-box {
 	background-color:rgba(255,255,255,1);
