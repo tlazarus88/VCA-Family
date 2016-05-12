@@ -641,7 +641,7 @@ ul.scroll-list {
 .roadtrip-circle {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translateY(-50%) !important;
 	left: 50%;
 	width: 800px;
 	height: 800px;
