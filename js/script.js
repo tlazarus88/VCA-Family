@@ -58,8 +58,7 @@ function roadCirc() {
   if ($(window).scrollTop() >= (bottomRoadList)) {
   	$('#roadtrip-circle-1').css('position', 'absolute');
   	$('#roadtrip-circle-2').css('visibility', 'visible');
-
-  }
+  };
 
 };
 
@@ -79,14 +78,23 @@ function init_map(){
 		map: map,
 		position: new google.maps.LatLng(40.6813578,-73.97733169999998)
 	});
-}
+  // Alter Roadtrip Image
+
+  scrollIntervalID = setInterval(mapZoom, 10)
+
+  function mapZoom(){
+    if ($(window).scrollTop() >= ($('#roadtrip-2').offset().top + $('#roadtrip-2').outerHeight(true))) {
+      myOptions = {zoom: 20}
+    }
+  };
+};
 
 google.maps.event.addDomListener(window, 'load', init_map);
 google.maps.event.addDomListener(window, "resize", function() {
  	var center = map.getCenter();
  	google.maps.event.trigger(map, "resize");
  	map.setCenter(center);
- })
+ });
 
 // Accordion
 
