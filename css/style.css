@@ -38,43 +38,43 @@ body {
 	-webkit-filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.12));
 	filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.12));
 }
-.state {
+.title-trtmnt .state {
 	font-size:64px;
 	font-weight:900;
 	text-transform:uppercase;
 }
-.of {
+.title-trtmnt .of {
 	font-size:28.7225px;
 	font-weight:300;
 }
-.play {
+.title-trtmnt .play {
 	font-size:66px;
 	letter-spacing:7px;
 	text-transform:uppercase;
 	font-weight:900;
 }
-.southern {
+.title-trtmnt .southern {
 	fill:#EE0077;
 	font-size:22px;
 	letter-spacing:1px;
 	text-transform:uppercase;
 	font-weight:900;
 }
-.california {
+.title-trtmnt .california {
 	fill:#EE0077;
 	font-weight:300;
 	font-size:24px;
 	letter-spacing:1.5px;
 	text-transform:uppercase;
 }
-.dek {
+.title-trtmnt .dek {
 	font-weight:300;
 	font-size:17px;
 }
-.st0{fill:#FFFFFF;}
-.st1{fill:none;stroke:#EE0077;stroke-width:0.75;stroke-miterlimit:10;}
-.st6{fill:none;stroke:#05BBFF;stroke-width:2.5;stroke-miterlimit:10;}
-.st9{fill:none;}
+.title-trtmnt .bg-diamond {fill:#FFFFFF;}
+.title-trtmnt .st1{fill:none;stroke:#EE0077;stroke-width:0.75;stroke-miterlimit:10;}
+.title-trtmnt .st6{fill:none;stroke:#05BBFF;stroke-width:2.5;stroke-miterlimit:10;}
+.title-trtmnt .txt-bx{fill:none;}
 
 /* DROPDOWN */
 
@@ -427,7 +427,7 @@ a:visited {
 	position: relative;
 	overflow: hidden;
 }
-.region-hero video#nrthrn-hero {
+.region-hero video {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -456,16 +456,17 @@ a:visited {
 .region-hero-title .region-loc {
 	font-weight: 900;
 	font-size:67.8428px;
-	letter-spacing:6px;
+	letter-spacing:9px;
 	stroke: none;
 	text-transform: uppercase;
 	fill: #FFFFFF;
+	text-align: center;
 }
 .region-hero-title .state {
 	font-weight: 300;
 	text-transform: uppercase;
-	font-size:59.8613px;
-	letter-spacing:5.25px;
+	font-size:62px;
+	letter-spacing:8px;
 	fill: #FFFFFF;
 }
 .region-hero-title .shad {
@@ -476,13 +477,11 @@ a:visited {
 .region-hero-title .diamond {
 	fill:none;
 	stroke:#FFFFFF;
-	stroke-width:2;
+	stroke-width:1.5;
 	stroke-miterlimit:10;
 }
 .region-hero-title .diamond.shad {
 	stroke:#000000;
-	filter: url(#pictureFilter);
-	opacity: .8;
 }
 
 /* Blog Post Styles */
@@ -504,7 +503,6 @@ a:visited {
 }
 
 /* Section Header Styles*/
-
 .section-marker {
 	display: block;
 	height:50px;
