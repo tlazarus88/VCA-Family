@@ -12,22 +12,79 @@
 	<link type="text/css"; rel="stylesheet"; href="css/normalize.css">
 	<link type="text/css"; rel="stylesheet"; href="css/reset.css">
 	<link type="text/css"; rel="stylesheet"; href="css/style.css">
-	<link rel="icon" href="assets/favicon.png">
+	<!-- <link rel="icon" href="assets/favicon.png"> -->
 	<title>State of Play</title>
 </head>
 <body>
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/script.js"></script>
-<script type="text/javascript">
-	$( document ).ready(function() {
-	    vpw = $(window).width();
-	    vph = $(window).height();
 
-	    $('.full-page').height(vph);
-	});
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
-<section class="sticky-nav clearfix">
+<section class="main-hero full-page">
+	<svg class="title-trtmnt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.6 424.6">
+	<polygon class="st0" points="714.6 212.3 357 424.6 0 212.3 357.3 0 "/><polygon class="st1" points="695.2 212.3 356.8 413.2 19 212.3 357.1 11.4 "/><text transform="matrix(1 0 0 1 267.073 121.6203)" class="state">state</text><text transform="matrix(1 0 0 1 267.1209 202.5311)" class="play">play</text><line class="st6" x1="273.8" y1="140.3" x2="333.8" y2="140.3"/><line class="st6" x1="380.8" y1="140.3" x2="440.8" y2="140.3"/><text transform="matrix(1 0 0 1 345.5594 147.7191)" class="of italc">of</text><rect x="164.5" y="225.7" class="st9" width="385.5" height="68.2"/><text transform="matrix(1 0 0 1 180.3961 237.5967)"><tspan class="dek">Discover why a trip to California makes the ultimate </tspan><tspan x="-13.1" y="20" class="dek">family vacation. Explore northern, central, and southern </tspan><tspan x="88.4" y="40" class="dek">California’s places to play.</tspan></text><text transform="matrix(1 0 0 1 277.9373 356.616)" class="california">California</text><text transform="matrix(1 0 0 1 286.526 323.2844)" class="southern italc">southern</text><rect x="279.7" y="299.7" class="st1" width="155.2" height="31.5"/><polygon points="418 312.8 427.8 312.8 422.9 308.1 "/><polygon points="418 317.5 427.8 317.5 422.9 322.3 "/><polygon points="342.9 386.9 371.6 386.9 357.2 395 "/>
+	</svg>
+</section>
+
+<section class="container-fluid toc clearfix" id="toc">
+	<div class="row">
+		<div class="col-md-4 toc-nca">
+			<ul class="toc-menu">
+	  			<li class="nav-explore">EXPLORE</li>
+	  			<li class="toc-region">NORTHERN CALIFORNIA</li>
+	  			<li class="toc-blogger"><a href="#">
+	  				<div class="blogger-circle"></div><span class="toc-with">with</span></br>
+	  				Brandi Riley</a></li>
+	  			<li class="toc-plus">plus</li>
+	    		<li><a href="#">Camp California</a></li>
+	    		<li role="separator" class="divider"></li>
+	    		<li><a href="#">TK Kid Friendly Attractions</a></li>
+	    		<li role="separator" class="divider"></li>
+	    		<li><a href="#">Photo Op: Share-Worthy Northern California Spots</a></li>
+	    		<li role="separator" class="divider"></li>
+	    		<li><a href="#">The Anti “Are We There Yet?” Road Trip</a></li> 
+	  		</ul>
+		</div>
+		<div class="col-md-4 toc-cca">
+			<ul class="toc-menu">
+	  			<li class="nav-explore">EXPLORE</li>
+	  			<li class="toc-region">NORTHERN CALIFORNIA</li>
+	  			<li class="toc-blogger"><a href="#">
+	  				<div class="blogger-circle"></div><span class="toc-with">with</span></br>
+	  				Patti Cordova</a></li>
+	  			<li class="toc-plus">plus</li>
+			    <li><a href="#">Edu(va)cation</a></li>
+	    		<li role="separator" class="divider"></li>
+	    		<li><a href="#">#EEEEEATS: Family-Friendly Spots in Central California</a></li>
+	    		<li role="separator" class="divider"></li>
+	    		<li><a href="#">Get to Know Central California</a></li>
+	    		<li role="separator" class="divider"></li>
+	    		<li><a href="#">4 Outdoor Adventures in Central California</a></li>
+	  		</ul>
+		</div>
+		<div class="col-md-4 toc-sca">
+			<ul class="toc-menu">
+	  			<li class="nav-explore">EXPLORE</li>
+	  			<li class="toc-region">NORTHERN CALIFORNIA</li>
+	  			<li class="toc-blogger"><a href="#">
+	  				<div class="blogger-circle"></div><span class="toc-with">with</span></br>
+	  				Justine Howell</a></li>
+	  			<li class="toc-plus">plus</li>
+	  			<li><a href="#">6 Kid-Friendly Southern California Beaches</a></li>
+	    		<li role="separator" class="divider"></li>
+	    		<li><a href="#">Surf ’n Skate</a></li>
+	    		<li role="separator" class="divider"></li>
+	    		<li><a href="#">Thrills, Chills, and Enchantments</a></li>
+	    		<li role="separator" class="divider"></li>
+	    		<li><a href="#">Bella Video</a></li>
+	  		</ul>
+		</div>
+	</div>
+</section>
+
+<section class="sticky-nav clearfix" id="sticky-nav">
 	<div class="dropdown">
 	  <button class="btn dropdown-toggle nav-nca" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 	    <span class="nav-explore">EXPLORE</span> NORTHERN CALIFORNIA
@@ -90,7 +147,7 @@
 	  		<span class="blogger-name">Justine Howell</span></br>
 	  		Headline TK</a></li>
 	  	<li role="separator" class="divider"></li>
-	    <li><a href="#">Surf ’n Skate</a></li>
+	    <li><a href="#">6 Kid-Friendly Southern California Beaches</a></li>
 	    <li role="separator" class="divider"></li>
 	    <li><a href="#">Surf ’n Skate</a></li>
 	    <li role="separator" class="divider"></li>
@@ -103,63 +160,347 @@
 	<div class="nav-status-bar"></div>
 </section>
 
-<header style="display:none;">
-	<nav class="clearfix">
-		<div class="nav-region nav-nca"><span class="nav-explore">EXPLORE</span> NORTHERN CALIFORNIA</div>
-			<div class="nav-rule"></div>
-		<div class="nav-region nav-cca"><span class="nav-explore">EXPLORE</span> CENTRAL CALIFORNIA</div>
-			<div class="nav-rule"></div>
-		<div class="nav-region nav-sca"><span class="nav-explore">EXPLORE</span> SOUTHERN CALIFORNIA</div>
-		<div class="nav-progress-bar"></div>
-		<div class="nav-status-bar"></div>
-	</nav>
-	<div class="nav-hover-wrapper">
-		<div class="nav-hover-menu nav-hover-nca">
-			<span class="nav-explore">EXPLORE</span> NORTHERN CALIFORNIA
-			<ul class="nav-dropdown">
-				<li>Must-See Kid-Friendly Attractions</li>
-				<li>Camp California</li>
-				<li>Photo Op: 4 Share-Worthy NoCal Spots</li>
-				<li>Anti-Are We There Yet Road Trip</li>
-			</ul>
-		</div>
-	</div>
-</header>
-
-<section class="main-hero full-page"></section>
-
-<section class="container-fluid toc">
-	<div class="row">
-		<div class="col-md-4"></div>
-		<div class="col-md-4"></div>
-		<div class="col-md-4"></div>
-	</div>
+<section class="region-hero full-page">
+	<svg class="region-hero-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.7 413.8">
+		<polygon class="diamond shad" points="683.5 206.5 345.1 407.4 7.3 206.5 345.4 5.6 "/>
+		<text transform="matrix(1 0 0 1 147.7531 200.4431)" class="region-loc shad italc">Northern</text>
+		<text transform="matrix(1 0 0 1 141.9746 260.7898)" class="state shad">California</text>
+		<polygon class="diamond" points="682.5 205.5 344.1 406.4 6.3 205.5 344.4 4.6 "/>
+		<text transform="matrix(1 0 0 1 146.7531 199.4431)" class="region-loc italc">Northern</text>
+		<text transform="matrix(1 0 0 1 140.9746 259.7898)" class="state">California</text>
+		<filter id="pictureFilter" >
+		  <feGaussianBlur stdDeviation="4" />
+		</filter>
+	</svg>
+	<video autoplay loop muted id="nrthrn-hero">
+		<source src="video/FPO-northern-vid-2.webm" type="video/webm">
+		<source src="video/FPO-northern-vid-2.mp4" type="video/mp4">
+		<!--<source src="video/FPO-northern-vid-1.ogg" type="video/ogg">-->
+		Your browser does not support the video tag.
+	</video>
 </section>
 
-<section class="region-hero full-page"></section>
-
-<section class="container-fluid article blogger-post">
-	<div class="row">
-		<div class="col-md-9">
-			<h1>Brandi's Guide To Northern California</h1>
-			<h2>The mama behind <span class="italc">Mama Knows It All</span> shares her favorite places to play with her family.</h2>
-			<img class="img-responsive begin-content blogger-info-box" src="images/FPO_Blogger_box.png">
+<!-- BRANDI POST -->
+<section class="bg-img-container-wrap" id="nrthrn-blog-post">
+	<div class="container-fluid article blogger-post">
+		<div class="row">
+			<div class="col-md-9">
+				<h1>Brandi's Guide To Northern California</h1>
+				<h2>The mama behind <span class="italc">Mama Knows It All</span> shares her favorite places to play with her family.</h2>
+				<img class="img-responsive begin-content blogger-info-box" src="images/FPO_Blogger_box.png">
+			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<p>She wanted to look 48. I nearly airbrushed her into oblivion. Ended up checking "albino" on the form. Dad asked me to do this on the day he pleads not guilty, as a spectacular protest. A…. ? Teamocil. So maybe you could start jete-ing, and stop je-terrorizing me! I'm tired of trying to find happiness through lies and self-medicating. If you need me, I'll be at the bar. I may have committed some light treason. There's a new daddy in town. A discipline daddy.</p>
-			<p>But I did finally get into Dad's pants. Although I had to have the crotch taken in a little bit. She keeps saying that God is going to show me a sign. The… something of my ways. Wisdom? NO TOUCHING! They're not gonna strip, right? I told them not to, but I can't guarantee their instincts won't kick in. Well, they got the Asian right… "hotties" might be a stretch. She keeps saying that God is going to show me a sign. The… something of my ways. Wisdom? It's probably wisdom.</p>
-			<p>I've been in the film business for a while but I just can't seem to get one in the can. Make love in your *own* hand, Mother! There are very few intelligent, attractive and straight men in this town. Well, that certainly leaves me out. Let me take off my assistant's skirt and put on my Barbra-Streisand-in-The-Prince-of-Tides ass-masking therapist pantsuit.</p>
-			<p>What a fun, sexy time for you. Friday night. She's trying to prove that she's closer to my children than I am, but the joke's on her, because she doesn't know how little I care for GOB. I'm a complete failure. I can't even fake the death of a stripper. One for the ladies. I'm not a prostitute. Then I shall let you live! What's gotten into you? Have you been eating cheese? </p>
-			<p>Ann, you need to decide whether you want a man or a boy. I know how I'd answer. I [bleeped] the business model. Yeah, she had all kinds of orgasms. Don't leave your Uncle T-bag hanging. It was for me. I was going to smoke the marijuana like a cigarette. Yeah, like anyone would want to R her. </p>
-			<p>The worst that could happen is that I could spill coffee all over this $3,000 suit. COME ON. If this were a Lifetime Moment of Truth movie, this would be our act break.  But it wasn't. No, it's the opposite. It's like my heart is getting hard. Sister's my new mother, Mother. And is it just me or is she looking hotter? Can't a guy call his mother pretty without it seeming strange? Amen. And how about that little piece of tail on her? Cute!</p>
-		</div>
-		<div class="col-md-5 col-md-offset-1">
-			<img class="img-responsive" src="images/FPO_northern-blogger-rsideimg1.jpg">
+		<div class="row">
+			<div class="col-md-6">
+				<p>Thanks to my father’s military status, I was very fortunate to be able to travel the world when I was growing up. No place I’ve been, however, compares to Northern California. Friendly folks who feel like neighbors, the influence of many diverse cultures, and a chill vibe make it easy for anyone to feel comfortable here. Five years ago, when I first visited the region, I dreamed that I could one day call it home. Three years ago, that dream became a reality, and I’m so proud to raise my daughter here and call Oakland, California my forever home!</p>
+				<p>There’s nothing to not love about where I live. From the awesome weather year round to the abundance of fun family activities, it’s no wonder that my friends and family all start concocting plans to relocate after vacationing here. It doesn’t hurt that I know all of the best places to take them to make them fall in love with our neck of the woods (or beach, or city...more on that later!). Northern California, the Bay Area in particular, is the ultimate family playground. Whether you have one child like I do, or a whole group of them, there’s plenty to keep your entire family happy.</p>
+				<p>Because there’s so much to do here, it’s easy to be overwhelmed by the choices. Don’t worry, Mama Knows It All has you covered! If you’re visiting the area for the first time, or you live here but want to get out and explore more, here’s a three-day itinerary that will help you cover the most ground...and have the most fun in Northern California!</p>
+				<p>My best piece of advice, for your entire trip, is to start early. There are so many hidden treasures in Northern California that it’s likely you’ll discover something that will get you off schedule, so our family has learned to stay flexible and get out as soon as we can after the sun rises. Trust me, you’ll appreciate this tip when you find a cool park that you want to hang out in for an hour or so!</p>
+				<h4>Day 1</h4>
+				<h3>Oakland and Berkeley</h3>
+				<p>I know, I know, everyone loves San Francisco. I do, too! You don’t have to rush into the city during your Northern California visit, though. In fact, it’s a good idea to pace yourself, especially if you’re traveling with children. Starting in San Francisco’s neighboring cities, Oakland and Berkeley, is a great way to start your vacation, and set the tone for the trip. Besides, they’re both extraordinarily family-friendly, with plenty to do and lots to keep the kiddos occupied and engaged.</p>
+				<h5>Children’s Fairyland</h5>
+				<p>Our family first fell in love with Children’s Fairyland on our first visit to Oakland. Super-duper kid-friendly, this fairytale-themed amusement park will be loved by children of all ages. Ride the Jolly Trolly Train, sit in on a puppet show, or meet new animal friends in the menagerie. You can experience the entire park in just a couple of hours, which leaves plenty of time for you to keep exploring.</p>
+				<h5>Jack London Square</h5>
+				<p>After Children’s Fairyland, take a short ride to Jack London Square for lunch, and you’re sure to find something interesting going on, too. It might be the day of the Farmer’s Market, there could be a dance party happening, or maybe your favorite movie is playing on the big screen. We never know what to expect when we go to Jack London Square! The one thing we can be sure of, though, is a great assortment of delicious restaurants!</p>
+				<h5>Tilden Park</h5>
+				<p>Once you finish lunch, it’s time to head over to Tilden Park in Berkeley. There’s a farm with a petting zoo, a carousel, botanical garden, and a steam train! Make sure you bring a blanket, because the acres of lush grass are perfect for a quick nap to refuel after you experience all the park has to offer.</p>
+				<h5>Shorebird Park Nature Center and Adventure Playground</h5>
+				<p>When you get your second wind, take the family to Shorebird Park Nature Center and Adventure Playground for another interesting experience.  A quintessentially Berkeley attraction, this park is unlike any playground you’ve ever been to. There's a zip line that kids and adults can ride on, and opportunities for children to build things with real hammers and nails, and to use paint to decorate their very own fort. The Shorebird Park Nature Center and Adventure Playground might be your kiddo’s favorite part of the entire day!</p>
+				<h4>Day 2</h4>
+				<h3>San Francisco</h3>
+				<p>The starlet of Northern California is obviously San Francisco. It’s one of the most visited cities in the world. If you’re in the region, you absolutely cannot miss it. If you start in Oakland, you can take the ferry from Jack London Square over to Fisherman’s Wharf for an exciting beginning to a day in the city. Even if you don't take the ferry, BART is a super affordable way to get into San Francisco, or you can leave the car at one of the many parking garages that are available.</p>
+				<h5>Fisherman’s Wharf</h5>
+				<p>No matter what your plans are, Fisherman’s Wharf has to be on your agenda. There’s so much to do there! You can see some ships, get a glimpse of Alcatraz, and watch the sea lions sunbathe or play. I have to warn you, though: It might be hard to drag the family to the next attraction after they see the sea lions! They’re just so darn interesting to watch!</p>
+				<h5>Chinatown</h5>
+				<p>San Francisco’s Chinatown neighborhood is one of my favorite places in the city. It’s so full of color, and there are tons of little surprises in every single shop you go into. The best part of Chinatown is that you get to experience the slopes and hills that San Francisco is known for!</p>
+				<h5>Golden Gate Bridge</h5>
+				<p>Since it’s one of the most iconic bridges in the country, you have to go over the Golden Gate bridge if you’re in Northern California. Every few weeks I try to sweet-talk my husband into driving me over the bridge because I absolutely love the views! Not only will your kids be impressed by the sheer size and beauty of the bridge, but it takes you to one of the most lovely little cities in our area.</p>
+				<h5>Sausalito</h5>
+				<p>After you drive over the Golden Gate Bridge, make your way to the Bay Area Discovery Museum. With its focus on imagination, creativity, and STEM activities, even the adults in the family will be engaged at the museum. There are often special events going on, so make sure you check the museum calendar before you go. After you leave, check out some of the shops in downtown Sausalito, and sit down for lunch at one of the many family-friendly restaurants in the area.</p>
+				<h5>Treasure Island</h5>
+				<p>To end your day, head over to Treasure Island, right at the end of the Bay Bridge, to watch the sunset. You won’t find a better view of San Francisco anywhere else. It’ll be the perfect close to a fun-filled day, and a memory that you’ll never, ever forget!</p>
+				<h4>Day 3</h4>
+				<h3>Northern California Wildcard</h3>
+				<p>For your third day in our lovely region, I have several recommendations for day trips. Don’t forget my earlier advice to stay flexible and be open to the adventure you might find.</p>
+				<h6>Option #1: Yosemite National Park</h6>
+				<h5>Yosemite National Park</h5>
+				<p>If you are coming to Northern California and you only have a few days, you MUST go to Yosemite National Park. It’s a 2.5-hour drive from Oakland, so if you start early in the morning, you'll have plenty of time to explore. One of the greatest parks in our country, Yosemite is absolutely breathtaking. When you and your family experience the amazing valley and beautiful waterfalls, you’ll be reminded of how beautiful our country truly is.</p>
+				<h6>Option #2: Santa Cruz</h6>
+				<h5>Santa Cruz Beach Boardwalk</h5>
+				<p>When I lived on the East Coast, one of my favorite things to do with my daughter was take a bus to the shore and hang out at the beach. Our version of that is the Santa Cruz Beach Boardwalk with its classic amusements, rides, and attractions. There’s a Ferris wheel, games, miniature golf, and great beach-themed foods. Your family will have the best time at the Santa Cruz Boardwalk!</p>
+				<h5>Henry Cowell Redwoods State Park</h5>
+				<p>If you want to experience the majesty of the beautiful redwood trees, Henry Cowell Redwoods State Park in Santa Cruz is the place to be. It’s home to some of the oldest redwoods in our state, so make sure to bring your camera to take tons of pictures of the family in this amazingly beautiful setting!</p>
+				<h5>Natural Bridges State Beach</h5>
+				<p>Before you leave the Santa Cruz area, make a stop at Natural Bridges State Beach to see the sun set. My husband and I had engagement photos taken here, and I can guarantee you one of the most gorgeous sunsets you’ll ever see in your life.</p>
+				<h6>Option #3: San Jose</h6>
+				<h5>San Jose</h5>
+				<p>You may know San Jose as the tech center of Northern California, but there’s plenty for families to do there, too! Just about an hour away from Oakland, San Jose makes a fun and easy day trip. Start your morning at Happy Hollow Park and Zoo for a close up look at some really sweet animals. After that, head over to the Children’s Discovery Museum for lunch and to play. You and your kiddos will love the gardens, imaginative exhibits, and opportunities to engage with science.</p>
+				<p>Now do you see why it was so easy for me to fall in love with Northern California? It’s the very best of everything our great country has to offer, and there’s no place I’d rather live, love, and have fun!</p>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<img class="img-responsive" src="images/FPO_northern-blogger-rsideimg1.jpg">
+			</div>
 		</div>
 	</div>
 </section> 
+
+<!-- PHOTO OP -->
+<img class="section-marker" src="images/section-marker.png">
+<section class="bg-img-container-wrap northern" id="photo-op">
+	<div class="container-fluid article">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Photo Op: Share-Worthy</br>Northern California Spots</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h2>Imagine a place where towering trees meet rugged coastline, and small friendly towns greet visitors with open arms (holding cups of artisanal coffee and mason jars of craft beer). Northern California, with its massive scale and otherworldly beauty, gives off an almost mystical vibe—the yin to Southern California’s yang. Here are four must-see spots for any family looking to capture some of Northern California’s charms. </h2>
+			</div>
+		</div>
+	</div>
+	<a href="#burney">
+		<ul class="hideContentWrap" id="burney">
+			<li class="hideContentHeader">Burney Falls</li>
+			<li class="hideContent">
+				<div class="text-box">
+					<p>This 129-foot-tall waterfall is one of the most jaw-dropping sights in North America. Located about 60 miles northeast of Redding, Burney Falls makes a delightful day trip. Take a hike around the falls to reach the optimum viewpoint, the overlook at McArthur-Burney Falls Memorial State Park, and you’ll see why President Teddy Roosevelt referred to the falls as the “eighth wonder of the world.”</p>
+				</div>
+			</li>
+		</ul>
+	</a>
+	<a href="#shasta">
+		<ul class="hideContentWrap" id="shasta">
+			<li class="hideContentHeader">Shasta Lake</li>
+			<li class="hideContent">
+				<div class="text-box">
+					<p>The largest lake in California, Shasta, is awash in watery family fun. With a whopping 370 miles of shoreline, it makes it easy to find an activity that involves your favorite watersport—from jet skiing to boating to just plain ol’ swimming. And one not-to-miss landmark is the Shasta Dam; at 602 feet high, it’s the second largest of its kind in the country and the perfect spot for a group photo. If you’re staying overnight, dine right on the water on a dinner cruise.</p>
+				</div>
+			</li>
+		</ul>
+	</a>
+	<a href="#mendocino">
+		<ul class="hideContentWrap" id="mendocino">
+			<li class="hideContentHeader">Mendocino</li>
+			<li class="hideContent">
+				<div class="text-box">
+					<p>Three hours north of San Francisco is the coastal cool town of Mendocino. Kids will love exploring Glass Beach, located about 10 miles north of the town of Mendocino, where deposits of colorful sea glass rest along the coves. One theory for the washed up treasure is that the sea glass is “mermaid tears,” shed every time a sailor is lost at sea. Just be sure not to take any of the glass with you—it’s best left on the beach for other visitors. On the way back to town, visit the Mendocino Coast Botanical Gardens to snap some pictures of its expansive collection of blooms, including its famous rhododendrons. Thirty miles south of town, check out the B Bryan Preserve, where you capture snaps of exotic animals like antelopes, kudus, zebras, and giraffes.</p>
+				</div>
+			</li>
+		</ul>
+	</a>
+	<a href="#eureka">
+		<ul class="hideContentWrap" id="eureka">
+			<li class="hideContentHeader">Eureka</li>
+			<li class="hideContent">
+				<div class="text-box">
+					<p>After a drive north through towering redwood forests, you’ll most definitely know when you’ve stumbled upon this Victorian-architecture-laden town along the coast. Eureka, 280 miles north of San Francisco, is not only worth a visit in and of itself—stroll along the seaside boardwalk and on the streets of old town, stopping at the intriguing Clarke Historical Museum. About an hour from Eureka on Highway 299 go hunting for Bigfoot at the Willow Creek-China Flat Museum. You’ll find footprint casts, Bigfoot pictures, and a collection of other odds and ends.</p>
+				</div>
+			</li>
+		</ul>
+	</a>
+</section>
+
+<!-- ROAD TRIP -->
+<img class="section-marker" src="images/section-marker.png">
+<section class="bg-img-container-wrap northern" id="article-roadtrip">
+	<div class="container-fluid article">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>The Anti<br>“Are We There Yet?”<br>Road Trip</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h2>The Avenue of the Giants, a 30-mile stretch of Highway 101,<br>is arguably one of America’s coolest drives.</h2>
+				<p>For a slice of Americana, complete with trees you can drive right through, take the family on a road trip along Highway 101. The route, starting from Phillipsville (roughly 225 miles north of San Francisco on the 101) and going north to Stafford, cuts through California’s Humboldt Redwoods State Park, home to the densest concentration of old-growth redwoods in the world. Here’s a guide for where to roam along this iconic stretch of road. It’s a drive so spectacular you may not hear an “Are we there yet?” the whole time.</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid article">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="scroll-list">
+					<li class="parallax-bg__empty" id="list-roadtrip">
+						<div class="roadtrip-circle" id="roadtrip-circle-1" style="transform: none">
+						</div>
+						<div class="col-md-6">
+							<div class="scroll-list-box">
+								<div class="box-header">
+									<div class="box-header-num">1</div>
+									<span class="stop-name">First Stop:</br>Phillipsville</span>
+								</div>
+								<p>Before you set out, fuel up on grass-fed-beef burgers, fresh baked goods, and soft-serve ice cream at the whimsical Chimney Tree Grill in the town of Phillipsville. The restaurant is next to the Living Chimney Tree, which was hollowed by a fire in 1914. Visitors can walk into the room-like space, entering through a front door, to check out the tree’s interior.</p>
+							</div>
+						</div>
+					</li>
+					<li class="parallax-bg__myers" id="roadtrip-2">
+						<div class="col-md-6"> 
+							<div class="scroll-list-box">
+								<div class="box-header">
+									<div class="box-header-num">2</div>
+									<span class="stop-name">Myers Flat and</br>the Shrine Tree</span>
+								</div>
+								<p>There are three redwoods you can drive a car through in California. The Shrine Drive-Tbrough iTree has the distinction of being the only one hollowed out by nature. Goose pens, as these interior spaces are known, are caused by fires, which burn out the interior of the tree but leave the exterior intact and alive. You’ll pay a small fee to pass through this privately owned redwood. Stop off in Myers Flat for the locally lauded Daily Grind espresso house or a visit to Riverbend Cellars for a laid back local wine tasting. If you have young kids, venture a mile farther to the Williams Grove day use area where you’ll access the Children’s Forest trail. This quiet, pretty 2-mile loop has plenty of fun exploration opportunities for little ones.</p>
+							</div>
+						</div>
+					</li>
+					<li class="parallax-bg__empty">
+						<div class="col-md-6">
+							<div class="scroll-list-box">
+								<div class="box-header">
+									<div class="box-header-num">3</div>
+									<span class="stop-name">The Humboldt Redwoods</br>State Park Visitor’s Center</span>
+								</div>
+								<p>This retro, 1930s visitor’s center near the town of Weott is both kitschy and educational. Three of the world’s remaining redwood species have been planted out front. Inside there’s a substantial history museum, as well as the world’s first RV, carved from a redwood trunk, which the owner drove around the country from 1917 to 1921 to raise awareness of the forests.</p>
+							</div>
+						</div>
+					</li>
+					<li class="parallax-bg__myers">
+						<div class="col-md-6">
+							<div class="scroll-list-box">
+								<div class="box-header one-line">
+									<div class="box-header-num">4</div>
+									<span class="stop-name">Founder’s Grove</span>
+								</div>
+								<p>Stop to explore the Dyerville Giant—estimated to be the world’s tallest tree when it toppled 25 years ago. When it crashed, people in the area thought there had been a train accident because of the explosive reverberation. It’s now a great opportunity to see a redwood root system, and there’s plenty of signage to learn about the forest.</p>
+							</div>
+						</div>
+					</li>
+					<li class="parallax-bg__empty" id="last-roadtrip">
+						<div class="col-md-6">
+							<div class="scroll-list-box">
+								<div class="box-header one-line">
+									<div class="box-header-num">5</div>
+									<span class="stop-name">The Grieg-French-Bell Grove</span>
+								</div>
+								<p>Fairytale lovers will marvel at this grove, most famous for the redwood sorrel ground cover. The dense, bright green foliage resembles four-leaf clovers, and it blankets the forest floor, rising and falling with the terrain. Pathways twist and turn among the trees in an incredible enchanted setting.</p>
+							</div>
+						</div>
+					</li>
+					<li class="parallax-bg__myers">
+						<div class="col-md-6">
+							<div class="scroll-list-box">
+								<div class="box-header one-line">
+									<div class="box-header-num">6</div>
+									<span class="stop-name">Eternal Tree House</span>
+								</div>
+								<p>About eight miles south of the Stafford end of the Avenue of the Giants sits the Eternal Tree House, a rustic roadside stop with a gift shop, restaurant, and a 20-square foot room located in the stump of one of the giants. Visitors to the house can leave their name in the guestbook before going back on the road.</p>
+							</div>
+						</div>
+						<div class="roadtrip-circle" id="roadtrip-circle-2">
+					</li>
+				</ul>		
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- KID ATTRACTIONS -->
+<img class="section-marker" src="images/section-marker.png">
+<section class="bg-img-container-wrap northern" id="kid-attractions">
+	<div class="container-fluid article">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Must-See Kid-Friendly Attractions</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h2>Some of the wider-known theme parks reside in the southern part of the state, but Northern California is home to wonder-filled theme parks, animal attractions, and summertime amusements. With so many exciting adventures to choose from, the only question is where to go first. So here, a few of the area’s main enticements to get you started.</h2>
+			</div>
+		</div>
+	</div>
+	<a href="#great-america">
+		<ul class="hideContentWrap" id="great-america">
+			<li class="hideContentHeader">Something for Everyone</li>
+			<li class="hideContent">
+				<h4>California’s Great America</h4>
+				<div class="text-box">
+					<p>This park features 53 rides, live entertainment, and a water park—certain to please everyone from pint-sized adventurers to older thrill-seekers. Spine-tingling rides include the Xtreme Skyflyer that re-creates the experience of skydiving, while tamer pursuits, such as bumper cars, are also plentiful. A dynamic new 4-D attraction, developed in partnership with Electronic Arts based on the game series Mass Effect™ and featuring customized technology for the park, will take guests on an adventure through the galaxy. After the thrills, the park’s regularly scheduled fireworks displays will end your day with a bang.</p>
+				</div>
+			</li>
+		</ul>
+	</a>
+	<a href="#gilroy">
+		<ul class="hideContentWrap" id="gilroy">
+			<li class="hideContentHeader">Natural Wonders</li>
+			<li class="hideContent">
+				<h4>Gilroy Gardens Family Theme Park</h4>
+				<div class="text-box">
+					<p>Think traditional amusement park for younger kids with an earth-friendly twist. Each of the park’s 40 rides and attractions, including a Ferris wheel and carousels, are built around six lush gardens. There are also learning sheds showing vignettes on conservation and the park’s greenery. Gilroy is also home to the Circus Trees, which are trees shaped and woven together to create complex designs, a basket, arch and zig-zag. The park’s water-filled play areas will let you make a splash on even the hottest of days.</p>
+				</div>
+			</li>
+		</ul>
+	</a>
+	<a href="#discov-kingdom">
+		<ul class="hideContentWrap" id="discov-kingdom">
+			<li class="hideContentHeader">Animal Attractions</li>
+			<li class="hideContent">
+				<h4>Six Flags Discovery Kingdom</h4>
+				<div class="text-box">
+					<p>Your kids can get up close and personal with wildlife at Six Flags Discovery Kingdom. Throughout the park, there are opportunities to experience exotic wildlife, such as observing dolphins at play through an underwater viewing window, or tigers relaxing by their pool. You can also feed a giraffe, seal, or sea lion, see penguins and walruses swim or touch a stingray. Check out animal shows, exhibits, and demonstrations, or the 42 rides including The Joker, the newest and most thrilling coaster, and Medusa, Northern California's tallest, longest, and fastest roller coaster.</p>
+				</div>
+			</li>
+		</ul>
+	</a>
+	<a href="#chil-fairyland">
+		<ul class="hideContentWrap" id="chil-fairyland">
+			<li class="hideContentHeader">Where Dreams Come True</li>
+			<li class="hideContent">
+				<h4>Children’s Fairyland</h4>
+				<div class="text-box">
+					<p>Children’s Fairyland first debuted its 10 acres of gardens and themed sets for children ages eight and under on the shores of Lake Merritt in 1950. The park was Walt Disney’s major inspiration for the theme park he created five years later. Here, tots can interact with life-size sets depicting scenes from classic storybooks, such as Pinocchio’s castle, as well as meet ponies, goats, and sheep. There are also child-size rides like carousels and a mini Ferris wheel. Make sure to catch a show at the Storybook Puppet Theater, which launched the careers of many famous puppeteers.</p>
+				</div>
+			</li>
+		</ul>
+	</a>
+	<a href="#safari-west">
+		<ul class="hideContentWrap" id="safari-west">
+			<li class="hideContentHeader">Wild Things</li>
+			<li class="hideContent">
+				<h4>Safari West</h4>
+				<div class="text-box">
+					<p>With more than 400 acres of wildlife preserve and 900 different animals representing 90 species, Safari West re-creates a day in the wild—in the heart of California wine country. Safari tours in a double-decker Korean War Vintage Power Wagons run three hours and bring you into contact with gazelles, giraffes, zebras, antelope, and other fauna and flora indigenous to Northern Tanzania. You can even “camp” in a luxury safari tent complete with hardwood floors, beds, and full bathrooms, falling asleep to the calls of exotic birds.</p>
+				</div>
+			</li>
+		</ul>
+	</a>
+	<a href="#fairytale-town">
+		<ul class="hideContentWrap" id="fairytale-town">
+			<li class="hideContentHeader">Tall Tales for Tiny Tots</li>
+			<li class="hideContent">
+				<h4>Fairytale Town</h4>
+				<div class="text-box">
+					<p>Built in 1959 inside William Land Park, Fairytale Town boasts 25 playsets based on different nursery rhymes and fairy tales, including Farmer Brown’s Barn that is home to three blind mice, a schoolhouse with Mary’s Little Lambs, which has real sheep grazing, and an Old Woman in the Shoe slide. Little ones can also meet a miniature Sicilian donkey named Eeyore, as well as Charlotte the spider and Daisy the cow, a miniature Hereford heifer.</p>
+				</div>
+			</li>
+		</ul>
+	</a>
+	<a href="#sac-zoo">
+		<ul class="hideContentWrap" id="sac-zoo">
+			<li class="hideContentHeader">Animal Instincts</li>
+			<li class="hideContent">
+				<h4>Sacramento Zoo</h4>
+				<div class="text-box">
+					<p>Wear comfortable walking shoes when you visit, because the Sacramento Zoo spans 14.5 acres, and you’ll want to see all of it. The zoo is home to over 500 animals of more than 140 different species, including red pandas, snow leopards, eagles, and various reptiles. If you’re looking for more than a leisurely stroll and casual viewing, you can sign up for educational classes and day camps. And if you want to see the animals in action at all hours, you can bring a tent and sleeping bags for a back-to-nature overnighter.</p>
+				</div>
+			</li>
+		</ul>
+	</a>
+	<a href="#funderland">
+		<ul class="hideContentWrap" id="funderland">
+			<li class="hideContentHeader">Toddler Town</li>
+			<li class="hideContent">
+				<h4>Funderland Amusement Park</h4>
+				<div class="text-box">
+					<p>Perfect for peewee adventurers, this small-scale amusement park is adjacent to the Sacramento Zoo and Fairytale Town, and features nine child-sized rides, seven of which can accommodate two-year-olds. Knee-high daredevils can ride the Flying Dragon Roller Coaster, spin in the Crazy Cups, and fly in a swinging log on the Squirrelly Whirl. There are also scaled-down boats, cars, trains, and planes for climbing on and exploring. You can also all pile into one of the Backroads Buggies, Funderland’s classic cars that let little drivers zoom around the park. </p>
+				</div>
+			</li>
+		</ul>
+	</a>
+</section>
 
 <script src="js/bootstrap.min.js"></script>
 </body>
