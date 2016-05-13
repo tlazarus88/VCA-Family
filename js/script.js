@@ -2,7 +2,7 @@
 
 jQuery(document).ready(function($) {
 
-// Full Page 
+// Full Page
 
 vpw = $(window).width();
 vph = $(window).height();
@@ -22,6 +22,15 @@ $(window).resize(function() {
 	});
 });
 
+var mainHeroAnim = function() {
+  $('.main-hero').css({
+    'background-image' : 'url(../images/FPO-region-northern-hero-bg.jpg)'
+  });
+  // debugger;
+  console.log('working')
+}
+// mainHeroAnim();
+
 // Nav Stickiness Swap
 
 scrollIntervalID = setInterval(stickIt, 10);
@@ -29,8 +38,8 @@ scrollIntervalID = setInterval(stickIt, 10);
 function stickIt() {
   $("#sticky-nav").hide();
 
-  var $orgToC = $('#toc');   
-  var bottomToC = $orgToC.offset().top + $orgToC.outerHeight(true);           
+  var $orgToC = $('#toc');
+  var bottomToC = $orgToC.offset().top + $orgToC.outerHeight(true);
 
   if ($(window).scrollTop() >= (bottomToC)) {
     // scrolled past the original position; now only show the cloned, sticky element.
@@ -50,10 +59,10 @@ scrollIntervalID = setInterval(roadCirc, 10)
 function roadCirc() {
   $('#roadtrip-circle-2').css('visibility', 'hidden');
 
-  var $roadList = $('#list-roadtrip');   
+  var $roadList = $('#list-roadtrip');
   var topRoadList = $roadList.offset().top;
 
-  var $endRoadList = $('#last-roadtrip');   
+  var $endRoadList = $('#last-roadtrip');
   var bottomRoadList = $endRoadList.offset().top + $endRoadList.outerHeight(true);
 
   if ($(window).scrollTop() >= (topRoadList)) {
@@ -120,7 +129,7 @@ $('.hideContentHeader').click(function() {
     $(this).find('.indicator').toggleClass("rotate");
 });
 
-// Smooth Scrolling 
+// Smooth Scrolling
 // includes offset for #sticky-nav
 
 $(function() {
