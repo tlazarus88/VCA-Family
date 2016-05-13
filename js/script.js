@@ -71,37 +71,46 @@ function roadCirc() {
 
 // Roadtrip Map
 
-var map;
+mapboxgl.accessToken = 'pk.eyJ1IjoidGxhemFydXM4OCIsImEiOiJjaW81dDdyNnkwMjBndmlsemlsa3EzNnBrIn0.3NylPNCT2ZSfG4mLTwXyKw';
+  var map = new mapboxgl.Map({
+      container: 'roadtrip-circle-1',
+      style: 'mapbox://styles/mapbox/streets-v8',
+      center: [40, -123]
+      interactive: false,
+      
+  });
 
-function init_map(){
-	var myOptions = {
-		zoom:15,
-		center:new google.maps.LatLng(40.6813578,-73.97733169999998),
-		mapTypeId: google.maps.MapTypeId.SATELLITE,
-		scrollwheel: false
-	};
-	map = new google.maps.Map(document.getElementById("roadtrip-circle-1"), myOptions);
-	marker = new google.maps.Marker({
-		map: map,
-		position: new google.maps.LatLng(40.6813578,-73.97733169999998)
-	});
-  // Alter Roadtrip Image
+// var map;
 
-  scrollIntervalID = setInterval(mapZoom, 10)
+// function init_map(){
+// 	var myOptions = {
+// 		zoom:15,
+// 		center:new google.maps.LatLng(40.6813578,-73.97733169999998),
+// 		mapTypeId: google.maps.MapTypeId.SATELLITE,
+// 		scrollwheel: false
+// 	};
+// 	map = new google.maps.Map(document.getElementById("roadtrip-circle-1"), myOptions);
+// 	marker = new google.maps.Marker({
+// 		map: map,
+// 		position: new google.maps.LatLng(40.6813578,-73.97733169999998)
+// 	});
+//   // Alter Roadtrip Image
 
-  function mapZoom(){
-    if ($(window).scrollTop() >= ($('#roadtrip-2').offset().top + $('#roadtrip-2').outerHeight(true))) {
-      myOptions = {zoom: 20}
-    }
-  };
-};
+//   scrollIntervalID = setInterval(mapZoom, 10)
 
-google.maps.event.addDomListener(window, 'load', init_map);
-google.maps.event.addDomListener(window, "resize", function() {
- 	var center = map.getCenter();
- 	google.maps.event.trigger(map, "resize");
- 	map.setCenter(center);
- });
+//   function mapZoom(){
+//     if ($(window).scrollTop() >= ($('#roadtrip-2').offset().top + $('#roadtrip-2').outerHeight(true))) {
+//       myOptions = {zoom: 20}
+//     }
+//   };
+// };
+
+// google.maps.event.addDomListener(window, 'load', init_map);
+// google.maps.event.addDomListener(window, "resize", function() {
+//  	var center = map.getCenter();
+//  	google.maps.event.trigger(map, "resize");
+//  	map.setCenter(center);
+//  });
 
 // Accordion
 
