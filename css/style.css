@@ -106,10 +106,7 @@ body {
 	width: 100%;
 	border-radius: 0;
 	border: none;
-	background-color: rgba(5,187,255,1);
-	background-blend-mode: screen;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-color: rgba(5,187,255,.8);
 	margin: 0;
 	padding: 0;
 	font-family: 'Brandon Grotesque', sans-serif;
@@ -121,30 +118,6 @@ body {
 .sticky-nav .btn:hover {
 	background-attachment: none;
 	color: rgba(255,255,255,1);
-}
-
-.nav-nca {
-	background-image: url("../images/Nav/770x45/GettyImages-517877952.jpg");
-}
-
-.nav-nca:hover {
-	background-image: none;
-}
-
-.nav-cca {
-	background-image: url("../images/Nav/770x45/GettyImages-184084521.jpg");
-}
-
-.nav-cca:hover {
-	background-image: none;
-}
-
-.nav-sca {
-	background-image: url("../images/Nav/770x45/GettyImages-152627362.jpg");
-}
-
-.nav-sca:hover {
-	background-image: none;
 }
 
 .nav-explore {
