@@ -757,6 +757,52 @@ ul.scroll-list {
 /* Safari and Chrome */
 }
 
+
+/* Camp CA/Listicle Styles */
+
+#camp-ca .scroll-list-box {
+	box-shadow: none;
+	margin: 80px 0 0 0;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 1!important;
+}
+
+#camp-ca .scroll-list-box .bold {
+	color: #1f1f1f;
+}
+
+#camp-ca .scroll-list-box .box-header {
+	margin-bottom: 6px;
+}
+
+#camp-ca .scroll-list-box .text-wrapper {
+	padding: 20px 25px 15px;
+	clear: both;
+}
+
+#camp-ca .scroll-list-box p {
+	
+	padding: 0 0 14px 0;
+	font-size: 19px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+#camp-ca .scroll-list-box .camp-ca-bold {
+	font-weight: 600;
+}
+
+
+#camp-ca .col-md-6 img {
+	width: 100%;
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+	margin: -200px 0 0 -10%;
+	position: relative;
+	z-index: 50!important;
+	margin-bottom: 40px;
+}
+
 /* Specific Slideshow Styles */ 
 
 #photo-op a .hideContentWrap#burney {
@@ -815,52 +861,64 @@ ul.scroll-list {
 #eduvacation a .hideContentWrap#sb-natural-history {
 	background-image: url("../images/eduvacation/sb-natural-history1.jpg");
 }
-
-/* Camp CA/Listicle Styles */
-
-#camp-ca .scroll-list-box {
-	box-shadow: none;
-	margin: 80px 0 0 0;
-	padding-bottom: 20px;
-	position: relative;
-	z-index: 1!important;
-}
-
-#camp-ca .scroll-list-box .bold {
-	color: #1f1f1f;
-}
-
-#camp-ca .scroll-list-box .box-header {
-	margin-bottom: 6px;
-}
-
-#camp-ca .scroll-list-box .text-wrapper {
-	padding: 20px 25px 15px;
-	clear: both;
-}
-
-#camp-ca .scroll-list-box p {
-	
-	padding: 0 0 14px 0;
-	font-size: 19px;
-	line-height: 28px;
-	font-weight: 300;
-}
-
-#camp-ca .scroll-list-box .camp-ca-bold {
-	font-weight: 600;
-}
-
-
-#camp-ca .col-md-6 img {
-	width: 100%;
-	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
-	margin: -200px 0 0 -10%;
-	position: relative;
-	z-index: 50!important;
-	margin-bottom: 40px;
-}
  
+#must-see-parks a .hideContentWrap#yosemite {
+	background-image: url("../images/must-see-parks/yosemite1.jpg");
+}
+#must-see-parks a .hideContentWrap#mammoth-lakes {
+	background-image: url("../images/must-see-parks/mammoth-lakes1.jpg");
+}
+#must-see-parks a .hideContentWrap#sequoia-kings {
+	background-image: url("../images/must-see-parks/sequoia-kings1.jpg");
+}
+#must-see-parks a .hideContentWrap#death-valley {
+	background-image: url("../images/must-see-parks/death-valley1.jpg");
+}
+
+#theme-parks a .hideContentWrap#seaworld {
+	background-image: url("../images/theme-parks/seaworld1.jpg");
+}
+#theme-parks a .hideContentWrap#knotts-berry {
+	background-image: url("../images/theme-parks/knotts-berry1.jpg");
+}
+#theme-parks a .hideContentWrap#magic-mountain {
+	background-image: url("../images/theme-parks/magic-mountain1.jpg");
+}
+#theme-parks a .hideContentWrap#disneyland {
+	background-image: url("../images/theme-parks/disneyland1.jpg");
+}
+#theme-parks a .hideContentWrap#legoland {
+	background-image: url("../images/theme-parks/legoland1.jpg");
+}
+#theme-parks a .hideContentWrap#castle-park {
+	background-image: url("../images/theme-parks/castle-park1.jpg");
+}
+#theme-parks a .hideContentWrap#raging-waters {
+	background-image: url("../images/theme-parks/raging-waters1.jpg");
+}
+#theme-parks a .hideContentWrap#universal {
+	background-image: url("../images/theme-parks/universal2.jpg");
+}
+
+#kid-beaches a .hideContentWrap#coronado {
+	background-image: url("../images/kid-beaches/coronado1.jpg");
+}
+#kid-beaches a .hideContentWrap#mission-bay {
+	background-image: url("../images/kid-beaches/mission-bay1.jpg");
+}
+#kid-beaches a .hideContentWrap#la-jolla {
+	background-image: url("../images/kid-beaches/la-jolla1.jpg");
+}
+#kid-beaches a .hideContentWrap#carlsbad {
+	background-image: url("../images/kid-beaches/carlsbad1.jpg");
+}
+#kid-beaches a .hideContentWrap#crystal-cove {
+	background-image: url("../images/kid-beaches/crystal-cove1.jpg");
+}
+#kid-beaches a .hideContentWrap#santa-monica {
+	background-image: url("../images/kid-beaches/santa-monica1.jpg");
+}
+
 /* Utility Styles*/
 .clearfix:after {
      visibility: hidden;
