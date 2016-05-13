@@ -83,7 +83,7 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 44px; 
+	height: 44px;
 	z-index: 5000!important;
 	box-shadow: 0 7px 8px rgba(0,0,0,.12);
 	text-align: center;
@@ -703,7 +703,7 @@ ul.scroll-list {
 	z-index: +1;
 }
 
-/* Slideshow/Accordion Styles */ 
+/* Slideshow/Accordion Styles */
 
 .hideContentWrap {
 	background-size: cover;
@@ -800,3 +800,5 @@ ul.scroll-list {
      clear: both;
      height: 0;
 }
+
+/*test*/
