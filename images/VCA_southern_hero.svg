@@ -1,0 +1,8 @@
+<svg class="region-hero-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681.4 405.7">
+	<polygon class="diamond shad" points="679.7 203.8 341.2 404.7 3.5 203.8 341.6 2.9 "/>
+	<text transform="matrix(1 0 0 1 118.4586 255.3635)" class="state shad">California</text>
+	<text transform="matrix(1 0 0 1 138.4766 193.3493)" class="region-loc shad italc">SOUTHERN</text>
+	<polygon class="diamond" points="677.7 201.8 339.2 402.7 1.5 201.8 339.6 0.9 "/>
+	<text transform="matrix(1 0 0 1 116.4586 253.3635)" class="state">California</text>
+	<text transform="matrix(1 0 0 1 136.4766 191.3493)" class="region-loc italc">SOUTHERN</text>
+</svg>
