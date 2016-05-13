@@ -818,6 +818,19 @@ ul.scroll-list {
 	background-image: url("../images/eduvacation/sb-natural-history1.jpg");
 }
 
+#must-see-parks a .hideContentWrap#yosemite {
+	background-image: url("../images/must-see-parks/yosemite1.jpg");
+}
+#must-see-parks a .hideContentWrap#mammoth-lakes {
+	background-image: url("../images/must-see-parks/mammoth-lakes1.jpg");
+}
+#must-see-parks a .hideContentWrap#sequoia-kings {
+	background-image: url("../images/must-see-parks/sequoia-kings1.jpg");
+}
+#must-see-parks a .hideContentWrap#death-valley {
+	background-image: url("../images/must-see-parks/death-valley1.jpg");
+}
+
 /* Utility Styles*/
 .clearfix:after {
      visibility: hidden;
