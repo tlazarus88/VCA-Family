@@ -773,6 +773,7 @@ ul.scroll-list {
 #photo-op a .hideContentWrap#eureka {
 	background-image: url("../images/photo-op/eureka2.jpg");
 }
+
 #kid-attractions a .hideContentWrap#great-america {
 	background-image: url("../images/kid-attractions/great-america.jpg");
 }
@@ -796,6 +797,25 @@ ul.scroll-list {
 }
 #kid-attractions a .hideContentWrap#funderland {
 	background-image: url("../images/kid-attractions/funderland2.jpg");
+}
+
+#eduvacation a .hideContentWrap#chabot-space {
+	background-image: url("../images/eduvacation/chabot1.jpg");
+}
+#eduvacation a .hideContentWrap#monterey-aquarium {
+	background-image: url("../images/eduvacation/monterey1.jpg");
+}
+#eduvacation a .hideContentWrap#academy-sciences {
+	background-image: url("../images/eduvacation/academy-sciences1.jpg");
+}
+#eduvacation a .hideContentWrap#exploratorium {
+	background-image: url("../images/eduvacation/exploratorium1.jpg");
+}
+#eduvacation a .hideContentWrap#tech-museum {
+	background-image: url("../images/eduvacation/tech-museum1.jpg");
+}
+#eduvacation a .hideContentWrap#sb-natural-history {
+	background-image: url("../images/eduvacation/sb-natural-history1.jpg");
 }
 
 /* Utility Styles*/
