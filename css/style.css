@@ -106,10 +106,7 @@ body {
 	width: 100%;
 	border-radius: 0;
 	border: none;
-	background-color: rgba(5,187,255,1);
-	background-blend-mode: screen;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-color: rgba(5,187,255,.8);
 	margin: 0;
 	padding: 0;
 	font-family: 'Brandon Grotesque', sans-serif;
@@ -121,30 +118,6 @@ body {
 .sticky-nav .btn:hover {
 	background-attachment: none;
 	color: rgba(255,255,255,1);
-}
-
-.nav-nca {
-	background-image: url("../images/Nav/770x45/GettyImages-517877952.jpg");
-}
-
-.nav-nca:hover {
-	background-image: none;
-}
-
-.nav-cca {
-	background-image: url("../images/Nav/770x45/GettyImages-184084521.jpg");
-}
-
-.nav-cca:hover {
-	background-image: none;
-}
-
-.nav-sca {
-	background-image: url("../images/Nav/770x45/GettyImages-152627362.jpg");
-}
-
-.nav-sca:hover {
-	background-image: none;
 }
 
 .nav-explore {
@@ -716,22 +689,10 @@ ul.scroll-list {
 	text-align: center;
 	overflow: hidden;
 }
-#photo-op a .hideContentWrap#burney {
-	background-image: url("../images/photo-op/burney1.jpg");
-}
-#photo-op a .hideContentWrap#shasta {
-	background-image: url("../images/photo-op/shasta1.jpg");
-}
-#photo-op a .hideContentWrap#mendocino {
-	background-image: url("../images/photo-op/mendocino1.jpg");
-}
-#photo-op a .hideContentWrap#eureka {
-	background-image: url("../images/photo-op/eureka2.jpg");
-}
 .hideContentWrap .hideContentHeader {
 	color: #fff;
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 32px;
 	letter-spacing: 3px;
 	background-color: rgba(5,187,255,.8);
@@ -751,9 +712,7 @@ ul.scroll-list {
 .hideContentWrap .hideContent {
 	height: 80vh;
 	display: none;
-}
-.hideContentWrap .hideContent h4 {
-	color: #000;
+	max-height: 750px;
 }
 .hideContentWrap .hideContent .text-box {
 	background-color:rgba(255,255,255,1);
@@ -762,8 +721,17 @@ ul.scroll-list {
 	bottom:0;
 	margin:0 10px 10px 10px;
 }
+.hideContentWrap .hideContent h4 {
+	/*background-color: rgba(235,4,120,1);*/
+	background-color: rgba(36,52,60,.9);
+	color: #FFF;
+	padding: 8px 40px 4px;
+	letter-spacing: 2px;
+	font-size: 18px;
+	display: inline-block;
+}
 .hideContentWrap .hideContent .text-box p {
-	padding:15px 20px;
+	padding:15px 45px;
 	font-size:17px;
 	line-height:22px;
 	font-weight: 400;
@@ -789,6 +757,45 @@ ul.scroll-list {
 /* IE 9 */
     -webkit-transform: rotate(45deg);
 /* Safari and Chrome */
+}
+
+/* Specific Slideshow Styles */ 
+
+#photo-op a .hideContentWrap#burney {
+	background-image: url("../images/photo-op/burney1.jpg");
+}
+#photo-op a .hideContentWrap#shasta {
+	background-image: url("../images/photo-op/shasta1.jpg");
+}
+#photo-op a .hideContentWrap#mendocino {
+	background-image: url("../images/photo-op/mendocino1.jpg");
+}
+#photo-op a .hideContentWrap#eureka {
+	background-image: url("../images/photo-op/eureka2.jpg");
+}
+#kid-attractions a .hideContentWrap#great-america {
+	background-image: url("../images/kid-attractions/great-america.jpg");
+}
+#kid-attractions a .hideContentWrap#gilroy {
+	background-image: url("../images/kid-attractions/gilroy2.jpg");
+}
+#kid-attractions a .hideContentWrap#discov-kingdom {
+	background-image: url("../images/kid-attractions/discovery-kingdom.jpg");
+}
+#kid-attractions a .hideContentWrap#chil-fairyland {
+	background-image: url("../images/kid-attractions/fairyland.jpg");
+}
+#kid-attractions a .hideContentWrap#safari-west {
+	background-image: url("../images/kid-attractions/safari-west.jpg");
+}
+#kid-attractions a .hideContentWrap#fairytale-town {
+	background-image: url("../images/kid-attractions/fairytale-town.jpg");
+}
+#kid-attractions a .hideContentWrap#sac-zoo {
+	background-image: url("../images/kid-attractions/sac-zoo.jpg");
+}
+#kid-attractions a .hideContentWrap#funderland {
+	background-image: url("../images/kid-attractions/funderland2.jpg");
 }
 
 /* Utility Styles*/
