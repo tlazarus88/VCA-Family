@@ -854,6 +854,25 @@ ul.scroll-list {
 	background-image: url("../images/theme-parks/universal2.jpg");
 }
 
+#kid-beaches a .hideContentWrap#coronado {
+	background-image: url("../images/kid-beaches/coronado1.jpg");
+}
+#kid-beaches a .hideContentWrap#mission-bay {
+	background-image: url("../images/kid-beaches/mission-bay1.jpg");
+}
+#kid-beaches a .hideContentWrap#la-jolla {
+	background-image: url("../images/kid-beaches/la-jolla1.jpg");
+}
+#kid-beaches a .hideContentWrap#carlsbad {
+	background-image: url("../images/kid-beaches/carlsbad1.jpg");
+}
+#kid-beaches a .hideContentWrap#crystal-cove {
+	background-image: url("../images/kid-beaches/crystal-cove1.jpg");
+}
+#kid-beaches a .hideContentWrap#santa-monica {
+	background-image: url("../images/kid-beaches/santa-monica1.jpg");
+}
+
 /* Utility Styles*/
 .clearfix:after {
      visibility: hidden;
