@@ -626,6 +626,10 @@ ul.scroll-list {
 	padding: 25px 0;
 }
 
+.bold {
+	font-weight: 700;
+}
+
 /* Specific Article Styles */
 
 #article-roadtrip {
