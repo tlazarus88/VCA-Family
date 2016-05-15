@@ -11,10 +11,6 @@ body {
 	font-family: 'Brandon Grotesque', sans-serif;
 }
 
-.italc {
-	font-style: italic;
-}
-
 /* MAIN HERO */
 
 .main-hero {
@@ -405,22 +401,37 @@ p {
 	font-weight: 300;
 	color: #524F4F;
 }
+.italc {
+	font-style: italic;
+}
+.bold {
+	font-weight: 600;
+}
 .container-fluid.article {
 	width: 90%;
-	max-width: 1200px;
+	max-width: 1400px;
 }
 .bg-img-container-wrap {
 	padding-bottom: 60px;
 	position: relative;
 }
 a:link,
-a:hover,
 a:active,
 a:visited {
 	text-decoration: none;
 }
-a {
+a,
+a:hover {
 	color: #eb0478;
+}
+.col-md-8 {
+	text-align: center;
+}
+.col-md-8 p {
+	text-align: center;
+	max-width: 900px;
+	display: inline-block;
+	padding-bottom: 0;
 }
 
 /* Region hero */
@@ -615,7 +626,7 @@ ul.scroll-list {
 }
 
 .one-line {
-	line-height: 25px;
+	line-height: 50px;
 }
 .box-header-num {
 	float: left;
@@ -652,20 +663,6 @@ ul.scroll-list {
 #article-roadtrip .col-md-8 {
 	text-align: center;
 }
-#article-roadtrip .col-md-8 p {
-	text-align: center;
-	max-width: 900px;
-	display: inline-block;
-	padding-bottom: 0;
-}
-
-/*#article-roadtrip .col-md-12.article-head {
-	width: 90%;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-left: 5%;
-	margin-right: 5%;
-}*/
 
 #list-roadtrip {
 	margin-top: 0px;
@@ -780,6 +777,52 @@ ul.scroll-list {
 /* Safari and Chrome */
 }
 
+
+/* Camp CA/Listicle Styles */
+
+#camp-ca .scroll-list-box {
+	box-shadow: none;
+	margin: 80px 0 0 0;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 1!important;
+}
+
+#camp-ca .scroll-list-box .bold {
+	color: #1f1f1f;
+}
+
+#camp-ca .scroll-list-box .box-header {
+	margin-bottom: 6px;
+}
+
+#camp-ca .scroll-list-box .text-wrapper {
+	padding: 20px 25px 15px;
+	clear: both;
+}
+
+#camp-ca .scroll-list-box p {
+	
+	padding: 0 0 14px 0;
+	font-size: 19px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+#camp-ca .scroll-list-box .camp-ca-bold {
+	font-weight: 600;
+}
+
+
+#camp-ca .col-md-6 img {
+	width: 100%;
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+	margin: -200px 0 0 -10%;
+	position: relative;
+	z-index: 50!important;
+	margin-bottom: 40px;
+}
+
 /* Specific Slideshow Styles */ 
 
 #photo-op a .hideContentWrap#burney {
@@ -838,7 +881,7 @@ ul.scroll-list {
 #eduvacation a .hideContentWrap#sb-natural-history {
 	background-image: url("../images/eduvacation/sb-natural-history1.jpg");
 }
-
+ 
 #must-see-parks a .hideContentWrap#yosemite {
 	background-image: url("../images/must-see-parks/yosemite1.jpg");
 }
