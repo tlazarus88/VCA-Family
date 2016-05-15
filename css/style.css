@@ -500,9 +500,13 @@ a {
 .container-fluid.article.blogger-post h2 {
 	font-size: 22px;
 }
+.container-fluid.article.blogger-post img {
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+}
 .blogger-info-box {
 	max-width: 750px;
 	margin-bottom: 80px;
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 }
 
 /* Specific Blog Post Styles */
