@@ -9,10 +9,7 @@ html, body {
 
 body {
 	font-family: 'Brandon Grotesque', sans-serif;
-}
-
-.italc {
-	font-style: italic;
+	overflow-x: hidden;
 }
 
 /* MAIN HERO */
@@ -20,7 +17,61 @@ body {
 .main-hero {
 	background-image: url("../images/FPO-main-southern-hero-bg.jpg");
 	background-size: cover;
+	text-align: center;
+	position: relative;
 }
+
+/* Title SVG Styles */
+
+.title-trtmnt {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width:875px;
+	margin-top:-2%;
+	-webkit-filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.12));
+	filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.12));
+}
+.title-trtmnt .state {
+	font-size:64px;
+	font-weight:900;
+	text-transform:uppercase;
+}
+.title-trtmnt .of {
+	font-size:28.7225px;
+	font-weight:300;
+}
+.title-trtmnt .play {
+	font-size:66px;
+	letter-spacing:7px;
+	text-transform:uppercase;
+	font-weight:900;
+}
+.title-trtmnt .southern {
+	fill:#EE0077;
+	font-size:22px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	font-weight:900;
+}
+.title-trtmnt .california {
+	fill:#EE0077;
+	font-weight:300;
+	font-size:24px;
+	letter-spacing:1.5px;
+	text-transform:uppercase;
+}
+.title-trtmnt .dek {
+	font-weight:300;
+	font-size:17px;
+}
+.title-trtmnt .bg-diamond {fill:#FFFFFF;}
+.title-trtmnt .st1{fill:none;stroke:#EE0077;stroke-width:0.75;stroke-miterlimit:10;}
+.title-trtmnt .st6{fill:none;stroke:#05BBFF;stroke-width:2.5;stroke-miterlimit:10;}
+.title-trtmnt .txt-bx{fill:none;}
 
 /* DROPDOWN */
 
@@ -52,10 +103,7 @@ body {
 	width: 100%;
 	border-radius: 0;
 	border: none;
-	background-color: rgba(5,187,255,1);
-	background-blend-mode: screen;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-color: rgba(5,187,255,.8);
 	margin: 0;
 	padding: 0;
 	font-family: 'Brandon Grotesque', sans-serif;
@@ -67,30 +115,6 @@ body {
 .sticky-nav .btn:hover {
 	background-attachment: none;
 	color: rgba(255,255,255,1);
-}
-
-.nav-nca {
-	background-image: url("../images/Nav/770x45/GettyImages-517877952.jpg");
-}
-
-.nav-nca:hover {
-	background-image: none;
-}
-
-.nav-cca {
-	background-image: url("../images/Nav/770x45/GettyImages-184084521.jpg");
-}
-
-.nav-cca:hover {
-	background-image: none;
-}
-
-.nav-sca {
-	background-image: url("../images/Nav/770x45/GettyImages-152627362.jpg");
-}
-
-.nav-sca:hover {
-	background-image: none;
 }
 
 .nav-explore {
@@ -337,13 +361,15 @@ h1 {
 	font-size: 52px;
 	line-height: 49px;
 	font-weight: 600;
+	text-align: center;
 }
 h2 {
-	font-size: 22px;
-	font-weight: 500;
-	line-height: 34px;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 30px;
 	color: #eb0478;
-	padding-top: 4px;
+	padding: 16px 0 60px;
+	text-align: center;
 }
 h3 {
 	font-size: 32px;
@@ -376,38 +402,650 @@ p {
 	font-weight: 300;
 	color: #524F4F;
 }
-
-.begin-content {
-	padding-top: 50px;
+.italc {
+	font-style: italic;
 }
-
-.blogger-info-box {
-	max-width: 750px;
+.bold {
+	font-weight: 600;
 }
-
-.article .row {
-	padding-top: 60px;
+.container-fluid.article {
+	width: 90%;
+	max-width: 1400px;
+}
+.bg-img-container-wrap {
+	padding-bottom: 60px;
+	position: relative;
+}
+a:link,
+a:active,
+a:visited {
+	text-decoration: none;
+}
+a,
+a:hover {
+	color: #eb0478;
+}
+.col-md-8 {
+	text-align: center;
+}
+.col-md-8 p {
+	text-align: center;
+	max-width: 900px;
+	display: inline-block;
+	padding-bottom: 0;
 }
 
 /* Region hero */
 
 .region-hero {
-	background-image: url("../images/FPO-region-northern-hero-bg.jpg");
 	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+.region-hero video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 50!important;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
 }
 
-.container-fluid.article {
-	width: 90%;
+/* Region Hero SVG Styles */
+
+.region-hero-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%,-50%);
+	width: 875px;
+	z-index: 100!important;
+}
+.region-hero-title .region-loc {
+	font-weight: 900;
+	font-size:67.8428px;
+	letter-spacing:9px;
+	stroke: none;
+	text-transform: uppercase;
+	fill: #FFFFFF;
+	text-align: center;
+}
+.region-hero-title .state {
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size:62px;
+	letter-spacing:8px;
+	fill: #FFFFFF;
+}
+.region-hero-title .shad {
+	fill: #000000;
+	filter: url(#pictureFilter);
+	opacity: .8;
+}
+.region-hero-title .diamond {
+	fill:none;
+	stroke:#FFFFFF;
+	stroke-width:1.5;
+	stroke-miterlimit:10;
+}
+.region-hero-title .diamond.shad {
+	stroke:#000000;
 }
 
 /* Blog Post Styles */
 
-.bg-img-container-wrap#nrthrn-blog-post {
-	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+.bg-img-container-wrap {
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
+.container-fluid.article.blogger-post h1,
+.container-fluid.article.blogger-post h2 {
+	text-align: left;
+}
+.container-fluid.article.blogger-post h2 {
+	font-size: 22px;
+}
+.container-fluid.article.blogger-post img {
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+}
+.blogger-info-box {
+	max-width: 750px;
+	margin-bottom: 80px;
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+}
 
+/* Specific Blog Post Styles */
+
+.bg-img-container-wrap#nrthrn-blog-post {
+	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+.bg-img-container-wrap#cntrl-blog-post {
+	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+.bg-img-container-wrap#sthrn-blog-post {
+	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+
+/* Arrow Icon SVG Styles */
+
+.arrow circle {
+	fill:#FFF845;
+}
+
+/* Caption/SVG Styles */
+
+.caption {
+	margin-top: 25px;
+}
+.caption svg {
+	width: 25px;
+	height: auto;
+	float: left;
+	margin-right: 8px;
+}
+.caption h5 {
+	color: #eb0478;
+	padding-top: 5px;
+}
+.caption p {
+	clear: both;
+	color: #474747;
+	font-size: 18px;
+	line-height: 24px;
+	margin-top: -4px;
+}
+
+/*.st0{fill:#FFF845;}*/
+
+/* Section Header Styles*/
+.section-marker {
+	display: block;
+	height:50px;
+	width: auto;
+	margin: 0 auto -25px;
+	position: relative;
+	z-index: 50!important;
+}
+.bg-img-container-wrap.northern {
+	background-image: url("../images/section-bg-triangle.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.container-fluid.article h1 {
+	padding-top: 100px;
+}
+.container-fluid.article h2 {
+	font-size: 21px;
+}
+
+/* Article Styles */
+
+.article h1 {
+	text-align: center;
+}
+
+.article h2 {
+	text-align: center;
+}
+
+.article .col-md-12 p {
+	margin-top: 50px;
+	text-align: center;
+}
+
+ul.scroll-list {
+	position: relative;
+	width: 100%;
+	height: 100v;
+}
+
+[class*="parallax-bg__"] {
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+.parallax-bg__empty {
+	background-image: none;
+	box-shadow: none;
+
+}
+.parallax-bg__myers {
+	background-image: url(../images/Article_Roadtrip/alamy_RM_bp6amt.jpg);
+}
+
+.parallax-bg__skate {
+	background-image: url(../images/surf-skate/skate_1.jpg);
+	margin-top: 50px;
+	margin-bottom: 0px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.parallax-bg__surf {
+	background-image: url(../images/surf-skate/surf_1.jpg);
+	margin-top: 50px;
+	margin-bottom: 0px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.scroll-list-box {
+	width: 100%;
+	background-color: rgba(255,255,255,.95);
+	-webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,.5);
+	   -moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,.5);
+	        box-shadow: 0 10px 6px -6px rgba(0,0,0,.5);
+	border: 2px solid rgba(5,187,255,1);
+	margin-bottom: 50%;
+	float: left;
+	position: relative;
+	z-index: +1;
+}
+
+.scroll-list-box:first-of-type {
+	margin-top: 50%;
+}
+
+.article .col-md-12 .scroll-list-box p {
+	clear: both;
+	padding: 25px;
+	text-align: left;
+}
+
+.box-header {
+	width: 100%;
+	display: inline-block;
+	float: left;
+	font-weight: 500;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-bottom: 1px solid rgba(5,187,255,1);
+}
+
+.one-line {
+	line-height: 50px;
+}
+.box-header-num {
+	float: left;
+	font-weight: 900;
+	font-size: 50px;
+	color: rgba(235,4,120,1);
+	padding: 25px;
+	margin-right: 25px;
+	border-right: 1px solid rgba(5,187,255,1);
+}
+.box-header .stop-name {
+	display: block;
+	padding: 25px;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+/* Specific Article Styles */
+
+#article-roadtrip {
+	padding-bottom: 0;
+	margin-bottom: -25px;
+}
+#article-roadtrip .container-fluid.article {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: none;
+}
+#article-roadtrip .col-md-8 {
+	text-align: center;
+}
+
+#list-roadtrip {
+	margin-top: 0px;
+}
+
+#article-roadtrip .scroll-list .col-md-6 {
+	margin-left: 5%;
+	margin-right: 5%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: +2;
+}
+
+.roadtrip-circle {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) !important;
+	left: 50%;
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 8px rgba(235,4,120,1);
+	z-index: +1;
+}
+
+#article-surf-skate {
+	padding-bottom: 0;
+	margin-bottom: -25px;
+}
+#article-surf-skate .container-fluid.article {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: none;
+}
+#article-surf-skate .col-md-8 {
+	text-align: center;
+}
+
+#article-surf-skate .col-md-8.col-md-offset-2 p {
+	text-align: center;
+	max-width: 900px;
+	display: inline-block;
+	padding-bottom: 0;
+}
+
+#article-surf-skate .box-header {
+	display: block;
+	padding: 25px;
+}
+
+#article-surf-skate .box-header .best-for {
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: none;
+}
+
+.list-surf-skate {
+	padding-bottom: 30%;	
+}
+
+#article-surf-skate .scroll-list .col-md-6 {
+	position: absolute;
+}
+
+#article-surf-skate .scroll-list-box p {
+	padding: 25px;
+}
+
+#article-surf-skate{
+	width: 100%;
+	margin-left: 5px;
+}
+
+.skate-list {
+	position: relative;
+	overflow: hidden;
+}
+
+.static-list {
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: scroll;
+}
+
+/* Slideshow/Accordion Styles */ 
+
+.hideContentWrap {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #05bbff;
+	width: 950px;
+	margin: 0 auto 1px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+.hideContentWrap .hideContentHeader {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 32px;
+	letter-spacing: 3px;
+	background-color: rgba(5,187,255,.8);
+	padding: 25px 25px 22px 25px;
+	position:relative;
+	z-index: 50!important;
+	text-shadow: 0px 2px 4px rgba(0,0,0,.4);
+	transition: all .5s ease-in-out;
+}
+.hideContentWrap .hideContentHeader:hover {
+	cursor: pointer;
+}
+.hideContentHeader.active {
+    background-color: rgba(5,187,255,0);
+    text-shadow: 0px 1px 4px rgba(0,0,0,.8);
+}
+.hideContentWrap .hideContent {
+	height: 80vh;
+	display: none;
+	max-height: 750px;
+}
+.hideContentWrap .hideContent .text-box {
+	background-color:rgba(255,255,255,1);
+	position:absolute;
+	z-index:1!important;
+	bottom:0;
+	margin:0 10px 10px 10px;
+}
+.hideContentWrap .hideContent h4 {
+	/*background-color: rgba(235,4,120,1);*/
+	background-color: rgba(36,52,60,.9);
+	color: #FFF;
+	padding: 8px 40px 4px;
+	letter-spacing: 2px;
+	font-size: 18px;
+	display: inline-block;
+}
+.hideContentWrap .hideContent .text-box p {
+	padding:15px 45px;
+	font-size:17px;
+	line-height:22px;
+	font-weight: 400;
+}
+.indicator {
+    display: inline-block;
+    position: absolute;
+    left: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    transition: all .5s ease-in-out;
+    width: 22px; height: 22px;
+    margin-right: 6px;
+}
+.indicator img {
+	width: 100%;
+	height: auto;
+}
+.indicator.rotate {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+/* IE 9 */
+    -webkit-transform: rotate(45deg);
+/* Safari and Chrome */
+}
+
+
+/* Camp CA/Listicle Styles */
+
+#camp-ca .scroll-list-box {
+	box-shadow: none;
+	margin: 80px 0 0 0;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 1!important;
+}
+
+#camp-ca .scroll-list-box .bold {
+	color: #1f1f1f;
+}
+
+#camp-ca .scroll-list-box .box-header {
+	margin-bottom: 6px;
+}
+
+#camp-ca .scroll-list-box .text-wrapper {
+	padding: 20px 25px 15px;
+	clear: both;
+}
+
+#camp-ca .scroll-list-box p {
+	
+	padding: 0 0 14px 0;
+	font-size: 19px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+#camp-ca .scroll-list-box .camp-ca-bold {
+	font-weight: 600;
+}
+
+
+#camp-ca .col-md-6 img {
+	width: 100%;
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+	margin: -200px 0 0 -10%;
+	position: relative;
+	z-index: 50!important;
+	margin-bottom: 40px;
+}
+
+/* Specific Slideshow Styles */ 
+
+#photo-op a .hideContentWrap#burney {
+	background-image: url("../images/photo-op/burney1.jpg");
+}
+#photo-op a .hideContentWrap#shasta {
+	background-image: url("../images/photo-op/shasta1.jpg");
+}
+#photo-op a .hideContentWrap#mendocino {
+	background-image: url("../images/photo-op/mendocino1.jpg");
+}
+#photo-op a .hideContentWrap#eureka {
+	background-image: url("../images/photo-op/eureka2.jpg");
+}
+
+#kid-attractions a .hideContentWrap#great-america {
+	background-image: url("../images/kid-attractions/great-america.jpg");
+}
+#kid-attractions a .hideContentWrap#gilroy {
+	background-image: url("../images/kid-attractions/gilroy2.jpg");
+}
+#kid-attractions a .hideContentWrap#discov-kingdom {
+	background-image: url("../images/kid-attractions/discovery-kingdom.jpg");
+}
+#kid-attractions a .hideContentWrap#chil-fairyland {
+	background-image: url("../images/kid-attractions/fairyland.jpg");
+}
+#kid-attractions a .hideContentWrap#safari-west {
+	background-image: url("../images/kid-attractions/safari-west.jpg");
+}
+#kid-attractions a .hideContentWrap#fairytale-town {
+	background-image: url("../images/kid-attractions/fairytale-town.jpg");
+}
+#kid-attractions a .hideContentWrap#sac-zoo {
+	background-image: url("../images/kid-attractions/sac-zoo.jpg");
+}
+#kid-attractions a .hideContentWrap#funderland {
+	background-image: url("../images/kid-attractions/funderland2.jpg");
+}
+
+#eduvacation a .hideContentWrap#chabot-space {
+	background-image: url("../images/eduvacation/chabot1.jpg");
+}
+#eduvacation a .hideContentWrap#monterey-aquarium {
+	background-image: url("../images/eduvacation/monterey1.jpg");
+}
+#eduvacation a .hideContentWrap#academy-sciences {
+	background-image: url("../images/eduvacation/academy-sciences1.jpg");
+}
+#eduvacation a .hideContentWrap#exploratorium {
+	background-image: url("../images/eduvacation/exploratorium1.jpg");
+}
+#eduvacation a .hideContentWrap#tech-museum {
+	background-image: url("../images/eduvacation/tech-museum1.jpg");
+}
+#eduvacation a .hideContentWrap#sb-natural-history {
+	background-image: url("../images/eduvacation/sb-natural-history1.jpg");
+}
+ 
+#must-see-parks a .hideContentWrap#yosemite {
+	background-image: url("../images/must-see-parks/yosemite1.jpg");
+}
+#must-see-parks a .hideContentWrap#mammoth-lakes {
+	background-image: url("../images/must-see-parks/mammoth-lakes1.jpg");
+}
+#must-see-parks a .hideContentWrap#sequoia-kings {
+	background-image: url("../images/must-see-parks/sequoia-kings1.jpg");
+}
+#must-see-parks a .hideContentWrap#death-valley {
+	background-image: url("../images/must-see-parks/death-valley1.jpg");
+}
+
+#theme-parks a .hideContentWrap#seaworld {
+	background-image: url("../images/theme-parks/seaworld1.jpg");
+}
+#theme-parks a .hideContentWrap#knotts-berry {
+	background-image: url("../images/theme-parks/knotts-berry1.jpg");
+}
+#theme-parks a .hideContentWrap#magic-mountain {
+	background-image: url("../images/theme-parks/magic-mountain1.jpg");
+}
+#theme-parks a .hideContentWrap#disneyland {
+	background-image: url("../images/theme-parks/disneyland1.jpg");
+}
+#theme-parks a .hideContentWrap#legoland {
+	background-image: url("../images/theme-parks/legoland1.jpg");
+}
+#theme-parks a .hideContentWrap#castle-park {
+	background-image: url("../images/theme-parks/castle-park1.jpg");
+}
+#theme-parks a .hideContentWrap#raging-waters {
+	background-image: url("../images/theme-parks/raging-waters1.jpg");
+}
+#theme-parks a .hideContentWrap#universal {
+	background-image: url("../images/theme-parks/universal2.jpg");
+}
+
+#kid-beaches a .hideContentWrap#coronado {
+	background-image: url("../images/kid-beaches/coronado1.jpg");
+}
+#kid-beaches a .hideContentWrap#mission-bay {
+	background-image: url("../images/kid-beaches/mission-bay1.jpg");
+}
+#kid-beaches a .hideContentWrap#la-jolla {
+	background-image: url("../images/kid-beaches/la-jolla1.jpg");
+}
+#kid-beaches a .hideContentWrap#carlsbad {
+	background-image: url("../images/kid-beaches/carlsbad1.jpg");
+}
+#kid-beaches a .hideContentWrap#crystal-cove {
+	background-image: url("../images/kid-beaches/crystal-cove1.jpg");
+}
+#kid-beaches a .hideContentWrap#santa-monica {
+	background-image: url("../images/kid-beaches/santa-monica1.jpg");
+}
 
 /* Utility Styles*/
 .clearfix:after {
