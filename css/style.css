@@ -419,6 +419,9 @@ a:active,
 a:visited {
 	text-decoration: none;
 }
+a {
+	color: #eb0478;
+}
 
 /* Region hero */
 
@@ -486,8 +489,7 @@ a:visited {
 
 /* Blog Post Styles */
 
-.bg-img-container-wrap#nrthrn-blog-post {
-	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+.bg-img-container-wrap {
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
@@ -500,6 +502,19 @@ a:visited {
 }
 .blogger-info-box {
 	max-width: 750px;
+	margin-bottom: 80px;
+}
+
+/* Specific Blog Post Styles */
+
+.bg-img-container-wrap#nrthrn-blog-post {
+	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+.bg-img-container-wrap#cntrl-blog-post {
+	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+.bg-img-container-wrap#sthrn-blog-post {
+	background-image: url("../images/FPO_Brandi_BG_img.jpg");
 }
 
 /* Section Header Styles*/
