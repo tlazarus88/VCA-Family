@@ -550,7 +550,7 @@ a.read-more {
 .container-fluid.article.blogger-post .col-md-offset-1 {
 	margin-left: 4%;
 }
-.container-fluid.article.blogger-post .col-md-offset-1 .sect-break {
+.container-fluid.article.blogger-post .sect-break {
 	/*margin-top: -200px;*/
 	margin-top: -30%;
 }
@@ -562,6 +562,12 @@ a.read-more {
 	position: relative;
 	z-index: 100!important;
 }
+.container-fluid.article.blogger-post .r-rail-above {
+	margin-left: -4%;
+}
+.container-fluid.article.blogger-post .r-rail-above .caption {
+	margin-left: 8%;
+}
 /* Specific Blog Post Styles */
 
 .bg-img-container-wrap#nrthrn-blog-post {
@@ -572,6 +578,9 @@ a.read-more {
 }
 .bg-img-container-wrap#sthrn-blog-post {
 	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+.bg-img-container-wrap#sthrn-blog-post .col-md-6 p.italc {
+	letter-spacing: .25px;
 }
 
 /* Arrow Icon SVG Styles */
@@ -622,8 +631,6 @@ a.read-more {
 	padding-top: 0;
 	margin-left: 0;
 }
-
-/*.st0{fill:#FFF845;}*/
 
 /* Section Header Styles*/
 .section-marker {
