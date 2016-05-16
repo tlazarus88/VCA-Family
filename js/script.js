@@ -69,7 +69,6 @@ function roadCirc() {
 
 };
 
-
 // Surf n Skate Scroll Function
 scrollIntervalID = setInterval(surfScroll, 10)
 
@@ -127,6 +126,15 @@ $.each(surfBg, function(i, surfBg){
 
 // Roadtrip Map
 
+// mapboxgl.accessToken = 'pk.eyJ1IjoidGxhemFydXM4OCIsImEiOiJjaW81dDdyNnkwMjBndmlsemlsa3EzNnBrIn0.3NylPNCT2ZSfG4mLTwXyKw';
+//   var map = new mapboxgl.Map({
+//       container: 'roadtrip-circle-1',
+//       style: 'mapbox://styles/mapbox/streets-v8',
+//       center: [40, -123]
+//       interactive: false,
+      
+//   });
+
 // var map;
 
 // function init_map(){
@@ -141,6 +149,7 @@ $.each(surfBg, function(i, surfBg){
 // 		map: map,
 // 		position: new google.maps.LatLng(40.6813578,-73.97733169999998)
 // 	});
+
   // Alter Roadtrip Image
 
 //   scrollIntervalID = setInterval(mapZoom, 10)
