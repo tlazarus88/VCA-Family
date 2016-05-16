@@ -899,6 +899,50 @@ ul.scroll-list {
 	overflow-y: scroll;
 }
 
+/* Camp CA/Listicle Styles */
+
+#camp-ca .scroll-list-box {
+	box-shadow: none;
+	margin: 80px 0 0 0;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 1!important;
+}
+
+#camp-ca .scroll-list-box .bold {
+	color: #1f1f1f;
+}
+
+#camp-ca .scroll-list-box .box-header {
+	margin-bottom: 6px;
+}
+
+#camp-ca .scroll-list-box .text-wrapper {
+	padding: 20px 25px 15px;
+	clear: both;
+}
+
+#camp-ca .scroll-list-box p {
+	
+	padding: 0 20px 14px 0;
+	font-size: 19px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+#camp-ca .scroll-list-box .camp-ca-bold {
+	font-weight: 600;
+}
+
+
+#camp-ca .col-md-6 img {
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+	margin: -250px 0 0 -10%;
+	position: relative;
+	z-index: 50!important;
+	margin-bottom: 40px;
+}
+
 /* Slideshow/Accordion Styles */
 
 .hideContentWrap {
@@ -927,10 +971,16 @@ ul.scroll-list {
 }
 .hideContentWrap .hideContentHeader:hover {
 	cursor: pointer;
+	letter-spacing: 4px;
+	color: #fff845;
 }
 .hideContentHeader.active {
     background-color: rgba(5,187,255,0);
     text-shadow: 0px 1px 4px rgba(0,0,0,.8);
+    color: #fff845;
+}
+.hideContentHeader.active:hover {
+	letter-spacing: 3px;
 }
 .hideContentWrap .hideContent {
 	height: 80vh;
@@ -979,51 +1029,6 @@ ul.scroll-list {
 /* IE 9 */
     -webkit-transform: rotate(45deg);
 /* Safari and Chrome */
-}
-
-
-/* Camp CA/Listicle Styles */
-
-#camp-ca .scroll-list-box {
-	box-shadow: none;
-	margin: 80px 0 0 0;
-	padding-bottom: 20px;
-	position: relative;
-	z-index: 1!important;
-}
-
-#camp-ca .scroll-list-box .bold {
-	color: #1f1f1f;
-}
-
-#camp-ca .scroll-list-box .box-header {
-	margin-bottom: 6px;
-}
-
-#camp-ca .scroll-list-box .text-wrapper {
-	padding: 20px 25px 15px;
-	clear: both;
-}
-
-#camp-ca .scroll-list-box p {
-	
-	padding: 0 20px 14px 0;
-	font-size: 19px;
-	line-height: 28px;
-	font-weight: 300;
-}
-
-#camp-ca .scroll-list-box .camp-ca-bold {
-	font-weight: 600;
-}
-
-
-#camp-ca .col-md-6 img {
-	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
-	margin: -250px 0 0 -10%;
-	position: relative;
-	z-index: 50!important;
-	margin-bottom: 40px;
 }
 
 /* Specific Slideshow Styles */ 
