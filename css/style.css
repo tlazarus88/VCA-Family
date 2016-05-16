@@ -9,10 +9,7 @@ html, body {
 
 body {
 	font-family: 'Brandon Grotesque', sans-serif;
-}
-
-.italc {
-	font-style: italic;
+	overflow-x: hidden;
 }
 
 /* MAIN HERO */
@@ -405,19 +402,37 @@ p {
 	font-weight: 300;
 	color: #524F4F;
 }
+.italc {
+	font-style: italic;
+}
+.bold {
+	font-weight: 600;
+}
 .container-fluid.article {
 	width: 90%;
-	max-width: 1200px;
+	max-width: 1400px;
 }
 .bg-img-container-wrap {
 	padding-bottom: 60px;
 	position: relative;
 }
 a:link,
-a:hover,
 a:active,
 a:visited {
 	text-decoration: none;
+}
+a,
+a:hover {
+	color: #eb0478;
+}
+.col-md-8 {
+	text-align: center;
+}
+.col-md-8 p {
+	text-align: center;
+	max-width: 900px;
+	display: inline-block;
+	padding-bottom: 0;
 }
 
 /* Region hero */
@@ -486,8 +501,7 @@ a:visited {
 
 /* Blog Post Styles */
 
-.bg-img-container-wrap#nrthrn-blog-post {
-	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+.bg-img-container-wrap {
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
@@ -498,9 +512,57 @@ a:visited {
 .container-fluid.article.blogger-post h2 {
 	font-size: 22px;
 }
+.container-fluid.article.blogger-post img {
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+}
 .blogger-info-box {
 	max-width: 750px;
+	margin-bottom: 80px;
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 }
+
+/* Specific Blog Post Styles */
+
+.bg-img-container-wrap#nrthrn-blog-post {
+	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+.bg-img-container-wrap#cntrl-blog-post {
+	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+.bg-img-container-wrap#sthrn-blog-post {
+	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+
+/* Arrow Icon SVG Styles */
+
+.arrow circle {
+	fill:#FFF845;
+}
+
+/* Caption/SVG Styles */
+
+.caption {
+	margin-top: 25px;
+}
+.caption svg {
+	width: 25px;
+	height: auto;
+	float: left;
+	margin-right: 8px;
+}
+.caption h5 {
+	color: #eb0478;
+	padding-top: 5px;
+}
+.caption p {
+	clear: both;
+	color: #474747;
+	font-size: 18px;
+	line-height: 24px;
+	margin-top: -4px;
+}
+
+/*.st0{fill:#FFF845;}*/
 
 /* Section Header Styles*/
 .section-marker {
@@ -561,6 +623,20 @@ ul.scroll-list {
 	background-image: url(../images/Article_Roadtrip/alamy_RM_bp6amt.jpg);
 }
 
+.parallax-bg__surf {
+	background-image: url(../images/surf-skate/surf_1.jpg);
+	margin-top: 50px;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+
+.parallax-bg__skate {
+	background-image: url(../images/surf-skate/skate_1.jpg);
+	margin-bottom: 0px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
 .scroll-list-box {
 	width: 100%;
 	background-color: rgba(255,255,255,.95);
@@ -596,7 +672,7 @@ ul.scroll-list {
 }
 
 .one-line {
-	line-height: 25px;
+	line-height: 50px;
 }
 .box-header-num {
 	float: left;
@@ -609,7 +685,11 @@ ul.scroll-list {
 }
 .box-header .stop-name {
 	display: block;
-	padding: 25px 0;
+	padding: 25px;
+}
+
+.bold {
+	font-weight: 700;
 }
 
 /* Specific Article Styles */
@@ -629,20 +709,6 @@ ul.scroll-list {
 #article-roadtrip .col-md-8 {
 	text-align: center;
 }
-#article-roadtrip .col-md-8 p {
-	text-align: center;
-	max-width: 900px;
-	display: inline-block;
-	padding-bottom: 0;
-}
-
-/*#article-roadtrip .col-md-12.article-head {
-	width: 90%;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-left: 5%;
-	margin-right: 5%;
-}*/
 
 #list-roadtrip {
 	margin-top: 0px;
@@ -657,21 +723,96 @@ ul.scroll-list {
 	z-index: +2;
 }
 
-.roadtrip-circle {
+.circle-container {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%) !important;
-	left: 50%;
-	width: 800px;
-	height: 800px;
-	margin: 0 auto;
-/*	background-image: url("../images/FPO_NCA.jpg");
-	background-size: 100%;*/
+	left: 45%;
+	width: 50%;
+	z-index: +1;
+}
+
+.roadtrip-circle {
+	display: block;
+	background-size: cover;
+	width: 100%;
+	height: 0;
+	padding: 50% 0;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 8px rgba(235,4,120,1);
-	z-index: +1;
+}
+
+#article-surf-skate {
+	padding-bottom: 0;
+	margin-bottom: -25px;
+}
+#article-surf-skate .container-fluid.article {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: none;
+}
+#article-surf-skate .col-md-8 {
+	text-align: center;
+}
+
+#article-surf-skate .col-md-8.col-md-offset-2 p {
+	text-align: center;
+	max-width: 900px;
+	display: inline-block;
+	padding-bottom: 0;
+}
+
+#article-surf-skate .box-header {
+	display: block;
+	padding: 25px;
+}
+
+#article-surf-skate .box-header .best-for {
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: none;
+}
+
+.list-surf-skate {
+	padding-bottom: 30%;	
+}
+
+#article-surf-skate .scroll-list .col-md-6 {
+	position: absolute;
+}
+
+#article-surf-skate .scroll-list-box p {
+	padding: 25px;
+}
+
+.skate-list {
+	position: relative;
+	overflow: hidden;
+}
+
+.surf-skate-title {
+	text-align: center;
+	position: absolute;
+	top: 45px;
+	left: 25%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	color: rgba(5,187,255,1);
+}
+
+.surf-skate-title-accent {
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+.static-list {
+	position: fixed;
+	overflow-y: scroll;
 }
 
 /* Slideshow/Accordion Styles */ 
@@ -757,6 +898,52 @@ ul.scroll-list {
 /* Safari and Chrome */
 }
 
+
+/* Camp CA/Listicle Styles */
+
+#camp-ca .scroll-list-box {
+	box-shadow: none;
+	margin: 80px 0 0 0;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 1!important;
+}
+
+#camp-ca .scroll-list-box .bold {
+	color: #1f1f1f;
+}
+
+#camp-ca .scroll-list-box .box-header {
+	margin-bottom: 6px;
+}
+
+#camp-ca .scroll-list-box .text-wrapper {
+	padding: 20px 25px 15px;
+	clear: both;
+}
+
+#camp-ca .scroll-list-box p {
+	
+	padding: 0 0 14px 0;
+	font-size: 19px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+#camp-ca .scroll-list-box .camp-ca-bold {
+	font-weight: 600;
+}
+
+
+#camp-ca .col-md-6 img {
+	width: 100%;
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+	margin: -200px 0 0 -10%;
+	position: relative;
+	z-index: 50!important;
+	margin-bottom: 40px;
+}
+
 /* Specific Slideshow Styles */ 
 
 #photo-op a .hideContentWrap#burney {
@@ -815,7 +1002,7 @@ ul.scroll-list {
 #eduvacation a .hideContentWrap#sb-natural-history {
 	background-image: url("../images/eduvacation/sb-natural-history1.jpg");
 }
-
+ 
 #must-see-parks a .hideContentWrap#yosemite {
 	background-image: url("../images/must-see-parks/yosemite1.jpg");
 }
@@ -827,6 +1014,50 @@ ul.scroll-list {
 }
 #must-see-parks a .hideContentWrap#death-valley {
 	background-image: url("../images/must-see-parks/death-valley1.jpg");
+}
+
+#theme-parks a .hideContentWrap#seaworld {
+	background-image: url("../images/theme-parks/seaworld1.jpg");
+}
+#theme-parks a .hideContentWrap#knotts-berry {
+	background-image: url("../images/theme-parks/knotts-berry1.jpg");
+}
+#theme-parks a .hideContentWrap#magic-mountain {
+	background-image: url("../images/theme-parks/magic-mountain1.jpg");
+}
+#theme-parks a .hideContentWrap#disneyland {
+	background-image: url("../images/theme-parks/disneyland1.jpg");
+}
+#theme-parks a .hideContentWrap#legoland {
+	background-image: url("../images/theme-parks/legoland1.jpg");
+}
+#theme-parks a .hideContentWrap#castle-park {
+	background-image: url("../images/theme-parks/castle-park1.jpg");
+}
+#theme-parks a .hideContentWrap#raging-waters {
+	background-image: url("../images/theme-parks/raging-waters1.jpg");
+}
+#theme-parks a .hideContentWrap#universal {
+	background-image: url("../images/theme-parks/universal2.jpg");
+}
+
+#kid-beaches a .hideContentWrap#coronado {
+	background-image: url("../images/kid-beaches/coronado1.jpg");
+}
+#kid-beaches a .hideContentWrap#mission-bay {
+	background-image: url("../images/kid-beaches/mission-bay1.jpg");
+}
+#kid-beaches a .hideContentWrap#la-jolla {
+	background-image: url("../images/kid-beaches/la-jolla1.jpg");
+}
+#kid-beaches a .hideContentWrap#carlsbad {
+	background-image: url("../images/kid-beaches/carlsbad1.jpg");
+}
+#kid-beaches a .hideContentWrap#crystal-cove {
+	background-image: url("../images/kid-beaches/crystal-cove1.jpg");
+}
+#kid-beaches a .hideContentWrap#santa-monica {
+	background-image: url("../images/kid-beaches/santa-monica1.jpg");
 }
 
 /* Utility Styles*/
