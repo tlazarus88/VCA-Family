@@ -9,10 +9,7 @@ html, body {
 
 body {
 	font-family: 'Brandon Grotesque', sans-serif;
-}
-
-.italc {
-	font-style: italic;
+	overflow-x: hidden;
 }
 
 /* MAIN HERO */
@@ -38,43 +35,43 @@ body {
 	-webkit-filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.12));
 	filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.12));
 }
-.state {
+.title-trtmnt .state {
 	font-size:64px;
 	font-weight:900;
 	text-transform:uppercase;
 }
-.of {
+.title-trtmnt .of {
 	font-size:28.7225px;
 	font-weight:300;
 }
-.play {
+.title-trtmnt .play {
 	font-size:66px;
 	letter-spacing:7px;
 	text-transform:uppercase;
 	font-weight:900;
 }
-.southern {
+.title-trtmnt .southern {
 	fill:#EE0077;
 	font-size:22px;
 	letter-spacing:1px;
 	text-transform:uppercase;
 	font-weight:900;
 }
-.california {
+.title-trtmnt .california {
 	fill:#EE0077;
 	font-weight:300;
 	font-size:24px;
 	letter-spacing:1.5px;
 	text-transform:uppercase;
 }
-.dek {
+.title-trtmnt .dek {
 	font-weight:300;
 	font-size:17px;
 }
-.st0{fill:#FFFFFF;}
-.st1{fill:none;stroke:#EE0077;stroke-width:0.75;stroke-miterlimit:10;}
-.st6{fill:none;stroke:#05BBFF;stroke-width:2.5;stroke-miterlimit:10;}
-.st9{fill:none;}
+.title-trtmnt .bg-diamond {fill:#FFFFFF;}
+.title-trtmnt .st1{fill:none;stroke:#EE0077;stroke-width:0.75;stroke-miterlimit:10;}
+.title-trtmnt .st6{fill:none;stroke:#05BBFF;stroke-width:2.5;stroke-miterlimit:10;}
+.title-trtmnt .txt-bx{fill:none;}
 
 /* DROPDOWN */
 
@@ -106,10 +103,7 @@ body {
 	width: 100%;
 	border-radius: 0;
 	border: none;
-	background-color: rgba(5,187,255,1);
-	background-blend-mode: screen;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-color: rgba(5,187,255,.8);
 	margin: 0;
 	padding: 0;
 	font-family: 'Brandon Grotesque', sans-serif;
@@ -121,30 +115,6 @@ body {
 .sticky-nav .btn:hover {
 	background-attachment: none;
 	color: rgba(255,255,255,1);
-}
-
-.nav-nca {
-	background-image: url("../images/Nav/770x45/GettyImages-517877952.jpg");
-}
-
-.nav-nca:hover {
-	background-image: none;
-}
-
-.nav-cca {
-	background-image: url("../images/Nav/770x45/GettyImages-184084521.jpg");
-}
-
-.nav-cca:hover {
-	background-image: none;
-}
-
-.nav-sca {
-	background-image: url("../images/Nav/770x45/GettyImages-152627362.jpg");
-}
-
-.nav-sca:hover {
-	background-image: none;
 }
 
 .nav-explore {
@@ -432,19 +402,37 @@ p {
 	font-weight: 300;
 	color: #524F4F;
 }
+.italc {
+	font-style: italic;
+}
+.bold {
+	font-weight: 600;
+}
 .container-fluid.article {
 	width: 90%;
-	max-width: 1200px;
+	max-width: 1400px;
 }
 .bg-img-container-wrap {
 	padding-bottom: 60px;
 	position: relative;
 }
 a:link,
-a:hover,
 a:active,
 a:visited {
 	text-decoration: none;
+}
+a,
+a:hover {
+	color: #eb0478;
+}
+.col-md-8 {
+	text-align: center;
+}
+.col-md-8 p {
+	text-align: center;
+	max-width: 900px;
+	display: inline-block;
+	padding-bottom: 0;
 }
 
 /* Region hero */
@@ -454,7 +442,7 @@ a:visited {
 	position: relative;
 	overflow: hidden;
 }
-.region-hero video#nrthrn-hero {
+.region-hero video {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -483,16 +471,17 @@ a:visited {
 .region-hero-title .region-loc {
 	font-weight: 900;
 	font-size:67.8428px;
-	letter-spacing:6px;
+	letter-spacing:9px;
 	stroke: none;
 	text-transform: uppercase;
 	fill: #FFFFFF;
+	text-align: center;
 }
 .region-hero-title .state {
 	font-weight: 300;
 	text-transform: uppercase;
-	font-size:59.8613px;
-	letter-spacing:5.25px;
+	font-size:62px;
+	letter-spacing:8px;
 	fill: #FFFFFF;
 }
 .region-hero-title .shad {
@@ -503,19 +492,16 @@ a:visited {
 .region-hero-title .diamond {
 	fill:none;
 	stroke:#FFFFFF;
-	stroke-width:2;
+	stroke-width:1.5;
 	stroke-miterlimit:10;
 }
 .region-hero-title .diamond.shad {
 	stroke:#000000;
-	filter: url(#pictureFilter);
-	opacity: .8;
 }
 
 /* Blog Post Styles */
 
-.bg-img-container-wrap#nrthrn-blog-post {
-	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+.bg-img-container-wrap {
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
@@ -526,12 +512,59 @@ a:visited {
 .container-fluid.article.blogger-post h2 {
 	font-size: 22px;
 }
+.container-fluid.article.blogger-post img {
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+}
 .blogger-info-box {
 	max-width: 750px;
+	margin-bottom: 80px;
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 }
 
-/* Section Header Styles*/
+/* Specific Blog Post Styles */
 
+.bg-img-container-wrap#nrthrn-blog-post {
+	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+.bg-img-container-wrap#cntrl-blog-post {
+	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+.bg-img-container-wrap#sthrn-blog-post {
+	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+
+/* Arrow Icon SVG Styles */
+
+.arrow circle {
+	fill:#FFF845;
+}
+
+/* Caption/SVG Styles */
+
+.caption {
+	margin-top: 25px;
+}
+.caption svg {
+	width: 25px;
+	height: auto;
+	float: left;
+	margin-right: 8px;
+}
+.caption h5 {
+	color: #eb0478;
+	padding-top: 5px;
+}
+.caption p {
+	clear: both;
+	color: #474747;
+	font-size: 18px;
+	line-height: 24px;
+	margin-top: -4px;
+}
+
+/*.st0{fill:#FFF845;}*/
+
+/* Section Header Styles*/
 .section-marker {
 	display: block;
 	height:50px;
@@ -590,6 +623,20 @@ ul.scroll-list {
 	background-image: url(../images/Article_Roadtrip/alamy_RM_bp6amt.jpg);
 }
 
+.parallax-bg__surf {
+	background-image: url(../images/surf-skate/surf_1.jpg);
+	margin-top: 50px;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+
+.parallax-bg__skate {
+	background-image: url(../images/surf-skate/skate_1.jpg);
+	margin-bottom: 0px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
 .scroll-list-box {
 	width: 100%;
 	background-color: rgba(255,255,255,.95);
@@ -625,7 +672,7 @@ ul.scroll-list {
 }
 
 .one-line {
-	line-height: 25px;
+	line-height: 50px;
 }
 .box-header-num {
 	float: left;
@@ -638,7 +685,11 @@ ul.scroll-list {
 }
 .box-header .stop-name {
 	display: block;
-	padding: 25px 0;
+	padding: 25px;
+}
+
+.bold {
+	font-weight: 700;
 }
 
 /* Specific Article Styles */
@@ -658,20 +709,6 @@ ul.scroll-list {
 #article-roadtrip .col-md-8 {
 	text-align: center;
 }
-#article-roadtrip .col-md-8 p {
-	text-align: center;
-	max-width: 900px;
-	display: inline-block;
-	padding-bottom: 0;
-}
-
-/*#article-roadtrip .col-md-12.article-head {
-	width: 90%;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-left: 5%;
-	margin-right: 5%;
-}*/
 
 #list-roadtrip {
 	margin-top: 0px;
@@ -694,13 +731,82 @@ ul.scroll-list {
 	width: 800px;
 	height: 800px;
 	margin: 0 auto;
-/*	background-image: url("../images/FPO_NCA.jpg");
-	background-size: 100%;*/
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 8px rgba(235,4,120,1);
 	z-index: +1;
+}
+
+#article-surf-skate {
+	padding-bottom: 0;
+	margin-bottom: -25px;
+}
+#article-surf-skate .container-fluid.article {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: none;
+}
+#article-surf-skate .col-md-8 {
+	text-align: center;
+}
+
+#article-surf-skate .col-md-8.col-md-offset-2 p {
+	text-align: center;
+	max-width: 900px;
+	display: inline-block;
+	padding-bottom: 0;
+}
+
+#article-surf-skate .box-header {
+	display: block;
+	padding: 25px;
+}
+
+#article-surf-skate .box-header .best-for {
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: none;
+}
+
+.list-surf-skate {
+	padding-bottom: 30%;	
+}
+
+#article-surf-skate .scroll-list .col-md-6 {
+	position: absolute;
+}
+
+#article-surf-skate .scroll-list-box p {
+	padding: 25px;
+}
+
+.skate-list {
+	position: relative;
+	overflow: hidden;
+}
+
+.surf-skate-title {
+	text-align: center;
+	position: absolute;
+	top: 45px;
+	left: 25%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	color: rgba(5,187,255,1);
+}
+
+.surf-skate-title-accent {
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+.static-list {
+	position: fixed;
+	overflow-y: scroll;
 }
 
 /* Slideshow/Accordion Styles */ 
@@ -716,22 +822,10 @@ ul.scroll-list {
 	text-align: center;
 	overflow: hidden;
 }
-#photo-op a .hideContentWrap#burney {
-	background-image: url("../images/photo-op/burney1.jpg");
-}
-#photo-op a .hideContentWrap#shasta {
-	background-image: url("../images/photo-op/shasta1.jpg");
-}
-#photo-op a .hideContentWrap#mendocino {
-	background-image: url("../images/photo-op/mendocino1.jpg");
-}
-#photo-op a .hideContentWrap#eureka {
-	background-image: url("../images/photo-op/eureka2.jpg");
-}
 .hideContentWrap .hideContentHeader {
 	color: #fff;
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 32px;
 	letter-spacing: 3px;
 	background-color: rgba(5,187,255,.8);
@@ -751,9 +845,7 @@ ul.scroll-list {
 .hideContentWrap .hideContent {
 	height: 80vh;
 	display: none;
-}
-.hideContentWrap .hideContent h4 {
-	color: #000;
+	max-height: 750px;
 }
 .hideContentWrap .hideContent .text-box {
 	background-color:rgba(255,255,255,1);
@@ -762,8 +854,17 @@ ul.scroll-list {
 	bottom:0;
 	margin:0 10px 10px 10px;
 }
+.hideContentWrap .hideContent h4 {
+	/*background-color: rgba(235,4,120,1);*/
+	background-color: rgba(36,52,60,.9);
+	color: #FFF;
+	padding: 8px 40px 4px;
+	letter-spacing: 2px;
+	font-size: 18px;
+	display: inline-block;
+}
 .hideContentWrap .hideContent .text-box p {
-	padding:15px 20px;
+	padding:15px 45px;
 	font-size:17px;
 	line-height:22px;
 	font-weight: 400;
@@ -789,6 +890,168 @@ ul.scroll-list {
 /* IE 9 */
     -webkit-transform: rotate(45deg);
 /* Safari and Chrome */
+}
+
+
+/* Camp CA/Listicle Styles */
+
+#camp-ca .scroll-list-box {
+	box-shadow: none;
+	margin: 80px 0 0 0;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 1!important;
+}
+
+#camp-ca .scroll-list-box .bold {
+	color: #1f1f1f;
+}
+
+#camp-ca .scroll-list-box .box-header {
+	margin-bottom: 6px;
+}
+
+#camp-ca .scroll-list-box .text-wrapper {
+	padding: 20px 25px 15px;
+	clear: both;
+}
+
+#camp-ca .scroll-list-box p {
+	
+	padding: 0 0 14px 0;
+	font-size: 19px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+#camp-ca .scroll-list-box .camp-ca-bold {
+	font-weight: 600;
+}
+
+
+#camp-ca .col-md-6 img {
+	width: 100%;
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+	margin: -200px 0 0 -10%;
+	position: relative;
+	z-index: 50!important;
+	margin-bottom: 40px;
+}
+
+/* Specific Slideshow Styles */ 
+
+#photo-op a .hideContentWrap#burney {
+	background-image: url("../images/photo-op/burney1.jpg");
+}
+#photo-op a .hideContentWrap#shasta {
+	background-image: url("../images/photo-op/shasta1.jpg");
+}
+#photo-op a .hideContentWrap#mendocino {
+	background-image: url("../images/photo-op/mendocino1.jpg");
+}
+#photo-op a .hideContentWrap#eureka {
+	background-image: url("../images/photo-op/eureka2.jpg");
+}
+
+#kid-attractions a .hideContentWrap#great-america {
+	background-image: url("../images/kid-attractions/great-america.jpg");
+}
+#kid-attractions a .hideContentWrap#gilroy {
+	background-image: url("../images/kid-attractions/gilroy2.jpg");
+}
+#kid-attractions a .hideContentWrap#discov-kingdom {
+	background-image: url("../images/kid-attractions/discovery-kingdom.jpg");
+}
+#kid-attractions a .hideContentWrap#chil-fairyland {
+	background-image: url("../images/kid-attractions/fairyland.jpg");
+}
+#kid-attractions a .hideContentWrap#safari-west {
+	background-image: url("../images/kid-attractions/safari-west.jpg");
+}
+#kid-attractions a .hideContentWrap#fairytale-town {
+	background-image: url("../images/kid-attractions/fairytale-town.jpg");
+}
+#kid-attractions a .hideContentWrap#sac-zoo {
+	background-image: url("../images/kid-attractions/sac-zoo.jpg");
+}
+#kid-attractions a .hideContentWrap#funderland {
+	background-image: url("../images/kid-attractions/funderland2.jpg");
+}
+
+#eduvacation a .hideContentWrap#chabot-space {
+	background-image: url("../images/eduvacation/chabot1.jpg");
+}
+#eduvacation a .hideContentWrap#monterey-aquarium {
+	background-image: url("../images/eduvacation/monterey1.jpg");
+}
+#eduvacation a .hideContentWrap#academy-sciences {
+	background-image: url("../images/eduvacation/academy-sciences1.jpg");
+}
+#eduvacation a .hideContentWrap#exploratorium {
+	background-image: url("../images/eduvacation/exploratorium1.jpg");
+}
+#eduvacation a .hideContentWrap#tech-museum {
+	background-image: url("../images/eduvacation/tech-museum1.jpg");
+}
+#eduvacation a .hideContentWrap#sb-natural-history {
+	background-image: url("../images/eduvacation/sb-natural-history1.jpg");
+}
+ 
+#must-see-parks a .hideContentWrap#yosemite {
+	background-image: url("../images/must-see-parks/yosemite1.jpg");
+}
+#must-see-parks a .hideContentWrap#mammoth-lakes {
+	background-image: url("../images/must-see-parks/mammoth-lakes1.jpg");
+}
+#must-see-parks a .hideContentWrap#sequoia-kings {
+	background-image: url("../images/must-see-parks/sequoia-kings1.jpg");
+}
+#must-see-parks a .hideContentWrap#death-valley {
+	background-image: url("../images/must-see-parks/death-valley1.jpg");
+}
+
+#theme-parks a .hideContentWrap#seaworld {
+	background-image: url("../images/theme-parks/seaworld1.jpg");
+}
+#theme-parks a .hideContentWrap#knotts-berry {
+	background-image: url("../images/theme-parks/knotts-berry1.jpg");
+}
+#theme-parks a .hideContentWrap#magic-mountain {
+	background-image: url("../images/theme-parks/magic-mountain1.jpg");
+}
+#theme-parks a .hideContentWrap#disneyland {
+	background-image: url("../images/theme-parks/disneyland1.jpg");
+}
+#theme-parks a .hideContentWrap#legoland {
+	background-image: url("../images/theme-parks/legoland1.jpg");
+}
+#theme-parks a .hideContentWrap#castle-park {
+	background-image: url("../images/theme-parks/castle-park1.jpg");
+}
+#theme-parks a .hideContentWrap#raging-waters {
+	background-image: url("../images/theme-parks/raging-waters1.jpg");
+}
+#theme-parks a .hideContentWrap#universal {
+	background-image: url("../images/theme-parks/universal2.jpg");
+}
+
+#kid-beaches a .hideContentWrap#coronado {
+	background-image: url("../images/kid-beaches/coronado1.jpg");
+}
+#kid-beaches a .hideContentWrap#mission-bay {
+	background-image: url("../images/kid-beaches/mission-bay1.jpg");
+}
+#kid-beaches a .hideContentWrap#la-jolla {
+	background-image: url("../images/kid-beaches/la-jolla1.jpg");
+}
+#kid-beaches a .hideContentWrap#carlsbad {
+	background-image: url("../images/kid-beaches/carlsbad1.jpg");
+}
+#kid-beaches a .hideContentWrap#crystal-cove {
+	background-image: url("../images/kid-beaches/crystal-cove1.jpg");
+}
+#kid-beaches a .hideContentWrap#santa-monica {
+	background-image: url("../images/kid-beaches/santa-monica1.jpg");
 }
 
 /* Utility Styles*/
