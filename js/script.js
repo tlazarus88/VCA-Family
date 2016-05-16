@@ -134,7 +134,7 @@ $('[data-readmore-toggle]').click(function(e) {
   var close_text = $(this).siblings('div[data-readmore]').data('close-text');
   
   if(typeof open_text == 'undefined') {open_text = "Read More"}
-  if(typeof close_text == 'undefined') {close_text = "Read Less"}
+  if(typeof close_text == 'undefined') {close_text = ""}
   
   if($(this).text() == open_text) {
     $(this).html(close_text).next('div[data-readmore]').show(300).after(this);
