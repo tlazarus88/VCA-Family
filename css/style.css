@@ -684,18 +684,17 @@ ul.scroll-list {
 	background-image: url(../images/Article_Roadtrip/alamy_RM_bp6amt.jpg);
 }
 
-.parallax-bg__skate {
-	background-image: url(../images/surf-skate/skate_1.jpg);
-	margin-top: 50px;
-	margin-bottom: 0px;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
 .parallax-bg__surf {
 	background-image: url(../images/surf-skate/surf_1.jpg);
 	margin-top: 50px;
 	margin-bottom: 0px;
-	overflow-y: scroll;
+	overflow: hidden;
+}
+
+.parallax-bg__skate {
+	background-image: url(../images/surf-skate/skate_1.jpg);
+	margin-bottom: 0px;
+	overflow-y: hidden;
 	overflow-x: hidden;
 }
 
@@ -785,19 +784,25 @@ ul.scroll-list {
 	z-index: +2;
 }
 
-.roadtrip-circle {
+.circle-container {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%) !important;
-	left: 50%;
-	width: 800px;
-	height: 800px;
-	margin: 0 auto;
+	left: 45%;
+	width: 50%;
+	z-index: +1;
+}
+
+.roadtrip-circle {
+	display: block;
+	background-size: cover;
+	width: 100%;
+	height: 0;
+	padding: 50% 0;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 8px rgba(235,4,120,1);
-	z-index: +1;
 }
 
 #article-surf-skate {
@@ -851,10 +856,23 @@ ul.scroll-list {
 	overflow: hidden;
 }
 
+.surf-skate-title {
+	text-align: center;
+	position: absolute;
+	top: 45px;
+	left: 25%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	color: rgba(5,187,255,1);
+}
+
+.surf-skate-title-accent {
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
 .static-list {
 	position: fixed;
-	top: 0;
-	left: 0;
 	overflow-y: scroll;
 }
 

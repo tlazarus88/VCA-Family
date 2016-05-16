@@ -69,39 +69,104 @@ function roadCirc() {
 
 };
 
-// Roadtrip Map
+// Surf n Skate Scroll Function
+scrollIntervalID = setInterval(surfScroll, 10)
 
-var map;
+function surfScroll() {
 
-function init_map(){
-	var myOptions = {
-		zoom:15,
-		center:new google.maps.LatLng(40.6813578,-73.97733169999998),
-		mapTypeId: google.maps.MapTypeId.SATELLITE,
-		scrollwheel: false
-	};
-	map = new google.maps.Map(document.getElementById("roadtrip-circle-1"), myOptions);
-	marker = new google.maps.Marker({
-		map: map,
-		position: new google.maps.LatLng(40.6813578,-73.97733169999998)
-	});
-  // Alter Roadtrip Image
+  var $surfList = $('#surf-list');
+  var topSurfList = $surfList.offset().top;
 
-  scrollIntervalID = setInterval(mapZoom, 10)
+  var bottomSurfList = $surfList.offset().top + $surfList.outerHeight(true);
 
-  function mapZoom(){
-    if ($(window).scrollTop() >= ($('#roadtrip-2').offset().top + $('#roadtrip-2').outerHeight(true))) {
-      myOptions = {zoom: 20}
-    }
+  if ($(window).scrollTop() >= (topSurfList)) {
+    $('#surf-list').css('overflow-y', 'scroll');
+  } else {
+    $('#surf-list').css('overflow-y', 'hidden');
   };
+
 };
 
-google.maps.event.addDomListener(window, 'load', init_map);
-google.maps.event.addDomListener(window, "resize", function() {
- 	var center = map.getCenter();
- 	google.maps.event.trigger(map, "resize");
- 	map.setCenter(center);
- });
+scrollIntervalID = setInterval(skateScroll, 10)
+
+function skateScroll() {
+
+  var $skateList = $('#skate-list');
+  var topSkateList = $skateList.offset().top;
+
+  var bottomSkateList = $skateList.offset().top + $skateList.outerHeight(true);
+
+  if ($(window).scrollTop() >= (topSkateList)) {
+    $('#skate-list').css('overflow-y', 'scroll');
+  } else {
+    $('#skate-list').css('overflow-y', 'hidden');
+  };
+
+};
+
+// Surf n Skate Background Loop
+
+var surfBg = ['url(../images/surf-skate/surf_1.jpg', 'url(../images/surf-skate/surf_2.jpg', 'url(../images/surf-skate/surf_3.jpg'];
+
+$.each(surfBg, function(i, surfBg){
+    setTimeout(function(){$('.parallax-bg__surf').css('background-image', surfBg)}, (i+1)*1000);
+});
+// var now = 0;
+// var int = self.setInterval(changeBG(), 1000);
+// var array = ["1", "2", "3"];
+
+// function changeBG() {
+//   //array of backgrounds
+//   now = (now+1) % array.length ;
+//   $('.parallax-bg__surf').css('background-image', 'url(../images/surf-skate/surf_' + array[now] + '.jpg)');
+// };
+
+
+
+
+// Roadtrip Map
+
+// mapboxgl.accessToken = 'pk.eyJ1IjoidGxhemFydXM4OCIsImEiOiJjaW81dDdyNnkwMjBndmlsemlsa3EzNnBrIn0.3NylPNCT2ZSfG4mLTwXyKw';
+//   var map = new mapboxgl.Map({
+//       container: 'roadtrip-circle-1',
+//       style: 'mapbox://styles/mapbox/streets-v8',
+//       center: [40, -123]
+//       interactive: false,
+      
+//   });
+
+// var map;
+
+// function init_map(){
+// 	var myOptions = {
+// 		zoom:15,
+// 		center:new google.maps.LatLng(40.6813578,-73.97733169999998),
+// 		mapTypeId: google.maps.MapTypeId.SATELLITE,
+// 		scrollwheel: false
+// 	};
+// 	map = new google.maps.Map(document.getElementById("roadtrip-circle-1"), myOptions);
+// 	marker = new google.maps.Marker({
+// 		map: map,
+// 		position: new google.maps.LatLng(40.6813578,-73.97733169999998)
+// 	});
+
+  // Alter Roadtrip Image
+
+//   scrollIntervalID = setInterval(mapZoom, 10)
+
+//   function mapZoom(){
+//     if ($(window).scrollTop() >= ($('#roadtrip-2').offset().top + $('#roadtrip-2').outerHeight(true))) {
+//       myOptions = {zoom: 20}
+//     }
+//   };
+// };
+
+// google.maps.event.addDomListener(window, 'load', init_map);
+// google.maps.event.addDomListener(window, "resize", function() {
+//  	var center = map.getCenter();
+//  	google.maps.event.trigger(map, "resize");
+//  	map.setCenter(center);
+//  });
 
 // Accordion
 
