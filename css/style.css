@@ -984,7 +984,7 @@ ul.scroll-list {
 
 #camp-ca .scroll-list-box p {
 	
-	padding: 0 0 14px 0;
+	padding: 0 20px 14px 0;
 	font-size: 19px;
 	line-height: 28px;
 	font-weight: 300;
@@ -997,7 +997,7 @@ ul.scroll-list {
 
 #camp-ca .col-md-6 img {
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
-	margin: -200px 0 0 -10%;
+	margin: -250px 0 0 -10%;
 	position: relative;
 	z-index: 50!important;
 	margin-bottom: 40px;
