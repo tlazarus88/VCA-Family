@@ -460,6 +460,14 @@ a:hover {
   	transform: translate(-50%, -50%);
 }
 
+.vca-hero-logo {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	width: 10%;
+	z-index: 200;
+ }
+
 /* Region Hero SVG Styles */
 
 .region-hero-title {
@@ -752,6 +760,13 @@ ul.scroll-list {
 
 .bold {
 	font-weight: 700;
+}
+
+.vca-logo-color {
+	width: 20%;
+	padding-top: 20px;
+	display: block;
+	margin: 0 auto;
 }
 
 /* Specific Article Styles */

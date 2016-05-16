@@ -160,11 +160,11 @@ function skateScroll() {
 
 // Surf n Skate Background Loop
 
-var surfBg = ['url(../images/surf-skate/surf_1.jpg', 'url(../images/surf-skate/surf_2.jpg', 'url(../images/surf-skate/surf_3.jpg'];
+// var surfBg = ['url(../images/surf-skate/surf_1.jpg', 'url(../images/surf-skate/surf_2.jpg', 'url(../images/surf-skate/surf_3.jpg'];
 
-$.each(surfBg, function(i, surfBg){
-    setTimeout(function(){$('.parallax-bg__surf').css('background-image', surfBg)}, (i+1)*1000);
-});
+// $.each(surfBg, function(i, surfBg){
+//     setTimeout(function(){$('.parallax-bg__surf').css('background-image', surfBg)}, (i+1)*1000);
+// });
 // var now = 0;
 // var int = self.setInterval(changeBG(), 1000);
 // var array = ["1", "2", "3"];
