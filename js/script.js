@@ -256,9 +256,9 @@ $('[data-readmore-toggle]').click(function(e) {
   if(typeof close_text == 'undefined') {close_text = ""}
   
   if($(this).text() == open_text) {
-    $(this).html(close_text).next('div[data-readmore]').show(300).after(this);
+    $(this).html(close_text).next('div[data-readmore]').show(150).after(this);
   } else {
-    $(this).html(open_text).prev('div[data-readmore]').hide(300).before(this);
+    $(this).html(open_text).prev('div[data-readmore]').hide(150).before(this);
   }
   
 });
