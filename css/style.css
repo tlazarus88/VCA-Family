@@ -402,6 +402,9 @@ p {
 	font-weight: 300;
 	color: #524F4F;
 }
+img {
+	width: 100%;
+}
 .italc {
 	font-style: italic;
 }
@@ -505,6 +508,29 @@ a:hover {
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
+.bg-img-container-wrap.blog {
+	/*max-height: 3000px;*/
+	overflow: hidden;
+	position: relative;
+	/*margin-bottom: 80px;*/
+}
+a.read-more {
+  font-size: 40px;
+  position: absolute;
+  display: block;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  max-width: 1400px;
+	margin: 0 auto;
+	padding-left: 15px;
+	margin-bottom: -5px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: .5px;
+}
 .container-fluid.article.blogger-post h1,
 .container-fluid.article.blogger-post h2 {
 	text-align: left;
@@ -514,13 +540,28 @@ a:hover {
 }
 .container-fluid.article.blogger-post img {
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+	margin-bottom: 40px;
 }
-.blogger-info-box {
+.container-fluid.article.blogger-post img.blogger-info-box {
 	max-width: 750px;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 }
-
+.container-fluid.article.blogger-post .col-md-offset-1 {
+	margin-left: 4%;
+}
+.container-fluid.article.blogger-post .col-md-offset-1 .sect-break {
+	/*margin-top: -200px;*/
+	margin-top: -30%;
+}
+.container-fluid.article.blogger-post .under {
+	position: relative;
+	z-index: 1!important;
+}
+.container-fluid.article.blogger-post .over {
+	position: relative;
+	z-index: 100!important;
+}
 /* Specific Blog Post Styles */
 
 .bg-img-container-wrap#nrthrn-blog-post {
@@ -542,13 +583,15 @@ a:hover {
 /* Caption/SVG Styles */
 
 .caption {
-	margin-top: 25px;
+	margin-top: -20px;
 }
+
 .caption svg {
 	width: 25px;
 	height: auto;
 	float: left;
-	margin-right: 8px;
+	margin-bottom: 8px;
+	margin-top: 20px;
 }
 .caption h5 {
 	color: #eb0478;
@@ -557,9 +600,27 @@ a:hover {
 .caption p {
 	clear: both;
 	color: #474747;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 17px;
+	line-height: 19px;
 	margin-top: -4px;
+	max-width: 400px;
+	padding: 0;
+}
+.caption p.cred,
+.caption .inline {
+	color: #A9A7A7;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding-top: 12px;
+	margin-bottom: 20px;
+}
+.caption .inline {
+	margin-left: 8px;
+}
+.caption p.inline {
+	padding-top: 0;
+	margin-left: 0;
 }
 
 /*.st0{fill:#FFF845;}*/
@@ -887,7 +948,6 @@ ul.scroll-list {
     margin-right: 6px;
 }
 .indicator img {
-	width: 100%;
 	height: auto;
 }
 .indicator.rotate {
@@ -936,7 +996,6 @@ ul.scroll-list {
 
 
 #camp-ca .col-md-6 img {
-	width: 100%;
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 	margin: -200px 0 0 -10%;
 	position: relative;
