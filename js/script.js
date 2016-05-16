@@ -121,12 +121,28 @@ $('.hideContentHeader').click(function() {
 
 // READ MORE
 
-
-$('.button').click(function() {
-    $(this).next('.blog').toggleClass("expand");
+$('div[data-readmore]').hide().each(function() {
+  var open_text = $(this).data('open-text');
+  open_text = typeof open_text !== 'undefined' ? open_text : 'Read More';
+  $(this).before('<a class="read-more" data-readmore-toggle href="#">' + open_text + '</a>');
 });
 
-
+$('[data-readmore-toggle]').click(function(e) {
+  e.preventDefault();
+  
+  var open_text = $(this).siblings('div[data-readmore]').data('open-text');
+  var close_text = $(this).siblings('div[data-readmore]').data('close-text');
+  
+  if(typeof open_text == 'undefined') {open_text = "Read More"}
+  if(typeof close_text == 'undefined') {close_text = "Read Less"}
+  
+  if($(this).text() == open_text) {
+    $(this).html(close_text).next('div[data-readmore]').show(300).after(this);
+  } else {
+    $(this).html(open_text).prev('div[data-readmore]').hide(300).before(this);
+  }
+  
+});
 
 // Smooth Scrolling
 // includes offset for #sticky-nav

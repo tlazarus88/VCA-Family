@@ -509,35 +509,31 @@ a:hover {
 	background-repeat: no-repeat;
 }
 .bg-img-container-wrap.blog {
-	max-height: 3000px;
+	/*max-height: 3000px;*/
 	overflow: hidden;
 	position: relative;
-	margin-bottom: 80px;
+	/*margin-bottom: 80px;*/
 }
-.bg-img-container-wrap.blog .expand {
-	max-height: 9999px;
-}
-.bg-img-container-wrap.blog p.blog-reveal {
-	color: #eb0478;
+a.read-more {
+  font-size: 40px;
+  position: absolute;
+  display: block;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  max-width: 1400px;
+	margin: 0 auto;
+	padding-left: 15px;
+	margin-bottom: -8px;
 	text-transform: uppercase;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	text-align: center; 
-	z-index: 250!important;
+	font-size: 18px;
 	font-weight: 500;
+	letter-spacing: .5px;
 }
-.bottom-grad {
-	background-image: url("../images/blog-bottom-grad.png");
-	background-repeat: repeat-x;
-	position: absolute;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	height: 120px;
-	z-index: 150!important;
+.container-fluid.article {
+	width: 90%;
+	max-width: 1400px;
 }
 .container-fluid.article.blogger-post h1,
 .container-fluid.article.blogger-post h2 {
