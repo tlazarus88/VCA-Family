@@ -134,6 +134,7 @@ $.each(surfBg, function(i, surfBg){
 //       interactive: false,
       
 //   });
+
 // var map;
 
 // function init_map(){
@@ -149,7 +150,7 @@ $.each(surfBg, function(i, surfBg){
 // 		position: new google.maps.LatLng(40.6813578,-73.97733169999998)
 // 	});
 
-//   // Alter Roadtrip Image
+  // Alter Roadtrip Image
 
 //   scrollIntervalID = setInterval(mapZoom, 10)
 
