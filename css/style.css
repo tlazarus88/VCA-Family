@@ -685,11 +685,43 @@ ul.scroll-list {
 	background-image: url(../images/Article_Roadtrip/alamy_RM_bp6amt.jpg);
 }
 
-.parallax-bg__surf {
+.surf_bg_1 {
 	background-image: url(../images/surf-skate/surf_1.jpg);
 	margin-top: 50px;
 	margin-bottom: 0px;
 	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+
+.surf_bg_2 {
+	background-image: url(../images/surf-skate/surf_2.jpg);
+	margin-top: 50px;
+	margin-bottom: 0px;
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+
+.surf_bg_3 {
+	background-image: url(../images/surf-skate/surf_3.jpg);
+	margin-top: 50px;
+	margin-bottom: 0px;
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
 }
 
 .parallax-bg__skate {
@@ -842,6 +874,9 @@ ul.scroll-list {
 
 .list-surf-skate {
 	padding-bottom: 30%;	
+}
+#list-surf-3 {
+	padding-bottom: 150%;
 }
 
 #article-surf-skate .scroll-list .col-md-6 {

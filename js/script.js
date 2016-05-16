@@ -45,17 +45,17 @@ function stickIt() {
 
 // Progress Bar Representation
 
-var progNCA = $('#nca-hero').waypoint(function(direction) {
-  $(".nav-status-bar").animate({'width': '0%'});
-})
+// var progNCA = $('#nca-hero').waypoint(function(direction) {
+//   $(".nav-status-bar").animate({'width': '0%'});
+// })
 
-var progNBlog = $('#nrthrn-blog-post').waypoint(function(direction) {
-  $(".nav-status-bar").animate({'width': '6.66%'});
-})
+// var progNBlog = $('#nrthrn-blog-post').waypoint(function(direction) {
+//   $(".nav-status-bar").animate({'width': '6.66%'});
+// })
 
-var progCampCa = $('#camp-ca').waypoint(function(direction) {
-  $(".nav-status-bar").animate({'width': '13.33%'});
-})
+// var progCampCa = $('#camp-ca').waypoint(function(direction) {
+//   $(".nav-status-bar").animate({'width': '13.33%'});
+// })
 
 // scrollIntervalID = setInterval(progressBar, 10);
 
@@ -131,6 +131,7 @@ function surfScroll() {
   var $surfList = $('#surf-list');
   var topSurfList = $surfList.offset().top;
 
+  var $endSurfList = $('#list-surf-3');
   var bottomSurfList = $surfList.offset().top + $surfList.outerHeight(true);
 
   if ($(window).scrollTop() >= (topSurfList)) {
@@ -138,7 +139,9 @@ function surfScroll() {
   } else {
     $('#surf-list').css('overflow-y', 'hidden');
   };
-
+  if ($(window).scrollTop() >= (bottomSurfList)) {
+    $('#surf-list').css('overflow-y', 'hidden');
+  };
 };
 
 scrollIntervalID = setInterval(skateScroll, 10)
@@ -148,23 +151,22 @@ function skateScroll() {
   var $skateList = $('#skate-list');
   var topSkateList = $skateList.offset().top;
 
-  var bottomSkateList = $skateList.offset().top + $skateList.outerHeight(true);
+  var $endSkateList = $('#list-skate-3');
+  var bottomSkateList = $endSkateList.offset().top;
 
   if ($(window).scrollTop() >= (topSkateList)) {
     $('#skate-list').css('overflow-y', 'scroll');
   } else {
     $('#skate-list').css('overflow-y', 'hidden');
   };
-
+  if ($(window).scrollTop() >= (bottomSkateList)) {
+    $('#skate-list').css('overflow-y', 'hidden');
+  };
 };
 
 // Surf n Skate Background Loop
 
-var surfBg = ['url(../images/surf-skate/surf_1.jpg', 'url(../images/surf-skate/surf_2.jpg', 'url(../images/surf-skate/surf_3.jpg'];
 
-$.each(surfBg, function(i, surfBg){
-    setTimeout(function(){$('.parallax-bg__surf').css('background-image', surfBg)}, (i+1)*1000);
-});
 // var now = 0;
 // var int = self.setInterval(changeBG(), 1000);
 // var array = ["1", "2", "3"];
