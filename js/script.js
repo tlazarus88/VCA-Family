@@ -43,6 +43,60 @@ function stickIt() {
   }
 };
 
+// Progress Bar Representation
+
+var progNCA = $('#nca-hero').waypoint(function(direction) {
+  $(".nav-status-bar").animate({'width': '0%'});
+})
+
+var progNBlog = $('#nrthrn-blog-post').waypoint(function(direction) {
+  $(".nav-status-bar").animate({'width': '6.66%'});
+})
+
+var progCampCa = $('#camp-ca').waypoint(function(direction) {
+  $(".nav-status-bar").animate({'width': '13.33%'});
+})
+
+// scrollIntervalID = setInterval(progressBar, 10);
+
+// function progressBar() {
+
+//   var topNCA = $('#nca-hero').offset().top;
+//   var topNBlog = $('#nrthrn-blog-post').offset().top;
+//   var topCampCa = $('#camp-ca').offset().top;
+
+
+//   if ($(window).scrollTop() >= (topNCA)) {
+//     $(".nav-status-bar").css({'width': '0%', 'transition': 'all 10s ease'});
+//   };
+//   if ($(window).scrollTop() >= (topNBlog)) {
+//     $(".nav-status-bar").css({'width': '6.66%', 'transition': 'all 10s ease'});
+//   }; 
+//   if ($(window).scrollTop() >= (topCampCa)) {
+//     $(".nav-status-bar").css({'width': '13.33%', 'transition': 'all 10s ease'});
+//   };
+// };
+
+// scrollIntervalID = setInterval(progressBar, 10);
+
+// function progressBar() {
+
+//   var topNCA = $('#nca-hero').offset().top;
+//   var topNBlog = $('#nrthrn-blog-post').offset().top;
+//   var topCampCa = $('#camp-ca').offset().top;
+
+
+//   if ($(window).scrollTop() >= (topNCA)) {
+//     $(".nav-status-bar").animate({'width': '0%'});
+//   };
+//   if ($(window).scrollTop() >= (topNBlog)) {
+//     $(".nav-status-bar").animate({'width': '6.66%'});
+//   }; 
+//   if ($(window).scrollTop() >= (topCampCa)) {
+//     $(".nav-status-bar").animate({'width': '13.33%'});
+//   };
+// };
+
 // Roadtrip Stickiness
 
 scrollIntervalID = setInterval(roadCirc, 10)
