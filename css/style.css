@@ -508,6 +508,37 @@ a:hover {
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
+.bg-img-container-wrap.blog {
+	max-height: 3000px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 80px;
+}
+.bg-img-container-wrap.blog .expand {
+	max-height: 9999px;
+}
+.bg-img-container-wrap.blog p.blog-reveal {
+	color: #eb0478;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center; 
+	z-index: 250!important;
+	font-weight: 500;
+}
+.bottom-grad {
+	background-image: url("../images/blog-bottom-grad.png");
+	background-repeat: repeat-x;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 120px;
+	z-index: 150!important;
+}
 .container-fluid.article.blogger-post h1,
 .container-fluid.article.blogger-post h2 {
 	text-align: left;
@@ -533,11 +564,11 @@ a:hover {
 	/*margin-top: -200px;*/
 	margin-top: -30%;
 }
-.under {
+.container-fluid.article.blogger-post .under {
 	position: relative;
 	z-index: 1!important;
 }
-.over {
+.container-fluid.article.blogger-post .over {
 	position: relative;
 	z-index: 100!important;
 }

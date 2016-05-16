@@ -105,7 +105,6 @@ google.maps.event.addDomListener(window, "resize", function() {
 
 // Accordion
 
-// $('.hideContentHeader').prepend('<span class="indicator">+</span> ');
 $('.hideContentHeader').prepend('<span class="indicator"><img src="images/plus-x-icon-wh.png"></span> ');
 
 $('.hideContentHeader').click(function() {
@@ -119,6 +118,15 @@ $('.hideContentHeader').click(function() {
 $('.hideContentHeader').click(function() {
     $(this).find('.indicator').toggleClass("rotate");
 });
+
+// READ MORE
+
+
+$('.button').click(function() {
+    $(this).next('.blog').toggleClass("expand");
+});
+
+
 
 // Smooth Scrolling
 // includes offset for #sticky-nav
