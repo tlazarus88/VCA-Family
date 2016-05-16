@@ -642,13 +642,27 @@ a.read-more {
 }
 
 /* Section Header Styles*/
+
 .section-marker {
-	display: block;
 	height:50px;
 	width: auto;
+	display: block;
 	margin: 0 auto -25px;
 	position: relative;
 	z-index: 50!important;
+}
+.section-marker .bg-shape{fill:#EB0478;}
+.section-marker .letter {
+	fill:#FFFFFF;
+	font-family:'BrandonGrotesque-BlackItalic';
+	letter-spacing:1;
+	font-size:13.1307px;
+}
+.section-marker .line {
+	fill:none;
+	stroke:#FFFFFF;
+	stroke-width:0.25;
+	stroke-miterlimit:10;
 }
 .bg-img-container-wrap.northern {
 	background-image: url("../images/section-bg-triangle.jpg");
