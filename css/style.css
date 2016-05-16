@@ -169,11 +169,12 @@ body {
 }
 
 .dropdown-menu li {
-	padding: 15px 0;
+	padding: 15px;
 }
 
 .dropdown-menu li a {
 	color: rgba(255,255,255,1);
+	white-space:normal;
 }
 
 .dropdown-menu li a:hover {
@@ -290,6 +291,7 @@ ul.toc-menu li a {
 	margin: 15px 0 20px 0;
 	color: rgba(0,0,0,1);
 	text-decoration: none;
+	line-height: 26px;
 }
 
 ul.toc-menu li a:hover {
