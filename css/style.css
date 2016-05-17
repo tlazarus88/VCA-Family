@@ -228,8 +228,73 @@ body {
 	width: 0%;
 	height: 4px;
 	background-color: rgba(250,192,221,1);
-	transition: all 2s ease;
+	transition: width 1s ease-in-out;
 }
+
+.status-width-0 {
+	width: 0%;
+}
+
+.status-width-1 {
+	width: 6.66%;
+}
+
+.status-width-2 {
+	width: 13.33%;
+}
+
+.status-width-3 {
+	width: 20%;
+}
+
+.status-width-4 {
+	width: 26.66%;
+}
+
+.status-width-5 {
+	width: 33.33%;
+}
+
+.status-width-6 {
+	width: 40%;
+}
+
+.status-width-7 {
+	width: 46.66%;
+}
+
+.status-width-8 {
+	width: 53.33%;
+}
+
+.status-width-9 {
+	width: 60%;
+}
+
+.status-width-10 {
+	width: 66.72%;
+}
+
+.status-width-11 {
+	width: 73.33%;
+}
+
+.status-width-12 {
+	width: 80%;
+}
+
+.status-width-13 {
+	width: 86.66%;
+}
+
+.status-width-14 {
+	width: 93.33%;
+}
+
+.status-width-15 {
+	width: 100%;
+}
+
 
 /* TOC */
 
