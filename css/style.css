@@ -521,10 +521,8 @@ a:hover {
 	background-repeat: no-repeat;
 }
 .bg-img-container-wrap.blog {
-	/*max-height: 3000px;*/
 	overflow: hidden;
 	position: relative;
-	/*margin-bottom: 80px;*/
 }
 a.read-more {
   font-size: 40px;
@@ -581,7 +579,7 @@ a.read-more {
 .container-fluid.article .blogger-profile-wrap {
 	width: 100%;
 	background-color: #fff;
-	height: 550px;
+	height: 525px;
 	max-width: 850px;
 	margin-bottom: 70px;
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
@@ -638,21 +636,26 @@ a.read-more {
 .bg-img-container-wrap#nrthrn-blog-post {
 	background-image: url("../images/FPO_Brandi_BG_img.jpg");
 }
-.bg-img-container-wrap#nrthrn-blog-post .blogger-profile-wrap .left-quadrant {
-	background-image: url("../images/brandi/Brandi-profile.jpg");
-}
-
 .bg-img-container-wrap#cntrl-blog-post {
 	background-image: url("../images/FPO_Brandi_BG_img.jpg");
-}
-.bg-img-container-wrap#cntrl-blog-post .blogger-profile-wrap .left-quadrant {
-
 }
 .bg-img-container-wrap#sthrn-blog-post {
 	background-image: url("../images/FPO_Brandi_BG_img.jpg");
 }
 .bg-img-container-wrap#sthrn-blog-post .col-md-6 p.italc {
 	letter-spacing: .25px;
+}
+
+.bg-img-container-wrap#nrthrn-blog-post .blogger-profile-wrap .left-quadrant {
+	background-image: url("../images/brandi/Brandi-profile.jpg");
+}
+.bg-img-container-wrap#cntrl-blog-post .blogger-profile-wrap .left-quadrant {
+	background-image: url("../images/pattie/Pattie_profile.jpg");
+	background-size: auto 85%;
+	background-position: center top;
+}
+.bg-img-container-wrap#sthrn-blog-post .blogger-profile-wrap .left-quadrant {
+	background-image: url("../images/justine/Justine_profile.jpg");
 }
 
 /* Arrow Icon SVG Styles */
