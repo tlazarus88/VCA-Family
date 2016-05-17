@@ -597,10 +597,23 @@ a.read-more {
 	width: 35%;
 	height: 100%;
 	position: relative;
-	float: left;
+	float: right;
 	background-image: url("../images/fake-border.jpg");
 	background-repeat: repeat-y;
-	background-position: top left; 
+	background-position: top left;
+	background-color: #caf1ff;
+	text-align: center;
+	overflow: hidden;
+}
+.container-fluid.article .blogger-profile-wrap .right-quadrant img {
+	display: inline-block;
+	transition: transform 0.85s;
+	transform: scale(1);
+	cursor: pointer;
+}
+.container-fluid.article .blogger-profile-wrap .right-quadrant:hover img {
+	-webkit-transform: scale(2.5);
+	transform: scale(2.5);
 }
 .container-fluid.article .blogger-profile-wrap .right-quadrant .btm-row {
 	background-image: url("../images/fake-border.jpg");
@@ -614,6 +627,7 @@ a.read-more {
   bottom: 0;
   background-color: #fff;
   border-top: 1px solid #05bbff;
+  z-index: 50!important;
 }
 .container-fluid.article .blogger-profile-wrap .btm-row h1 {
 	font-size: 36px;
@@ -629,6 +643,7 @@ a.read-more {
 	font-size: 30px;
 	letter-spacing: 1px;
 	padding: 4px 0 0 26px;
+	text-align: left;
 }
 
 /* Specific Blog Post Styles */
