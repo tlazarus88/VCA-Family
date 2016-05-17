@@ -426,6 +426,7 @@ a:link,
 a:active,
 a:visited {
 	text-decoration: none;
+	outline: 0;
 }
 a,
 a:hover {
@@ -574,6 +575,7 @@ a.read-more {
 .container-fluid.article.blogger-post .r-rail-above .caption {
 	margin-left: 8%;
 }
+
 /* Blogger Profile Box */
 
 .container-fluid.article .blogger-profile-wrap {
@@ -590,7 +592,6 @@ a.read-more {
 	height: 100%;
 	position: relative;
 	float: left;
-	background-image: url("../images/brandi/Brandi-profile.jpg");
 	background-size: auto 100%;
 	background-position: center;
 }
@@ -620,7 +621,16 @@ a.read-more {
 	font-size: 36px;
 	padding-top: 0;
 	line-height: 80px;
-
+	padding-left: 24px;
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+.container-fluid.article .blogger-profile-wrap .btm-row h4 {
+	color: #eb0478;
+	line-height: 80px;
+	font-size: 30px;
+	letter-spacing: 1px;
+	padding: 4px 0 0 26px;
 }
 
 /* Specific Blog Post Styles */
@@ -628,8 +638,15 @@ a.read-more {
 .bg-img-container-wrap#nrthrn-blog-post {
 	background-image: url("../images/FPO_Brandi_BG_img.jpg");
 }
+.bg-img-container-wrap#nrthrn-blog-post .blogger-profile-wrap .left-quadrant {
+	background-image: url("../images/brandi/Brandi-profile.jpg");
+}
+
 .bg-img-container-wrap#cntrl-blog-post {
 	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+}
+.bg-img-container-wrap#cntrl-blog-post .blogger-profile-wrap .left-quadrant {
+
 }
 .bg-img-container-wrap#sthrn-blog-post {
 	background-image: url("../images/FPO_Brandi_BG_img.jpg");
