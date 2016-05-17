@@ -1139,7 +1139,6 @@ ul.scroll-list {
 #camp-ca .scroll-list-box {
 	box-shadow: none;
 	margin: 80px 0 0 0;
-	padding-bottom: 20px;
 	position: relative;
 	z-index: 1!important;
 }
@@ -1158,10 +1157,9 @@ ul.scroll-list {
 }
 
 #camp-ca .scroll-list-box p {
-	
 	padding: 0 20px 14px 0;
 	font-size: 19px;
-	line-height: 28px;
+	line-height: 26px;
 	font-weight: 300;
 }
 
