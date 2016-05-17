@@ -188,7 +188,7 @@ function progressBar() {
 
 // Roadtrip Stickiness
 
-scrollIntervalID = setInterval(roadCirc, 100)
+scrollIntervalID = setInterval(roadCirc, 10)
 
 function roadCirc() {
   $('#roadtrip-circle-2').css('visibility', 'hidden');
