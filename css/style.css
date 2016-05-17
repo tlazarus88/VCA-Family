@@ -553,11 +553,6 @@ a.read-more {
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 	margin-bottom: 40px;
 }
-.container-fluid.article.blogger-post img.blogger-info-box {
-	max-width: 750px;
-	margin-bottom: 60px;
-	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
-}
 .container-fluid.article.blogger-post .col-md-offset-1 {
 	margin-left: 4%;
 }
@@ -579,6 +574,55 @@ a.read-more {
 .container-fluid.article.blogger-post .r-rail-above .caption {
 	margin-left: 8%;
 }
+/* Blogger Profile Box */
+
+.container-fluid.article .blogger-profile-wrap {
+	width: 100%;
+	background-color: #fff;
+	height: 550px;
+	max-width: 850px;
+	margin-bottom: 70px;
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+	border: 2px solid #05bbff;
+}
+.container-fluid.article .blogger-profile-wrap .left-quadrant {
+	width: 65%;
+	height: 100%;
+	position: relative;
+	float: left;
+	background-image: url("../images/brandi/Brandi-profile.jpg");
+	background-size: auto 100%;
+	background-position: center;
+}
+.container-fluid.article .blogger-profile-wrap .right-quadrant {
+	width: 35%;
+	height: 100%;
+	position: relative;
+	float: left;
+	background-image: url("../images/fake-border.jpg");
+	background-repeat: repeat-y;
+	background-position: top left; 
+}
+.container-fluid.article .blogger-profile-wrap .right-quadrant .btm-row {
+	background-image: url("../images/fake-border.jpg");
+	background-repeat: repeat-y;
+	background-position: left;
+}
+.container-fluid.article .blogger-profile-wrap .btm-row {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 1px solid #05bbff;
+}
+.container-fluid.article .blogger-profile-wrap .btm-row h1 {
+	font-size: 36px;
+	padding-top: 0;
+	line-height: 80px;
+
+}
+
 /* Specific Blog Post Styles */
 
 .bg-img-container-wrap#nrthrn-blog-post {
@@ -713,7 +757,7 @@ ul.scroll-list {
 
 }
 .parallax-bg__myers {
-	background-image: url(../images/Article_Roadtrip/alamy_RM_bp6amt.jpg);
+	background-image: url(../images/article_roadtrip/alamy_RM_bp6amt.jpg);
 }
 
 .parallax-bg__surf {
@@ -828,7 +872,7 @@ ul.scroll-list {
 	top: 50%;
 	transform: translateY(-50%) !important;
 	left: 45%;
-	width: 50%;
+	width: 40%;
 	z-index: +1;
 }
 
@@ -842,6 +886,32 @@ ul.scroll-list {
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 8px rgba(235,4,120,1);
+	background-image: url(../images/article_roadtrip/map_1.jpg);
+	transition: all .5s ease-in-out;
+}
+
+.circle-bg-2 {
+	background-image: url(../images/article_roadtrip/map_2.jpg);
+}
+
+.circle-bg-3 {
+	background-image: url(../images/article_roadtrip/map_3.jpg);
+}
+
+.circle-bg-4 {
+	background-image: url(../images/article_roadtrip/map_4.jpg);
+}
+
+.circle-bg-5 {
+	background-image: url(../images/article_roadtrip/map_5.jpg);
+}
+
+.circle-bg-6 {
+	background-image: url(../images/article_roadtrip/map_6.jpg);
+}
+
+.circle-bg-7 {
+	background-image: url(../images/article_roadtrip/map_7.jpg);
 }
 
 #article-surf-skate {
