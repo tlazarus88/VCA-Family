@@ -367,6 +367,10 @@ $('[data-readmore-toggle]').click(function(e) {
   
 });
 
+// Inner zoom
+
+// $("#zoom_05").elevateZoom({ zoomType  : "inner", cursor: "crosshair" }); 
+
 // Smooth Scrolling
 // includes offset for #sticky-nav
 
