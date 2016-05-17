@@ -674,7 +674,7 @@ a.read-more {
 	width: 100%;
 	background-color: #fff;
 	height: 525px;
-	max-width: 850px;
+	/*max-width: 850px;*/
 	margin-bottom: 70px;
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 	border: 2px solid #05bbff;
@@ -698,16 +698,18 @@ a.read-more {
 	background-color: #caf1ff;
 	text-align: center;
 	overflow: hidden;
+	cursor: pointer;
 }
 .container-fluid.article .blogger-profile-wrap .right-quadrant img {
 	display: inline-block;
-	transition: transform 0.85s;
+	transition: transform 1s;
 	transform: scale(1);
 	cursor: pointer;
 }
 .container-fluid.article .blogger-profile-wrap .right-quadrant img:hover {
-	-webkit-transform: scale(2.5);
-	transform: scale(2.5);
+	-webkit-transform: scale(2);
+	transform: scale(2);
+	cursor: pointer;
 }
 .container-fluid.article .blogger-profile-wrap .right-quadrant .btm-row {
 	background-image: url("../images/fake-border.jpg");
