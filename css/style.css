@@ -674,7 +674,7 @@ a.read-more {
 	width: 100%;
 	background-color: #fff;
 	height: 525px;
-	/*max-width: 850px;*/
+	max-width: 950px;
 	margin-bottom: 70px;
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 	border: 2px solid #05bbff;
@@ -899,7 +899,7 @@ ul.scroll-list {
 	box-shadow: none;
 }
 
-.parallax-bg__myers {
+/*.parallax-bg__myers {
 	background-image: url(../images/article_roadtrip/alamy_RM_BP6AMT.jpg);
 }
 
@@ -909,7 +909,7 @@ ul.scroll-list {
 
 .parallax-bg__eternal-tree-house {
 	background-image: url(../images/article_roadtrip/gty_RF_545168913.jpg);
-}
+}*/
 
 .parallax-bg__surf {
 	background-image: url(../images/surf-skate/surf_1.jpg);
