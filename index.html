@@ -14,15 +14,19 @@
 	<link type="text/css"; rel="stylesheet"; href="css/style.css">
 	<!-- <link rel="icon" href="assets/favicon.png"> -->
 	<title>State of Play</title>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/script.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZNhA-UO2M07yKZ4Khrj0OcvNEmXD6gI8&callback=initMap"
+    async defer></script> -->
 
 <section class="main-hero full-page">
+	<img src="assets/VCA_white.gif" class="vca-hero-logo">
 	<svg class="title-trtmnt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.6 424.6">
 	<polygon class="bg-diamond" points="714.6 212.3 357 424.6 0 212.3 357.3 0 "/>
 	<polygon class="st1" points="695.2 212.3 356.8 413.2 19 212.3 357.1 11.4 "/>
@@ -36,51 +40,51 @@
 			<ul class="toc-menu">
 	  			<li class="nav-explore">EXPLORE</li>
 	  			<li class="toc-region">NORTHERN CALIFORNIA</li>
-	  			<li class="toc-blogger"><a href="#">
+	  			<li class="toc-blogger"><a href="#nrthrn-blog-post">
 	  				<div class="blogger-circle"></div><span class="toc-with">with</span></br>
 	  				Brandi Riley</a></li>
 	  			<li class="toc-plus">plus</li>
-	    		<li><a href="#">Camp California</a></li>
+	    		<li><a href="#camp-ca">Camp California</a></li>
 	    		<li role="separator" class="divider"></li>
-	    		<li><a href="#">TK Kid Friendly Attractions</a></li>
+	    		<li><a href="#photo-op">Photo Op: Share-Worthy Northern California Spots</a></li>
 	    		<li role="separator" class="divider"></li>
-	    		<li><a href="#">Photo Op: Share-Worthy Northern California Spots</a></li>
-	    		<li role="separator" class="divider"></li>
-	    		<li><a href="#">The Anti “Are We There Yet?” Road Trip</a></li> 
+	    		<li><a href="#article-roadtrip">The Anti “Are We There Yet?” Road Trip</a></li>
+	    		<li role="separator" class="divider"></li> 
+	    		<li><a href="#kid-attractions">8 Must-See Kid-Friendly Attractions</a></li>
 	  		</ul>
 		</div>
 		<div class="col-md-4 toc-cca">
 			<ul class="toc-menu">
 	  			<li class="nav-explore">EXPLORE</li>
 	  			<li class="toc-region">CENTRAL CALIFORNIA</li>
-	  			<li class="toc-blogger"><a href="#">
+	  			<li class="toc-blogger"><a href="#cntrl-blog-post">
 	  				<div class="blogger-circle"></div><span class="toc-with">with</span></br>
 	  				Patti Cordova</a></li>
 	  			<li class="toc-plus">plus</li>
-			    <li><a href="#">Edu(va)cation</a></li>
+			    <li><a href="#eduvacation">Edu(va)cation</a></li>
 	    		<li role="separator" class="divider"></li>
-	    		<li><a href="#">#EEEEEATS: Family-Friendly Spots in Central California</a></li>
+	    		<li><a href="#article-meet-cca">Get to Know Central California</a></li>
 	    		<li role="separator" class="divider"></li>
-	    		<li><a href="#">Get to Know Central California</a></li>
+	    		<li><a href="#must-see-parks">4 Outdoor Adventures in Central California</a></li>
 	    		<li role="separator" class="divider"></li>
-	    		<li><a href="#">4 Outdoor Adventures in Central California</a></li>
+	    		<li><a href="#article-eats">#EEEEEATS: Family-Friendly Spots in Central California</a></li>
 	  		</ul>
 		</div>
 		<div class="col-md-4 toc-sca">
 			<ul class="toc-menu">
 	  			<li class="nav-explore">EXPLORE</li>
 	  			<li class="toc-region">SOUTHERN CALIFORNIA</li>
-	  			<li class="toc-blogger"><a href="#">
+	  			<li class="toc-blogger"><a href="#sthrn-blog-post">
 	  				<div class="blogger-circle"></div><span class="toc-with">with</span></br>
 	  				Justine Howell</a></li>
 	  			<li class="toc-plus">plus</li>
-	  			<li><a href="#">6 Kid-Friendly Southern California Beaches</a></li>
+	  			<li><a href="#theme-parks">Thrills, Chills, and Enchantments</a></li>
 	    		<li role="separator" class="divider"></li>
-	    		<li><a href="#">Surf ’n Skate</a></li>
+	    		<li><a href="#surf-skate">Surf ’n Skate</a></li>
 	    		<li role="separator" class="divider"></li>
-	    		<li><a href="#">Thrills, Chills, and Enchantments</a></li>
+	    		<li><a href="#kid-beaches">6 Kid-Friendly Southern California Beaches</a></li>
 	    		<li role="separator" class="divider"></li>
-	    		<li><a href="#">Bella Video</a></li>
+	    		<li><a href="#bella-video">Bella Video TK</a></li>
 	  		</ul>
 		</div>
 	</div>
@@ -96,18 +100,18 @@
 	  	<li class="btn"><span class="nav-explore">EXPLORE</span> NORTHERN CALIFORNIA
 		<span class="caret"></span></li>
 	  	<div class="invisible-hover"></div>
-	  	<li class="nav-blogger"><a href="#">
+	  	<li class="nav-blogger"><a href="#nrthrn-blog-post">
 	  		<div class="blogger-circle"></div>
 	  		<span class="blogger-name">Brandi Riley</span></br>
 	  		Headline TK</a></li>
 	  	<li role="separator" class="divider"></li>
-	    <li><a href="#">Camp California</a></li>
+	    <li><a href="#camp-ca">Camp California</a></li>
 	    <li role="separator" class="divider"></li>
-	    <li><a href="#">TK Kid Friendly Attractions</a></li>
+	    <li><a href="#photo-op">Photo Op: Share-Worthy Northern California Spots</a></li>
 	    <li role="separator" class="divider"></li>
-	    <li><a href="#">Photo Op: Share-Worthy Northern California Spots</a></li>
-	    <li role="separator" class="divider"></li>
-	    <li><a href="#">The Anti “Are We There Yet?” Road Trip</a></li>
+	    <li><a href="#article-roadtrip">The Anti “Are We There Yet?” Road Trip</a></li>
+	    <li role="separator" class="divider"></li> 
+	    <li><a href="#kid-attractions">8 Must-See Kid-Friendly Attractions</a></li>
 	  </ul>
 	</div>
 	<div class="nav-rule"></div>
@@ -120,18 +124,18 @@
 	  	<li class="btn"><span class="nav-explore">EXPLORE</span> CENTRAL CALIFORNIA
 		<span class="caret"></span></li>
 	  	<div class="invisible-hover"></div>
-	  	<li class="nav-blogger"><a href="#">
+	  	<li class="nav-blogger"><a href="#cntrl-blog-post">
 	  		<div class="blogger-circle"></div>
 	  		<span class="blogger-name">Patti Cordova</span></br>
 	  		Headline TK</a></li>
 	  	<li role="separator" class="divider"></li>
-	    <li><a href="#">Edu(va)cation</a></li>
+	     <li><a href="#eduvacation">Edu(va)cation</a></li>
 	    <li role="separator" class="divider"></li>
-	    <li><a href="#">#EEEEEATS: Family-Friendly Spots in Central California</a></li>
+	    <li><a href="#article-meet-cca">Get to Know Central California</a></li>
 	    <li role="separator" class="divider"></li>
-	    <li><a href="#">Get to Know Central California</a></li>
+	    <li><a href="#must-see-parks">4 Outdoor Adventures in Central California</a></li>
 	    <li role="separator" class="divider"></li>
-	    <li><a href="#">4 Outdoor Adventures in Central California</a></li>
+	    <li><a href="#article-eats">#EEEEEATS: Family-Friendly Spots in Central California</a></li>
 	  </ul>
 	</div>
 	<div class="nav-rule"></div>
@@ -144,25 +148,26 @@
 	  	<li class="btn"><span class="nav-explore">EXPLORE</span> SOUTHERN CALIFORNIA
 		<span class="caret"></span></li>
 	  	<div class="invisible-hover"></div>
-	  	<li class="nav-blogger"><a href="#">
+	  	<li class="nav-blogger"><a href="#sthrn-blog-post">
 	  		<div class="blogger-circle"></div>
 	  		<span class="blogger-name">Justine Howell</span></br>
 	  		Headline TK</a></li>
 	  	<li role="separator" class="divider"></li>
-	    <li><a href="#">6 Kid-Friendly Southern California Beaches</a></li>
+	  	<li><a href="#theme-parks">Thrills, Chills, and Enchantments</a></li>
 	    <li role="separator" class="divider"></li>
-	    <li><a href="#">Surf ’n Skate</a></li>
+	    <li><a href="#article-surf-skate">Surf ’n Skate</a></li>
 	    <li role="separator" class="divider"></li>
-	    <li><a href="#">Thrills, Chills, and Enchantments</a></li>
-<!-- 	    <li role="separator" class="divider"></li>
-	    <li><a href="#">The Anti “Are We There Yet?” Road Trip</a></li> -->
+	    <li><a href="#kid-beaches">6 Kid-Friendly Southern California Beaches</a></li>
+	    <li role="separator" class="divider"></li>
+	    <li><a href="#bella-video">Bella Video TK</a></li>
 	  </ul>
 	</div>
 	<div class="nav-progress-bar"></div>
 	<div class="nav-status-bar"></div>
 </section>
 
-<section class="region-hero full-page">
+<section class="region-hero full-page" id="nca-hero">
+	<img src="assets/VCA_white.gif" class="vca-hero-logo">
 	<svg class="region-hero-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681.5 405.6">
 		<polygon class="diamond shad" points="679.7 203.8 341.2 404.7 3.4 203.8 341.6 2.9 "/>
 		<text transform="matrix(1 0 0 1 118.4505 255.3401)" class="state shad">California</text>
@@ -175,20 +180,28 @@
 		</filter>
 	</svg>
 	<video autoplay loop muted>
-		<source src="video/FPO-northern-vid-2.webm" type="video/webm">
-		<source src="video/FPO-northern-vid-2.mp4" type="video/mp4">
-		Your browser does not support the video tag.
+		<source src="video/VCA_Family_Hero_Northern_v1.webmhd.webm" type="video/webm">
+ 		<source src="video/VCA_Family_Hero_Northern_v1.mp4" type="video/mp4">	Your browser does not support the video tag.
 	</video>
 </section>
 
 <!-- BRANDI POST -->
-<section class="bg-img-container-wrap" id="nrthrn-blog-post">
+<section class="bg-img-container-wrap blog" id="nrthrn-blog-post">
 	<div class="container-fluid article blogger-post">
 		<div class="row">
 			<div class="col-md-9">
 				<h1>Brandi's Guide To Northern California</h1>
 				<h2>The mama behind <span class="italc">Mama Knows It All</span> shares her favorite places to play with her family.</h2>
-				<img class="img-responsive begin-content blogger-info-box" src="images/FPO_Blogger_box.png">
+				<div class="blogger-profile-wrap clearfix">
+					<div class="left-quadrant">
+						<div class="btm-row">
+							<h1>Brandi Riley</h1>
+						</div>
+					</div>
+					<div class="right-quadrant">
+						<div class="btm-row"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -200,6 +213,39 @@
 				<h4>Day 1</h4>
 				<h3>Oakland and Berkeley</h3>
 				<p>I know, I know, everyone loves San Francisco. I do, too! You don’t have to rush into the city during your Northern California visit, though. In fact, it’s a good idea to pace yourself, especially if you’re traveling with children. Starting in San Francisco’s neighboring cities, Oakland and Berkeley, is a great way to start your vacation, and set the tone for the trip. Besides, they’re both extraordinarily family-friendly, with plenty to do and lots to keep the kiddos occupied and engaged.</p>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<img src="images/FPO_northern-blogger-rsideimg1.jpg">
+				<div class="caption">
+					<p>Oakland at night. <span class="italc cred inline">Getty Images</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<img class="over" src="images/brandi/Brandi1.jpg">
+			</div>
+			<div class="col-md-5">
+				<div class="caption">
+					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
+					<p class="italc cred">Getty Images</p>
+				</div>
+				<div class="caption">
+					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
+					<p class="italc cred">Getty Images</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h5>Children’s Fairyland</h5>
 				<p>Our family first fell in love with Children’s Fairyland on our first visit to Oakland. Super-duper kid-friendly, this fairytale-themed amusement park will be loved by children of all ages. Ride the Jolly Trolly Train, sit in on a puppet show, or meet new animal friends in the menagerie. You can experience the entire park in just a couple of hours, which leaves plenty of time for you to keep exploring.</p>
 				<h5>Jack London Square</h5>
@@ -208,42 +254,103 @@
 				<p>Once you finish lunch, it’s time to head over to Tilden Park in Berkeley. There’s a farm with a petting zoo, a carousel, botanical garden, and a steam train! Make sure you bring a blanket, because the acres of lush grass are perfect for a quick nap to refuel after you experience all the park has to offer.</p>
 				<h5>Shorebird Park Nature Center and Adventure Playground</h5>
 				<p>When you get your second wind, take the family to Shorebird Park Nature Center and Adventure Playground for another interesting experience.  A quintessentially Berkeley attraction, this park is unlike any playground you’ve ever been to. There's a zip line that kids and adults can ride on, and opportunities for children to build things with real hammers and nails, and to use paint to decorate their very own fort. The Shorebird Park Nature Center and Adventure Playground might be your kiddo’s favorite part of the entire day!</p>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<img class="sect-break under" src="images/brandi/Brandi2.jpg">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h4>Day 2</h4>
 				<h3>San Francisco</h3>
 				<p>The starlet of Northern California is obviously San Francisco. It’s one of the most visited cities in the world. If you’re in the region, you absolutely cannot miss it. If you start in Oakland, you can take the ferry from Jack London Square over to Fisherman’s Wharf for an exciting beginning to a day in the city. Even if you don't take the ferry, BART is a super affordable way to get into San Francisco, or you can leave the car at one of the many parking garages that are available.</p>
-				<h5>Fisherman’s Wharf</h5>
-				<p>No matter what your plans are, Fisherman’s Wharf has to be on your agenda. There’s so much to do there! You can see some ships, get a glimpse of Alcatraz, and watch the sea lions sunbathe or play. I have to warn you, though: It might be hard to drag the family to the next attraction after they see the sea lions! They’re just so darn interesting to watch!</p>
-				<h5>Chinatown</h5>
-				<p>San Francisco’s Chinatown neighborhood is one of my favorite places in the city. It’s so full of color, and there are tons of little surprises in every single shop you go into. The best part of Chinatown is that you get to experience the slopes and hills that San Francisco is known for!</p>
-				<h5>Golden Gate Bridge</h5>
-				<p>Since it’s one of the most iconic bridges in the country, you have to go over the Golden Gate bridge if you’re in Northern California. Every few weeks I try to sweet-talk my husband into driving me over the bridge because I absolutely love the views! Not only will your kids be impressed by the sheer size and beauty of the bridge, but it takes you to one of the most lovely little cities in our area.</p>
-				<h5>Sausalito</h5>
-				<p>After you drive over the Golden Gate Bridge, make your way to the Bay Area Discovery Museum. With its focus on imagination, creativity, and STEM activities, even the adults in the family will be engaged at the museum. There are often special events going on, so make sure you check the museum calendar before you go. After you leave, check out some of the shops in downtown Sausalito, and sit down for lunch at one of the many family-friendly restaurants in the area.</p>
-				<h5>Treasure Island</h5>
-				<p>To end your day, head over to Treasure Island, right at the end of the Bay Bridge, to watch the sunset. You won’t find a better view of San Francisco anywhere else. It’ll be the perfect close to a fun-filled day, and a memory that you’ll never, ever forget!</p>
-				<h4>Day 3</h4>
-				<h3>Northern California Wildcard</h3>
-				<p>For your third day in our lovely region, I have several recommendations for day trips. Don’t forget my earlier advice to stay flexible and be open to the adventure you might find.</p>
-				<h6>Option #1: Yosemite National Park</h6>
-				<h5>Yosemite National Park</h5>
-				<p>If you are coming to Northern California and you only have a few days, you MUST go to Yosemite National Park. It’s a 2.5-hour drive from Oakland, so if you start early in the morning, you'll have plenty of time to explore. One of the greatest parks in our country, Yosemite is absolutely breathtaking. When you and your family experience the amazing valley and beautiful waterfalls, you’ll be reminded of how beautiful our country truly is.</p>
-				<h6>Option #2: Santa Cruz</h6>
-				<h5>Santa Cruz Beach Boardwalk</h5>
-				<p>When I lived on the East Coast, one of my favorite things to do with my daughter was take a bus to the shore and hang out at the beach. Our version of that is the Santa Cruz Beach Boardwalk with its classic amusements, rides, and attractions. There’s a Ferris wheel, games, miniature golf, and great beach-themed foods. Your family will have the best time at the Santa Cruz Boardwalk!</p>
-				<h5>Henry Cowell Redwoods State Park</h5>
-				<p>If you want to experience the majesty of the beautiful redwood trees, Henry Cowell Redwoods State Park in Santa Cruz is the place to be. It’s home to some of the oldest redwoods in our state, so make sure to bring your camera to take tons of pictures of the family in this amazingly beautiful setting!</p>
-				<h5>Natural Bridges State Beach</h5>
-				<p>Before you leave the Santa Cruz area, make a stop at Natural Bridges State Beach to see the sun set. My husband and I had engagement photos taken here, and I can guarantee you one of the most gorgeous sunsets you’ll ever see in your life.</p>
-				<h6>Option #3: San Jose</h6>
-				<h5>San Jose</h5>
-				<p>You may know San Jose as the tech center of Northern California, but there’s plenty for families to do there, too! Just about an hour away from Oakland, San Jose makes a fun and easy day trip. Start your morning at Happy Hollow Park and Zoo for a close up look at some really sweet animals. After that, head over to the Children’s Discovery Museum for lunch and to play. You and your kiddos will love the gardens, imaginative exhibits, and opportunities to engage with science.</p>
-				<p>Now do you see why it was so easy for me to fall in love with Northern California? It’s the very best of everything our great country has to offer, and there’s no place I’d rather live, love, and have fun!</p>
-			</div>
-			<div class="col-md-5 col-md-offset-1">
-				<img class="img-responsive" src="images/FPO_northern-blogger-rsideimg1.jpg">
 			</div>
 		</div>
 	</div>
+	<div data-readmore>
+		<div class="container-fluid article blogger-post">
+			<div class="row">
+				<div class="col-md-7">
+					<img class="over" src="images/brandi/Brandi3.jpg">
+				</div>
+				<div class="col-md-5">
+					<div class="caption">
+						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+							<circle cx="9.6" cy="9.6" r="9.6"/>
+							<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+						</svg>
+						<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
+						<p class="italc cred">Getty Images</p>
+					</div>
+					<div class="caption">
+						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+							<circle cx="9.6" cy="9.6" r="9.6"/>
+							<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+						</svg>
+						<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
+						<p class="italc cred">Getty Images</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h5>Fisherman’s Wharf</h5>
+					<p>No matter what your plans are, Fisherman’s Wharf has to be on your agenda. There’s so much to do there! You can see some ships, get a glimpse of Alcatraz, and watch the sea lions sunbathe or play. I have to warn you, though: It might be hard to drag the family to the next attraction after they see the sea lions! They’re just so darn interesting to watch!</p>
+					<h5>Chinatown</h5>
+					<p>San Francisco’s Chinatown neighborhood is one of my favorite places in the city. It’s so full of color, and there are tons of little surprises in every single shop you go into. The best part of Chinatown is that you get to experience the slopes and hills that San Francisco is known for!</p>
+					<h5>Golden Gate Bridge</h5>
+					<p>Since it’s one of the most iconic bridges in the country, you have to go over the Golden Gate bridge if you’re in Northern California. Every few weeks I try to sweet-talk my husband into driving me over the bridge because I absolutely love the views! Not only will your kids be impressed by the sheer size and beauty of the bridge, but it takes you to one of the most lovely little cities in our area.</p>
+					<h5>Sausalito</h5>
+				</div>
+				<div class="col-md-5 col-md-offset-1">
+					<img class="sect-break under" src="images/brandi/Brandi4.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<p>After you drive over the Golden Gate Bridge, make your way to the Bay Area Discovery Museum. With its focus on imagination, creativity, and STEM activities, even the adults in the family will be engaged at the museum. There are often special events going on, so make sure you check the museum calendar before you go. After you leave, check out some of the shops in downtown Sausalito, and sit down for lunch at one of the many family-friendly restaurants in the area.</p>
+					<h5>Treasure Island</h5>
+					<p>To end your day, head over to Treasure Island, right at the end of the Bay Bridge, to watch the sunset. You won’t find a better view of San Francisco anywhere else. It’ll be the perfect close to a fun-filled day, and a memory that you’ll never, ever forget!</p>
+					<h4>Day 3</h4>
+					<h3>Northern California Wildcard</h3>
+					<p>For your third day in our lovely region, I have several recommendations for day trips. Don’t forget my earlier advice to stay flexible and be open to the adventure you might find.</p>
+					<h6>Option #1: Yosemite National Park</h6>
+					<h5>Yosemite National Park</h5>
+					<p>If you are coming to Northern California and you only have a few days, you MUST go to Yosemite National Park. It’s a 2.5-hour drive from Oakland, so if you start early in the morning, you'll have plenty of time to explore. One of the greatest parks in our country, Yosemite is absolutely breathtaking. When you and your family experience the amazing valley and beautiful waterfalls, you’ll be reminded of how beautiful our country truly is.</p>
+				</div>
+				<div class="col-md-5 col-md-offset-1">
+					<img class="img-responsive" src="images/brandi/Supplied-Brandi5.jpg">
+					<div class="caption">
+						<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
+						<p class="italc cred">Getty Images</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-7">
+					<img class="over" src="images/brandi/FPO_Yosemite.jpg">
+					<div class="caption">
+						<p class="italc cred inline">Getty Images</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h6>Option #2: Santa Cruz</h6>
+					<h5>Santa Cruz Beach Boardwalk</h5>
+					<p>When I lived on the East Coast, one of my favorite things to do with my daughter was take a bus to the shore and hang out at the beach. Our version of that is the Santa Cruz Beach Boardwalk with its classic amusements, rides, and attractions. There’s a Ferris wheel, games, miniature golf, and great beach-themed foods. Your family will have the best time at the Santa Cruz Boardwalk!</p>
+					<h5>Henry Cowell Redwoods State Park</h5>
+					<p>If you want to experience the majesty of the beautiful redwood trees, Henry Cowell Redwoods State Park in Santa Cruz is the place to be. It’s home to some of the oldest redwoods in our state, so make sure to bring your camera to take tons of pictures of the family in this amazingly beautiful setting!</p>
+					<h5>Natural Bridges State Beach</h5>
+					<p>Before you leave the Santa Cruz area, make a stop at Natural Bridges State Beach to see the sun set. My husband and I had engagement photos taken here, and I can guarantee you one of the most gorgeous sunsets you’ll ever see in your life.</p>
+					<h6>Option #3: San Jose</h6>
+					<h5>San Jose</h5>
+					<p>You may know San Jose as the tech center of Northern California, but there’s plenty for families to do there, too! Just about an hour away from Oakland, San Jose makes a fun and easy day trip. Start your morning at Happy Hollow Park and Zoo for a close up look at some really sweet animals. After that, head over to the Children’s Discovery Museum for lunch and to play. You and your kiddos will love the gardens, imaginative exhibits, and opportunities to engage with science.</p>
+					<p>Now do you see why it was so easy for me to fall in love with Northern California? It’s the very best of everything our great country has to offer, and there’s no place I’d rather live, love, and have fun!</p>
+				</div>
+			</div>
+		</div>
+	</div><!--hide-blog end-->
 </section> 
 
 <!-- CAMP CA -->
@@ -384,6 +491,7 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<p>Check out eight more spots for adventurous kids <a href="http://www.visitcalifornia.com/feature/8-great-spots-take-adventurous-daughter">here</a>.</p>
+				<img src="assets/VCA_color.gif" class="vca-logo-color">
 			</div>
 		</div>
 </section>
@@ -466,7 +574,8 @@
 			<div class="col-md-12">
 				<ul class="scroll-list">
 					<li class="parallax-bg__empty" id="list-roadtrip">
-						<div class="roadtrip-circle" id="roadtrip-circle-1" style="transform: none">
+						<div class="circle-container" id="roadtrip-circle-1">
+							<div class="roadtrip-circle"></div>
 						</div>
 						<div class="col-md-6">
 							<div class="scroll-list-box">
@@ -489,7 +598,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__empty">
+					<li class="parallax-bg__empty" id="roadtrip-3">
 						<div class="col-md-6">
 							<div class="scroll-list-box">
 								<div class="box-header">
@@ -500,7 +609,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__myers">
+					<li class="parallax-bg__myers" id="roadtrip-4">
 						<div class="col-md-6">
 							<div class="scroll-list-box">
 								<div class="box-header one-line">
@@ -532,7 +641,9 @@
 								<p>About eight miles south of the Stafford end of the Avenue of the Giants sits the Eternal Tree House, a rustic roadside stop with a gift shop, restaurant, and a 20-square foot room located in the stump of one of the giants. Visitors to the house can leave their name in the guestbook before going back on the road.</p>
 							</div>
 						</div>
-						<div class="roadtrip-circle" id="roadtrip-circle-2">
+						<div class="circle-container" id="roadtrip-circle-2">
+							<div class="roadtrip-circle" id="last-circle"></div>
+						</div>
 					</li>
 				</ul>		
 			</div>
@@ -645,7 +756,8 @@
 	</a>
 </section>
 
-<section class="region-hero full-page">
+<section class="region-hero full-page" id="cca-hero">
+	<img src="assets/VCA_white.gif" class="vca-hero-logo">
 	<svg class="region-hero-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681.4 405.9">
 	<polygon class="diamond shad" points="679.7 203.7 341.3 404.6 3.5 203.7 341.6 2.8 "/>
 	<text transform="matrix(1 0 0 1 118.5439 255.2865)" class="state shad">California</text>
@@ -658,10 +770,101 @@
 	</filter>
 </svg>
 	<video autoplay loop muted>
-		<source src="video/508845990.mp4" type="video/mp4">
+		<source src="video/VCA_Family_Hero_Central_v1.webmhd.webm" type="video/webm">
+ 		<source src="video/VCA_Family_Hero_Central_v1.mp4" type="video/mp4">
 		Your browser does not support the video tag.
 	</video>
 </section>
+
+<!-- PATTIE POST -->
+<section class="bg-img-container-wrap" id="cntrl-blog-post">
+	<div class="container-fluid article blogger-post">
+		<div class="row">
+			<div class="col-md-9">
+				<h1>Pattie's Guide To Northern California</h1>
+				<h2>Lorem ipsum dolor sit amet, et sensibus inciderint cum, ei vim unum fierent vulputate.</h2>
+				<img class="img-responsive begin-content blogger-info-box" src="images/pattie/FPO_Pattie_Blogger_box.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>We love visiting Central California because it gives us a beautiful mix of the ocean, the mountains, and farm life. It offers some of the best wineries on the West Coast, has little-known towns, and features fun little eateries sprinkled throughout the coast. Now that summer is coming up, we’ve started planning our next family road trip up to Central California, and it includes a handful of adventure-filled stops. The Central Valley and the Central Coast are where we’ll be spending the majority of our time because they’re both just a short drive away from Los Angeles. Want to plan your own Central California road trip and need ideas? Read on for our three-day family road trip itinerary!</p>
+				<h4>Day 1</h4>
+				<h3>Santa Barbara</h3>
+				<p>Closest to Los Angeles is the beautiful city of Santa Barbara. You’ll find this historic spot about an hour and a half north of L.A. Santa Barbara is known for its shopping, dining, and gorgeous scenery. This city is a big hit for multi-generational groups because it offers a lot of activities, including the Old Mission Santa Barbara, the Santa Barbara Zoo, and museums with a heavy emphasis on nature and history. And of course, the beach is always a hit too.</p>
+				<h5>You can find us at...</h5>
+				<p>The Farmers Market in Downtown Santa Barbara on Tuesdays and Saturdays. There’s plenty of locally grown produce, along with an array of restaurants offering everything from pizza to tacos, served alongside some of the best wine in the state of California.</p>
+				<h4>Day 2</h4>
+				<h3>Solvang</h3>
+				<p>About an hour away from Santa Barbara is a quaint little town called Solvang. Driving into Solvang will make you feel as though you’re stepping back in time. You will immediately get the small-town feel (it has a population of about 5,500) as you drive down its one major road and past its mom-and-pop shops and well-known bakeries. Founded by a group of Danes in 1911, the town gives you the feeling that it hasn’t changed much since then.</p>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<img class="img-responsive" src="images/pattie/visiting-oceanside.jpg">
+				<div class="caption">
+					<p>Lorem ipsum dolor amet. <span class="italc cred inline">Getty Images</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<img class="over" src="images/pattie/Solvang.jpg">
+			</div>
+			<div class="col-md-5">
+				<div class="caption">
+					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
+					<p class="italc cred">Getty Images</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Solvang is still home to bakeries, restaurants, and merchants who have continued to offer a taste of Denmark through its food, landscape, and museums.</p>
+				<h5>You can find us at...</h5>
+				<p>The shoe store trying on a pair of clogs, the local bookstore peeking into the Hans Christian Andersen museum upstairs, and, of course, around Copenhagen replicas like the Little Mermaid statue and the Round Tower, taking family pictures. We’ll also be stopping by Old Mission Santa Inés near the center of town. Just outside of Solvang, we’ll stop by OstrichLand USA—a ranch where visitors can see ostriches, feed them, and even buy their eggs!</p>
+				<h4>Day 3</h4>
+				<h3>Central Valley</h3>
+				<p>Covering a large piece of California is the Central Valley. This area is known for producing an abundance of fresh fruits, vegetables, and greenery, coupled with its small-town feel and country atmosphere. Highway 99 will take you where you need to go, but your family will enjoy discovering off-the-beaten-path destinations the most.</p>
+				<h5>You can find us at...</h5>
+				<p>The produce stands, stocking up on in-season fruits. We’d like to visit UC Davis and rent bikes to discover the campus, and maybe take some time for some much-needed water play at The Delta. There, you can do everything from waterskiing to fishing to wildlife watching.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<img class="over" src="images/pattie/central-valley.jpg">
+			</div>
+			<div class="col-md-5">
+				<div class="caption">
+					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
+					<p class="italc cred">Getty Images</p>
+				</div>
+				<div class="caption">
+					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
+					<p class="italc cred">Getty Images</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Central California is a wonderful region of the Golden State, with the ocean and mountains surrounding the family-owned farms and quaint towns that you’ll run into simply by driving down the scenic highways. Families can always find something that they enjoy doing. Whether we choose a day at the beach, a tour of historic missions, or fruit picking at a farm, Central California will give us three days of fun, great meals, and bonding moments that will carry us into our future California travels.</p>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<img class="sect-break under" src="images/pattie/supplied_pattie_2.jpg">
+			</div>
+		</div>
+	</div>
+</section> 
 
 <!-- Edu(va)cation -->
 <img class="section-marker" src="images/section-marker.png">
@@ -680,7 +883,7 @@
 	</div>
 	<a href="#chabot-space">
 		<ul class="hideContentWrap" id="chabot-space">
-			<li class="hideContentHeader">Chabot Space & Science Center</li>
+			<li class="hideContentHeader">Chabot Space &amp; Science Center</li>
 			<li class="hideContent">
 				<div class="text-box">
 					<p>Ready for an out-of-this-world adventure? Head to Oakland to take a trip through outer space via Chabot’s state-of-the-art planetarium, or see if you have the right stuff on a simulated space mission in the Challenger Learning Center. The center is great for all ages, including the littlest astronauts, who can enroll in the Tyke Explorers Workshop, which teaches children three to five years old about space, dinosaurs, the human body, and other science topics. Chabot is home to three telescopes open for public viewing—visit after sunset for a spectacular view of the night sky.</p>
@@ -882,7 +1085,8 @@
 	</div>
 </section> 
 
-<section class="region-hero full-page">
+<section class="region-hero full-page" id="sca-hero">
+	<img src="assets/VCA_white.gif" class="vca-hero-logo">
 	<svg class="region-hero-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681.4 405.7">
 		<polygon class="diamond shad" points="679.7 203.8 341.2 404.7 3.5 203.8 341.6 2.9 "/>
 		<text transform="matrix(1 0 0 1 118.4586 255.3635)" class="state shad">California</text>
@@ -892,10 +1096,241 @@
 		<text transform="matrix(1 0 0 1 136.4766 191.3493)" class="region-loc italc">SOUTHERN</text>
 	</svg>
 	<video autoplay loop muted>
-		<source src="video/FPO-southern-vid-1.mp4" type="video/mp4">
-		Your browser does not support the video tag.
+		<source src="video/VCA_Family_Hero_Southern_v1.mp4" type="video/mp4">Your browser does not support the video tag.
 	</video>
 </section>
+
+<!-- JUSTINE POST -->
+<section class="bg-img-container-wrap" id="sthrn-blog-post">
+	<div class="container-fluid article blogger-post">
+		<div class="row">
+			<div class="col-md-9">
+				<h1>Justine's 25 Reasons to Visit California</h1>
+				<h2>Lorem ipsum dolor sit amet, et sensibus inciderint cum, ei vim unum fierent vulputate.</h2>
+				<img class="img-responsive begin-content blogger-info-box" src="images/justine/FPO_Justine_Blogger_box.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>I have lived in California almost my entire life, and I couldn’t imagine raising my kids anywhere else! Southern California is unique because you can visit the beach, go to Disneyland, or play in the snow, usually within a two hour drive….you really can’t find that anywhere else! If you haven’t visited the Golden State yet, let us show you around. Here are 25 of our favorite spots with a lot of hidden gems in between!</p>
+				<p>Let’s start with the fabulous amusement parks you will find here in Southern California. You can’t pass these by:</p>
+				<h4>1</h4>
+				<h3>Disneyland</h3>
+				<p>When you think of California, you probably picture Mickey Mouse, and a trip to Disneyland is definitely something every child (and adult) will remember forever!</p>
+				<h4>2</h4>
+				<h3>Disney California Adventure Park</h3>
+				<p>On the same grounds as Disneyland, this second park is unique; it offers live entertainment and an extended Disney feel, with additional rides like our favorite, Soarin’ Over California.</p>
+				<h4>3</h4>
+				<h3>Knott’s Berry Farm</h3>
+				<p>Knott’s really has something for everyone, with lots of live entertainment too, which we love. There are smaller rides in Camp Snoopy, classics like the Log Ride, and roller coasters for the more daring. Throughout the year they have special events during Christmas, their Boysenberry Festival, and more, which keep it fresh.</p>
+				<h4>4</h4>
+				<h3>Universal Studios Hollywood</h3>
+				<p>A really fun place for rides and live entertainment featuring your favorite movie characters, and their studio tour is amazing. We love seeing where some of our favorite movies were filmed!</p>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<img src="images/justine/KnottsBerryFarm.jpg">
+				<div class="caption">
+					<p>Camp Snoopy at Knott's Berry Farm. <span class="italc cred inline">Getty Images</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<img class="over" src="images/justine/simpsons-universal.jpg">
+			</div>
+			<div class="col-md-5">
+				<div class="caption">
+					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
+					<p class="italc cred">Getty Images</p>
+				</div>
+				<div class="caption">
+					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
+					<p class="italc cred">Getty Images</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h4>5</h4>
+				<h3>LEGOLAND</h3>
+				<p>A fun place for younger kids, especially those who love building! There are not only fun rides at LEGOLAND but building stations, a great waterpark, and Sea Life Aquarium adjacent to the park as well. It’s fascinating what they’ve made out of LEGO bricks!</p>
+				<p class="italc">Let’s move on to a few water locations we love in Southern California! Some of them you may have heard of, and others are hidden gems that are must-sees during your visit here.</p>
+				<h4>6</h4>
+				<h3>SeaWorld San Diego</h3>
+				<p>This park has changed a lot over the years and even has a few roller coasters too! Our favorite attractions are still the shows (with seasonal offerings as well), and the hands-on exhibits are always a hit.</p>
+				<h4>7</h4>
+				<h3>The Queen Mary</h3>
+				<p>This floating hotel in Long Beach offers tours. Even my kids thought it was fascinating to see the artifacts and the exhibits on the ship. In the winter months there’s the <a href="http://temeculablogs.com/queen-mary-ice-kingdom-discounted-tickets/">Queen Mary CHILL</a> with ice sculptures, tubing, skating, and more (this has become our annual tradition).</p>
+				<h4>8</h4>
+				<h3>Aquarium of the Pacific</h3>
+				<p>This is quite a large aquarium, located in Long Beach, with a lot of outside exhibits, such as a penguin habitat and shark-touch pools that we haven’t seen anywhere else!</p>
+				<h4>9</h4>
+				<h3>Birch Aquarium at Scripps</h3>
+				<p>Located in La Jolla, this aquarium offers a lot of hands-on exhibits for kids, and half of the facility is outdoors, which we love! Featuring interactive exhibits and exciting science displays, it’s great for little hands and in an absolutely gorgeous location overlooking the beach.</p>
+				<h4>10</h4>
+				<h3>Tide Pools</h3>
+				<p>We love visiting the many tide pools in Southern California! One of our favorite spots is in <a href="http://temeculablogs.com/la-jolla-tide-pools/">La Jolla, called Children’s Pool</a>. There’s a beach where you can look for small sea creatures and get up close and personal with the harbor seals and sea lions, who love to sun themselves!</p>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<img class="sect-break under" src="images/justine/legoland.jpg">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<img class="over" src="images/justine/supplied_justine_2.jpg">
+			</div>
+			<div class="col-md-5 r-rail-above">
+				<img class="sect-break under" src="images/justine/supplied_justine_1.jpg">
+			</div>
+			<div class="col-md-5">
+				<div class="caption">
+					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet.</p>
+					<p class="italc cred">Getty Images</p>
+				</div>
+				<div class="caption">
+					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet.</p>
+					<p class="italc cred">Getty Images</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h4>11</h4>
+				<h3>Ocean Institute</h3>
+				<p>If you’re coming to Southern California to visit the ocean and all it has to offer, this is a great place to visit in Dana Point! They offer hands-on exploration, and taking a whale-watching trip is a must, too…it’s amazing!</p>
+			</div>
+		</div>
+	</div>
+	<div data-readmore>
+	<div class="container-fluid article blogger-post">
+		<div class="row">
+			<div class="col-md-6">
+				<h4>12</h4>
+				<h3>Huntington Beach Adventure Playground</h3>
+				<p>This is a hidden gem! If your childhood included playing in mud puddles, sliding down slippery slopes with your friends, and not caring about how dirty you got….your kids will get to experience that kind of down-home fun here too!</p>
+				<h4>13</h4>
+				<h3>Waterparks</h3>
+				<p>There are <a href="http://temeculablogs.com/water-parks-southern-california/">so many great waterparks in Southern California</a>, and since it is warm basically year round here you can visit them often!</p>
+				<h4>14</h4>
+				<h3>The beach</h3>
+				<p>I’d be here all day if I listed all of the beaches we love, and since there are so many, we like visiting a new one each time we head out for some sun and sand. Two of our favorites are Carlsbad State Beach and San Clemente State Beach, because we lived there for many years. There is a playground, and lots of parking.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<img src="images/justine/san_clemente.jpg">
+			</div>
+			<div class="col-md-5">
+				<div class="caption">
+					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+					</svg>
+					<p>San Clemente pier. <span class="italc cred inline">Getty Images</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p class="italc">If you’re an animal lover and you’re looking for fun places in Southern California to visit them, there are several locations, both big and small.</p>
+				<h4>15</h4>
+				<h3>San Diego Zoo Safari Park</h3>
+				<p>Probably one of our favorite places to go and see animals roaming the acres and acres of land. Their Africa Tram is like nothing you’ve ever been on, as it takes you on a half hour tour that allows you to see the animals up close.</p>
+				<h4>16</h4>
+				<h3>Rancho Las Lomas</h3>
+				<p>A true hidden gem! This is a great zoological garden with rescued animals that can no longer live in the wild for a variety of reasons. You can get up close with unique animals and take a tour of the facility, which is nestled in the small city of Silverado. It’s pretty neat.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h4>17</h4>
+				<h3>Bates Nut Farm</h3>
+				<p>Our favorite hidden gem!! My kids love feeding animals, seasonal festivals, and large fields where we can have a picnic and run free. Bates offers all of these things! Each season offers something new with a small-town feel, and it’s become our tradition each October to pick pumpkins right off the vine!</p>
+				<p class="italc">Now we’re moving right along to several fun children’s museums we have here in Southern California that we visit quite often and are a must-see!</p>
+				<h4>18</h4>
+				<h3>Discovery Cube OC</h3>
+				<p>One of our all-time favorite hands-on museums for children in Orange County is called Discovery Cube OC. Throughout the year they offer different exhibits and incredible shows like the Bubblefest you see here! Children can pretend they’re hockey players, shop at a grocery store meant just for them, learn all about hurricanes and much more. It’s three stories full of fun, and you can easily spend the whole day there!</p>
+				<h4>19</h4>
+				<h3>Pennypickle’s Workshop</h3>
+				<p>Another hidden gem! We love visiting small places like this one and sharing them with others. Although it’s on a smaller scale, this children’s museum is very interactive and is located in a quaint area of Old Town Temecula, which is fun to walk around after your visit there.</p>
+				<h4>20</h4>
+				<h3>Orange Empire Railway Museum</h3>
+				<p>If you’re a train enthusiast, this is a great place to visit! There are different events year round, and they even have Thomas the Tank Engine visit each year!</p>
+				<p class="italc">Now let’s get back outdoors, shall we! There are so many great places to camp and hike in Southern California and we have visited many of them, so let me share a few of our favorites.</p>
+				<h4>21</h4>
+				<h3>Idyllwild</h3>
+				<p>We visit Idyllwild often because it isn’t too far from our home in Temecula and it’s such a gorgeous area to take a walk, have a picnic, and just unplug as a family. It reminds us of a smaller version of Yosemite, offering small campgrounds as well as a lake just outside of town, called Lake Hemet, where sometimes we just skip rocks and chat.</p>
+				<h4>22</h4>
+				<h3>Santa Rosa Plateau</h3>
+				<p>Our all-time favorite place to hike! Gorgeous isn’t a big enough word to describe this area. There are many trails to choose from and it’s fairly flat, so it’s easy for children to join the fun! We pack a picnic and head out for an afternoon together often, and we always see something new.</p>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<img class="sect-break under" src="images/justine/supplied_justine_6.jpg">
+				<div class="caption">
+					<p>Bates Nut Farm. <span class="italc cred inline">Getty Images</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<img class="over" src="images/justine/supplied_justine_3.jpg">
+			</div>
+			<div class="col-md-5 r-rail-above">
+				<img class="sect-break under" src="images/justine/idyllwild.jpg">
+			</div>
+			<div class="col-md-5">
+				<div class="caption">
+					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet.</p>
+					<p class="italc cred">Getty Images</p>
+				</div>
+				<div class="caption">
+					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet.</p>
+					<p class="italc cred">Getty Images</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h4>23</h4>
+				<h3>Julian</h3>
+				<p>Another hidden gem! We love finding small quaint towns like this one and just making a day trip of it. It’s a great little place to stay at a bed-and-breakfast, explore the beautiful woody area, visit their underground candy mine, and have a slice of their noteworthy apple pie!</p>
+				<p class="italc">To round out our list of 25 reasons to visit California, we want to share a few great places where you can pick your own veggies and fruit….so much fun with kids!</p>
+				<h4>24</h4>
+				<h3>Tanaka Farms</h3>
+				<p>Not only can you pick your own fruits and vegetables, but you can take a CookOut Tour, where they will help grill what you’ve picked right then and there! Very educational and fun for adults and kids!</p>
+				<h4>25</h4>
+				<h3>Temecula Blueberry Company</h3>
+				<p>This is a fantastic hidden gem! There are many strawberry fields here and there, but it’s rare to find a blueberry field where you can gather your own fruit right off the bush and bring it home that day. Offering movie nights during the summer, story time, and a few farm animals, it’s a fun experience for little hands and delicious for everyone!</p>
+				<p class="italc">From <a href="http://temeculablogs.com/">The Typical Mom</a> family to yours, I hope you find several activities you love among our suggestions here and make memories with each other this year that will last a lifetime!</p>
+			</div>
+		</div>
+	</div>
+	</div><!-- hide end -->
+</section> 
 
 <!-- Theme Parks -->
 <img class="section-marker" src="images/section-marker.png">
@@ -1005,7 +1440,114 @@
 	</a>
 </section>
 
-<!-- Theme Parks -->
+<!-- Surf 'n Skate' -->
+<img class="section-marker" src="images/section-marker.png">
+<section class="bg-img-container-wrap northern" id="article-surf-skate">
+	<div class="container-fluid article">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Surf ’n Skate</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h2>Budding surfers and skaters will find a bounty of spots to hone their skills in Southern California.</h2>
+				<p>Boards of all shapes and sizes dominate communities in Southern California—the region serving as the perfect backdrop to learn the quintessential Californian activities of surfing and skating. These camps are in locations that provide plenty for parents to do while the kids are away.</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid article">
+		<div class="row">
+			<div class="parallax-bg__surf" id="surf-list">
+				<div class="col-md-12 col-md-offset-1">
+					<div class="surf-skate-title">
+						In The </br> <span class="surf-skate-title-accent">Water</span>
+					</div>
+					<ul class="scroll-list">
+						<li class="list-surf-skate" id="list-surf-1">
+							<div class="col-md-6">
+								<div class="scroll-list-box">
+									<div class="box-header">
+										<span class="best-for">Best for:</span>
+										</br>Wave newbies					
+									</div>
+									<p>The small waves and lack of rocks at Bolsa Chica State Beach make the <span class="bold">Huntington Beach Surf Camp</span> a safe, kid-friendly option for learning how to catch a wave. With a four-to-one student-to-teacher ratio, your son or daughter will get personalized attention during a week of 9 a.m. to 3 p.m. full-day sessions (half days also available). Head over to Main Street for the grilled fish taco from Wahoo’s Fish Taco and wander through the surf shops and boutiques before picking your camper up at the end of the day.</p>
+								</div>
+							</div>
+						</li>
+						<li class="list-surf-skate" id="list-surf-2">
+							<div class="col-md-6">
+								<div class="scroll-list-box">
+									<div class="box-header">
+										<span class="best-for">Best for:</span>
+										</br>A fun, relaxed atmosphere	
+									</div>
+									<p>Choose your ideal vacation location when signing your kids up for the <span class="bold">Perfect Day Surf Camp</span> at Santa Monica, Manhattan, Redondo, or Torrance Beaches. The camps offer flexible times and keep things fun by integrating beach dodgeball, capture the flag, and sandcastle time for the little ones. Each camp is located near the coastal bike path for riding or walking to beachfront restaurants. Or you could take a stand-up paddleboarding or surfing class while the kids catch waves.</p>
+								</div>
+							</div>
+						</li>
+						<li class="list-surf-skate" id="list-surf-3">
+							<div class="col-md-6">
+								<div class="scroll-list-box">
+									<div class="box-header">
+										<span class="best-for">Best for:</span>
+										</br>The whole family 			
+									</div>
+									<p><span class="bold">Menehune Surf</span> in La Jolla or Del Mar serves up half- or full-day instruction. Youngsters (ages five to seven) start by playing in the shallow water and learning about the marine life, while the eight- to twelve-year-olds develop skills and learn about ocean ecosystems, and the teens focus on skills, etiquette, and learning about surf culture and how boards are designed. While the kids catch waves, parents can treat themselves to a sea stone massage or deep cleansing facial at L’Auberge in Del Mar.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid article">
+		<div class="row">
+			<div class="parallax-bg__skate" id="skate-list">
+				<div class="col-md-12 col-md-offset-1">
+					<ul class="scroll-list">
+						<li class="list-surf-skate" id="list-skate-1">
+							<div class="col-md-6">
+								<div class="scroll-list-box">
+									<div class="box-header">
+										<span class="best-for">Best for:</span>
+										</br>Flexible instruction
+									</div>
+									<p>Pick a Southern California destination from Irvine to Long Beach and it’s likely that <span class="bold">Skatedog</span> has a camp location there. Summer camp sessions, run through the local Parks and Recreation Departments, teach kids ages six to 13 how to skate using ramps and rails from Skatedog’s mobile skate park. Camp spots are located near attractions like the historic <span class="italc">Queen Mary</span> in Long Beach or the upscale, open-air Fashion Island in Newport Beach.</p>
+								</div>
+							</div>
+						</li>
+						<li class="list-surf-skate" id="list-skate-2">
+							<div class="col-md-6">
+								<div class="scroll-list-box">
+									<div class="box-header">
+										<span class="best-for">Best for:</span>
+										</br>Advanced tricksters
+									</div>
+									<p>The legendary skate park at the <span class="bold">Magdalena Ecke YMCA</span> in Encinitas features a combination of street course, kidney-shaped bowl, and mix of ramp styles. It hosts three camps based on ability level: Technique for beginners, a tricks-focused intermediate/advanced camp, and a travel camp that takes skaters to other parks around San Diego. Parents can stay entertained in the quaint beachside town of Encinitas—simply relax on Moonlight Beach or grab a cup of house-roasted coffee at Lofty Bean and walk south down the 101 to browse gift shops and boutiques.</p>
+								</div>
+							</div>
+						</li>
+						<li class="list-surf-skate" id="list-skate-3">
+							<div class="col-md-6">
+								<div class="scroll-list-box">
+									<div class="box-header">
+										<span class="best-for">Best for:</span>
+										</br>Multimedia skaters 
+									</div>
+									<p>If you mastered tricks at skateboard camp but don’t have it on video, did it really happen? For kids 10 and up, the <span class="bold">Etnies Video Production Skate Camp</span> in Lake Forest combines videography and photography with skateboarding during a weeklong camp. Etnies also offers a preschool skate camp for 4- and 5-year-olds. Lake Forest is just inland of Laguna Beach, where there are more than 100 galleries, sculpture gardens, and art studios within walking distance.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Kid Beaches -->
 <img class="section-marker" src="images/section-marker.png">
 <section class="bg-img-container-wrap northern" id="kid-beaches">
 	<div class="container-fluid article">
@@ -1090,5 +1632,8 @@
 
 
 <script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/jquery.waypoints.min.js"></script> -->
+
+
 </body>
 </html>
