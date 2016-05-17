@@ -1023,10 +1023,11 @@ ul.scroll-list {
 
 #camp-ca .col-md-6 img {
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
-	margin: -250px 0 0 -10%;
+	/*margin: -250px 0 40px -10%;*/
+	margin-top: -300px;
+	margin-bottom: 40px;
 	position: relative;
 	z-index: 50!important;
-	margin-bottom: 40px;
 }
 
 /* Animation Styles */
@@ -1034,14 +1035,18 @@ ul.scroll-list {
 .animateblock {
   color: #fff;
   opacity: 0;
-  -webkit-transition: all 0.55s linear;
-  -moz-transition: all 0.55s linear;
-  transition: all 0.55s linear;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  position: relative;
   z-index: 50!important;
 }
-
 .animateblock.animated {
   opacity: 1;
+}
+.animateblock img {
+	position: relative;
+  z-index: 50!important;
 }
 
 /* animation transition styles */
@@ -1074,10 +1079,13 @@ ul.scroll-list {
   display: block;
   width: auto;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 45px;
 }
 .animateblock.btm.animated {
   margin-top: 0;
+}
+.animateblock.btm.animated img {
+	margin-left: -18%;
 }
 
 .animateblock.centerleft {
