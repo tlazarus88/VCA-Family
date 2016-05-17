@@ -119,6 +119,7 @@ function roadCirc() {
   if ($(window).scrollTop() >= (bottomRoadList)) {
   	$('#roadtrip-circle-1').css('position', 'absolute');
   	$('#roadtrip-circle-2').css('visibility', 'visible');
+    $('#last-circle').addClass('circle-bg-7');
   };
 
 };
@@ -181,46 +182,60 @@ function skateScroll() {
 
 // Roadtrip Map
 
-// mapboxgl.accessToken = 'pk.eyJ1IjoidGxhemFydXM4OCIsImEiOiJjaW81dDdyNnkwMjBndmlsemlsa3EzNnBrIn0.3NylPNCT2ZSfG4mLTwXyKw';
-//   var map = new mapboxgl.Map({
-//       container: 'circle-map',
-//       style: 'mapbox://styles/mapbox/streets-v8',
-//       interactive: false,
-      
-//   });
+scrollIntervalID = setInterval(circleBg, 10)
 
-// var map;
+function circleBg() {
 
-// function init_map(){
-// 	var myOptions = {
-// 		zoom:15,
-// 		center:new google.maps.LatLng(40.6813578,-73.97733169999998),
-// 		mapTypeId: google.maps.MapTypeId.SATELLITE,
-// 		scrollwheel: false
-// 	};
-// 	map = new google.maps.Map(document.getElementById("roadtrip-circle-1"), myOptions);
-// 	marker = new google.maps.Marker({
-// 		map: map,
-// 		position: new google.maps.LatLng(40.6813578,-73.97733169999998)
-// 	});
+  var $roadtrip1 = $('#list-roadtrip');
+  var roadtrip1 = $roadtrip1.offset().top;
+  var $roadtrip2 = $('#roadtrip-2');
+  var roadtrip2 = $roadtrip2.offset().top;
+  var $roadtrip3 = $('#roadtrip-3');
+  var roadtrip3 = $roadtrip3.offset().top;
+  var $roadtrip4 = $('#roadtrip-4');
+  var roadtrip4 = $roadtrip4.offset().top;
+  var $roadtrip5 = $('#last-roadtrip');
+  var roadtrip5 = $roadtrip5.offset().top;
 
-  // Alter Roadtrip Image
 
-//   scrollIntervalID = setInterval(mapZoom, 10)
+  if ($(window).scrollTop() >= (roadtrip1)) {
+    $('.roadtrip-circle').addClass('circle-bg-2');
+  } else {
+    $('.roadtrip-circle').removeClass('circle-bg-2');
+  };
+  if ($(window).scrollTop() >= (roadtrip2)) {
+    $('.roadtrip-circle').addClass('circle-bg-3');
+  } else {
+    $('.roadtrip-circle').removeClass('circle-bg-3');
+  };
+  if ($(window).scrollTop() >= (roadtrip3)) {
+    $('.roadtrip-circle').addClass('circle-bg-4');
+  } else {
+    $('.roadtrip-circle').removeClass('circle-bg-4');
+  };
+  if ($(window).scrollTop() >= (roadtrip4)) {
+    $('.roadtrip-circle').addClass('circle-bg-5');
+  } else {
+    $('.roadtrip-circle').removeClass('circle-bg-5');
+  };
+  if ($(window).scrollTop() >= (roadtrip5)) {
+    $('.roadtrip-circle').addClass('circle-bg-6');
+  } else {
+    $('.roadtrip-circle').removeClass('circle-bg-6');
+  };
 
-//   function mapZoom(){
-//     if ($(window).scrollTop() >= ($('#roadtrip-2').offset().top + $('#roadtrip-2').outerHeight(true))) {
-//       myOptions = {zoom: 20}
-//     }
-//   };
-// };
+  // function addBlue() = function(callback) {
+  //   $('.roadtrip-circle').addClass('circle-blue', function() {
+  //   callback();
+  //   });
+  // };
 
-// google.maps.event.addDomListener(window, 'load', init_map);
-// google.maps.event.addDomListener(window, "resize", function() {
-//  	var center = map.getCenter();
-//  	google.maps.event.trigger(map, "resize");
-//  	map.setCenter(center);
-//  });
+  // function addRed() = function(){
+  //   $('.roadtrip-circle').addClass('circle-red');
+  // };
+
+
+};
 
 // Accordion
 
