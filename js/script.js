@@ -73,6 +73,11 @@ $(function(){
   } // end animate_elems()
 });
 
+// Fancy Box
+$(document).ready(function() {
+  $('.fancybox').fancybox();
+});
+
 // Progress Bar Representation
 
 scrollIntervalID = setInterval(progressBar, 10);
