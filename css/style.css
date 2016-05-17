@@ -891,13 +891,22 @@ ul.scroll-list {
 	background-size: cover;
     box-shadow: inset 0 0 1em #111;
 }
+
 .parallax-bg__empty {
 	background-image: none;
 	box-shadow: none;
-
 }
+
 .parallax-bg__myers {
-	background-image: url(../images/article_roadtrip/alamy_RM_bp6amt.jpg);
+	background-image: url(../images/article_roadtrip/alamy_RM_BP6AMT.jpg);
+}
+
+.parallax-bg__founders-grove {
+	background-image: url(../images/article_roadtrip/gty_RF_587244505.jpg);
+}
+
+.parallax-bg__eternal-tree-house {
+	background-image: url(../images/article_roadtrip/gty_RF_545168913.jpg);
 }
 
 .parallax-bg__surf {
@@ -1011,7 +1020,7 @@ ul.scroll-list {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%) !important;
-	left: 45%;
+	left: 50%;
 	width: 40%;
 	z-index: +1;
 }
