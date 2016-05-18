@@ -25,6 +25,7 @@ body {
 
 .title-trtmnt {
 	position:absolute;
+	z-index: 500!important;
 	top:50%;
 	left:50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -63,16 +64,25 @@ body {
 	font-size:24px;
 	letter-spacing:1.5px;
 	text-transform:uppercase;
+	display: none;
 }
 .title-trtmnt .dek {
 	font-weight:300;
 	font-size:17px;
 }
+.title-trtmnt .drpdwn,
+.title-trtmnt .southern,
+.title-trtmnt .california
+.title-trtmnt .pink-rect {
+	display: none;
+} 
 .title-trtmnt .bg-diamond {fill:#FFFFFF;}
-.title-trtmnt .st1{fill:none;stroke:#EE0077;stroke-width:0.75;stroke-miterlimit:10;}
+.title-trtmnt .st1{fill:none;stroke:#EE0077;stroke-width:0.75;stroke-miterlimit:10;display:none;}
 .title-trtmnt .st6{fill:none;stroke:#05BBFF;stroke-width:2.5;stroke-miterlimit:10;}
 .title-trtmnt .txt-bx{fill:none;}
-
+.dek-wrap {
+	margin-bottom: -25px;
+}
 /* DROPDOWN */
 
 /* whole nav has bonus 1px height*/
