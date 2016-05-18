@@ -1190,6 +1190,26 @@ ul.scroll-list {
 	z-index: 50!important;
 }
 
+#article-eats .col-md-6 {
+	position: relative;
+}
+
+#article-eats .animateblock.btm.animated img {
+	margin-left: 0%;
+}
+
+#article-eats #taco {
+	width: 100%;
+	margin-top: -65%;
+}
+
+#article-eats img {
+	width: 75%;
+	margin-top: -50%;
+	margin-bottom: -100%;
+	z-index: -1 !important;	
+}
+
 /* Animation Styles */
 
 .animateblock {
