@@ -22,6 +22,24 @@ $(window).resize(function() {
 	});
 });
 
+// Smooth Scrolling
+// includes offset for #sticky-nav
+$(function() {
+
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top-44
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 // Nav Stickiness Swap
 
 scrollIntervalID = setInterval(stickIt, 10);
@@ -43,59 +61,153 @@ function stickIt() {
   }
 };
 
+// Image Animations 
+
+$(function(){
+  var $elems = $('.animateblock');
+  var winheight = $(window).height();
+  var fullheight = $(document).height();
+  
+  $(window).scroll(function(){
+    animate_elems();
+  });
+  
+  function animate_elems() {
+    wintop = $(window).scrollTop(); // calculate distance from top of window
+ 
+    // loop through each item to check when it animates
+    $elems.each(function(){
+      $elm = $(this);
+      
+      if($elm.hasClass('animated')) { return true; } // if already animated skip to the next item
+      
+      topcoords = $elm.offset().top; // element's distance from top of page in pixels
+      
+      if(wintop > (topcoords - (winheight*.95))) {
+        // animate when top of the window is 3/4 above the element
+        $elm.addClass('animated');
+      }
+    });
+  } // end animate_elems()
+});
+
+// Fancy Box
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+  });
+
 // Progress Bar Representation
 
-// var progNCA = $('#nca-hero').waypoint(function(direction) {
-//   $(".nav-status-bar").animate({'width': '0%'});
-// })
+scrollIntervalID = setInterval(progressBar, 10);
 
-// var progNBlog = $('#nrthrn-blog-post').waypoint(function(direction) {
-//   $(".nav-status-bar").animate({'width': '6.66%'});
-// })
+function progressBar() {
 
-// var progCampCa = $('#camp-ca').waypoint(function(direction) {
-//   $(".nav-status-bar").animate({'width': '13.33%'});
-// })
+  var topNCA = $('#nca-hero').offset().top;
+  var topNBlog = $('#nrthrn-blog-post').offset().top;
+  var topCampCa = $('#camp-ca').offset().top;
+  var topPhotoOp = $('#photo-op').offset().top;
+  var topRoadtrip = $('#article-roadtrip').offset().top;
+  var topKidAttractions = $('#kid-attractions').offset().top;
+  var topCCA = $('#cca-hero').offset().top;
+  var topCBlog = $('#cntrl-blog-post').offset().top;
+  var topEdu = $('#eduvacation').offset().top;
+  var topMeetCCA = $('#article-meet-cca').offset().top;
+  var topParks = $('#must-see-parks').offset().top;
+  var topEats = $('#article-eats').offset().top;
+  var topSCA = $('#sca-hero').offset().top;
+  var topSBlog = $('#sthrn-blog-post').offset().top;
+  var topThemeParks = $('#theme-parks').offset().top;
+  var topSurfSkate = $('#article-surf-skate').offset().top;
+  var topKidBeaches = $('#kid-beaches').offset().top;
 
-// scrollIntervalID = setInterval(progressBar, 10);
-
-// function progressBar() {
-
-//   var topNCA = $('#nca-hero').offset().top;
-//   var topNBlog = $('#nrthrn-blog-post').offset().top;
-//   var topCampCa = $('#camp-ca').offset().top;
-
-
-//   if ($(window).scrollTop() >= (topNCA)) {
-//     $(".nav-status-bar").css({'width': '0%', 'transition': 'all 10s ease'});
-//   };
-//   if ($(window).scrollTop() >= (topNBlog)) {
-//     $(".nav-status-bar").css({'width': '6.66%', 'transition': 'all 10s ease'});
-//   }; 
-//   if ($(window).scrollTop() >= (topCampCa)) {
-//     $(".nav-status-bar").css({'width': '13.33%', 'transition': 'all 10s ease'});
-//   };
-// };
-
-// scrollIntervalID = setInterval(progressBar, 10);
-
-// function progressBar() {
-
-//   var topNCA = $('#nca-hero').offset().top;
-//   var topNBlog = $('#nrthrn-blog-post').offset().top;
-//   var topCampCa = $('#camp-ca').offset().top;
-
-
-//   if ($(window).scrollTop() >= (topNCA)) {
-//     $(".nav-status-bar").animate({'width': '0%'});
-//   };
-//   if ($(window).scrollTop() >= (topNBlog)) {
-//     $(".nav-status-bar").animate({'width': '6.66%'});
-//   }; 
-//   if ($(window).scrollTop() >= (topCampCa)) {
-//     $(".nav-status-bar").animate({'width': '13.33%'});
-//   };
-// };
+  if ($(window).scrollTop() >= (topNCA)) {
+    $('.nav-status-bar').addClass('status-width-0');
+    $('.btn.nav-nca').css('color','rgba(255,255,255,1)');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-0');
+  };
+  if ($(window).scrollTop() >= (topNBlog)) {
+    $('.nav-status-bar').addClass('status-width-1');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-1');
+  };
+  if ($(window).scrollTop() >= (topCampCa)) {
+    $('.nav-status-bar').addClass('status-width-2');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-2');
+  };
+  if ($(window).scrollTop() >= (topPhotoOp)) {
+    $('.nav-status-bar').addClass('status-width-3');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-3');
+  };
+  if ($(window).scrollTop() >= (topRoadtrip)) {
+    $('.nav-status-bar').addClass('status-width-4');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-4');
+  };
+  if ($(window).scrollTop() >= (topKidAttractions)) {
+    $('.nav-status-bar').addClass('status-width-5');
+    $('.btn.nav-cca').css('color','rgba(0,0,0,1)')
+  } else {
+    $('.nav-status-bar').removeClass('status-width-5');
+  };
+  if ($(window).scrollTop() >= (topCCA)) {
+    $('.btn.nav-cca').css('color','rgba(255,255,255,1)');
+    $('.btn.nav-nca').css('color','rgba(0,0,0,1)');
+  };
+  if ($(window).scrollTop() >= (topCBlog)) {
+    $('.nav-status-bar').addClass('status-width-6');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-6');
+  };
+  if ($(window).scrollTop() >= (topEdu)) {
+    $('.nav-status-bar').addClass('status-width-7');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-7');
+  };
+  if ($(window).scrollTop() >= (topMeetCCA)) {
+    $('.nav-status-bar').addClass('status-width-8');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-8');
+  };
+  if ($(window).scrollTop() >= (topParks)) {
+    $('.nav-status-bar').addClass('status-width-9');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-9');
+  };
+  if ($(window).scrollTop() >= (topEats)) {
+    $('.nav-status-bar').addClass('status-width-10');
+    $('.btn.nav-sca').css('color','rgba(0,0,0,1)')
+  } else {
+    $('.nav-status-bar').removeClass('status-width-10');
+  };
+  if ($(window).scrollTop() >= (topSCA)) {
+    $('.btn.nav-sca').css('color','rgba(255,255,255,1)');
+    $('.btn.nav-cca').css('color','rgba(0,0,0,1)');
+  };
+  if ($(window).scrollTop() >= (topSBlog)) {
+    $('.nav-status-bar').addClass('status-width-11');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-11');
+  };
+  if ($(window).scrollTop() >= (topThemeParks)) {
+    $('.nav-status-bar').addClass('status-width-12');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-12');
+  };
+  if ($(window).scrollTop() >= (topSurfSkate)) {
+    $('.nav-status-bar').addClass('status-width-13');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-13');
+  };
+  if ($(window).scrollTop() >= (topKidBeaches)) {
+    $('.nav-status-bar').addClass('status-width-14');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-14');
+  };
+  
+};
 
 // Roadtrip Stickiness
 
@@ -271,30 +383,11 @@ $('[data-readmore-toggle]').click(function(e) {
   if(typeof close_text == 'undefined') {close_text = ""}
   
   if($(this).text() == open_text) {
-    $(this).html(close_text).next('div[data-readmore]').show(300).after(this);
+    $(this).html(close_text).next('div[data-readmore]').show(1000).after(this);
   } else {
-    $(this).html(open_text).prev('div[data-readmore]').hide(300).before(this);
+    $(this).html(open_text).prev('div[data-readmore]').hide(1000).before(this);
   }
   
-});
-
-// Smooth Scrolling
-// includes offset for #sticky-nav
-
-$(function() {
-
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top-44
-        }, 1000);
-        return false;
-      }
-    }
-  });
 });
 
 });

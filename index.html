@@ -12,38 +12,59 @@
 	<link type="text/css"; rel="stylesheet"; href="css/normalize.css">
 	<link type="text/css"; rel="stylesheet"; href="css/reset.css">
 	<link type="text/css"; rel="stylesheet"; href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 	<!-- <link rel="icon" href="assets/favicon.png"> -->
 	<title>State of Play</title>
-	<script src='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
-	<link href='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
 </head>
+
+
 <body>
+
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZNhA-UO2M07yKZ4Khrj0OcvNEmXD6gI8&callback=initMap"
-    async defer></script> -->
 
 <section class="main-hero full-page">
 	<img src="assets/VCA_white.gif" class="vca-hero-logo">
 	<svg class="title-trtmnt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.6 424.6">
 	<polygon class="bg-diamond" points="714.6 212.3 357 424.6 0 212.3 357.3 0 "/>
 	<polygon class="st1" points="695.2 212.3 356.8 413.2 19 212.3 357.1 11.4 "/>
-	<text transform="matrix(1 0 0 1 267.073 121.6203)" class="state">state</text><text transform="matrix(1 0 0 1 267.1209 202.5311)" class="play">play</text><line class="st6" x1="273.8" y1="140.3" x2="333.8" y2="140.3"/><line class="st6" x1="380.8" y1="140.3" x2="440.8" y2="140.3"/><text transform="matrix(1 0 0 1 345.5594 147.7191)" class="of italc">of</text><rect x="164.5" y="225.7" class="txt-bx" width="385.5" height="68.2"/><text transform="matrix(1 0 0 1 180.3961 237.5967)"><tspan class="dek">Discover why a trip to California makes the ultimate </tspan><tspan x="-13.1" y="20" class="dek">family vacation. Explore northern, central, and southern </tspan><tspan x="88.4" y="40" class="dek">California’s places to play.</tspan></text><text transform="matrix(1 0 0 1 277.9373 356.616)" class="california">California</text><text transform="matrix(1 0 0 1 286.526 323.2844)" class="southern italc">southern</text><rect x="279.7" y="299.7" class="st1" width="155.2" height="31.5"/><polygon points="418 312.8 427.8 312.8 422.9 308.1 "/><polygon points="418 317.5 427.8 317.5 422.9 322.3 "/><polygon points="342.9 386.9 371.6 386.9 357.2 395 "/>
+	<text transform="matrix(1 0 0 1 267.073 121.6203)" class="state">state</text><text transform="matrix(1 0 0 1 267.1209 202.5311)" class="play">play</text><line class="st6" x1="273.8" y1="140.3" x2="333.8" y2="140.3"/><line class="st6" x1="380.8" y1="140.3" x2="440.8" y2="140.3"/><text transform="matrix(1 0 0 1 345.5594 147.7191)" class="of italc">of</text><rect x="164.5" y="225.7" class="txt-bx" width="385.5" height="68.2"/><text class="dek-wrap" transform="matrix(1 0 0 1 180.3961 237.5967)"><tspan class="dek">Discover why a trip to California makes the ultimate </tspan><tspan x="-13.1" y="20" class="dek">family vacation. Explore northern, central, and southern </tspan><tspan x="88.4" y="40" class="dek">California’s places to play.</tspan></text><text transform="matrix(1 0 0 1 277.9373 356.616)" class="california">California</text><text transform="matrix(1 0 0 1 286.526 323.2844)" class="southern italc">southern</text><rect x="279.7" y="299.7" class="st1 pink-rect" width="155.2" height="31.5"/><polygon class="drpdwn" points="418 312.8 427.8 312.8 422.9 308.1 "/><polygon class="drpdwn" points="418 317.5 427.8 317.5 422.9 322.3 "/><polygon points="342.9 386.9 371.6 386.9 357.2 395 "/>
 	</svg>
 </section>
+
+<!-- <section class="region-hero full-page" id="main-hero">
+	<img src="assets/VCA_white.gif" class="vca-hero-logo">
+	<img class="title-trtmnt" src="images/FPO-new-title-trtmnt.png">
+	<svg class="region-hero-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681.4 405.7">
+		<polygon class="diamond shad" points="679.7 203.8 341.2 404.7 3.5 203.8 341.6 2.9 "/>
+		<text transform="matrix(1 0 0 1 118.4586 255.3635)" class="state shad">California</text>
+		<text transform="matrix(1 0 0 1 138.4766 193.3493)" class="region-loc shad italc">SOUTHERN</text>
+		<polygon class="diamond" points="677.7 201.8 339.2 402.7 1.5 201.8 339.6 0.9 "/>
+		<text transform="matrix(1 0 0 1 116.4586 253.3635)" class="state">California</text>
+		<text transform="matrix(1 0 0 1 136.4766 191.3493)" class="region-loc italc">SOUTHERN</text>
+	</svg>
+	<video autoplay loop muted>
+		<source src="video/VCA_Family_Hero_Southern_v2.webmhd.webm" type="video/webm">
+		<source src="video/VCA_Family_Hero_Southern_v2.mp4" type="video/mp4">Your browser does not support the video tag.
+	</video>
+</section> -->
 
 <section class="container-fluid toc clearfix" id="toc">
 	<div class="row">
 		<div class="col-md-4 toc-nca">
+			<div class="toc-bg-container">
+				<div class="toc-nca-bg"></div>
+			</div>
 			<ul class="toc-menu">
 	  			<li class="nav-explore">EXPLORE</li>
 	  			<li class="toc-region">NORTHERN CALIFORNIA</li>
 	  			<li class="toc-blogger"><a href="#nrthrn-blog-post">
-	  				<div class="blogger-circle"></div><span class="toc-with">with</span></br>
+	  				<div class="blogger-circle"></div>
+	  				<div class="toc-with">with</div></br>
 	  				Brandi Riley</a></li>
-	  			<li class="toc-plus">plus</li>
+	  			<li class="toc-plus">More Ways to Play</li>
 	    		<li><a href="#camp-ca">Camp California</a></li>
 	    		<li role="separator" class="divider"></li>
 	    		<li><a href="#photo-op">Photo Op: Share-Worthy Northern California Spots</a></li>
@@ -54,13 +75,17 @@
 	  		</ul>
 		</div>
 		<div class="col-md-4 toc-cca">
+			<div class="toc-bg-container">
+				<div class="toc-cca-bg"></div>
+			</div>
 			<ul class="toc-menu">
 	  			<li class="nav-explore">EXPLORE</li>
 	  			<li class="toc-region">CENTRAL CALIFORNIA</li>
 	  			<li class="toc-blogger"><a href="#cntrl-blog-post">
-	  				<div class="blogger-circle"></div><span class="toc-with">with</span></br>
+	  				<div class="blogger-circle"></div>
+	  				<div class="toc-with">with</div></br>
 	  				Patti Cordova</a></li>
-	  			<li class="toc-plus">plus</li>
+	  			<li class="toc-plus">More Ways to Play</li>
 			    <li><a href="#eduvacation">Edu(va)cation</a></li>
 	    		<li role="separator" class="divider"></li>
 	    		<li><a href="#article-meet-cca">Get to Know Central California</a></li>
@@ -71,13 +96,17 @@
 	  		</ul>
 		</div>
 		<div class="col-md-4 toc-sca">
+			<div class="toc-bg-container">
+				<div class="toc-sca-bg"></div>
+			</div>
 			<ul class="toc-menu">
 	  			<li class="nav-explore">EXPLORE</li>
 	  			<li class="toc-region">SOUTHERN CALIFORNIA</li>
 	  			<li class="toc-blogger"><a href="#sthrn-blog-post">
-	  				<div class="blogger-circle"></div><span class="toc-with">with</span></br>
+	  				<div class="blogger-circle"></div>
+	  				<div class="toc-with">with</div></br>
 	  				Justine Howell</a></li>
-	  			<li class="toc-plus">plus</li>
+	  			<li class="toc-plus">More Ways to Play</li>
 	  			<li><a href="#theme-parks">Thrills, Chills, and Enchantments</a></li>
 	    		<li role="separator" class="divider"></li>
 	    		<li><a href="#surf-skate">Surf ’n Skate</a></li>
@@ -199,7 +228,14 @@
 						</div>
 					</div>
 					<div class="right-quadrant">
-						<div class="btm-row"></div>
+						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+							<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
+							<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+						</svg>
+						<div class="btm-row">
+							<h4>Oakland, CA</h4>
+						</div>
+						<img src="images/brandi/brandi-map-zoom.png">
 					</div>
 				</div>
 			</div>
@@ -215,7 +251,7 @@
 				<p>I know, I know, everyone loves San Francisco. I do, too! You don’t have to rush into the city during your Northern California visit, though. In fact, it’s a good idea to pace yourself, especially if you’re traveling with children. Starting in San Francisco’s neighboring cities, Oakland and Berkeley, is a great way to start your vacation, and set the tone for the trip. Besides, they’re both extraordinarily family-friendly, with plenty to do and lots to keep the kiddos occupied and engaged.</p>
 			</div>
 			<div class="col-md-5 col-md-offset-1">
-				<img src="images/FPO_northern-blogger-rsideimg1.jpg">
+				<img src="images/brandi/oakland.jpg">
 				<div class="caption">
 					<p>Oakland at night. <span class="italc cred inline">Getty Images</span></p>
 				</div>
@@ -228,7 +264,7 @@
 			<div class="col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
 					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
@@ -236,7 +272,7 @@
 				</div>
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
 					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
@@ -276,7 +312,7 @@
 				<div class="col-md-5">
 					<div class="caption">
 						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-							<circle cx="9.6" cy="9.6" r="9.6"/>
+							<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 							<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 						</svg>
 						<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
@@ -284,7 +320,7 @@
 					</div>
 					<div class="caption">
 						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-							<circle cx="9.6" cy="9.6" r="9.6"/>
+							<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 							<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 						</svg>
 						<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
@@ -328,7 +364,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-7">
-					<img class="over" src="images/brandi/FPO_Yosemite.jpg">
+					<img class="over" src="images/brandi/yosemite.jpg">
 					<div class="caption">
 						<p class="italc cred inline">Getty Images</p>
 					</div>
@@ -389,8 +425,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6 col-md-offset-6">
-				<img src="images/camp-ca/steep-ravine.jpg">
+			<div class="col-md-6 col-md-offset-6 animateblock btm">
+				<a class="fancybox" href="images/camp-ca/steep-ravine.jpg"><img src="images/camp-ca/steep-ravine.jpg"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -409,8 +445,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6 col-md-offset-6">
-				<img src="images/camp-ca/mackerricher.jpg">
+			<div class="col-md-6 col-md-offset-6 animateblock btm">
+				<a class="fancybox" href="images/camp-ca/mackerricher.jpg"><img src="images/camp-ca/mackerricher.jpg"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -429,8 +465,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6 col-md-offset-6">
-				<img src="images/camp-ca/beach.jpg">
+			<div class="col-md-6 col-md-offset-6 animateblock btm">
+				<a class="fancybox" href="images/camp-ca/beach.jpg"><img src="images/camp-ca/beach.jpg"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -449,8 +485,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6 col-md-offset-6">
-				<img src="images/camp-ca/tomales.jpg">
+			<div class="col-md-6 col-md-offset-6 animateblock btm">
+				<a class="fancybox" href="images/camp-ca/tomales.jpg"><img src="images/camp-ca/tomales.jpg"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -470,7 +506,9 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-6">
-				<img src="images/camp-ca/sequoia.jpg">
+				<div class="animateblock btm">
+					<a class="fancybox" href="images/camp-ca/sequoia.jpg"><img src="images/camp-ca/sequoia.jpg"></a>
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -490,7 +528,9 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-6">
-				<img src="images/camp-ca/bigbasin.jpg">
+				<div class="animateblock btm">
+					<a class="fancybox" href="images/camp-ca/bigbasin.jpg"><img src="images/camp-ca/bigbasin.jpg"></a>
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -624,7 +664,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__myers" id="roadtrip-4">
+					<li class="parallax-bg__founders-grove" id="roadtrip-4">
 						<div class="col-md-6">
 							<div class="scroll-list-box">
 								<div class="box-header one-line">
@@ -646,7 +686,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__myers">
+					<li class="parallax-bg__eternal-tree-house">
 						<div class="col-md-6">
 							<div class="scroll-list-box">
 								<div class="box-header one-line">
@@ -801,9 +841,25 @@
 	<div class="container-fluid article blogger-post">
 		<div class="row">
 			<div class="col-md-9">
-				<h1>Pattie's Guide To Northern California</h1>
-				<h2>Lorem ipsum dolor sit amet, et sensibus inciderint cum, ei vim unum fierent vulputate.</h2>
-				<img class="img-responsive begin-content blogger-info-box" src="images/pattie/FPO_Pattie_Blogger_box.png">
+				<h1>Pattie's Guide To Central California</h1>
+				<h2>The mama behind Living Mi Vida Loca shares her favorite Central California spots.</h2>
+				<div class="blogger-profile-wrap clearfix">
+					<div class="left-quadrant">
+						<div class="btm-row">
+							<h1>Pattie Cordova</h1>
+						</div>
+					</div>
+					<div class="right-quadrant">
+						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+							<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
+							<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+						</svg>
+						<div class="btm-row">
+							<h4>Los Angeles, CA</h4>
+						</div>
+						<img src="images/pattie/pattie-map-zoom.png">
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -832,7 +888,7 @@
 			<div class="col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
 					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
@@ -859,7 +915,7 @@
 			<div class="col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
 					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
@@ -867,7 +923,7 @@
 				</div>
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
 					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
@@ -1008,7 +1064,7 @@
 				<p>Forty miles east of Yosemite Valley sits Mono Lake (“Mono” rhymes with “yoyo,” FYI), with its otherworldly landscape of strange rock forms. The visitor center, just off U.S. 395 north of Lee Vining and Tioga Pass, offers a wealth of information and scientific exploration.</p>
 			</div>
 			<div class="col-md-5 col-md-offset-1">
-				<img class="img-responsive" src="images/FPO_northern-blogger-rsideimg1.jpg">
+				<!-- <img class="img-responsive" src="images/FPO_northern-blogger-rsideimg1.jpg"> -->
 			</div>
 		</div>
 	</div>
@@ -1102,28 +1158,55 @@
 		<div class="row">
 			<div class="col-md-6">
 				<p>Pint-size picky eater in the back seat? Fret not. Families driving through the Central Valley can take full advantage of the region’s fresh, local ingredients. As you make your way to Yosemite, the Sequoias, or the Monterey Peninsula, pull over to find hidden gems that will ensure no one in your crew goes hungry on vacation.</p>
-
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h3>Farm Fresh Fruit</h3>
 				<p>With a double-decker Venetian carousel and a train dubbed Casa de Choo Choo, <span class="bold">Casa de Fruta</span> in Hollister (roughly 50 miles inland from Santa Cruz) is a dream pit stop for kids. Visit the roadside stand for just-picked produce, and load up on fruits and vegetables before hopping back in the car—they’ll be the perfect road-trip snack.</p>
-
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-6 animateblock btm">
+				<img class="img-responsive" src="images/eats/berries.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h3>A Don’t-Leave-Without-One Burger </h3>
 				<p>Harry Snyder couldn’t possibly have known what he was creating when he opened California’s first drive-thru burger stand in 1948. Fast-forward to 2015, and the 300th <span class="bold">In-N-Out Burger</span> restaurant—now operating in five states—opens, a testament to the cult-like following. Go for the classic burgers, and stay for the famous shakes (choose from classic chocolate, strawberry and vanilla flavors, or order one of each!). For an insider experience, ask about the not-so-secret secret menu.</p>
-
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h3>Classic Mexican</h3>
 				<p>Adventurers headed to the Sierra National Forest or the southern end of Yosemite National Park should make a pit stop in Fresno at <span class="bold">Castillo’s</span>. The family-run restaurant has been serving up enchiladas, tamales, and tacos since 1955, and it’s famous for warm service, and raved-about house made tortillas and salsa (aka, crowd pleasers).</p>
-
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-6 animateblock btm">
+				<img class="img-responsive" src="images/eats/taco.png" id="taco">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h3>American Classics</h3>
 				<p>If you’re driving along Highway 101 and notice a 40-foot-tall wooden cowboy, you’ve reached <span class="bold">F. McClintock Saloon and Dining House</span>, a Pismo Beach (13 miles south of San Luis Obispo) restaurant that’s been attracting tourists and locals alike for more than four decades. Inside, servers pour water from three feet above the glass, and kid-friendly fare includes skillet potatoes (drenched in cheese and bacon), nachos, and a variety of steaks and ribs.</p>
-
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h3>Save Room for Dessert</h3>
 				<p>No family vacation is complete without indulging in something sweet. After sights like Sequoia National Park, home to some of the largest trees in the world, make a pit stop in Hanford at <span class="bold">Superior Dairy</span>. Settle into the charming vinyl booths and enjoy freshly made, classic and seasonal scoops. Bon appetite!</p>
 			</div>
-			<div class="col-md-5 col-md-offset-1">
-				<img class="img-responsive" src="images/FPO_northern-blogger-rsideimg1.jpg">
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-6 animateblock btm">
+				<img class="img-responsive" src="images/eats/icecream.jpg">
 			</div>
 		</div>
 	</div>
-</section> 
+</section>  
 
 <section class="region-hero full-page" id="sca-hero">
 	<img src="assets/VCA_white.gif" class="vca-hero-logo">
@@ -1146,9 +1229,26 @@
 	<div class="container-fluid article blogger-post">
 		<div class="row">
 			<div class="col-md-9">
-				<h1>Justine's 25 Reasons to Visit California</h1>
-				<h2>Lorem ipsum dolor sit amet, et sensibus inciderint cum, ei vim unum fierent vulputate.</h2>
-				<img class="img-responsive begin-content blogger-info-box" src="images/justine/FPO_Justine_Blogger_box.png">
+				<h1>Justine’s Guide to Southern California</h1>
+				<h2>The mama behind The Typical Mom shares 25 of her favorite places to play with the family.</h2>
+				<div class="blogger-profile-wrap clearfix">
+					<div class="left-quadrant">
+						<div class="btm-row">
+							<h1>Justine Howell</h1>
+						</div>
+					</div>
+					<div class="right-quadrant">
+						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
+							<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
+							<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
+						</svg>
+						<div class="btm-row">
+							<h4>Temecula, CA</h4>
+						</div>
+						<img src="images/justine/justine-map-zoom.png">
+						<!-- <img id="zoom_05" src="images/justine/justine-map-zoom-sm.jpg" data-zoom-image="images/justine/justine-map-zoom-lg.jpg"/> -->
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -1182,7 +1282,7 @@
 			<div class="col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
 					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
@@ -1190,7 +1290,7 @@
 				</div>
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
 					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
@@ -1234,7 +1334,7 @@
 			<div class="col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
 					<p>Lorem ipsum dolor sit amet.</p>
@@ -1242,7 +1342,7 @@
 				</div>
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
 					<p>Lorem ipsum dolor sit amet.</p>
@@ -1280,7 +1380,7 @@
 			<div class="col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
 					<p>San Clemente pier. <span class="italc cred inline">Getty Images</span></p>
@@ -1338,7 +1438,7 @@
 			<div class="col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
 					<p>Lorem ipsum dolor sit amet.</p>
@@ -1346,7 +1446,7 @@
 				</div>
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle cx="9.6" cy="9.6" r="9.6"/>
+						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
 					<p>Lorem ipsum dolor sit amet.</p>
@@ -1686,10 +1786,38 @@
 	</a>
 </section>
 
+<!-- BELLA VIDEO -->
+<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
+	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
+	<text transform="matrix(1 0 0 1 15.8559 16.241)" class="letter">S</text>
+	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
+	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
+</svg>
+<section class="bg-img-container-wrap northern" id="video-bella">
+	<div class="container-fluid article">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Bella Video</br>Headline TK</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h2>Lorem ipsum dolor sit amet, ultrices aenean dictum, repellendus duis quam dolor malesuada. Id erat sodales omnis venenatis phasellus sodales, egestas sit luctus curabitur. Laoreet accumsan suspendisse libero elit, egestas in amet orci luctus sed mollis, ligula vivamus orci aliquet dictum, turpis pede vestibulum lobortis per libero, ac vestibulum leo pretium sed at. Pede vel sed lacus adipiscing iaculis.</h2>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid article">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="videoWrapper" id="bella-vid">
+					<iframe class="youtube-video" id="bella-vid" width="560" height="315" src="https://www.youtube.com/embed/a5MSF7d-YsY" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <script src="js/bootstrap.min.js"></script>
-<!-- <script src="js/jquery.waypoints.min.js"></script> -->
-
 
 </body>
 </html>
