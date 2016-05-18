@@ -93,8 +93,8 @@ $(function(){
 
 // Fancy Box
 $(document).ready(function() {
-  $('.fancybox').fancybox();
-});
+    $(".fancybox").fancybox();
+  });
 
 // Progress Bar Representation
 
