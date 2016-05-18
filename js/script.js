@@ -370,7 +370,7 @@ $('[data-readmore-toggle]').click(function(e) {
     $(this).html(open_text).prev('div[data-readmore]').hide(300).before(this);
   }
   
-});
+}); 
 
 // Smooth Scrolling
 // includes offset for #sticky-nav
