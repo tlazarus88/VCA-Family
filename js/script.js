@@ -73,6 +73,11 @@ $(function(){
   } // end animate_elems()
 });
 
+// Fancy Box
+$(document).ready(function() {
+  $('.fancybox').fancybox();
+});
+
 // Progress Bar Representation
 
 scrollIntervalID = setInterval(progressBar, 10);
@@ -365,11 +370,7 @@ $('[data-readmore-toggle]').click(function(e) {
     $(this).html(open_text).prev('div[data-readmore]').hide(300).before(this);
   }
   
-});
-
-// Inner zoom
-
-// $("#zoom_05").elevateZoom({ zoomType  : "inner", cursor: "crosshair" }); 
+}); 
 
 // Smooth Scrolling
 // includes offset for #sticky-nav
