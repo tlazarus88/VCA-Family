@@ -99,7 +99,7 @@
 	  			<li class="toc-plus">More Ways to Play</li>
 	  			<li><a href="#theme-parks">Thrills, Chills, and Enchantments</a></li>
 	    		<li role="separator" class="divider"></li>
-	    		<li><a href="#surf-skate">Surf ’n Skate</a></li>
+	    		<li><a href="#article-surf-skate">Surf ’n Skate</a></li>
 	    		<li role="separator" class="divider"></li>
 	    		<li><a href="#kid-beaches">6 Kid-Friendly Southern California Beaches</a></li>
 	    		<li role="separator" class="divider"></li>
@@ -120,9 +120,9 @@
 		<span class="caret"></span></li>
 	  	<div class="invisible-hover"></div>
 	  	<li class="nav-blogger"><a href="#nrthrn-blog-post">
-	  		<div class="blogger-circle"></div>
-	  		<span class="blogger-name">Brandi Riley</span></br>
-	  		Headline TK</a></li>
+	  		<div class="blogger-circle" id="brandi-nav"></div>
+	  		<span class="blogger-name">Brandi Riley's</span></br>
+	  		Guide to Northern California</a></li>
 	  	<li role="separator" class="divider"></li>
 	    <li><a href="#camp-ca">Camp California</a></li>
 	    <li role="separator" class="divider"></li>
@@ -144,9 +144,9 @@
 		<span class="caret"></span></li>
 	  	<div class="invisible-hover"></div>
 	  	<li class="nav-blogger"><a href="#cntrl-blog-post">
-	  		<div class="blogger-circle"></div>
-	  		<span class="blogger-name">Patti Cordova</span></br>
-	  		Headline TK</a></li>
+	  		<div class="blogger-circle" id="pattie-nav"></div>
+	  		<span class="blogger-name">Pattie Cordova's</span></br>
+	  		Guide to Central California</a></li>
 	  	<li role="separator" class="divider"></li>
 	     <li><a href="#eduvacation">Edu(va)cation</a></li>
 	    <li role="separator" class="divider"></li>
@@ -168,9 +168,9 @@
 		<span class="caret"></span></li>
 	  	<div class="invisible-hover"></div>
 	  	<li class="nav-blogger"><a href="#sthrn-blog-post">
-	  		<div class="blogger-circle"></div>
-	  		<span class="blogger-name">Justine Howell</span></br>
-	  		Headline TK</a></li>
+	  		<div class="blogger-circle" id="justine-nav"></div>
+	  		<span class="blogger-name">Justine Howell's</span></br>
+	  		Guide to Southern California</a></li>
 	  	<li role="separator" class="divider"></li>
 	  	<li><a href="#theme-parks">Thrills, Chills, and Enchantments</a></li>
 	    <li role="separator" class="divider"></li>
@@ -526,7 +526,7 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<p>Check out eight more spots for adventurous kids <a href="http://www.visitcalifornia.com/feature/8-great-spots-take-adventurous-daughter">here</a>.</p>
-				<img src="assets/VCA_color.gif" class="vca-logo-color">
+				<img src="assets/CA Logo_Dream Big_Color.png" class="vca-logo-color">
 			</div>
 		</div>
 </section>
@@ -618,7 +618,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="scroll-list">
-					<li class="parallax-bg__empty" id="list-roadtrip">
+					<li class="parallax-bg__empty full-page" id="list-roadtrip">
 						<div class="circle-container" id="roadtrip-circle-1">
 							<div class="roadtrip-circle"></div>
 						</div>
@@ -632,7 +632,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__myers" id="roadtrip-2">
+					<li class="parallax-bg__myers full-page" id="roadtrip-2">
 						<div class="col-md-6"> 
 							<div class="scroll-list-box">
 								<div class="box-header">
@@ -643,7 +643,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__empty" id="roadtrip-3">
+					<li class="parallax-bg__empty full-page" id="roadtrip-3">
 						<div class="col-md-6">
 							<div class="scroll-list-box">
 								<div class="box-header">
@@ -654,7 +654,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__founders-grove" id="roadtrip-4">
+					<li class="parallax-bg__founders-grove full-page" id="roadtrip-4">
 						<div class="col-md-6">
 							<div class="scroll-list-box">
 								<div class="box-header one-line">
@@ -665,7 +665,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__empty" id="last-roadtrip">
+					<li class="parallax-bg__empty full-page" id="last-roadtrip">
 						<div class="col-md-6">
 							<div class="scroll-list-box">
 								<div class="box-header one-line">
@@ -676,7 +676,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__eternal-tree-house">
+					<li class="parallax-bg__eternal-tree-house full-page">
 						<div class="col-md-6">
 							<div class="scroll-list-box">
 								<div class="box-header one-line">
@@ -1598,90 +1598,59 @@
 		</div>
 	</div>
 	<div class="container-fluid article">
-		<div class="row">
-			<div class="parallax-bg__surf" id="surf-list">
-				<div class="col-md-12 col-md-offset-1">
-					<div class="surf-skate-title">
-						In The </br> <span class="surf-skate-title-accent">Water</span>
+		<div class="row surf-skate-wrap" id="surf-bg">
+			<div class="col-md-6 col-md-offset-1">
+				<div class="surf-skate-title">
+					In The </br> <span class="surf-skate-title-accent">Water</span>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>Wave newbies					
 					</div>
-					<ul class="scroll-list">
-						<li class="list-surf-skate" id="list-surf-1">
-							<div class="col-md-6">
-								<div class="scroll-list-box">
-									<div class="box-header">
-										<span class="best-for">Best for:</span>
-										</br>Wave newbies					
-									</div>
-									<p>The small waves and lack of rocks at Bolsa Chica State Beach make the <span class="bold">Huntington Beach Surf Camp</span> a safe, kid-friendly option for learning how to catch a wave. With a four-to-one student-to-teacher ratio, your son or daughter will get personalized attention during a week of 9 a.m. to 3 p.m. full-day sessions (half days also available). Head over to Main Street for the grilled fish taco from Wahoo’s Fish Taco and wander through the surf shops and boutiques before picking your camper up at the end of the day.</p>
-								</div>
-							</div>
-						</li>
-						<li class="list-surf-skate" id="list-surf-2">
-							<div class="col-md-6">
-								<div class="scroll-list-box">
-									<div class="box-header">
-										<span class="best-for">Best for:</span>
-										</br>A fun, relaxed atmosphere	
-									</div>
-									<p>Choose your ideal vacation location when signing your kids up for the <span class="bold">Perfect Day Surf Camp</span> at Santa Monica, Manhattan, Redondo, or Torrance Beaches. The camps offer flexible times and keep things fun by integrating beach dodgeball, capture the flag, and sandcastle time for the little ones. Each camp is located near the coastal bike path for riding or walking to beachfront restaurants. Or you could take a stand-up paddleboarding or surfing class while the kids catch waves.</p>
-								</div>
-							</div>
-						</li>
-						<li class="list-surf-skate" id="list-surf-3">
-							<div class="col-md-6">
-								<div class="scroll-list-box">
-									<div class="box-header">
-										<span class="best-for">Best for:</span>
-										</br>The whole family 			
-									</div>
-									<p><span class="bold">Menehune Surf</span> in La Jolla or Del Mar serves up half- or full-day instruction. Youngsters (ages five to seven) start by playing in the shallow water and learning about the marine life, while the eight- to twelve-year-olds develop skills and learn about ocean ecosystems, and the teens focus on skills, etiquette, and learning about surf culture and how boards are designed. While the kids catch waves, parents can treat themselves to a sea stone massage or deep cleansing facial at L’Auberge in Del Mar.</p>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>		
+					<p>The small waves and lack of rocks at Bolsa Chica State Beach make the <span class="bold">Huntington Beach Surf Camp</span> a safe, kid-friendly option for learning how to catch a wave. With a four-to-one student-to-teacher ratio, your son or daughter will get personalized attention during a week of 9 a.m. to 3 p.m. full-day sessions (half days also available). Head over to Main Street for the grilled fish taco from Wahoo’s Fish Taco and wander through the surf shops and boutiques before picking your camper up at the end of the day.</p>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>A fun, relaxed atmosphere	
+					</div>
+					<p>Choose your ideal vacation location when signing your kids up for the <span class="bold">Perfect Day Surf Camp</span> at Santa Monica, Manhattan, Redondo, or Torrance Beaches. The camps offer flexible times and keep things fun by integrating beach dodgeball, capture the flag, and sandcastle time for the little ones. Each camp is located near the coastal bike path for riding or walking to beachfront restaurants. Or you could take a stand-up paddleboarding or surfing class while the kids catch waves.</p>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>The whole family 			
+					</div>
+					<p><span class="bold">Menehune Surf</span> in La Jolla or Del Mar serves up half- or full-day instruction. Youngsters (ages five to seven) start by playing in the shallow water and learning about the marine life, while the eight- to twelve-year-olds develop skills and learn about ocean ecosystems, and the teens focus on skills, etiquette, and learning about surf culture and how boards are designed. While the kids catch waves, parents can treat themselves to a sea stone massage or deep cleansing facial at L’Auberge in Del Mar.</p>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container-fluid article">
-		<div class="row">
-			<div class="parallax-bg__skate" id="skate-list">
-				<div class="col-md-12 col-md-offset-1">
-					<ul class="scroll-list">
-						<li class="list-surf-skate" id="list-skate-1">
-							<div class="col-md-6">
-								<div class="scroll-list-box">
-									<div class="box-header">
-										<span class="best-for">Best for:</span>
-										</br>Flexible instruction
-									</div>
-									<p>Pick a Southern California destination from Irvine to Long Beach and it’s likely that <span class="bold">Skatedog</span> has a camp location there. Summer camp sessions, run through the local Parks and Recreation Departments, teach kids ages six to 13 how to skate using ramps and rails from Skatedog’s mobile skate park. Camp spots are located near attractions like the historic <span class="italc">Queen Mary</span> in Long Beach or the upscale, open-air Fashion Island in Newport Beach.</p>
-								</div>
-							</div>
-						</li>
-						<li class="list-surf-skate" id="list-skate-2">
-							<div class="col-md-6">
-								<div class="scroll-list-box">
-									<div class="box-header">
-										<span class="best-for">Best for:</span>
-										</br>Advanced tricksters
-									</div>
-									<p>The legendary skate park at the <span class="bold">Magdalena Ecke YMCA</span> in Encinitas features a combination of street course, kidney-shaped bowl, and mix of ramp styles. It hosts three camps based on ability level: Technique for beginners, a tricks-focused intermediate/advanced camp, and a travel camp that takes skaters to other parks around San Diego. Parents can stay entertained in the quaint beachside town of Encinitas—simply relax on Moonlight Beach or grab a cup of house-roasted coffee at Lofty Bean and walk south down the 101 to browse gift shops and boutiques.</p>
-								</div>
-							</div>
-						</li>
-						<li class="list-surf-skate" id="list-skate-3">
-							<div class="col-md-6">
-								<div class="scroll-list-box">
-									<div class="box-header">
-										<span class="best-for">Best for:</span>
-										</br>Multimedia skaters 
-									</div>
-									<p>If you mastered tricks at skateboard camp but don’t have it on video, did it really happen? For kids 10 and up, the <span class="bold">Etnies Video Production Skate Camp</span> in Lake Forest combines videography and photography with skateboarding during a weeklong camp. Etnies also offers a preschool skate camp for 4- and 5-year-olds. Lake Forest is just inland of Laguna Beach, where there are more than 100 galleries, sculpture gardens, and art studios within walking distance.</p>
-								</div>
-							</div>
-						</li>
-					</ul>
+		<div class="row surf-skate-wrap" id="skate-bg">
+			<div class="col-md-6 col-md-offset-1">
+				<div class="surf-skate-title">
+					In The </br> <span class="surf-skate-title-accent">Water</span>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>Flexible instruction
+					</div>
+					<p>Pick a Southern California destination from Irvine to Long Beach and it’s likely that <span class="bold">Skatedog</span> has a camp location there. Summer camp sessions, run through the local Parks and Recreation Departments, teach kids ages six to 13 how to skate using ramps and rails from Skatedog’s mobile skate park. Camp spots are located near attractions like the historic <span class="italc">Queen Mary</span> in Long Beach or the upscale, open-air Fashion Island in Newport Beach.</p>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>Advanced tricksters
+					</div>
+					<p>The legendary skate park at the <span class="bold">Magdalena Ecke YMCA</span> in Encinitas features a combination of street course, kidney-shaped bowl, and mix of ramp styles. It hosts three camps based on ability level: Technique for beginners, a tricks-focused intermediate/advanced camp, and a travel camp that takes skaters to other parks around San Diego. Parents can stay entertained in the quaint beachside town of Encinitas—simply relax on Moonlight Beach or grab a cup of house-roasted coffee at Lofty Bean and walk south down the 101 to browse gift shops and boutiques.</p>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>Multimedia skaters
+					</div>
+					<p>If you mastered tricks at skateboard camp but don’t have it on video, did it really happen? For kids 10 and up, the <span class="bold">Etnies Video Production Skate Camp</span> in Lake Forest combines videography and photography with skateboarding during a weeklong camp. Etnies also offers a preschool skate camp for 4- and 5-year-olds. Lake Forest is just inland of Laguna Beach, where there are more than 100 galleries, sculpture gardens, and art studios within walking distance.</p>
 				</div>
 			</div>
 		</div>
@@ -1787,12 +1756,12 @@
 	<div class="container-fluid article">
 		<div class="row">
 			<div class="col-md-12">
-				<h1>Bella Video</br>Headline TK</h1>
+				<h1>Bella Kenworthy Brings</br>Girl Power to the Skate Park</h1>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<h2>Lorem ipsum dolor sit amet, ultrices aenean dictum, repellendus duis quam dolor malesuada. Id erat sodales omnis venenatis phasellus sodales, egestas sit luctus curabitur. Laoreet accumsan suspendisse libero elit, egestas in amet orci luctus sed mollis, ligula vivamus orci aliquet dictum, turpis pede vestibulum lobortis per libero, ac vestibulum leo pretium sed at. Pede vel sed lacus adipiscing iaculis.</h2>
+				<h2>Between her pink helmet and her mad talent, 8-year-old Bella Kenworthy is hard to ignore when she hits the skate park. This skater, surfer, and second-grader has a big dream that girls will take over the skate park, and nothing can stand in her way.</h2>
 			</div>
 		</div>
 	</div>
