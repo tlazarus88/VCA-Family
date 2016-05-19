@@ -197,12 +197,23 @@ body {
 	height: 50px;
 	margin: 0 auto;
 	background-color: black;
-/*	background-image: url("../images/FPO_NCA.jpg");
-	background-size: 100%;*/
+	background-size: 100%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
+}
+
+#brandi-nav {
+	background-image:  url('../images/toc_nav/Brandi_nav.jpg');
+}
+
+#pattie-nav {
+	background-image:  url('../images/toc_nav/Pattie_nav.jpg');
+}
+
+#justine-nav {
+	background-image:  url('../images/toc_nav/Justine_nav.jpg');
 }
 
 .dropdown-menu li .nav-blogger {
@@ -420,8 +431,7 @@ ul.toc-menu .blogger-circle {
 	margin: 0 auto;
 	padding-bottom: 10px;
 	background-color: black;
-/*	background-image: url("../images/FPO_NCA.jpg");
-	background-size: 100%;*/
+	background-size: 100%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
@@ -460,6 +470,18 @@ ul.toc-menu .divider {
 	height: 10px;
 	margin: -30px 10% 0px 10%;
 	background-color: rgba(241,251,255,0);
+}
+
+.toc-nca .blogger-circle {
+	background-image:  url('../images/toc_nav/Brandi_toc.jpg');
+}
+
+.toc-cca .blogger-circle {
+	background-image:  url('../images/toc_nav/Pattie_toc.jpg');
+}
+
+.toc-sca .blogger-circle {
+	background-image:  url('../images/toc_nav/Justine_toc.jpg');
 }
 
 /* General Styles */
@@ -1593,7 +1615,7 @@ ul.scroll-list {
 
 .videoWrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 52.5%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
 }
