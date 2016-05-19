@@ -25,6 +25,7 @@ body {
 
 .title-trtmnt {
 	position:absolute;
+	z-index: 500!important;
 	top:50%;
 	left:50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -63,16 +64,25 @@ body {
 	font-size:24px;
 	letter-spacing:1.5px;
 	text-transform:uppercase;
+	display: none;
 }
 .title-trtmnt .dek {
 	font-weight:300;
 	font-size:17px;
 }
+.title-trtmnt .drpdwn,
+.title-trtmnt .southern,
+.title-trtmnt .california
+.title-trtmnt .pink-rect {
+	display: none;
+} 
 .title-trtmnt .bg-diamond {fill:#FFFFFF;}
-.title-trtmnt .st1{fill:none;stroke:#EE0077;stroke-width:0.75;stroke-miterlimit:10;}
+.title-trtmnt .st1{fill:none;stroke:#EE0077;stroke-width:0.75;stroke-miterlimit:10;display:none;}
 .title-trtmnt .st6{fill:none;stroke:#05BBFF;stroke-width:2.5;stroke-miterlimit:10;}
 .title-trtmnt .txt-bx{fill:none;}
-
+.dek-wrap {
+	margin-bottom: -25px;
+}
 /* DROPDOWN */
 
 /* whole nav has bonus 1px height*/
@@ -324,6 +334,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 35%;
+	transition: all 1s ease;
 }
 .toc .row .toc-nca-bg {
 	height: 100%;
@@ -397,7 +408,7 @@ ul.toc-menu .toc-region {
 	box-shadow: 0px 10px 6px -5px rgba(0,0,0,.1);
 	width: 50%;
 	margin: 10px 25%;
-	padding: 10px;
+	padding: 10px 15px 8px;
 	background-color: rgba(255,255,255,1);
 	font-weight: 900;
 	font-size: 20px;
@@ -442,7 +453,7 @@ ul.toc-menu .toc-blogger a{
 }
 
 ul.toc-menu .divider {
-	box-shadow: 0px 10px 10px 0px rgba(0,0,0,.1);
+	box-shadow: 0px 8px 14px 0px rgba(0,0,0,.07);
 	display: block;
 	z-index: +500;
 	max-width: 80%;
@@ -674,7 +685,7 @@ a.read-more {
 	width: 100%;
 	background-color: #fff;
 	height: 525px;
-	max-width: 850px;
+	/*max-width: 850px;*/
 	margin-bottom: 70px;
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 	border: 2px solid #05bbff;
@@ -698,16 +709,18 @@ a.read-more {
 	background-color: #caf1ff;
 	text-align: center;
 	overflow: hidden;
+	cursor: pointer;
 }
 .container-fluid.article .blogger-profile-wrap .right-quadrant img {
 	display: inline-block;
-	transition: transform 0.85s;
+	transition: transform 1s;
 	transform: scale(1);
 	cursor: pointer;
 }
 .container-fluid.article .blogger-profile-wrap .right-quadrant img:hover {
-	-webkit-transform: scale(2.5);
-	transform: scale(2.5);
+	-webkit-transform: scale(2);
+	transform: scale(2);
+	cursor: pointer;
 }
 .container-fluid.article .blogger-profile-wrap .right-quadrant .btm-row {
 	background-image: url("../images/fake-border.jpg");
@@ -880,10 +893,39 @@ a.read-more {
 ul.scroll-list {
 	position: relative;
 	width: 100%;
-	height: 100v;
 }
 
 [class*="parallax-bg__"] {
+/*	height: 100vh;
+*/	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+
+.parallax-bg__empty {
+	background-image: none;
+	box-shadow: none;
+}
+
+.parallax-bg__myers {
+	background-image: url(../images/article_roadtrip/alamy_RM_BP6AMT.jpg);
+}
+
+.parallax-bg__founders-grove {
+	background-image: url(../images/article_roadtrip/gty_RF_587244505.jpg);
+}
+
+.parallax-bg__eternal-tree-house {
+	background-image: url(../images/article_roadtrip/gty_RF_545168913.jpg);
+}
+
+.surf_bg_1 {
+	background-image: url(../images/surf-skate/surf_1.jpg);
+	margin-top: 50px;
+	margin-bottom: 0px;
+	overflow: hidden;
 	height: 100vh;
 	position: relative;
 	background-attachment: fixed;
@@ -891,20 +933,31 @@ ul.scroll-list {
 	background-size: cover;
     box-shadow: inset 0 0 1em #111;
 }
-.parallax-bg__empty {
-	background-image: none;
-	box-shadow: none;
 
-}
-.parallax-bg__myers {
-	background-image: url(../images/article_roadtrip/alamy_RM_bp6amt.jpg);
-}
-
-.parallax-bg__surf {
-	background-image: url(../images/surf-skate/surf_1.jpg);
+.surf_bg_2 {
+	background-image: url(../images/surf-skate/surf_2.jpg);
 	margin-top: 50px;
 	margin-bottom: 0px;
 	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+
+.surf_bg_3 {
+	background-image: url(../images/surf-skate/surf_3.jpg);
+	margin-top: 50px;
+	margin-bottom: 0px;
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
 }
 
 .parallax-bg__skate {
@@ -1011,7 +1064,7 @@ ul.scroll-list {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%) !important;
-	left: 45%;
+	left: 50%;
 	width: 40%;
 	z-index: +1;
 }
@@ -1054,6 +1107,73 @@ ul.scroll-list {
 	background-image: url(../images/article_roadtrip/map_7.jpg);
 }
 
+/* Camp CA/Listicle Styles */
+
+#camp-ca .scroll-list-box {
+	box-shadow: none;
+	margin: 80px 0 0 0;
+	position: relative;
+	z-index: 1!important;
+}
+
+#camp-ca .scroll-list-box .bold {
+	color: #1f1f1f;
+}
+
+#camp-ca .scroll-list-box .box-header {
+	margin-bottom: 6px;
+}
+
+#camp-ca .scroll-list-box .text-wrapper {
+	padding: 20px 25px 15px;
+	clear: both;
+}
+
+#camp-ca .scroll-list-box p {
+	padding: 0 20px 14px 0;
+	font-size: 19px;
+	line-height: 26px;
+	font-weight: 300;
+}
+
+#camp-ca .scroll-list-box .camp-ca-bold {
+	font-weight: 600;
+}
+
+
+#camp-ca .col-md-6 img {
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+	/*margin: -250px 0 40px -10%;*/
+	margin-top: -300px;
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 50!important;
+}
+
+/* Article Eats */
+
+#article-eats .col-md-6 {
+	position: relative;
+}
+
+#article-eats .animateblock.btm.animated img {
+	margin-left: 0%;
+}
+
+#article-eats #taco {
+	width: 100%;
+	margin-top: -65%;
+}
+
+#article-eats img {
+	width: 75%;
+	margin-top: -50%;
+	margin-bottom: -100%;
+	z-index: -1 !important;	
+}
+
+/* Article Surf Skate */
+
 #article-surf-skate {
 	padding-bottom: 0;
 	margin-bottom: -25px;
@@ -1080,6 +1200,7 @@ ul.scroll-list {
 #article-surf-skate .box-header {
 	display: block;
 	padding: 25px;
+	margin-bottom: 25px;
 }
 
 #article-surf-skate .box-header .best-for {
@@ -1088,12 +1209,8 @@ ul.scroll-list {
 	text-transform: none;
 }
 
-.list-surf-skate {
-	padding-bottom: 30%;	
-}
-
-#article-surf-skate .scroll-list .col-md-6 {
-	position: absolute;
+#article-surf-skate .scroll-list .col-md-12 {
+	position: relative;
 }
 
 #article-surf-skate .scroll-list-box p {
@@ -1120,54 +1237,53 @@ ul.scroll-list {
 	font-weight: 700;
 }
 
-.static-list {
-	position: fixed;
-	overflow-y: scroll;
+.surf-skate-container {
+	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	position: relative;
+  	min-height: 100%;
+  	padding: 40px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    box-shadow: inset 0 0 1em #111;
 }
 
-/* Camp CA/Listicle Styles */
-
-#camp-ca .scroll-list-box {
-	box-shadow: none;
-	margin: 80px 0 0 0;
-	padding-bottom: 20px;
-	position: relative;
-	z-index: 1!important;
+.surf-skate-wrap {
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+  	position: relative;
+  	min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    box-shadow: inset 0 0 1em #111;
 }
 
-#camp-ca .scroll-list-box .bold {
-	color: #1f1f1f;
+.surf-skate-wrap#surf-bg {
+	margin-top: 50px;
+	background-image: url("../images/surf-skate/surf_1.jpg");
 }
 
-#camp-ca .scroll-list-box .box-header {
-	margin-bottom: 6px;
+.surf-skate-wrap#skate-bg {
+	background-image: url("../images/surf-skate/skate_1.jpg");
 }
 
-#camp-ca .scroll-list-box .text-wrapper {
-	padding: 20px 25px 15px;
-	clear: both;
+#article-surf-skate .scroll-list-box {
+	margin: 10% 0;
 }
 
-#camp-ca .scroll-list-box p {
-	
-	padding: 0 20px 14px 0;
-	font-size: 19px;
-	line-height: 28px;
-	font-weight: 300;
+#article-surf-skate .scroll-list-box:first-of-type {
+	margin-top: 0;
 }
 
-#camp-ca .scroll-list-box .camp-ca-bold {
-	font-weight: 600;
+#article-surf-skate .surf-skate-wrap .col-md-6.col-md-offset-1 {
+	margin-bottom: 0;
+	padding: 15% 0;
 }
 
-
-#camp-ca .col-md-6 img {
-	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
-	/*margin: -250px 0 40px -10%;*/
-	margin-top: -300px;
-	margin-bottom: 40px;
-	position: relative;
-	z-index: 50!important;
+.surf-skate-title {
+	top: 15px;
 }
 
 /* Animation Styles */
@@ -1314,7 +1430,7 @@ ul.scroll-list {
 	max-height: 750px;
 }
 .hideContentWrap .hideContent .text-box {
-	background-color:rgba(255,255,255,1);
+	background-color:rgba(255,255,255,.9);
 	position:absolute;
 	z-index:1!important;
 	bottom:0;
@@ -1473,6 +1589,23 @@ ul.scroll-list {
 	background-image: url("../images/kid-beaches/santa-monica1.jpg");
 }
 
+/* Video Styles */
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 52.5%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /* Utility Styles*/
 .clearfix:after {
      visibility: hidden;
@@ -1484,3 +1617,23 @@ ul.scroll-list {
 }
 
 /*test*/
+
+
+/* ----------- Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1200px), screen and (max-device-width: 1600px), screen and (-webkit-min-device-pixel-ratio: 1) { 
+	.toc .row .toc-bg-container {height: 225px;}
+	ul.toc-menu .toc-region {width: 300px; margin: 10px 0; display: inline-block; font-size: 22px;}
+	ul.toc-menu .toc-blogger a {margin: 10px 0 0 0;}
+	.toc-plus {margin-top: 25px;}
+}
+
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px), 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}
+
+

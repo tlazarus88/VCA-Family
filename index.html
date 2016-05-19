@@ -12,27 +12,44 @@
 	<link type="text/css"; rel="stylesheet"; href="css/normalize.css">
 	<link type="text/css"; rel="stylesheet"; href="css/reset.css">
 	<link type="text/css"; rel="stylesheet"; href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 	<!-- <link rel="icon" href="assets/favicon.png"> -->
 	<title>State of Play</title>
-	<script src='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
-	<link href='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
 </head>
+
+
 <body>
+
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZNhA-UO2M07yKZ4Khrj0OcvNEmXD6gI8&callback=initMap"
-    async defer></script> -->
 
 <section class="main-hero full-page">
 	<img src="assets/VCA_white.gif" class="vca-hero-logo">
 	<svg class="title-trtmnt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.6 424.6">
 	<polygon class="bg-diamond" points="714.6 212.3 357 424.6 0 212.3 357.3 0 "/>
 	<polygon class="st1" points="695.2 212.3 356.8 413.2 19 212.3 357.1 11.4 "/>
-	<text transform="matrix(1 0 0 1 267.073 121.6203)" class="state">state</text><text transform="matrix(1 0 0 1 267.1209 202.5311)" class="play">play</text><line class="st6" x1="273.8" y1="140.3" x2="333.8" y2="140.3"/><line class="st6" x1="380.8" y1="140.3" x2="440.8" y2="140.3"/><text transform="matrix(1 0 0 1 345.5594 147.7191)" class="of italc">of</text><rect x="164.5" y="225.7" class="txt-bx" width="385.5" height="68.2"/><text transform="matrix(1 0 0 1 180.3961 237.5967)"><tspan class="dek">Discover why a trip to California makes the ultimate </tspan><tspan x="-13.1" y="20" class="dek">family vacation. Explore northern, central, and southern </tspan><tspan x="88.4" y="40" class="dek">California’s places to play.</tspan></text><text transform="matrix(1 0 0 1 277.9373 356.616)" class="california">California</text><text transform="matrix(1 0 0 1 286.526 323.2844)" class="southern italc">southern</text><rect x="279.7" y="299.7" class="st1" width="155.2" height="31.5"/><polygon points="418 312.8 427.8 312.8 422.9 308.1 "/><polygon points="418 317.5 427.8 317.5 422.9 322.3 "/><polygon points="342.9 386.9 371.6 386.9 357.2 395 "/>
+	<text transform="matrix(1 0 0 1 267.073 121.6203)" class="state">state</text><text transform="matrix(1 0 0 1 267.1209 202.5311)" class="play">play</text><line class="st6" x1="273.8" y1="140.3" x2="333.8" y2="140.3"/><line class="st6" x1="380.8" y1="140.3" x2="440.8" y2="140.3"/><text transform="matrix(1 0 0 1 345.5594 147.7191)" class="of italc">of</text><rect x="164.5" y="225.7" class="txt-bx" width="385.5" height="68.2"/><text class="dek-wrap" transform="matrix(1 0 0 1 180.3961 237.5967)"><tspan class="dek">Discover why a trip to California makes the ultimate </tspan><tspan x="-13.1" y="20" class="dek">family vacation. Explore northern, central, and southern </tspan><tspan x="88.4" y="40" class="dek">California’s places to play.</tspan></text><text transform="matrix(1 0 0 1 277.9373 356.616)" class="california">California</text><text transform="matrix(1 0 0 1 286.526 323.2844)" class="southern italc">southern</text><rect x="279.7" y="299.7" class="st1 pink-rect" width="155.2" height="31.5"/><polygon class="drpdwn" points="418 312.8 427.8 312.8 422.9 308.1 "/><polygon class="drpdwn" points="418 317.5 427.8 317.5 422.9 322.3 "/><polygon points="342.9 386.9 371.6 386.9 357.2 395 "/>
 	</svg>
 </section>
+
+<!-- <section class="region-hero full-page" id="main-hero">
+	<img src="assets/VCA_white.gif" class="vca-hero-logo">
+	<img class="title-trtmnt" src="images/FPO-new-title-trtmnt.png">
+	<svg class="region-hero-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681.4 405.7">
+		<polygon class="diamond shad" points="679.7 203.8 341.2 404.7 3.5 203.8 341.6 2.9 "/>
+		<text transform="matrix(1 0 0 1 118.4586 255.3635)" class="state shad">California</text>
+		<text transform="matrix(1 0 0 1 138.4766 193.3493)" class="region-loc shad italc">SOUTHERN</text>
+		<polygon class="diamond" points="677.7 201.8 339.2 402.7 1.5 201.8 339.6 0.9 "/>
+		<text transform="matrix(1 0 0 1 116.4586 253.3635)" class="state">California</text>
+		<text transform="matrix(1 0 0 1 136.4766 191.3493)" class="region-loc italc">SOUTHERN</text>
+	</svg>
+	<video autoplay loop muted>
+		<source src="video/VCA_Family_Hero_Southern_v2.webmhd.webm" type="video/webm">
+		<source src="video/VCA_Family_Hero_Southern_v2.mp4" type="video/mp4">Your browser does not support the video tag.
+	</video>
+</section> -->
 
 <section class="container-fluid toc clearfix" id="toc">
 	<div class="row">
@@ -92,7 +109,7 @@
 	  			<li class="toc-plus">More Ways to Play</li>
 	  			<li><a href="#theme-parks">Thrills, Chills, and Enchantments</a></li>
 	    		<li role="separator" class="divider"></li>
-	    		<li><a href="#surf-skate">Surf ’n Skate</a></li>
+	    		<li><a href="#article-surf-skate">Surf ’n Skate</a></li>
 	    		<li role="separator" class="divider"></li>
 	    		<li><a href="#kid-beaches">6 Kid-Friendly Southern California Beaches</a></li>
 	    		<li role="separator" class="divider"></li>
@@ -234,7 +251,7 @@
 				<p>I know, I know, everyone loves San Francisco. I do, too! You don’t have to rush into the city during your Northern California visit, though. In fact, it’s a good idea to pace yourself, especially if you’re traveling with children. Starting in San Francisco’s neighboring cities, Oakland and Berkeley, is a great way to start your vacation, and set the tone for the trip. Besides, they’re both extraordinarily family-friendly, with plenty to do and lots to keep the kiddos occupied and engaged.</p>
 			</div>
 			<div class="col-md-5 col-md-offset-1">
-				<img src="images/FPO_northern-blogger-rsideimg1.jpg">
+				<img src="images/brandi/oakland.jpg">
 				<div class="caption">
 					<p>Oakland at night. <span class="italc cred inline">Getty Images</span></p>
 				</div>
@@ -347,7 +364,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-7">
-					<img class="over" src="images/brandi/FPO_Yosemite.jpg">
+					<img class="over" src="images/brandi/yosemite.jpg">
 					<div class="caption">
 						<p class="italc cred inline">Getty Images</p>
 					</div>
@@ -409,7 +426,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-6 animateblock btm">
-				<img src="images/camp-ca/steep-ravine.jpg">
+				<a class="fancybox" href="images/camp-ca/steep-ravine.jpg"><img src="images/camp-ca/steep-ravine.jpg"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -429,7 +446,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-6 animateblock btm">
-				<img src="images/camp-ca/mackerricher.jpg">
+				<a class="fancybox" href="images/camp-ca/mackerricher.jpg"><img src="images/camp-ca/mackerricher.jpg"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -449,7 +466,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-6 animateblock btm">
-				<img src="images/camp-ca/beach.jpg">
+				<a class="fancybox" href="images/camp-ca/beach.jpg"><img src="images/camp-ca/beach.jpg"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -469,7 +486,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-6 animateblock btm">
-				<img src="images/camp-ca/tomales.jpg">
+				<a class="fancybox" href="images/camp-ca/tomales.jpg"><img src="images/camp-ca/tomales.jpg"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -490,7 +507,7 @@
 		<div class="row">
 			<div class="col-md-6 col-md-offset-6">
 				<div class="animateblock btm">
-					<img src="images/camp-ca/sequoia.jpg">
+					<a class="fancybox" href="images/camp-ca/sequoia.jpg"><img src="images/camp-ca/sequoia.jpg"></a>
 				</div>
 			</div>
 		</div>
@@ -511,13 +528,15 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-6">
-				<img src="images/camp-ca/bigbasin.jpg">
+				<div class="animateblock btm">
+					<a class="fancybox" href="images/camp-ca/bigbasin.jpg"><img src="images/camp-ca/bigbasin.jpg"></a>
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<p>Check out eight more spots for adventurous kids <a href="http://www.visitcalifornia.com/feature/8-great-spots-take-adventurous-daughter">here</a>.</p>
-				<img src="assets/VCA_color.gif" class="vca-logo-color">
+				<img src="assets/CA Logo_Dream Big_Color.png" class="vca-logo-color">
 			</div>
 		</div>
 </section>
@@ -609,7 +628,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="scroll-list">
-					<li class="parallax-bg__empty" id="list-roadtrip">
+					<li class="parallax-bg__empty full-page" id="list-roadtrip">
 						<div class="circle-container" id="roadtrip-circle-1">
 							<div class="roadtrip-circle"></div>
 						</div>
@@ -623,7 +642,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__myers" id="roadtrip-2">
+					<li class="parallax-bg__myers full-page" id="roadtrip-2">
 						<div class="col-md-6"> 
 							<div class="scroll-list-box">
 								<div class="box-header">
@@ -634,7 +653,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__empty" id="roadtrip-3">
+					<li class="parallax-bg__empty full-page" id="roadtrip-3">
 						<div class="col-md-6">
 							<div class="scroll-list-box">
 								<div class="box-header">
@@ -645,7 +664,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__myers" id="roadtrip-4">
+					<li class="parallax-bg__founders-grove full-page" id="roadtrip-4">
 						<div class="col-md-6">
 							<div class="scroll-list-box">
 								<div class="box-header one-line">
@@ -656,7 +675,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__empty" id="last-roadtrip">
+					<li class="parallax-bg__empty full-page" id="last-roadtrip">
 						<div class="col-md-6">
 							<div class="scroll-list-box">
 								<div class="box-header one-line">
@@ -667,7 +686,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="parallax-bg__myers">
+					<li class="parallax-bg__eternal-tree-house full-page">
 						<div class="col-md-6">
 							<div class="scroll-list-box">
 								<div class="box-header one-line">
@@ -822,7 +841,7 @@
 	<div class="container-fluid article blogger-post">
 		<div class="row">
 			<div class="col-md-9">
-				<h1>Pattie's Guide To Northern California</h1>
+				<h1>Pattie's Guide To Central California</h1>
 				<h2>The mama behind Living Mi Vida Loca shares her favorite Central California spots.</h2>
 				<div class="blogger-profile-wrap clearfix">
 					<div class="left-quadrant">
@@ -1045,7 +1064,7 @@
 				<p>Forty miles east of Yosemite Valley sits Mono Lake (“Mono” rhymes with “yoyo,” FYI), with its otherworldly landscape of strange rock forms. The visitor center, just off U.S. 395 north of Lee Vining and Tioga Pass, offers a wealth of information and scientific exploration.</p>
 			</div>
 			<div class="col-md-5 col-md-offset-1">
-				<img class="img-responsive" src="images/FPO_northern-blogger-rsideimg1.jpg">
+				<!-- <img class="img-responsive" src="images/FPO_northern-blogger-rsideimg1.jpg"> -->
 			</div>
 		</div>
 	</div>
@@ -1139,28 +1158,55 @@
 		<div class="row">
 			<div class="col-md-6">
 				<p>Pint-size picky eater in the back seat? Fret not. Families driving through the Central Valley can take full advantage of the region’s fresh, local ingredients. As you make your way to Yosemite, the Sequoias, or the Monterey Peninsula, pull over to find hidden gems that will ensure no one in your crew goes hungry on vacation.</p>
-
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h3>Farm Fresh Fruit</h3>
 				<p>With a double-decker Venetian carousel and a train dubbed Casa de Choo Choo, <span class="bold">Casa de Fruta</span> in Hollister (roughly 50 miles inland from Santa Cruz) is a dream pit stop for kids. Visit the roadside stand for just-picked produce, and load up on fruits and vegetables before hopping back in the car—they’ll be the perfect road-trip snack.</p>
-
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-6 animateblock btm">
+				<img class="img-responsive" src="images/eats/berries.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h3>A Don’t-Leave-Without-One Burger </h3>
 				<p>Harry Snyder couldn’t possibly have known what he was creating when he opened California’s first drive-thru burger stand in 1948. Fast-forward to 2015, and the 300th <span class="bold">In-N-Out Burger</span> restaurant—now operating in five states—opens, a testament to the cult-like following. Go for the classic burgers, and stay for the famous shakes (choose from classic chocolate, strawberry and vanilla flavors, or order one of each!). For an insider experience, ask about the not-so-secret secret menu.</p>
-
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h3>Classic Mexican</h3>
 				<p>Adventurers headed to the Sierra National Forest or the southern end of Yosemite National Park should make a pit stop in Fresno at <span class="bold">Castillo’s</span>. The family-run restaurant has been serving up enchiladas, tamales, and tacos since 1955, and it’s famous for warm service, and raved-about house made tortillas and salsa (aka, crowd pleasers).</p>
-
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-6 animateblock btm">
+				<img class="img-responsive" src="images/eats/taco.png" id="taco">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h3>American Classics</h3>
 				<p>If you’re driving along Highway 101 and notice a 40-foot-tall wooden cowboy, you’ve reached <span class="bold">F. McClintock Saloon and Dining House</span>, a Pismo Beach (13 miles south of San Luis Obispo) restaurant that’s been attracting tourists and locals alike for more than four decades. Inside, servers pour water from three feet above the glass, and kid-friendly fare includes skillet potatoes (drenched in cheese and bacon), nachos, and a variety of steaks and ribs.</p>
-
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h3>Save Room for Dessert</h3>
 				<p>No family vacation is complete without indulging in something sweet. After sights like Sequoia National Park, home to some of the largest trees in the world, make a pit stop in Hanford at <span class="bold">Superior Dairy</span>. Settle into the charming vinyl booths and enjoy freshly made, classic and seasonal scoops. Bon appetite!</p>
 			</div>
-			<div class="col-md-5 col-md-offset-1">
-				<img class="img-responsive" src="images/FPO_northern-blogger-rsideimg1.jpg">
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-6 animateblock btm">
+				<img class="img-responsive" src="images/eats/icecream.jpg">
 			</div>
 		</div>
 	</div>
-</section> 
+</section>  
 
 <section class="region-hero full-page" id="sca-hero">
 	<img src="assets/VCA_white.gif" class="vca-hero-logo">
@@ -1200,6 +1246,7 @@
 							<h4>Temecula, CA</h4>
 						</div>
 						<img src="images/justine/justine-map-zoom.png">
+						<!-- <img id="zoom_05" src="images/justine/justine-map-zoom-sm.jpg" data-zoom-image="images/justine/justine-map-zoom-lg.jpg"/> -->
 					</div>
 				</div>
 			</div>
@@ -1561,90 +1608,59 @@
 		</div>
 	</div>
 	<div class="container-fluid article">
-		<div class="row">
-			<div class="parallax-bg__surf" id="surf-list">
-				<div class="col-md-12 col-md-offset-1">
-					<div class="surf-skate-title">
-						In The </br> <span class="surf-skate-title-accent">Water</span>
+		<div class="row surf-skate-wrap" id="surf-bg">
+			<div class="col-md-6 col-md-offset-1">
+				<div class="surf-skate-title">
+					In The </br> <span class="surf-skate-title-accent">Water</span>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>Wave newbies					
 					</div>
-					<ul class="scroll-list">
-						<li class="list-surf-skate" id="list-surf-1">
-							<div class="col-md-6">
-								<div class="scroll-list-box">
-									<div class="box-header">
-										<span class="best-for">Best for:</span>
-										</br>Wave newbies					
-									</div>
-									<p>The small waves and lack of rocks at Bolsa Chica State Beach make the <span class="bold">Huntington Beach Surf Camp</span> a safe, kid-friendly option for learning how to catch a wave. With a four-to-one student-to-teacher ratio, your son or daughter will get personalized attention during a week of 9 a.m. to 3 p.m. full-day sessions (half days also available). Head over to Main Street for the grilled fish taco from Wahoo’s Fish Taco and wander through the surf shops and boutiques before picking your camper up at the end of the day.</p>
-								</div>
-							</div>
-						</li>
-						<li class="list-surf-skate" id="list-surf-2">
-							<div class="col-md-6">
-								<div class="scroll-list-box">
-									<div class="box-header">
-										<span class="best-for">Best for:</span>
-										</br>A fun, relaxed atmosphere	
-									</div>
-									<p>Choose your ideal vacation location when signing your kids up for the <span class="bold">Perfect Day Surf Camp</span> at Santa Monica, Manhattan, Redondo, or Torrance Beaches. The camps offer flexible times and keep things fun by integrating beach dodgeball, capture the flag, and sandcastle time for the little ones. Each camp is located near the coastal bike path for riding or walking to beachfront restaurants. Or you could take a stand-up paddleboarding or surfing class while the kids catch waves.</p>
-								</div>
-							</div>
-						</li>
-						<li class="list-surf-skate" id="list-surf-3">
-							<div class="col-md-6">
-								<div class="scroll-list-box">
-									<div class="box-header">
-										<span class="best-for">Best for:</span>
-										</br>The whole family 			
-									</div>
-									<p><span class="bold">Menehune Surf</span> in La Jolla or Del Mar serves up half- or full-day instruction. Youngsters (ages five to seven) start by playing in the shallow water and learning about the marine life, while the eight- to twelve-year-olds develop skills and learn about ocean ecosystems, and the teens focus on skills, etiquette, and learning about surf culture and how boards are designed. While the kids catch waves, parents can treat themselves to a sea stone massage or deep cleansing facial at L’Auberge in Del Mar.</p>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>		
+					<p>The small waves and lack of rocks at Bolsa Chica State Beach make the <span class="bold">Huntington Beach Surf Camp</span> a safe, kid-friendly option for learning how to catch a wave. With a four-to-one student-to-teacher ratio, your son or daughter will get personalized attention during a week of 9 a.m. to 3 p.m. full-day sessions (half days also available). Head over to Main Street for the grilled fish taco from Wahoo’s Fish Taco and wander through the surf shops and boutiques before picking your camper up at the end of the day.</p>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>A fun, relaxed atmosphere	
+					</div>
+					<p>Choose your ideal vacation location when signing your kids up for the <span class="bold">Perfect Day Surf Camp</span> at Santa Monica, Manhattan, Redondo, or Torrance Beaches. The camps offer flexible times and keep things fun by integrating beach dodgeball, capture the flag, and sandcastle time for the little ones. Each camp is located near the coastal bike path for riding or walking to beachfront restaurants. Or you could take a stand-up paddleboarding or surfing class while the kids catch waves.</p>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>The whole family 			
+					</div>
+					<p><span class="bold">Menehune Surf</span> in La Jolla or Del Mar serves up half- or full-day instruction. Youngsters (ages five to seven) start by playing in the shallow water and learning about the marine life, while the eight- to twelve-year-olds develop skills and learn about ocean ecosystems, and the teens focus on skills, etiquette, and learning about surf culture and how boards are designed. While the kids catch waves, parents can treat themselves to a sea stone massage or deep cleansing facial at L’Auberge in Del Mar.</p>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container-fluid article">
-		<div class="row">
-			<div class="parallax-bg__skate" id="skate-list">
-				<div class="col-md-12 col-md-offset-1">
-					<ul class="scroll-list">
-						<li class="list-surf-skate" id="list-skate-1">
-							<div class="col-md-6">
-								<div class="scroll-list-box">
-									<div class="box-header">
-										<span class="best-for">Best for:</span>
-										</br>Flexible instruction
-									</div>
-									<p>Pick a Southern California destination from Irvine to Long Beach and it’s likely that <span class="bold">Skatedog</span> has a camp location there. Summer camp sessions, run through the local Parks and Recreation Departments, teach kids ages six to 13 how to skate using ramps and rails from Skatedog’s mobile skate park. Camp spots are located near attractions like the historic <span class="italc">Queen Mary</span> in Long Beach or the upscale, open-air Fashion Island in Newport Beach.</p>
-								</div>
-							</div>
-						</li>
-						<li class="list-surf-skate" id="list-skate-2">
-							<div class="col-md-6">
-								<div class="scroll-list-box">
-									<div class="box-header">
-										<span class="best-for">Best for:</span>
-										</br>Advanced tricksters
-									</div>
-									<p>The legendary skate park at the <span class="bold">Magdalena Ecke YMCA</span> in Encinitas features a combination of street course, kidney-shaped bowl, and mix of ramp styles. It hosts three camps based on ability level: Technique for beginners, a tricks-focused intermediate/advanced camp, and a travel camp that takes skaters to other parks around San Diego. Parents can stay entertained in the quaint beachside town of Encinitas—simply relax on Moonlight Beach or grab a cup of house-roasted coffee at Lofty Bean and walk south down the 101 to browse gift shops and boutiques.</p>
-								</div>
-							</div>
-						</li>
-						<li class="list-surf-skate" id="list-skate-3">
-							<div class="col-md-6">
-								<div class="scroll-list-box">
-									<div class="box-header">
-										<span class="best-for">Best for:</span>
-										</br>Multimedia skaters 
-									</div>
-									<p>If you mastered tricks at skateboard camp but don’t have it on video, did it really happen? For kids 10 and up, the <span class="bold">Etnies Video Production Skate Camp</span> in Lake Forest combines videography and photography with skateboarding during a weeklong camp. Etnies also offers a preschool skate camp for 4- and 5-year-olds. Lake Forest is just inland of Laguna Beach, where there are more than 100 galleries, sculpture gardens, and art studios within walking distance.</p>
-								</div>
-							</div>
-						</li>
-					</ul>
+		<div class="row surf-skate-wrap" id="skate-bg">
+			<div class="col-md-6 col-md-offset-1">
+				<div class="surf-skate-title">
+					In The </br> <span class="surf-skate-title-accent">Water</span>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>Flexible instruction
+					</div>
+					<p>Pick a Southern California destination from Irvine to Long Beach and it’s likely that <span class="bold">Skatedog</span> has a camp location there. Summer camp sessions, run through the local Parks and Recreation Departments, teach kids ages six to 13 how to skate using ramps and rails from Skatedog’s mobile skate park. Camp spots are located near attractions like the historic <span class="italc">Queen Mary</span> in Long Beach or the upscale, open-air Fashion Island in Newport Beach.</p>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>Advanced tricksters
+					</div>
+					<p>The legendary skate park at the <span class="bold">Magdalena Ecke YMCA</span> in Encinitas features a combination of street course, kidney-shaped bowl, and mix of ramp styles. It hosts three camps based on ability level: Technique for beginners, a tricks-focused intermediate/advanced camp, and a travel camp that takes skaters to other parks around San Diego. Parents can stay entertained in the quaint beachside town of Encinitas—simply relax on Moonlight Beach or grab a cup of house-roasted coffee at Lofty Bean and walk south down the 101 to browse gift shops and boutiques.</p>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>Multimedia skaters
+					</div>
+					<p>If you mastered tricks at skateboard camp but don’t have it on video, did it really happen? For kids 10 and up, the <span class="bold">Etnies Video Production Skate Camp</span> in Lake Forest combines videography and photography with skateboarding during a weeklong camp. Etnies also offers a preschool skate camp for 4- and 5-year-olds. Lake Forest is just inland of Laguna Beach, where there are more than 100 galleries, sculpture gardens, and art studios within walking distance.</p>
 				</div>
 			</div>
 		</div>
@@ -1739,10 +1755,38 @@
 	</a>
 </section>
 
+<!-- BELLA VIDEO -->
+<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
+	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
+	<text transform="matrix(1 0 0 1 15.8559 16.241)" class="letter">S</text>
+	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
+	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
+</svg>
+<section class="bg-img-container-wrap northern" id="video-bella">
+	<div class="container-fluid article">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Bella Kenworthy Brings</br>Girl Power to the Skate Park</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h2>Between her pink helmet and her mad talent, 8-year-old Bella Kenworthy is hard to ignore when she hits the skate park. This skater, surfer, and second-grader has a big dream that girls will take over the skate park, and nothing can stand in her way.</h2>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid article">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="videoWrapper" id="bella-vid">
+					<iframe class="youtube-video" id="bella-vid" width="560" height="315" src="https://www.youtube.com/embed/a5MSF7d-YsY" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <script src="js/bootstrap.min.js"></script>
-<!-- <script src="js/jquery.waypoints.min.js"></script> -->
-
 
 </body>
 </html>
