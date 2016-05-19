@@ -14,58 +14,93 @@ body {
 
 /* MAIN HERO */
 
-.region-hero#main-hero {
+.hero#main-hero {
 	text-align: center;
 	position: relative;
 }
-.region-hero#main-hero video {
+.hero#main-hero video {
 	z-index: 0!important;
 }
-.region-hero#main-hero .title {
+.hero#main-hero .title-outer {
 	position:absolute;
 	z-index: 500!important;
 	width: 100%;
 	top:50%;
 	left:50%;
+	height: 65%;
 	margin-top: -2%;
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-.region-hero#main-hero .hero-diamond {
+.hero#main-hero .title-inner {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.hero#main-hero .title-inner .hero-text-wrap {
 	position:absolute;
-	z-index: 300!important;
+	z-index: 400!important;
 	top:50%;
 	left:50%;
-	margin-top: -2%;
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	width: 1000px;
 }
-.region-hero#main-hero .hero-diamond .shape {
-	fill:none;
-	stroke:rgba(255,255,255,.5);
-	stroke-miterlimit:10;
-}
-.region-hero#main-hero .title h1 {
-	color: #fff;
-	font-size: 94px;
+
+.hero#main-hero .title-inner h1 {
+	color: rgba(235,4,120,1);
+	font-size: 100px;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 4px;
-	line-height: 110px;
-	text-shadow: 0px 4px 6px rgba(0,0,0,.2);
+	line-height: 120px;
+	margin-left: -3%;
+	text-shadow: 0px 2px 4px rgba(0,0,0,.1);
 }
-.region-hero#main-hero .title p {
-	color: #fff;
+.hero#main-hero .title-inner h1 .small {
+	text-transform: lowercase;
+	font-weight: 200;
+	color: #05bbff;
+}
+.hero#main-hero .title-inner p {
+	color: #000;
 	font-size: 25px;
 	max-width: 750px;
 	display: inline-block;
-	line-height: 34px;
-	text-shadow: 0px 4px 6px rgba(0,0,0,.2);
+	line-height: 30px;
+	text-shadow: 0px 2px 4px rgba(0,0,0,.1);
+}
+.hero#main-hero .vca-hero-logo {
+	position: absolute;
+	z-index: 350!important;
+	bottom: 12%;
+	width: 150px;
+	display: inline-block;
+	left:50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.hero#main-hero .hero-diamond {
+	position:absolute;
+	z-index: 300!important;
+	height: 100%;
+	width: auto;
+	top:50%;
+	left:50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
+.hero#main-hero .hero-diamond .shape {
+	fill:rgba(255,255,255,.7);
+	stroke:none;
+	stroke-miterlimit:10;
+}
+ 
 /* DROPDOWN */
 
 /* whole nav has bonus 1px height*/
@@ -555,12 +590,12 @@ a:hover {
 
 /* Region hero */
 
-.region-hero {
+.hero {
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
 }
-.region-hero video {
+.hero video {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -574,7 +609,7 @@ a:hover {
   	transform: translate(-50%, -50%);
 }
 
-.vca-hero-logo {
+.region .vca-hero-logo {
 	position: absolute;
 	top: 25px;
 	right: 25px;
@@ -1625,21 +1660,33 @@ ul.scroll-list {
 /*test*/
 
 
-/* ----------- Non-Retina Screens ----------- */
+/* ----------- Laptop ----------- */
 
-@media screen and (min-device-width: 1200px), screen and (max-device-width: 1600px), screen and (-webkit-min-device-pixel-ratio: 1) { 
+@media screen and (min-device-width: 1200px), screen and (max-device-width: 1600px) { 
 	.toc .row .toc-bg-container {height: 225px;}
 	ul.toc-menu .toc-region {width: 300px; margin: 10px 0; display: inline-block; font-size: 22px;}
 	ul.toc-menu .toc-blogger a {margin: 10px 0 0 0;}
 	.toc-plus {margin-top: 25px;}
+	.hero#main-hero .title-outer {height: 65%;}
+	.hero#main-hero .title-inner h1 {font-size: 90px; margin-left: -3%;}
+	.hero#main-hero .title-inner p {font-size: 22px;max-width: 650px;line-height: 28px;}
+	.hero#main-hero .title-inner .hero-text-wrap {margin-top:.8%;}
+	.hero#main-hero .vca-hero-logo {left: 8%;bottom: 18%;}
+}
+
+/* ----------- Monitors ----------- */
+
+@media screen and (min-device-width: 1600px) { 
+	.hero#main-hero .title-outer {
+		height: 50%;
+	}
+	.hero#main-hero .title-inner h1 {
+		font-size: 110px;
+	}
+	.hero#main-hero .vca-hero-logo {left: 50%;bottom: 12%;}
 }
 
 
-/* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px), 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-}
+
 
 
