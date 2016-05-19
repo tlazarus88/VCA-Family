@@ -1149,8 +1149,8 @@ ul.scroll-list {
 	padding-bottom: 150%;
 }
 
-#article-surf-skate .scroll-list .col-md-6 {
-	position: absolute;
+#article-surf-skate .scroll-list .col-md-12 {
+	position: relative;
 }
 
 #article-surf-skate .scroll-list-box p {
@@ -1180,6 +1180,22 @@ ul.scroll-list {
 .static-list {
 	position: fixed;
 	overflow-y: scroll;
+}
+
+.surf-bg {
+	background-image: url(../images/surf-skate/surf_1.jpg);
+}
+
+.skate-bg {
+	background-image: url(../images/surf-skate/skate_1.jpg);
+}
+
+#article-surf-skate .scroll-list-box {
+	margin-bottom: 0%;
+}
+
+#article-surf-skate .col-md-6.col-md-offset-1 {
+	margin-bottom: 40%;
 }
 
 /* Camp CA/Listicle Styles */
@@ -1255,16 +1271,6 @@ ul.scroll-list {
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-
-.surf-bg {
-	background-image: url(../images/surf-skate/surf_1.jpg);
-}
-
-.skate-bg {
-	background-image: url(../images/surf-skate/skate_1.jpg);
-}
-
-
 
 /* Animation Styles */
 
