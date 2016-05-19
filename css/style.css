@@ -1354,7 +1354,7 @@ ul.scroll-list {
 	max-height: 750px;
 }
 .hideContentWrap .hideContent .text-box {
-	background-color:rgba(255,255,255,1);
+	background-color:rgba(255,255,255,.9);
 	position:absolute;
 	z-index:1!important;
 	bottom:0;
