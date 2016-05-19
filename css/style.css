@@ -893,12 +893,11 @@ a.read-more {
 ul.scroll-list {
 	position: relative;
 	width: 100%;
-	height: 100v;
 }
 
 [class*="parallax-bg__"] {
-	height: 100vh;
-	position: relative;
+/*	height: 100vh;
+*/	position: relative;
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: cover;
@@ -922,11 +921,43 @@ ul.scroll-list {
 	background-image: url(../images/article_roadtrip/gty_RF_545168913.jpg);
 }
 
-.parallax-bg__surf {
+.surf_bg_1 {
 	background-image: url(../images/surf-skate/surf_1.jpg);
 	margin-top: 50px;
 	margin-bottom: 0px;
 	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+
+.surf_bg_2 {
+	background-image: url(../images/surf-skate/surf_2.jpg);
+	margin-top: 50px;
+	margin-bottom: 0px;
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+
+.surf_bg_3 {
+	background-image: url(../images/surf-skate/surf_3.jpg);
+	margin-top: 50px;
+	margin-bottom: 0px;
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
 }
 
 .parallax-bg__skate {
@@ -1113,9 +1144,12 @@ ul.scroll-list {
 .list-surf-skate {
 	padding-bottom: 30%;	
 }
+#list-surf-3 {
+	padding-bottom: 150%;
+}
 
-#article-surf-skate .scroll-list .col-md-6 {
-	position: absolute;
+#article-surf-skate .scroll-list .col-md-12 {
+	position: relative;
 }
 
 #article-surf-skate .scroll-list-box p {
@@ -1145,6 +1179,23 @@ ul.scroll-list {
 .static-list {
 	position: fixed;
 	overflow-y: scroll;
+}
+
+.surf-bg {
+	background-image: url(../images/surf-skate/surf_1.jpg);
+}
+
+.skate-bg {
+	background-image: url(../images/surf-skate/skate_1.jpg);
+}
+
+#article-surf-skate .scroll-list-box {
+	margin-bottom: 0%;
+
+}
+
+#article-surf-skate .col-md-6.col-md-offset-1 {
+	margin-bottom: 40%;
 }
 
 /* Camp CA/Listicle Styles */
@@ -1208,6 +1259,48 @@ ul.scroll-list {
 	margin-top: -50%;
 	margin-bottom: -100%;
 	z-index: -1 !important;	
+}
+
+.surf-skate-container {
+	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	position: relative;
+  	min-height: 100%;
+  	padding: 40px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+/* TEST surf-skate styles */ 
+
+.surf-skate-wrap {
+	background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.surf-skate-wrap#surf-bg {
+	background-image: url("../images/surf-skate/surf_1.jpg");
+}
+.surf-skate-wrap#skate-bg {
+	background-image: url("../images/surf-skate/skate_1.jpg");
+}
+#article-surf-skate .scroll-list-box {
+	margin: 40px 0;
+}
+#article-surf-skate .scroll-list-box:first-of-type {
+	margin-top: 0;
+}
+#article-surf-skate .surf-skate-wrap .col-md-6.col-md-offset-1 {
+	margin-bottom: 0;
+	padding: 80px 0;
+}
+.surf-skate-title {
+	top: 15px;
 }
 
 /* Animation Styles */
