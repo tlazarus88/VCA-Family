@@ -654,7 +654,6 @@ a.read-more {
 	width: 100%;
 	background-color: #fff;
 	height: 525px;
-	/*max-width: 850px;*/
 	margin-bottom: 70px;
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 	border: 2px solid #05bbff;
@@ -753,7 +752,7 @@ a.read-more {
 }
 .bg-img-container-wrap#cntrl-blog-post .blogger-profile-wrap .left-quadrant {
 	background-image: url("../images/pattie/Pattie_profile.jpg");
-	background-size: auto 85%;
+	background-size: 100%;
 	background-position: center top;
 }
 .bg-img-container-wrap#sthrn-blog-post .blogger-profile-wrap .left-quadrant {
