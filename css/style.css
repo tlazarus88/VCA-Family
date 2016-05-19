@@ -1107,97 +1107,6 @@ ul.scroll-list {
 	background-image: url(../images/article_roadtrip/map_7.jpg);
 }
 
-#article-surf-skate {
-	padding-bottom: 0;
-	margin-bottom: -25px;
-}
-#article-surf-skate .container-fluid.article {
-	width: 100%;
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	max-width: none;
-}
-#article-surf-skate .col-md-8 {
-	text-align: center;
-}
-
-#article-surf-skate .col-md-8.col-md-offset-2 p {
-	text-align: center;
-	max-width: 900px;
-	display: inline-block;
-	padding-bottom: 0;
-}
-
-#article-surf-skate .box-header {
-	display: block;
-	padding: 25px;
-}
-
-#article-surf-skate .box-header .best-for {
-	font-size: 20px;
-	font-weight: 900;
-	text-transform: none;
-}
-
-.list-surf-skate {
-	padding-bottom: 30%;	
-}
-#list-surf-3 {
-	padding-bottom: 150%;
-}
-
-#article-surf-skate .scroll-list .col-md-12 {
-	position: relative;
-}
-
-#article-surf-skate .scroll-list-box p {
-	padding: 25px;
-}
-
-.skate-list {
-	position: relative;
-	overflow: hidden;
-}
-
-.surf-skate-title {
-	text-align: center;
-	position: absolute;
-	top: 45px;
-	left: 25%;
-	transform: translateX(-50%);
-	font-size: 20px;
-	color: rgba(5,187,255,1);
-}
-
-.surf-skate-title-accent {
-	text-transform: capitalize;
-	font-weight: 700;
-}
-
-.static-list {
-	position: fixed;
-	overflow-y: scroll;
-}
-
-.surf-bg {
-	background-image: url(../images/surf-skate/surf_1.jpg);
-}
-
-.skate-bg {
-	background-image: url(../images/surf-skate/skate_1.jpg);
-}
-
-#article-surf-skate .scroll-list-box {
-	margin-bottom: 0%;
-
-}
-
-#article-surf-skate .col-md-6.col-md-offset-1 {
-	margin-bottom: 40%;
-}
-
 /* Camp CA/Listicle Styles */
 
 #camp-ca .scroll-list-box {
@@ -1241,6 +1150,8 @@ ul.scroll-list {
 	z-index: 50!important;
 }
 
+/* Article Eats */
+
 #article-eats .col-md-6 {
 	position: relative;
 }
@@ -1261,6 +1172,71 @@ ul.scroll-list {
 	z-index: -1 !important;	
 }
 
+/* Article Surf Skate */
+
+#article-surf-skate {
+	padding-bottom: 0;
+	margin-bottom: -25px;
+}
+#article-surf-skate .container-fluid.article {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: none;
+}
+#article-surf-skate .col-md-8 {
+	text-align: center;
+}
+
+#article-surf-skate .col-md-8.col-md-offset-2 p {
+	text-align: center;
+	max-width: 900px;
+	display: inline-block;
+	padding-bottom: 0;
+}
+
+#article-surf-skate .box-header {
+	display: block;
+	padding: 25px;
+	margin-bottom: 25px;
+}
+
+#article-surf-skate .box-header .best-for {
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: none;
+}
+
+#article-surf-skate .scroll-list .col-md-12 {
+	position: relative;
+}
+
+#article-surf-skate .scroll-list-box p {
+	padding: 25px;
+}
+
+.skate-list {
+	position: relative;
+	overflow: hidden;
+}
+
+.surf-skate-title {
+	text-align: center;
+	position: absolute;
+	top: 45px;
+	left: 25%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	color: rgba(5,187,255,1);
+}
+
+.surf-skate-title-accent {
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
 .surf-skate-container {
 	background-attachment: fixed;
   	background-repeat: no-repeat;
@@ -1270,35 +1246,42 @@ ul.scroll-list {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    box-shadow: inset 0 0 1em #111;
 }
-
-/* TEST surf-skate styles */ 
 
 .surf-skate-wrap {
 	background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  min-height: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+    background-repeat: no-repeat;
+  	position: relative;
+  	min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    box-shadow: inset 0 0 1em #111;
 }
+
 .surf-skate-wrap#surf-bg {
+	margin-top: 50px;
 	background-image: url("../images/surf-skate/surf_1.jpg");
 }
+
 .surf-skate-wrap#skate-bg {
 	background-image: url("../images/surf-skate/skate_1.jpg");
 }
+
 #article-surf-skate .scroll-list-box {
-	margin: 40px 0;
+	margin: 10% 0;
 }
+
 #article-surf-skate .scroll-list-box:first-of-type {
 	margin-top: 0;
 }
+
 #article-surf-skate .surf-skate-wrap .col-md-6.col-md-offset-1 {
 	margin-bottom: 0;
-	padding: 80px 0;
+	padding: 15% 0;
 }
+
 .surf-skate-title {
 	top: 15px;
 }
