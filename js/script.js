@@ -22,6 +22,24 @@ $(window).resize(function() {
 	});
 });
 
+// Smooth Scrolling
+// includes offset for #sticky-nav
+$(function() {
+
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top-44
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 // Nav Stickiness Swap
 
 scrollIntervalID = setInterval(stickIt, 10);
@@ -43,59 +61,153 @@ function stickIt() {
   }
 };
 
+// Image Animations 
+
+$(function(){
+  var $elems = $('.animateblock');
+  var winheight = $(window).height();
+  var fullheight = $(document).height();
+  
+  $(window).scroll(function(){
+    animate_elems();
+  });
+  
+  function animate_elems() {
+    wintop = $(window).scrollTop(); // calculate distance from top of window
+ 
+    // loop through each item to check when it animates
+    $elems.each(function(){
+      $elm = $(this);
+      
+      if($elm.hasClass('animated')) { return true; } // if already animated skip to the next item
+      
+      topcoords = $elm.offset().top; // element's distance from top of page in pixels
+      
+      if(wintop > (topcoords - (winheight*.95))) {
+        // animate when top of the window is 3/4 above the element
+        $elm.addClass('animated');
+      }
+    });
+  } // end animate_elems()
+});
+
+// Fancy Box
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+  });
+
 // Progress Bar Representation
 
-// var progNCA = $('#nca-hero').waypoint(function(direction) {
-//   $(".nav-status-bar").animate({'width': '0%'});
-// })
+scrollIntervalID = setInterval(progressBar, 10);
 
-// var progNBlog = $('#nrthrn-blog-post').waypoint(function(direction) {
-//   $(".nav-status-bar").animate({'width': '6.66%'});
-// })
+function progressBar() {
 
-// var progCampCa = $('#camp-ca').waypoint(function(direction) {
-//   $(".nav-status-bar").animate({'width': '13.33%'});
-// })
+  var topNCA = $('#nca-hero').offset().top;
+  var topNBlog = $('#nrthrn-blog-post').offset().top;
+  var topCampCa = $('#camp-ca').offset().top;
+  var topPhotoOp = $('#photo-op').offset().top;
+  var topRoadtrip = $('#article-roadtrip').offset().top;
+  var topKidAttractions = $('#kid-attractions').offset().top;
+  var topCCA = $('#cca-hero').offset().top;
+  var topCBlog = $('#cntrl-blog-post').offset().top;
+  var topEdu = $('#eduvacation').offset().top;
+  var topMeetCCA = $('#article-meet-cca').offset().top;
+  var topParks = $('#must-see-parks').offset().top;
+  var topEats = $('#article-eats').offset().top;
+  var topSCA = $('#sca-hero').offset().top;
+  var topSBlog = $('#sthrn-blog-post').offset().top;
+  var topThemeParks = $('#theme-parks').offset().top;
+  var topSurfSkate = $('#article-surf-skate').offset().top;
+  var topKidBeaches = $('#kid-beaches').offset().top;
 
-// scrollIntervalID = setInterval(progressBar, 10);
-
-// function progressBar() {
-
-//   var topNCA = $('#nca-hero').offset().top;
-//   var topNBlog = $('#nrthrn-blog-post').offset().top;
-//   var topCampCa = $('#camp-ca').offset().top;
-
-
-//   if ($(window).scrollTop() >= (topNCA)) {
-//     $(".nav-status-bar").css({'width': '0%', 'transition': 'all 10s ease'});
-//   };
-//   if ($(window).scrollTop() >= (topNBlog)) {
-//     $(".nav-status-bar").css({'width': '6.66%', 'transition': 'all 10s ease'});
-//   }; 
-//   if ($(window).scrollTop() >= (topCampCa)) {
-//     $(".nav-status-bar").css({'width': '13.33%', 'transition': 'all 10s ease'});
-//   };
-// };
-
-// scrollIntervalID = setInterval(progressBar, 10);
-
-// function progressBar() {
-
-//   var topNCA = $('#nca-hero').offset().top;
-//   var topNBlog = $('#nrthrn-blog-post').offset().top;
-//   var topCampCa = $('#camp-ca').offset().top;
-
-
-//   if ($(window).scrollTop() >= (topNCA)) {
-//     $(".nav-status-bar").animate({'width': '0%'});
-//   };
-//   if ($(window).scrollTop() >= (topNBlog)) {
-//     $(".nav-status-bar").animate({'width': '6.66%'});
-//   }; 
-//   if ($(window).scrollTop() >= (topCampCa)) {
-//     $(".nav-status-bar").animate({'width': '13.33%'});
-//   };
-// };
+  if ($(window).scrollTop() >= (topNCA)) {
+    $('.nav-status-bar').addClass('status-width-0');
+    $('.btn.nav-nca').css('color','rgba(255,255,255,1)');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-0');
+  };
+  if ($(window).scrollTop() >= (topNBlog)) {
+    $('.nav-status-bar').addClass('status-width-1');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-1');
+  };
+  if ($(window).scrollTop() >= (topCampCa)) {
+    $('.nav-status-bar').addClass('status-width-2');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-2');
+  };
+  if ($(window).scrollTop() >= (topPhotoOp)) {
+    $('.nav-status-bar').addClass('status-width-3');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-3');
+  };
+  if ($(window).scrollTop() >= (topRoadtrip)) {
+    $('.nav-status-bar').addClass('status-width-4');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-4');
+  };
+  if ($(window).scrollTop() >= (topKidAttractions)) {
+    $('.nav-status-bar').addClass('status-width-5');
+    $('.btn.nav-cca').css('color','rgba(0,0,0,1)')
+  } else {
+    $('.nav-status-bar').removeClass('status-width-5');
+  };
+  if ($(window).scrollTop() >= (topCCA)) {
+    $('.btn.nav-cca').css('color','rgba(255,255,255,1)');
+    $('.btn.nav-nca').css('color','rgba(0,0,0,1)');
+  };
+  if ($(window).scrollTop() >= (topCBlog)) {
+    $('.nav-status-bar').addClass('status-width-6');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-6');
+  };
+  if ($(window).scrollTop() >= (topEdu)) {
+    $('.nav-status-bar').addClass('status-width-7');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-7');
+  };
+  if ($(window).scrollTop() >= (topMeetCCA)) {
+    $('.nav-status-bar').addClass('status-width-8');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-8');
+  };
+  if ($(window).scrollTop() >= (topParks)) {
+    $('.nav-status-bar').addClass('status-width-9');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-9');
+  };
+  if ($(window).scrollTop() >= (topEats)) {
+    $('.nav-status-bar').addClass('status-width-10');
+    $('.btn.nav-sca').css('color','rgba(0,0,0,1)')
+  } else {
+    $('.nav-status-bar').removeClass('status-width-10');
+  };
+  if ($(window).scrollTop() >= (topSCA)) {
+    $('.btn.nav-sca').css('color','rgba(255,255,255,1)');
+    $('.btn.nav-cca').css('color','rgba(0,0,0,1)');
+  };
+  if ($(window).scrollTop() >= (topSBlog)) {
+    $('.nav-status-bar').addClass('status-width-11');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-11');
+  };
+  if ($(window).scrollTop() >= (topThemeParks)) {
+    $('.nav-status-bar').addClass('status-width-12');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-12');
+  };
+  if ($(window).scrollTop() >= (topSurfSkate)) {
+    $('.nav-status-bar').addClass('status-width-13');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-13');
+  };
+  if ($(window).scrollTop() >= (topKidBeaches)) {
+    $('.nav-status-bar').addClass('status-width-14');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-14');
+  };
+  
+};
 
 // Roadtrip Stickiness
 
@@ -119,53 +231,54 @@ function roadCirc() {
   if ($(window).scrollTop() >= (bottomRoadList)) {
   	$('#roadtrip-circle-1').css('position', 'absolute');
   	$('#roadtrip-circle-2').css('visibility', 'visible');
+    $('#last-circle').addClass('circle-bg-7');
   };
 
 };
 
 // Surf n Skate Scroll Function
-scrollIntervalID = setInterval(surfScroll, 10)
+// scrollIntervalID = setInterval(surfScroll, 10)
 
-function surfScroll() {
+// function surfScroll() {
 
-  var $surfList = $('#surf-list');
-  var topSurfList = $surfList.offset().top;
+//   var $surfList = $('#surf-list');
+//   var topSurfList = $surfList.offset().top;
 
-  var $endSurfList = $('#list-surf-3');
-  var bottomSurfList = $surfList.offset().top + $surfList.outerHeight(true);
+//   var $endSurfList = $('#list-surf-3');
+//   var bottomSurfList = $surfList.offset().top + $surfList.outerHeight(true);
 
-  if ($(window).scrollTop() >= (topSurfList)) {
-    $('#surf-list').css('overflow-y', 'scroll');
-  } else {
-    $('#surf-list').css('overflow-y', 'hidden');
-  };
-  if ($(window).scrollTop() >= (bottomSurfList)) {
-    $('#surf-list').css('overflow-y', 'hidden');
-  };
-};
+//   if ($(window).scrollTop() >= (topSurfList)) {
+//     $('#surf-list').css('overflow-y', 'scroll');
+//   } else {
+//     $('#surf-list').css('overflow-y', 'hidden');
+//   };
+//   if ($(window).scrollTop() >= (bottomSurfList)) {
+//     $('#surf-list').css('overflow-y', 'hidden');
+//   };
+// };
 
-scrollIntervalID = setInterval(skateScroll, 10)
+// scrollIntervalID = setInterval(skateScroll, 10)
 
-function skateScroll() {
+// function skateScroll() {
 
-  var $skateList = $('#skate-list');
-  var topSkateList = $skateList.offset().top;
+//   var $skateList = $('#skate-list');
+//   var topSkateList = $skateList.offset().top;
 
-  var $endSkateList = $('#list-skate-3');
-  var bottomSkateList = $endSkateList.offset().top;
+//   var $endSkateList = $('#list-skate-3');
+//   var bottomSkateList = $endSkateList.offset().top;
 
-  if ($(window).scrollTop() >= (topSkateList)) {
-    $('#skate-list').css('overflow-y', 'scroll');
-  } else {
-    $('#skate-list').css('overflow-y', 'hidden');
-  };
-  if ($(window).scrollTop() >= (bottomSkateList)) {
-    $('#skate-list').css('overflow-y', 'hidden');
-  };
-};
+//   if ($(window).scrollTop() >= (topSkateList)) {
+//     $('#skate-list').css('overflow-y', 'scroll');
+//   } else {
+//     $('#skate-list').css('overflow-y', 'hidden');
+//   };
+//   if ($(window).scrollTop() >= (bottomSkateList)) {
+//     $('#skate-list').css('overflow-y', 'hidden');
+//   };
+// };
+
 
 // Surf n Skate Background Loop
-
 
 // var now = 0;
 // var int = self.setInterval(changeBG(), 1000);
@@ -182,47 +295,60 @@ function skateScroll() {
 
 // Roadtrip Map
 
-// mapboxgl.accessToken = 'pk.eyJ1IjoidGxhemFydXM4OCIsImEiOiJjaW81dDdyNnkwMjBndmlsemlsa3EzNnBrIn0.3NylPNCT2ZSfG4mLTwXyKw';
-//   var map = new mapboxgl.Map({
-//       container: 'roadtrip-circle-1',
-//       style: 'mapbox://styles/mapbox/streets-v8',
-//       center: [40, -123]
-//       interactive: false,
-      
-//   });
+scrollIntervalID = setInterval(circleBg, 10)
 
-// var map;
+function circleBg() {
 
-// function init_map(){
-// 	var myOptions = {
-// 		zoom:15,
-// 		center:new google.maps.LatLng(40.6813578,-73.97733169999998),
-// 		mapTypeId: google.maps.MapTypeId.SATELLITE,
-// 		scrollwheel: false
-// 	};
-// 	map = new google.maps.Map(document.getElementById("roadtrip-circle-1"), myOptions);
-// 	marker = new google.maps.Marker({
-// 		map: map,
-// 		position: new google.maps.LatLng(40.6813578,-73.97733169999998)
-// 	});
+  var $roadtrip1 = $('#list-roadtrip');
+  var roadtrip1 = $roadtrip1.offset().top;
+  var $roadtrip2 = $('#roadtrip-2');
+  var roadtrip2 = $roadtrip2.offset().top;
+  var $roadtrip3 = $('#roadtrip-3');
+  var roadtrip3 = $roadtrip3.offset().top;
+  var $roadtrip4 = $('#roadtrip-4');
+  var roadtrip4 = $roadtrip4.offset().top;
+  var $roadtrip5 = $('#last-roadtrip');
+  var roadtrip5 = $roadtrip5.offset().top;
 
-  // Alter Roadtrip Image
 
-//   scrollIntervalID = setInterval(mapZoom, 10)
+  if ($(window).scrollTop() >= (roadtrip1)) {
+    $('.roadtrip-circle').addClass('circle-bg-2');
+  } else {
+    $('.roadtrip-circle').removeClass('circle-bg-2');
+  };
+  if ($(window).scrollTop() >= (roadtrip2)) {
+    $('.roadtrip-circle').addClass('circle-bg-3');
+  } else {
+    $('.roadtrip-circle').removeClass('circle-bg-3');
+  };
+  if ($(window).scrollTop() >= (roadtrip3)) {
+    $('.roadtrip-circle').addClass('circle-bg-4');
+  } else {
+    $('.roadtrip-circle').removeClass('circle-bg-4');
+  };
+  if ($(window).scrollTop() >= (roadtrip4)) {
+    $('.roadtrip-circle').addClass('circle-bg-5');
+  } else {
+    $('.roadtrip-circle').removeClass('circle-bg-5');
+  };
+  if ($(window).scrollTop() >= (roadtrip5)) {
+    $('.roadtrip-circle').addClass('circle-bg-6');
+  } else {
+    $('.roadtrip-circle').removeClass('circle-bg-6');
+  };
 
-//   function mapZoom(){
-//     if ($(window).scrollTop() >= ($('#roadtrip-2').offset().top + $('#roadtrip-2').outerHeight(true))) {
-//       myOptions = {zoom: 20}
-//     }
-//   };
-// };
+  // function addBlue() = function(callback) {
+  //   $('.roadtrip-circle').addClass('circle-blue', function() {
+  //   callback();
+  //   });
+  // };
 
-// google.maps.event.addDomListener(window, 'load', init_map);
-// google.maps.event.addDomListener(window, "resize", function() {
-//  	var center = map.getCenter();
-//  	google.maps.event.trigger(map, "resize");
-//  	map.setCenter(center);
-//  });
+  // function addRed() = function(){
+  //   $('.roadtrip-circle').addClass('circle-red');
+  // };
+
+
+};
 
 // Accordion
 
@@ -258,30 +384,11 @@ $('[data-readmore-toggle]').click(function(e) {
   if(typeof close_text == 'undefined') {close_text = ""}
   
   if($(this).text() == open_text) {
-    $(this).html(close_text).next('div[data-readmore]').show(300).after(this);
+    $(this).html(close_text).next('div[data-readmore]').show(1000).after(this);
   } else {
-    $(this).html(open_text).prev('div[data-readmore]').hide(300).before(this);
+    $(this).html(open_text).prev('div[data-readmore]').hide(1000).before(this);
   }
   
-});
-
-// Smooth Scrolling
-// includes offset for #sticky-nav
-
-$(function() {
-
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top-44
-        }, 1000);
-        return false;
-      }
-    }
-  });
 });
 
 });
