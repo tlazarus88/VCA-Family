@@ -32,6 +32,22 @@ body {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+.region-hero#main-hero .hero-diamond {
+	position:absolute;
+	z-index: 300!important;
+	top:50%;
+	left:50%;
+	margin-top: -2%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 1000px;
+}
+.region-hero#main-hero .hero-diamond .shape {
+	fill:none;
+	stroke:rgba(255,255,255,.5);
+	stroke-miterlimit:10;
+}
 .region-hero#main-hero .title h1 {
 	color: #fff;
 	font-size: 94px;
