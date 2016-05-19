@@ -1272,6 +1272,37 @@ ul.scroll-list {
     -o-background-size: cover;
 }
 
+/* TEST surf-skate styles */ 
+
+.surf-skate-wrap {
+	background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.surf-skate-wrap#surf-bg {
+	background-image: url("../images/surf-skate/surf_1.jpg");
+}
+.surf-skate-wrap#skate-bg {
+	background-image: url("../images/surf-skate/skate_1.jpg");
+}
+#article-surf-skate .scroll-list-box {
+	margin: 40px 0;
+}
+#article-surf-skate .scroll-list-box:first-of-type {
+	margin-top: 0;
+}
+#article-surf-skate .surf-skate-wrap .col-md-6.col-md-offset-1 {
+	margin-bottom: 0;
+	padding: 80px 0;
+}
+.surf-skate-title {
+	top: 15px;
+}
+
 /* Animation Styles */
 
 .animateblock {
