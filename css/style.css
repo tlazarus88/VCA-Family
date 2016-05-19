@@ -14,11 +14,12 @@ body {
 
 /* MAIN HERO */
 
-.main-hero {
-	background-image: url("../images/FPO-main-southern-hero-bg.jpg");
-	background-size: cover;
+.region-hero#main-hero {
 	text-align: center;
 	position: relative;
+}
+.region-hero#main-hero video {
+	z-index: 0!important;
 }
 
 /* Title SVG Styles */
@@ -310,6 +311,7 @@ body {
 
 .toc .row {
 	position: relative;
+	z-index: 1!important;
 	height: 100%;
 	border-bottom: 4px solid rgba(235,4,120,1);
 	background-color: rgba(241,251,255,1);
@@ -606,6 +608,7 @@ a:hover {
 }
 .region-hero-title .shad {
 	fill: #000000;
+	-webkit-filter: url(#pictureFilter);
 	filter: url(#pictureFilter);
 	opacity: .8;
 }
