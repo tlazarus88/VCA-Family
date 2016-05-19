@@ -893,12 +893,11 @@ a.read-more {
 ul.scroll-list {
 	position: relative;
 	width: 100%;
-	height: 100v;
 }
 
 [class*="parallax-bg__"] {
-	height: 100vh;
-	position: relative;
+/*	height: 100vh;
+*/	position: relative;
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: cover;
@@ -1192,6 +1191,7 @@ ul.scroll-list {
 
 #article-surf-skate .scroll-list-box {
 	margin-bottom: 0%;
+
 }
 
 #article-surf-skate .col-md-6.col-md-offset-1 {
