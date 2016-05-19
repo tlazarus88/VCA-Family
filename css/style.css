@@ -943,52 +943,6 @@ ul.scroll-list {
 	background-image: url(../images/article_roadtrip/gty_RF_545168913.jpg);
 }
 
-.surf_bg_1 {
-	background-image: url(../images/surf-skate/surf_1.jpg);
-	margin-top: 50px;
-	margin-bottom: 0px;
-	overflow: hidden;
-	height: 100vh;
-	position: relative;
-	background-attachment: fixed;
-	background-position: center center;
-	background-size: cover;
-    box-shadow: inset 0 0 1em #111;
-}
-
-.surf_bg_2 {
-	background-image: url(../images/surf-skate/surf_2.jpg);
-	margin-top: 50px;
-	margin-bottom: 0px;
-	overflow: hidden;
-	height: 100vh;
-	position: relative;
-	background-attachment: fixed;
-	background-position: center center;
-	background-size: cover;
-    box-shadow: inset 0 0 1em #111;
-}
-
-.surf_bg_3 {
-	background-image: url(../images/surf-skate/surf_3.jpg);
-	margin-top: 50px;
-	margin-bottom: 0px;
-	overflow: hidden;
-	height: 100vh;
-	position: relative;
-	background-attachment: fixed;
-	background-position: center center;
-	background-size: cover;
-    box-shadow: inset 0 0 1em #111;
-}
-
-.parallax-bg__skate {
-	background-image: url(../images/surf-skate/skate_1.jpg);
-	margin-bottom: 0px;
-	overflow-y: hidden;
-	overflow-x: hidden;
-}
-
 .scroll-list-box {
 	width: 100%;
 	background-color: rgba(255,255,255,.95);
@@ -1208,6 +1162,7 @@ ul.scroll-list {
 	margin-right: 0px;
 	max-width: none;
 }
+
 #article-surf-skate .col-md-8 {
 	text-align: center;
 }
@@ -1237,11 +1192,6 @@ ul.scroll-list {
 
 #article-surf-skate .scroll-list-box p {
 	padding: 25px;
-}
-
-.skate-list {
-	position: relative;
-	overflow: hidden;
 }
 
 .surf-skate-title {
@@ -1288,7 +1238,7 @@ ul.scroll-list {
 }
 
 .surf-skate-wrap#skate-bg {
-	background-image: url("../images/surf-skate/skate_1.jpg");
+	background-image: url("../images/surf-skate/offset_183620.jpg");
 }
 
 #article-surf-skate .scroll-list-box {
@@ -1328,30 +1278,6 @@ ul.scroll-list {
 }
 
 /* animation transition styles */
-.animateblock.left {
-  margin-left: -2%;
-}
-.animateblock.left.animated {
-  margin-left: 12%;
-}
-
-.animateblock.right {
-  display: block;
-  margin-left: 100%;
-}
-.animateblock.right.animated {
-  margin-left: 70%;
-}
-
-.animateblock.top {
-  display: block;
-  width: auto;
-  text-align: center;
-  margin-top: -25px;
-}
-.animateblock.top.animated {
-  margin-top: 0px;
-}
 
 .animateblock.btm {
   display: block;
@@ -1359,52 +1285,12 @@ ul.scroll-list {
   text-align: center;
   margin-top: 45px;
 }
+
 .animateblock.btm.animated {
   margin-top: 0;
 }
 .animateblock.btm.animated img {
 	margin-left: -18%;
-}
-
-.animateblock.centerleft {
-  display: block;
-  width: auto;
-  text-align: center;
-  margin-right: -10%;
-}
-.animateblock.centerleft.animated {
-  margin-right: 0;
-}
-
-.animateblock.centerright {
-  display: block;
-  width: auto;
-  text-align: center;
-  margin-left: -10%;
-}
-.animateblock.centerright.animated {
-  margin-left: 0;
-}
-
-.animateblock.center {
-  margin-left: 2%;
-}
-.animateblock.center.animated {
-  margin-left: 42%;
-}
-
-.animateblock.size {
-  display: block;
-  width: 10%;
-  text-align: center;
-}
-.animateblock.size.animated {
-  width: 100%;
-  height: 100%;
-}
-.animateblock.size img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* Slideshow/Accordion Styles */
@@ -1586,7 +1472,7 @@ ul.scroll-list {
 	background-image: url("../images/theme-parks/castle-park1.jpg");
 }
 #theme-parks a .hideContentWrap#raging-waters {
-	background-image: url("../images/theme-parks/raging-waters1.jpg");
+	background-image: url("../images/theme-parks/RagingWaters_Supplied_RWSD_AquaRocket_2015_RC6530.jpg");
 }
 #theme-parks a .hideContentWrap#universal {
 	background-image: url("../images/theme-parks/universal2.jpg");
