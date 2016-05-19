@@ -21,69 +21,35 @@ body {
 .region-hero#main-hero video {
 	z-index: 0!important;
 }
-
-/* Title SVG Styles */
-
-.title-trtmnt {
+.region-hero#main-hero .title {
 	position:absolute;
 	z-index: 500!important;
+	width: 100%;
 	top:50%;
 	left:50%;
+	margin-top: -2%;
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	width:875px;
-	margin-top:-2%;
-	-webkit-filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.12));
-	filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.12));
 }
-.title-trtmnt .state {
-	font-size:64px;
-	font-weight:900;
-	text-transform:uppercase;
+.region-hero#main-hero .title h1 {
+	color: #fff;
+	font-size: 94px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	line-height: 110px;
+	text-shadow: 0px 4px 6px rgba(0,0,0,.2);
 }
-.title-trtmnt .of {
-	font-size:28.7225px;
-	font-weight:300;
+.region-hero#main-hero .title p {
+	color: #fff;
+	font-size: 25px;
+	max-width: 750px;
+	display: inline-block;
+	line-height: 34px;
+	text-shadow: 0px 4px 6px rgba(0,0,0,.2);
 }
-.title-trtmnt .play {
-	font-size:66px;
-	letter-spacing:7px;
-	text-transform:uppercase;
-	font-weight:900;
-}
-.title-trtmnt .southern {
-	fill:#EE0077;
-	font-size:22px;
-	letter-spacing:1px;
-	text-transform:uppercase;
-	font-weight:900;
-}
-.title-trtmnt .california {
-	fill:#EE0077;
-	font-weight:300;
-	font-size:24px;
-	letter-spacing:1.5px;
-	text-transform:uppercase;
-	display: none;
-}
-.title-trtmnt .dek {
-	font-weight:300;
-	font-size:17px;
-}
-.title-trtmnt .drpdwn,
-.title-trtmnt .southern,
-.title-trtmnt .california
-.title-trtmnt .pink-rect {
-	display: none;
-} 
-.title-trtmnt .bg-diamond {fill:#FFFFFF;}
-.title-trtmnt .st1{fill:none;stroke:#EE0077;stroke-width:0.75;stroke-miterlimit:10;display:none;}
-.title-trtmnt .st6{fill:none;stroke:#05BBFF;stroke-width:2.5;stroke-miterlimit:10;}
-.title-trtmnt .txt-bx{fill:none;}
-.dek-wrap {
-	margin-bottom: -25px;
-}
+
 /* DROPDOWN */
 
 /* whole nav has bonus 1px height*/
