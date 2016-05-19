@@ -197,12 +197,23 @@ body {
 	height: 50px;
 	margin: 0 auto;
 	background-color: black;
-/*	background-image: url("../images/FPO_NCA.jpg");
-	background-size: 100%;*/
+	background-size: 100%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
+}
+
+#brandi-nav {
+	background-image:  url('../images/toc_nav/Brandi_nav.jpg');
+}
+
+#pattie-nav {
+	background-image:  url('../images/toc_nav/Pattie_nav.jpg');
+}
+
+#justine-nav {
+	background-image:  url('../images/toc_nav/Justine_nav.jpg');
 }
 
 .dropdown-menu li .nav-blogger {
@@ -420,8 +431,7 @@ ul.toc-menu .blogger-circle {
 	margin: 0 auto;
 	padding-bottom: 10px;
 	background-color: black;
-/*	background-image: url("../images/FPO_NCA.jpg");
-	background-size: 100%;*/
+	background-size: 100%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
@@ -460,6 +470,18 @@ ul.toc-menu .divider {
 	height: 10px;
 	margin: -30px 10% 0px 10%;
 	background-color: rgba(241,251,255,0);
+}
+
+.toc-nca .blogger-circle {
+	background-image:  url('../images/toc_nav/Brandi_toc.jpg');
+}
+
+.toc-cca .blogger-circle {
+	background-image:  url('../images/toc_nav/Pattie_toc.jpg');
+}
+
+.toc-sca .blogger-circle {
+	background-image:  url('../images/toc_nav/Justine_toc.jpg');
 }
 
 /* General Styles */
@@ -893,12 +915,11 @@ a.read-more {
 ul.scroll-list {
 	position: relative;
 	width: 100%;
-	height: 100v;
 }
 
 [class*="parallax-bg__"] {
-	height: 100vh;
-	position: relative;
+/*	height: 100vh;
+*/	position: relative;
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: cover;
@@ -922,11 +943,43 @@ ul.scroll-list {
 	background-image: url(../images/article_roadtrip/gty_RF_545168913.jpg);
 }
 
-.parallax-bg__surf {
+.surf_bg_1 {
 	background-image: url(../images/surf-skate/surf_1.jpg);
 	margin-top: 50px;
 	margin-bottom: 0px;
 	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+
+.surf_bg_2 {
+	background-image: url(../images/surf-skate/surf_2.jpg);
+	margin-top: 50px;
+	margin-bottom: 0px;
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+
+.surf_bg_3 {
+	background-image: url(../images/surf-skate/surf_3.jpg);
+	margin-top: 50px;
+	margin-bottom: 0px;
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+    box-shadow: inset 0 0 1em #111;
 }
 
 .parallax-bg__skate {
@@ -1076,77 +1129,6 @@ ul.scroll-list {
 	background-image: url(../images/article_roadtrip/map_7.jpg);
 }
 
-#article-surf-skate {
-	padding-bottom: 0;
-	margin-bottom: -25px;
-}
-#article-surf-skate .container-fluid.article {
-	width: 100%;
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	max-width: none;
-}
-#article-surf-skate .col-md-8 {
-	text-align: center;
-}
-
-#article-surf-skate .col-md-8.col-md-offset-2 p {
-	text-align: center;
-	max-width: 900px;
-	display: inline-block;
-	padding-bottom: 0;
-}
-
-#article-surf-skate .box-header {
-	display: block;
-	padding: 25px;
-}
-
-#article-surf-skate .box-header .best-for {
-	font-size: 20px;
-	font-weight: 900;
-	text-transform: none;
-}
-
-.list-surf-skate {
-	padding-bottom: 30%;	
-}
-
-#article-surf-skate .scroll-list .col-md-6 {
-	position: absolute;
-}
-
-#article-surf-skate .scroll-list-box p {
-	padding: 25px;
-}
-
-.skate-list {
-	position: relative;
-	overflow: hidden;
-}
-
-.surf-skate-title {
-	text-align: center;
-	position: absolute;
-	top: 45px;
-	left: 25%;
-	transform: translateX(-50%);
-	font-size: 20px;
-	color: rgba(5,187,255,1);
-}
-
-.surf-skate-title-accent {
-	text-transform: capitalize;
-	font-weight: 700;
-}
-
-.static-list {
-	position: fixed;
-	overflow-y: scroll;
-}
-
 /* Camp CA/Listicle Styles */
 
 #camp-ca .scroll-list-box {
@@ -1190,6 +1172,8 @@ ul.scroll-list {
 	z-index: 50!important;
 }
 
+/* Article Eats */
+
 #article-eats .col-md-6 {
 	position: relative;
 }
@@ -1208,6 +1192,120 @@ ul.scroll-list {
 	margin-top: -50%;
 	margin-bottom: -100%;
 	z-index: -1 !important;	
+}
+
+/* Article Surf Skate */
+
+#article-surf-skate {
+	padding-bottom: 0;
+	margin-bottom: -25px;
+}
+#article-surf-skate .container-fluid.article {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: none;
+}
+#article-surf-skate .col-md-8 {
+	text-align: center;
+}
+
+#article-surf-skate .col-md-8.col-md-offset-2 p {
+	text-align: center;
+	max-width: 900px;
+	display: inline-block;
+	padding-bottom: 0;
+}
+
+#article-surf-skate .box-header {
+	display: block;
+	padding: 25px;
+	margin-bottom: 25px;
+}
+
+#article-surf-skate .box-header .best-for {
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: none;
+}
+
+#article-surf-skate .scroll-list .col-md-12 {
+	position: relative;
+}
+
+#article-surf-skate .scroll-list-box p {
+	padding: 25px;
+}
+
+.skate-list {
+	position: relative;
+	overflow: hidden;
+}
+
+.surf-skate-title {
+	text-align: center;
+	position: absolute;
+	top: 45px;
+	left: 25%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	color: rgba(5,187,255,1);
+}
+
+.surf-skate-title-accent {
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+.surf-skate-container {
+	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	position: relative;
+  	min-height: 100%;
+  	padding: 40px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+
+.surf-skate-wrap {
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+  	position: relative;
+  	min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+}
+
+.surf-skate-wrap#surf-bg {
+	margin-top: 50px;
+	background-image: url("../images/surf-skate/surf_1.jpg");
+}
+
+.surf-skate-wrap#skate-bg {
+	background-image: url("../images/surf-skate/skate_1.jpg");
+}
+
+#article-surf-skate .scroll-list-box {
+	margin: 10% 0;
+}
+
+#article-surf-skate .scroll-list-box:first-of-type {
+	margin-top: 0;
+}
+
+#article-surf-skate .surf-skate-wrap .col-md-6.col-md-offset-1 {
+	margin-bottom: 0;
+	padding: 15% 0;
+}
+
+.surf-skate-title {
+	top: 15px;
 }
 
 /* Animation Styles */
@@ -1517,7 +1615,7 @@ ul.scroll-list {
 
 .videoWrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 52.5%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
 }
