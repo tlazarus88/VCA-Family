@@ -880,6 +880,9 @@ a.read-more {
 	padding-top: 0;
 	margin-left: 0;
 }
+.cred.no-left-margin {
+	margin-left: 0;
+}
 
 /* Section Header Styles*/
 
