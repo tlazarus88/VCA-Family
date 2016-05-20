@@ -695,29 +695,31 @@ a.read-more {
 .container-fluid.article.blogger-post h2 {
 	font-size: 22px;
 }
-.container-fluid.article.blogger-post img {
+.container-fluid.article.blogger-post img,
+.bg-img-container-wrap#article-meet-cca .container-fluid.article img {
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 	margin-bottom: 40px;
 }
-.container-fluid.article.blogger-post .col-md-offset-1 {
+.container-fluid.article.blogger-post .col-md-offset-1,
+.bg-img-container-wrap#article-meet-cca .container-fluid.article .col-md-offset-1 {
 	margin-left: 4%;
 }
-.container-fluid.article.blogger-post .sect-break {
+.container-fluid.article .sect-break {
 	/*margin-top: -200px;*/
 	margin-top: -30%;
 }
-.container-fluid.article.blogger-post .under {
+.container-fluid.article .under {
 	position: relative;
 	z-index: 1!important;
 }
-.container-fluid.article.blogger-post .over {
+.container-fluid.article .over {
 	position: relative;
 	z-index: 100!important;
 }
-.container-fluid.article.blogger-post .r-rail-above {
+.container-fluid.article .r-rail-above {
 	margin-left: -4%;
 }
-.container-fluid.article.blogger-post .r-rail-above .caption {
+.container-fluid.article .r-rail-above .caption {
 	margin-left: 8%;
 }
 
