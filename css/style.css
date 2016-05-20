@@ -1563,12 +1563,8 @@ ul.scroll-list {
 /* ----------- Monitors ----------- */
 
 @media screen and (min-device-width: 1600px) { 
-	.hero#main-hero .title-outer {
-		height: 50%;
-	}
-	.hero#main-hero .title-inner h1 {
-		font-size: 110px;
-	}
+	.hero#main-hero .title-outer {height: 50%;}
+	.hero#main-hero .title-inner h1 {font-size: 110px;}
 	.hero#main-hero .vca-hero-logo {left: 50%;bottom: 12%;}
 }
 
