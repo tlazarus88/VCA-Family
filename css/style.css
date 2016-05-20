@@ -21,6 +21,30 @@ body {
 .hero#main-hero video {
 	z-index: 0!important;
 }
+/*.hero#main-hero img.main-title {
+	position:absolute;
+	z-index: 500!important;
+	top:50%;
+	left:50%;
+	margin-top: -2%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	height: 65%;
+}*/
+.hero img.main-title {
+	position:absolute;
+	z-index: 500!important;
+	top:50%;
+	left:50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	height: 65%;
+}
+.hero#main-hero img.main-title {
+	margin-top: -2%;
+}
 .hero#main-hero .title-outer {
 	position:absolute;
 	z-index: 500!important;
