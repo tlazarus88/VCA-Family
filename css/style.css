@@ -374,10 +374,12 @@ body {
 	background-image: url("../images/Nav/770x388/GettyImages-517877952_screen.png");
 	background-size: cover;
 	background-position: bottom;
+	transition: all 1s ease;
 }
 
 .toc .row .toc-nca:hover .toc-nca-bg {
 	background-image: url("../images/Nav/770x388/GettyImages-517877952.png");
+	
 }
 
 .toc .row .toc-cca-bg {
@@ -385,6 +387,7 @@ body {
 	background-image: url("../images/Nav/770x388/GettyImages-184084521_screen.png");
 	background-size: cover;
 	background-position: bottom;
+	transition: all 1s ease;
 }
 
 .toc .row .toc-cca:hover .toc-cca-bg {
@@ -396,6 +399,7 @@ body {
 	background-image: url("../images/Nav/770x388/GettyImages-152627362_screen.png");
 	background-size: cover;
 	background-position: bottom;
+	transition: all 1s ease;
 }
 
 .toc .row .toc-sca:hover .toc-sca-bg {
@@ -570,6 +574,8 @@ img {
 .bg-img-container-wrap {
 	padding-bottom: 60px;
 	position: relative;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 a:link,
 a:active,
@@ -910,9 +916,13 @@ a.read-more {
 	stroke-miterlimit:10;
 }
 .bg-img-container-wrap.northern {
-	background-image: url("../images/section-bg-triangle.jpg");
-	background-size: 100% auto;
-	background-repeat: no-repeat;
+	background-image: url("../images/fpo-nrthrn-region-header-image.jpg");
+}
+.bg-img-container-wrap.central {
+	background-image: url("../images/fpo-cntrl-region-header-image.jpg");
+}
+.bg-img-container-wrap.southern {
+	background-image: url("../images/fpo-sthrn-region-header-image.jpg");
 }
 .container-fluid.article h1 {
 	padding-top: 100px;
