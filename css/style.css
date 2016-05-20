@@ -45,60 +45,6 @@ body {
 .hero#main-hero img.main-title {
 	margin-top: -2%;
 }
-.hero#main-hero .title-outer {
-	position:absolute;
-	z-index: 500!important;
-	width: 100%;
-	top:50%;
-	left:50%;
-	height: 65%;
-	margin-top: -2%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-.hero#main-hero .title-inner {
-	height: 100%;
-	width: 100%;
-	position: relative;
-	text-align: center;
-}
-.hero#main-hero .title-inner .hero-text-wrap {
-	position:absolute;
-	z-index: 400!important;
-	top:50%;
-	left:50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-.hero#main-hero .title-inner h1 {
-	color: rgba(235,4,120,1);
-	font-size: 90px;
-	font-weight: 800;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	line-height: 120px;
-	margin-left: -3%;
-	text-shadow: 0px 2px 4px rgba(0,0,0,.1);
-}
-.hero#main-hero .title-inner h1 .small {
-	text-transform: lowercase;
-	font-weight: 200;
-	color: #05bbff;
-}
-.hero#main-hero .title-inner p {
-	color: #000;
-	font-size: 17px;
-	font-weight: 400;
-	max-width: 550px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	display: inline-block;
-	line-height: 28px;
-	text-shadow: 0px 2px 4px rgba(0,0,0,.1);
-}
 .hero#main-hero .vca-hero-logo {
 	position: absolute;
 	z-index: 350!important;
