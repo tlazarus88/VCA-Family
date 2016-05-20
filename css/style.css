@@ -1566,6 +1566,7 @@ ul.scroll-list {
 	.hero#main-hero .title-outer {height: 50%;}
 	.hero#main-hero .title-inner h1 {font-size: 110px;}
 	.hero#main-hero .vca-hero-logo {left: 50%;bottom: 12%;}
+	.hero#main-hero .title-inner .hero-text-wrap {margin-top:1.4%;}
 }
 
 
