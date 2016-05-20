@@ -11,15 +11,24 @@ $('.full-page').height(vph);
 
 // Window CSS Resize Fix
 
-jQuery(function($){
-var windowWidth = $(window).width();
+$(window).resize(function(){location.reload();});
 
-$(window).resize(function() {
-    if(windowWidth != $(window).width()){
-    	location.reload();
-    	return;
-    	}
-	});
+// Smooth Scrolling
+// includes offset for #sticky-nav
+$(function() {
+
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top-44
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
 
 // Nav Stickiness Swap
@@ -72,6 +81,11 @@ $(function(){
     });
   } // end animate_elems()
 });
+
+// Fancy Box
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+  });
 
 // Progress Bar Representation
 
@@ -213,62 +227,6 @@ function roadCirc() {
 
 };
 
-// Surf n Skate Scroll Function
-scrollIntervalID = setInterval(surfScroll, 10)
-
-function surfScroll() {
-
-  var $surfList = $('#surf-list');
-  var topSurfList = $surfList.offset().top;
-
-  var bottomSurfList = $surfList.offset().top + $surfList.outerHeight(true);
-
-  if ($(window).scrollTop() >= (topSurfList)) {
-    $('#surf-list').css('overflow-y', 'scroll');
-  } else {
-    $('#surf-list').css('overflow-y', 'hidden');
-  };
-
-};
-
-scrollIntervalID = setInterval(skateScroll, 10)
-
-function skateScroll() {
-
-  var $skateList = $('#skate-list');
-  var topSkateList = $skateList.offset().top;
-
-  var bottomSkateList = $skateList.offset().top + $skateList.outerHeight(true);
-
-  if ($(window).scrollTop() >= (topSkateList)) {
-    $('#skate-list').css('overflow-y', 'scroll');
-  } else {
-    $('#skate-list').css('overflow-y', 'hidden');
-  };
-
-};
-
-
-// Surf n Skate Background Loop
-
-// var surfBg = ['url(../images/surf-skate/surf_1.jpg', 'url(../images/surf-skate/surf_2.jpg', 'url(../images/surf-skate/surf_3.jpg'];
-
-// $.each(surfBg, function(i, surfBg){
-//     setTimeout(function(){$('.parallax-bg__surf').css('background-image', surfBg)}, (i+1)*1000);
-// });
-// var now = 0;
-// var int = self.setInterval(changeBG(), 1000);
-// var array = ["1", "2", "3"];
-
-// function changeBG() {
-//   //array of backgrounds
-//   now = (now+1) % array.length ;
-//   $('.parallax-bg__surf').css('background-image', 'url(../images/surf-skate/surf_' + array[now] + '.jpg)');
-// };
-
-
-
-
 // Roadtrip Map
 
 scrollIntervalID = setInterval(circleBg, 10)
@@ -360,30 +318,11 @@ $('[data-readmore-toggle]').click(function(e) {
   if(typeof close_text == 'undefined') {close_text = ""}
   
   if($(this).text() == open_text) {
-    $(this).html(close_text).next('div[data-readmore]').show(300).after(this);
+    $(this).html(close_text).next('div[data-readmore]').show(1000).after(this);
   } else {
-    $(this).html(open_text).prev('div[data-readmore]').hide(300).before(this);
+    $(this).html(open_text).prev('div[data-readmore]').hide(1000).before(this);
   }
   
-});
-
-// Smooth Scrolling
-// includes offset for #sticky-nav
-
-$(function() {
-
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top-44
-        }, 1000);
-        return false;
-      }
-    }
-  });
 });
 
 });
