@@ -51,10 +51,10 @@ body {
 
 .hero#main-hero .title-inner h1 {
 	color: rgba(235,4,120,1);
-	font-size: 100px;
-	font-weight: 600;
+	font-size: 90px;
+	font-weight: 800;
 	text-transform: uppercase;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	line-height: 120px;
 	margin-left: -3%;
 	text-shadow: 0px 2px 4px rgba(0,0,0,.1);
@@ -66,10 +66,13 @@ body {
 }
 .hero#main-hero .title-inner p {
 	color: #000;
-	font-size: 25px;
-	max-width: 750px;
+	font-size: 17px;
+	font-weight: 400;
+	max-width: 550px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 	display: inline-block;
-	line-height: 30px;
+	line-height: 28px;
 	text-shadow: 0px 2px 4px rgba(0,0,0,.1);
 }
 .hero#main-hero .vca-hero-logo {
@@ -371,10 +374,12 @@ body {
 	background-image: url("../images/Nav/770x388/GettyImages-517877952_screen.png");
 	background-size: cover;
 	background-position: bottom;
+	transition: all 1s ease;
 }
 
 .toc .row .toc-nca:hover .toc-nca-bg {
 	background-image: url("../images/Nav/770x388/GettyImages-517877952.png");
+	
 }
 
 .toc .row .toc-cca-bg {
@@ -382,6 +387,7 @@ body {
 	background-image: url("../images/Nav/770x388/GettyImages-184084521_screen.png");
 	background-size: cover;
 	background-position: bottom;
+	transition: all 1s ease;
 }
 
 .toc .row .toc-cca:hover .toc-cca-bg {
@@ -393,6 +399,7 @@ body {
 	background-image: url("../images/Nav/770x388/GettyImages-152627362_screen.png");
 	background-size: cover;
 	background-position: bottom;
+	transition: all 1s ease;
 }
 
 .toc .row .toc-sca:hover .toc-sca-bg {
@@ -567,6 +574,8 @@ img {
 .bg-img-container-wrap {
 	padding-bottom: 60px;
 	position: relative;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 a:link,
 a:active,
@@ -695,29 +704,31 @@ a.read-more {
 .container-fluid.article.blogger-post h2 {
 	font-size: 22px;
 }
-.container-fluid.article.blogger-post img {
+.container-fluid.article.blogger-post img,
+.bg-img-container-wrap#article-meet-cca .container-fluid.article img {
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 	margin-bottom: 40px;
 }
-.container-fluid.article.blogger-post .col-md-offset-1 {
+.container-fluid.article.blogger-post .col-md-offset-1,
+.bg-img-container-wrap#article-meet-cca .container-fluid.article .col-md-offset-1 {
 	margin-left: 4%;
 }
-.container-fluid.article.blogger-post .sect-break {
+.container-fluid.article .sect-break {
 	/*margin-top: -200px;*/
 	margin-top: -30%;
 }
-.container-fluid.article.blogger-post .under {
+.container-fluid.article .under {
 	position: relative;
 	z-index: 1!important;
 }
-.container-fluid.article.blogger-post .over {
+.container-fluid.article .over {
 	position: relative;
 	z-index: 100!important;
 }
-.container-fluid.article.blogger-post .r-rail-above {
+.container-fluid.article .r-rail-above {
 	margin-left: -4%;
 }
-.container-fluid.article.blogger-post .r-rail-above .caption {
+.container-fluid.article .r-rail-above .caption {
 	margin-left: 8%;
 }
 
@@ -808,13 +819,13 @@ a.read-more {
 /* Specific Blog Post Styles */
 
 .bg-img-container-wrap#nrthrn-blog-post {
-	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+	background-image: url("../images/brandi/fpo-northern_blogger_bg_img.jpg");
 }
 .bg-img-container-wrap#cntrl-blog-post {
-	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+	background-image: url("../images/pattie/fpo-central_blogger_bg_img.jpg");
 }
 .bg-img-container-wrap#sthrn-blog-post {
-	background-image: url("../images/FPO_Brandi_BG_img.jpg");
+	background-image: url("../images/justine/fpo-southern_blogger_bg_img.jpg");
 }
 .bg-img-container-wrap#sthrn-blog-post .col-md-6 p.italc {
 	letter-spacing: .25px;
@@ -943,9 +954,13 @@ a.read-more {
 	stroke-miterlimit:10;
 }
 .bg-img-container-wrap.northern {
-	background-image: url("../images/section-bg-triangle.jpg");
-	background-size: 100% auto;
-	background-repeat: no-repeat;
+	background-image: url("../images/fpo-nrthrn-region-header-image.jpg");
+}
+.bg-img-container-wrap.central {
+	background-image: url("../images/fpo-cntrl-region-header-image.jpg");
+}
+.bg-img-container-wrap.southern {
+	background-image: url("../images/fpo-sthrn-region-header-image.jpg");
 }
 .container-fluid.article h1 {
 	padding-top: 100px;
@@ -1592,8 +1607,6 @@ ul.scroll-list {
 	ul.toc-menu .toc-blogger a {margin: 10px 0 0 0;}
 	.toc-plus {margin-top: 25px;}
 	.hero#main-hero .title-outer {height: 65%;}
-	.hero#main-hero .title-inner h1 {font-size: 90px; margin-left: -3%;}
-	.hero#main-hero .title-inner p {font-size: 22px;max-width: 650px;line-height: 28px;}
 	.hero#main-hero .title-inner .hero-text-wrap {margin-top:.8%;}
 	.hero#main-hero .vca-hero-logo {left: 8%;bottom: 18%;}
 }
