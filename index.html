@@ -24,32 +24,24 @@
 <script src="js/script.js"></script>
 <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 
-
-<section class="main-hero full-page">
+<section class="hero full-page" id="main-hero">
 	<img src="assets/VCA_white.gif" class="vca-hero-logo">
-	<svg class="title-trtmnt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.6 424.6">
-	<polygon class="bg-diamond" points="714.6 212.3 357 424.6 0 212.3 357.3 0 "/>
-	<polygon class="st1" points="695.2 212.3 356.8 413.2 19 212.3 357.1 11.4 "/>
-	<text transform="matrix(1 0 0 1 267.073 121.6203)" class="state">state</text><text transform="matrix(1 0 0 1 267.1209 202.5311)" class="play">play</text><line class="st6" x1="273.8" y1="140.3" x2="333.8" y2="140.3"/><line class="st6" x1="380.8" y1="140.3" x2="440.8" y2="140.3"/><text transform="matrix(1 0 0 1 345.5594 147.7191)" class="of italc">of</text><rect x="164.5" y="225.7" class="txt-bx" width="385.5" height="68.2"/><text class="dek-wrap" transform="matrix(1 0 0 1 180.3961 237.5967)"><tspan class="dek">Discover why a trip to California makes the ultimate </tspan><tspan x="-13.1" y="20" class="dek">family vacation. Explore northern, central, and southern </tspan><tspan x="88.4" y="40" class="dek">California’s places to play.</tspan></text><text transform="matrix(1 0 0 1 277.9373 356.616)" class="california">California</text><text transform="matrix(1 0 0 1 286.526 323.2844)" class="southern italc">southern</text><rect x="279.7" y="299.7" class="st1 pink-rect" width="155.2" height="31.5"/><polygon class="drpdwn" points="418 312.8 427.8 312.8 422.9 308.1 "/><polygon class="drpdwn" points="418 317.5 427.8 317.5 422.9 322.3 "/><polygon points="342.9 386.9 371.6 386.9 357.2 395 "/>
-	</svg>
-</section>
-
-<!-- <section class="region-hero full-page" id="main-hero">
-	<img src="assets/VCA_white.gif" class="vca-hero-logo">
-	<img class="title-trtmnt" src="images/FPO-new-title-trtmnt.png">
-	<svg class="region-hero-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681.4 405.7">
-		<polygon class="diamond shad" points="679.7 203.8 341.2 404.7 3.5 203.8 341.6 2.9 "/>
-		<text transform="matrix(1 0 0 1 118.4586 255.3635)" class="state shad">California</text>
-		<text transform="matrix(1 0 0 1 138.4766 193.3493)" class="region-loc shad italc">SOUTHERN</text>
-		<polygon class="diamond" points="677.7 201.8 339.2 402.7 1.5 201.8 339.6 0.9 "/>
-		<text transform="matrix(1 0 0 1 116.4586 253.3635)" class="state">California</text>
-		<text transform="matrix(1 0 0 1 136.4766 191.3493)" class="region-loc italc">SOUTHERN</text>
-	</svg>
+	<div class="title-outer">
+		<div class="title-inner">
+			<div class="hero-text-wrap">
+				<h1 class="italc">State <span class="small">of</span> Play</h1>
+				<p>Discover why a trip to California makes the ultimate family vacation. Explore northern, central, and southern California’s places to play.</p>
+			</div>
+			<svg class="hero-diamond" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 678.4 403">
+				<polygon class="shape" points="677.2 201.5 338.8 402.4 1 201.5 339.1 0.6 "/>
+			</svg>
+		</div>
+	</div>
 	<video autoplay loop muted>
-		<source src="video/VCA_Family_Hero_Southern_v2.webmhd.webm" type="video/webm">
-		<source src="video/VCA_Family_Hero_Southern_v2.mp4" type="video/mp4">Your browser does not support the video tag.
+		<source src="video/VCA_Family_Hero_General_v1.webmhd.webm" type="video/webm">
+		<source src="video/VCA_Family_Hero_General_v1.mp4" type="video/mp4">Your browser does not support the video tag.
 	</video>
-</section> -->
+</section>
 
 <section class="container-fluid toc clearfix" id="toc">
 	<div class="row">
@@ -195,7 +187,7 @@
 	<div class="nav-status-bar"></div>
 </section>
 
-<section class="region-hero full-page" id="nca-hero">
+<section class="hero region full-page" id="nca-hero">
 	<img src="assets/VCA_white.gif" class="vca-hero-logo">
 	<svg class="region-hero-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681.5 405.6">
 		<polygon class="diamond shad" points="679.7 203.8 341.2 404.7 3.4 203.8 341.6 2.9 "/>
@@ -420,6 +412,9 @@
 						<h5>Mount Tamalpais State Park</h5>
 						<p>Although it’s a mere 45 minutes away from San Francisco, Steep Ravine feels incredibly remote. On a clear day, you can see the city’s skyline in the distance, as well as the Farallon Islands 25 miles off the coast. Pitch a tent or stay in a rustic cabin—sites for both look out on expansive ocean views perfect for watching the sunset.</p>
 						<p><span class="bold">What to do:</span> Hike or drive to nearby Stinson Beach, where lifeguards are on duty from May through mid-September. On weekends, head to the mountain’s Gravity Car Barn to learn about the sloping, winding railroad that once carried passengers down by gravity alone.</p>
+						<div class="caption">
+							<p class="italc cred">Patrick Smith/Getty Images</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -439,7 +434,10 @@
 					<div class="text-wrapper">
 						<h5>Fort Bragg</h5>
 						<p>Three miles up the coast from Fort Bragg, MacKerricher State Park showcases multiple habitats—forest, beach, dunes, bluffs, wetlands, and a collection of tide pools at the shore—around its 140-plus campsites. During whale migration season (winter and spring), MacKerricher boasts nine miles of uninterrupted coastline for spotting spouts.</p>
-						<p><span class="bold">What to do:</span> Take a ride on the historic Skunk Train, a 131-year-old engine that has chugged along the coastal “Redwood Route” since 1885. Horse lovers can get saddle time in at Ten Mile Beach or in Jackson State Forest. If the kiddos need a break from “all that nature,” take a swing at mini golf at the Emerald Dolphin Inn, and stop for a cone at Cowlick’s Ice Cream Café on the way back to camp. </p>
+						<p><span class="bold">What to do:</span> Take a ride on the historic Skunk Train, a 131-year-old engine that has chugged along the coastal “Redwood Route” since 1885. Horse lovers can get saddle time in at Ten Mile Beach or in Jackson State Forest. If the kiddos need a break from “all that nature,” take a swing at mini golf at the Emerald Dolphin Inn, and stop for a cone at Cowlick’s Ice Cream Café on the way back to camp.</p>
+						<div class="caption">
+							<p class="italc cred">Brad Mitchell/Alamy</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -460,6 +458,9 @@
 						<h5>D.L. Bliss State Park, Lake Tahoe</h5>
 						<p>It’s no wonder these lakeside campgrounds are so highly coveted given their proximity to the crystal-clear waters of Lake Tahoe. The water and all of its activities wait mere feet away from your tent. Pack warm clothes for the evenings, which tend to be chilly even during the summer months.</p>
 						<p><span class="bold">What to do:</span> Waterbugs will enjoy swimming, diving, or paddleboarding on the lake’s clear water. Or stay on land to lounge on the beach or explore miles of nearby trails—don’t miss the opportunity to snap a picture at Balancing Rock in the northwest section of the park. At the end of the day, join fellow campers at the campfire center to swap adventure stories.</p>
+						<div class="caption">
+							<p class="italc cred">SuperStock/Getty Images</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -480,6 +481,9 @@
 						<h5>Point Reyes National Seashore</h5>
 						<p>Up for an adventure? First, buy some fresh oysters at the Marshall Store, rent a kayak at Blue Waters Kayaking, and load up your gear for a one-hour paddle to the boat-in only Tomales Bay campsites. After you set up camp on the beach, hike the steep hill for a breathtaking view of Tomales Bay.</p>
 						<p><span class="bold">What to do:</span> Check out Pierce Point Ranch, where you can catch a glimpse of the nearly 400 tule elk in residence at the Tule Elk Reserve. Visitors to the Kenneth C. Patrick Visitor Center at Drakes Beach can learn about 16th-century maritime exploration and check out the minke whale skeleton on display.</p>
+						<div class="caption">
+							<p class="italc cred">Yhelfman/Getty Images</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -499,7 +503,10 @@
 					<div class="text-wrapper">
 						<h5>Sequoia-Kings Canyon National Parks</h5>
 						<p>If the words “luxury” and “camping” ever belonged in the same sentence, it would be to describe this glamping experience. The camp outfits its 330-square-foot canvas tents with plush mattresses, down feather pillows and comforters, and luxe wool area rugs.</p>
-						<p><span class="bold">What to do:</span> Bring a fly rod to cast out over nearby creeks and lakes (the camp has limited supplies available for borrowing). Book a horseback-riding excursion before you arrive. Make a checklist of local wildlife, including deer, chipmunks, hummingbirds, and marmots, and see who can spot the most! </p>
+						<p><span class="bold">What to do:</span> Bring a fly rod to cast out over nearby creeks and lakes (the camp has limited supplies available for borrowing). Book a horseback-riding excursion before you arrive. Make a checklist of local wildlife, including deer, chipmunks, hummingbirds, and marmots, and see who can spot the most!</p>
+						<div class="caption">
+							<p class="italc cred">Jerome Gorin/Getty Images</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -522,6 +529,9 @@
 						<h5>North of Boulder Creek</h5>
 						<p>Not only does Big Basin feature an incredible collection of gigantic redwoods, but the area is also home to 80 miles of trails sprinkled with gorgeous waterfalls (take the 10-mile Berry Creek Loop for a look at the cascading Berry Creek Falls). If your crew prefers a tent upgrade, you can rent a spacious “tent cabin” that sleeps four and comes with mattress pads and a wood stove.</p>
 						<p><span class="bold">What to do:</span> Enjoy the park’s 80 miles of trails, punctuated by the towering trees. For a high-flying adventure, head south to Mount Hermon Adventures Redwood Canopy Tours, where explorers ages 10+ can fly through the trees on a zip-line adventure. A lower course is available for kids as young as five.</p>
+						<div class="caption">
+							<p class="italc cred">Gary Kavanagh/Getty Images</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -827,7 +837,7 @@
 	</div>
 </section>
 
-<section class="region-hero full-page" id="cca-hero">
+<section class="hero region full-page" id="cca-hero">
 	<img src="assets/VCA_white.gif" class="vca-hero-logo">
 	<svg class="region-hero-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681.4 405.9">
 	<polygon class="diamond shad" points="679.7 203.7 341.3 404.6 3.5 203.7 341.6 2.8 "/>
@@ -886,15 +896,16 @@
 				<p>About an hour away from Santa Barbara is a quaint little town called Solvang. Driving into Solvang will make you feel as though you’re stepping back in time. You will immediately get the small-town feel (it has a population of about 5,500) as you drive down its one major road and past its mom-and-pop shops and well-known bakeries. Founded by a group of Danes in 1911, the town gives you the feeling that it hasn’t changed much since then.</p>
 			</div>
 			<div class="col-md-5 col-md-offset-1">
-				<img class="img-responsive" src="images/pattie/visiting-oceanside.jpg">
+				<img class="img-responsive animateblock btm" src="images/pattie/visiting-oceanside.jpg">
 				<div class="caption">
-					<p>Lorem ipsum dolor amet. <span class="italc cred inline">Getty Images</span></p>
+					<p>Pattie and her crew strike a pose on a jetty.
+					</br><span class="italc cred inline no-left-margin">Courtesy of Pattie Cordova</span></p>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-7">
-				<img class="over" src="images/pattie/Solvang.jpg">
+				<img class="over" src="images/pattie/solvang.jpg">
 			</div>
 			<div class="col-md-5">
 				<div class="caption">
@@ -902,8 +913,8 @@
 						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
-					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
-					<p class="italc cred">Getty Images</p>
+					<p>Experience a slice of history on the streets of Solvang.</p>
+					<p class="italc cred">Fox Lei/Shutterstock</p>
 				</div>
 			</div>
 		</div>
@@ -911,7 +922,7 @@
 			<div class="col-md-6">
 				<p>Solvang is still home to bakeries, restaurants, and merchants who have continued to offer a taste of Denmark through its food, landscape, and museums.</p>
 				<h5>You can find us at...</h5>
-				<p>The shoe store trying on a pair of clogs, the local bookstore peeking into the Hans Christian Andersen museum upstairs, and, of course, around Copenhagen replicas like the Little Mermaid statue and the Round Tower, taking family pictures. We’ll also be stopping by Old Mission Santa Inés near the center of town. Just outside of Solvang, we’ll stop by OstrichLand USA—a ranch where visitors can see ostriches, feed them, and even buy their eggs!</p>
+				<p>shoe store trying on a pair of clogs, the local bookstore peeking into the Hans Christian Andersen museum upstairs, and, of course, around Copenhagen replicas like the Little Mermaid statue and the Round Tower, taking family pictures. We’ll also be stopping by Old Mission Santa Inés near the center of town. Just outside of Solvang, we’ll stop by OstrichLand USA—a ranch where visitors can see ostriches, feed them, and even buy their eggs!</p>
 				<h4>Day 3</h4>
 				<h3>Central Valley</h3>
 				<p>Covering a large piece of California is the Central Valley. This area is known for producing an abundance of fresh fruits, vegetables, and greenery, coupled with its small-town feel and country atmosphere. Highway 99 will take you where you need to go, but your family will enjoy discovering off-the-beaten-path destinations the most.</p>
@@ -929,16 +940,16 @@
 						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
-					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
-					<p class="italc cred">Getty Images</p>
+					<p>Explore the family-owned farms California's Central Valley is known for.</p>
+					<p class="italc cred">Hal Bergman/Getty Images</p>
 				</div>
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
 						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
 						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
 					</svg>
-					<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
-					<p class="italc cred">Getty Images</p>
+					<p>Pattie's son learns to ride in the park.</p>
+					<p class="italc cred">Courtesy of Pattie Cordova</p>
 				</div>
 			</div>
 		</div>
@@ -1219,7 +1230,7 @@
 	</div>
 </section>  
 
-<section class="region-hero full-page" id="sca-hero">
+<section class="hero region full-page" id="sca-hero">
 	<img src="assets/VCA_white.gif" class="vca-hero-logo">
 	<svg class="region-hero-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681.4 405.7">
 		<polygon class="diamond shad" points="679.7 203.8 341.2 404.7 3.5 203.8 341.6 2.9 "/>
