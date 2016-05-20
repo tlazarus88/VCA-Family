@@ -894,6 +894,15 @@ a.read-more {
 	font-size: 12px
 }
 
+.hideContentWrap .hideContent .text-box p.italc.cred {
+	color: #959595;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
 /* Section Header Styles*/
 
 .section-marker {
@@ -1386,7 +1395,7 @@ ul.scroll-list {
 	display: inline-block;
 }
 .hideContentWrap .hideContent .text-box p {
-	padding:15px 45px;
+	padding:15px 45px 0px 45px;
 	font-size:17px;
 	line-height:22px;
 	font-weight: 400;
@@ -1504,7 +1513,7 @@ ul.scroll-list {
 	background-image: url("../images/theme-parks/castle-park1.jpg");
 }
 #theme-parks a .hideContentWrap#raging-waters {
-	background-image: url("../images/theme-parks/RagingWaters_Supplied_RWSD_AquaRocket_2015_RC6530.jpg");
+	background-image: url("../images/theme-parks/raging-waters1.jpg");
 }
 #theme-parks a .hideContentWrap#universal {
 	background-image: url("../images/theme-parks/universal2.jpg");
