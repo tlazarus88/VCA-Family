@@ -246,41 +246,30 @@ function circleBg() {
 
 
   if ($(window).scrollTop() >= (roadtrip1)) {
-    $('.roadtrip-circle').addClass('circle-bg-2');
+    $('.roadtrip-circle').removeClass('circle-bg-1');
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-2');
+    $('.roadtrip-circle').addClass('circle-bg-1');
   };
   if ($(window).scrollTop() >= (roadtrip2)) {
-    $('.roadtrip-circle').addClass('circle-bg-3');
+    $('.roadtrip-circle').removeClass('circle-bg-2')
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-3');
+    $('.roadtrip-circle').addClass('circle-bg-2');
   };
   if ($(window).scrollTop() >= (roadtrip3)) {
-    $('.roadtrip-circle').addClass('circle-bg-4');
+    $('.roadtrip-circle').removeClass('circle-bg-3')
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-4');
+    $('.roadtrip-circle').addClass('circle-bg-3');
   };
   if ($(window).scrollTop() >= (roadtrip4)) {
-    $('.roadtrip-circle').addClass('circle-bg-5');
+    $('.roadtrip-circle').removeClass('circle-bg-4')
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-5');
+    $('.roadtrip-circle').addClass('circle-bg-4');
   };
   if ($(window).scrollTop() >= (roadtrip5)) {
-    $('.roadtrip-circle').addClass('circle-bg-6');
+    $('.roadtrip-circle').removeClass('circle-bg-5')
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-6');
+    $('.roadtrip-circle').addClass('circle-bg-5');
   };
-
-  // function addBlue() = function(callback) {
-  //   $('.roadtrip-circle').addClass('circle-blue', function() {
-  //   callback();
-  //   });
-  // };
-
-  // function addRed() = function(){
-  //   $('.roadtrip-circle').addClass('circle-red');
-  // };
-
 
 };
 
