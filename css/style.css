@@ -1139,49 +1139,6 @@ ul.scroll-list {
 	background-image: url(../images/article_roadtrip/map_7.jpg);
 }
 
-/* Camp CA/Listicle Styles */
-
-#camp-ca .scroll-list-box {
-	box-shadow: none;
-	margin: 80px 0 0 0;
-	position: relative;
-	z-index: 1!important;
-}
-
-#camp-ca .scroll-list-box .bold {
-	color: #1f1f1f;
-}
-
-#camp-ca .scroll-list-box .box-header {
-	margin-bottom: 6px;
-}
-
-#camp-ca .scroll-list-box .text-wrapper {
-	padding: 20px 25px 15px;
-	clear: both;
-}
-
-#camp-ca .scroll-list-box p {
-	padding: 0 20px 14px 0;
-	font-size: 19px;
-	line-height: 26px;
-	font-weight: 300;
-}
-
-#camp-ca .scroll-list-box .camp-ca-bold {
-	font-weight: 600;
-}
-
-
-#camp-ca .col-md-6 img {
-	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
-	/*margin: -250px 0 40px -10%;*/
-	margin-top: -300px;
-	margin-bottom: 40px;
-	position: relative;
-	z-index: 50!important;
-}
-
 /* Article Eats */
 
 #article-eats .col-md-6 {
@@ -1317,7 +1274,6 @@ ul.scroll-list {
 /* Animation Styles */
 
 .animateblock {
-  color: #fff;
   opacity: 0;
   -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
@@ -1332,21 +1288,66 @@ ul.scroll-list {
 	position: relative;
   z-index: 50!important;
 }
-
-/* animation transition styles */
-
 .animateblock.btm {
   display: block;
-  width: auto;
-  text-align: center;
   margin-top: 45px;
 }
-
 .animateblock.btm.animated {
   margin-top: 0;
 }
-.animateblock.btm.animated img {
-	margin-left: -18%;
+
+/* Meet CCA Animation Styles */
+
+.animateblock.btm.sect-break {
+	margin-top: -10%;
+	-webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+.animateblock.btm.animated.sect-break {
+	margin-top: -40%;
+}
+
+/* Camp CA Animation Styles */
+
+#camp-ca .animateblock.btm.animated img {
+	margin-left: -9%;
+}
+
+/* Camp CA/Listicle Styles */
+
+#camp-ca .scroll-list-box {
+	box-shadow: none;
+	margin: 80px 0 0 0;
+	position: relative;
+	z-index: 1!important;
+}
+#camp-ca .scroll-list-box .bold {
+	color: #1f1f1f;
+}
+#camp-ca .scroll-list-box .box-header {
+	margin-bottom: 6px;
+}
+#camp-ca .scroll-list-box .text-wrapper {
+	padding: 20px 25px 15px;
+	clear: both;
+}
+#camp-ca .scroll-list-box p {
+	padding: 0 20px 14px 0;
+	font-size: 19px;
+	line-height: 26px;
+	font-weight: 300;
+}
+#camp-ca .scroll-list-box .camp-ca-bold {
+	font-weight: 600;
+}
+#camp-ca .col-md-6 img {
+	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+	margin-top: -300px;
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 50!important;
 }
 
 /* Slideshow/Accordion Styles */
