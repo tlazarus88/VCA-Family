@@ -235,6 +235,12 @@ function circleBg() {
 
   var $roadtrip1 = $('#list-roadtrip');
   var roadtrip1 = $roadtrip1.offset().top;
+  var $roadtrip1a = $('#roadtrip-1a');
+  var roadtrip1a = $roadtrip1a.offset().top;
+  var $roadtrip1b = $('#roadtrip-1b');
+  var roadtrip1b = $roadtrip1b.offset().top;
+  var $roadtrip1c = $('#roadtrip-1c');
+  var roadtrip1c = $roadtrip1c.offset().top;
   var $roadtrip2 = $('#roadtrip-2');
   var roadtrip2 = $roadtrip2.offset().top;
   var $roadtrip3 = $('#roadtrip-3');
@@ -244,43 +250,46 @@ function circleBg() {
   var $roadtrip5 = $('#last-roadtrip');
   var roadtrip5 = $roadtrip5.offset().top;
 
-
-  if ($(window).scrollTop() >= (roadtrip1)) {
-    $('.roadtrip-circle').addClass('circle-bg-2');
+  if ($(window).scrollTop() >= (roadtrip1a)) {
+    $('.roadtrip-circle').removeClass('circle-bg-1');
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-2');
+    $('.roadtrip-circle').addClass('circle-bg-1');
+  };
+  if ($(window).scrollTop() >= (roadtrip1b)) {
+    $('.roadtrip-circle').removeClass('circle-bg-1a');
+  } else {
+    $('.roadtrip-circle').addClass('circle-bg-1a');
+  };
+  if ($(window).scrollTop() >= (roadtrip1c)) {
+    $('.roadtrip-circle').removeClass('circle-bg-1b');
+  } else {
+    $('.roadtrip-circle').addClass('circle-bg-1b');
+  };
+  if ($(window).scrollTop() >= (roadtrip1)) {
+    $('.roadtrip-circle').removeClass('circle-bg-1c');
+  } else {
+    $('.roadtrip-circle').addClass('circle-bg-1c');
   };
   if ($(window).scrollTop() >= (roadtrip2)) {
-    $('.roadtrip-circle').addClass('circle-bg-3');
+    $('.roadtrip-circle').removeClass('circle-bg-2')
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-3');
+    $('.roadtrip-circle').addClass('circle-bg-2');
   };
   if ($(window).scrollTop() >= (roadtrip3)) {
-    $('.roadtrip-circle').addClass('circle-bg-4');
+    $('.roadtrip-circle').removeClass('circle-bg-3')
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-4');
+    $('.roadtrip-circle').addClass('circle-bg-3');
   };
   if ($(window).scrollTop() >= (roadtrip4)) {
-    $('.roadtrip-circle').addClass('circle-bg-5');
+    $('.roadtrip-circle').removeClass('circle-bg-4')
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-5');
+    $('.roadtrip-circle').addClass('circle-bg-4');
   };
   if ($(window).scrollTop() >= (roadtrip5)) {
-    $('.roadtrip-circle').addClass('circle-bg-6');
+    $('.roadtrip-circle').removeClass('circle-bg-5')
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-6');
+    $('.roadtrip-circle').addClass('circle-bg-5');
   };
-
-  // function addBlue() = function(callback) {
-  //   $('.roadtrip-circle').addClass('circle-blue', function() {
-  //   callback();
-  //   });
-  // };
-
-  // function addRed() = function(){
-  //   $('.roadtrip-circle').addClass('circle-red');
-  // };
-
 
 };
 
