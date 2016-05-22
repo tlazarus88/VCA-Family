@@ -74,7 +74,7 @@ $(function(){
       
       topcoords = $elm.offset().top; // element's distance from top of page in pixels
       
-      if(wintop > (topcoords - (winheight*.95))) {
+      if(wintop > (topcoords - (winheight*.75))) {
         // animate when top of the window is 3/4 above the element
         $elm.addClass('animated');
       }
@@ -327,9 +327,9 @@ $('[data-readmore-toggle]').click(function(e) {
   if(typeof close_text == 'undefined') {close_text = ""}
   
   if($(this).text() == open_text) {
-    $(this).html(close_text).next('div[data-readmore]').show(1000).after(this);
+    $(this).html(close_text).next('div[data-readmore]').show(500).after(this);
   } else {
-    $(this).html(open_text).prev('div[data-readmore]').hide(1000).before(this);
+    $(this).html(open_text).prev('div[data-readmore]').hide(500).before(this);
   }
   
 });

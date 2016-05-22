@@ -18,6 +18,7 @@ body {
 	text-align: center;
 	position: relative;
 	border-top: none;
+	z-index: 0!important;
 }
 .hero#main-hero video {
 	z-index: 0!important;
@@ -35,7 +36,7 @@ body {
 }*/
 .hero img.main-title {
 	position:absolute;
-	z-index: 500!important;
+	z-index: 800!important;
 	top:50%;
 	left:50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -394,6 +395,7 @@ ul.toc-menu li a {
 	color: rgba(0,0,0,1);
 	text-decoration: none;
 	line-height: 26px;
+	transition: all .35s ease;
 }
 
 ul.toc-menu li a:hover {
@@ -404,6 +406,7 @@ ul.toc-menu li a:hover {
 ul.toc-menu .nav-explore {
 	margin-top: 20px;
 	color: rgba(0,0,0,1);
+	transition: all .35s ease;
 }
 
 .toc .row .col-md-4:hover ul.toc-menu .nav-explore {
@@ -420,6 +423,8 @@ ul.toc-menu .toc-region {
 	font-weight: 900;
 	font-size: 20px;
 	color: rgba(235,4,120,1);
+	letter-spacing: 1px;
+	font-style: italic;
 }
 ul.toc-menu .blogger-circle {
 	width: 150px;
@@ -586,6 +591,7 @@ a:hover {
 	position: relative;
 	overflow: hidden;
 	border-top: 6px solid rgba(235,4,120,1);
+	z-index: 500!important;
 }
 .hero video {
 	position: absolute;
@@ -1589,8 +1595,6 @@ ul.scroll-list {
      clear: both;
      height: 0;
 }
-
-/*test*/
 
 
 /* ----------- Laptop ----------- */
