@@ -1580,6 +1580,7 @@ ul.scroll-list {
      clear: both;
      height: 0;
 }
+.xs-display-none {display: inline;}
 
 
 /* ----------- Laptop ----------- */
@@ -1650,6 +1651,23 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 30px;line-height: 60px;}
 	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 26px;line-height: 60px;}
 	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:49px;}
+}
+
+/* ----------- Mobile ----------- */
+
+@media screen and (max-width: 840px) {
+	.col-xs-10, .col-xs-6, .col-xs-5, .col-xs-7 {width: 100%;}
+	.col-xs-6 {padding: 0 14%;}
+	.container-fluid.article.blogger-post .col-md-offset-1 {margin-left: 0;}
+	.xs-display-none, .animateblock.btm.xs-display-none  {display: none;}
+	.animateblock.btm.sect-break, .animateblock.btm.animated.sect-break {margin-top: 0;}
+	.animateblock {opacity: 1;}
+	.container-fluid.article .blogger-profile-wrap {height: 300px;}
+	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 26px;padding-left: 20px;}
+	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 22px;line-height: 60px; padding: 4px 0 0 20px;}
+	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:49px;}
+	h1 {font-size: 40px; line-height: 40px;}
+	h2 {font-size: 21px; line-height: 24px;}
 }
 
 
