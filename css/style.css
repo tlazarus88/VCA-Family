@@ -1621,6 +1621,37 @@ ul.scroll-list {
 	
 }
 
+/* ----------- Medium devices ----------- */
+
+@media screen and (max-width: 992px) {
+	.hero img.main-title {height: 50%;}
+	.container-fluid.article {width:;}
+	ul.toc-menu .nav-explore {font-size: 18px;letter-spacing: .4em;}
+	ul.toc-menu .toc-region {font-size: 20px;letter-spacing:.5px;width:auto;padding:9px 14px 6px;}
+	.toc .row .toc-bg-container {height: 185px;}
+	ul.toc-menu .blogger-circle {width: 125px;height:125px;}
+	ul.toc-menu .toc-blogger a {font-size: 28px;}
+	ul.toc-menu li {font-size: 18px;}
+	ul.toc-menu li.toc-plus {margin-top: 18px;font-size:16px;}
+	ul.toc-menu li a {padding: 12px 0;}
+	.toc-with {font-size: 18px;margin-top: 12px;margin-bottom: -24px;}
+	p {font-size: 19px; line-height: 30px;}
+	.container-fluid.article h1 {padding-top: 60px;}
+	h1 {font-size: 52px; line-height: 54px;}
+	h2 {font-size: 24px;padding: 14px 0 40px;line-height: 29px;}
+	h3 {font-size: 28px; line-height: 36px;}
+	h4 {font: italic 700 21px/25px "abril-display",sans-serif;}
+	.caption p {font-size: 16px;}
+	.caption .arrow {width: 22px;}
+	.animateblock.btm.animated.sect-break {margin-top: -30%;}
+	.parralax-credit p.cred, .caption p.cred, .caption .inline {font-size: 10px;}
+	.container-fluid.article .blogger-profile-wrap {height: 400px;}
+	.container-fluid.article .blogger-profile-wrap .btm-row {height: 60px;}
+	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 30px;line-height: 60px;}
+	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 26px;line-height: 60px;}
+	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:49px;}
+}
+
 
 
 
