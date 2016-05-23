@@ -1808,7 +1808,7 @@ ul.scroll-list {
 	ul.toc-menu li.toc-plus {margin-top: 18px;font-size:16px;}
 	ul.toc-menu li a {padding: 12px 0;}
 	.toc-with {font-size: 18px;margin-top: 12px;margin-bottom: -24px;}
-	p {font-size: 19px; line-height: 30px;}
+	p {font-size: 18px; line-height: 28px;}
 	.container-fluid.article h1 {padding-top: 60px;}
 	h1 {font-size: 48px; line-height: 50px;}
 	h2 {font-size: 22px;padding: 14px 0 40px;line-height: 27px;}
@@ -1834,7 +1834,7 @@ ul.scroll-list {
 
 @media screen and (max-width: 768px) {
 	.col-xs-10, .col-xs-6, .col-xs-5, .col-xs-7 {width: 100%;}
-	.col-xs-6 {padding: 0 14%;}
+	.col-xs-6 {padding: 0 5%;}
 	.container-fluid.article.blogger-post .col-md-offset-1 {margin-left: 0;}
 	.xs-display-none, .animateblock.btm.xs-display-none  {display: none;}
 	.animateblock.btm.sect-break, .animateblock.btm.animated.sect-break {margin-top: 0;}
@@ -1843,7 +1843,7 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 26px;padding-left: 20px;}
 	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 22px;line-height: 60px; padding: 4px 0 0 20px;}
 	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:49px;}
-	h1 {font-size: 40px; line-height: 40px;}
+	h1 {font-size: 38px; line-height: 38px;}
 	h2 {font-size: 21px; line-height: 24px;}
 	#desktop-nav {visibility: hidden;}
 	#mobile-nav {visibility: visible;}
@@ -1867,6 +1867,14 @@ ul.scroll-list {
 	.parralax-credit {right: 5%; bottom: 98%;}
 	#article-eats img {width: 100%; margin: 0;}
 	#article-eats #taco {width: 100%; margin: 0;}
+	p {line-height: 24px;}
+	.section-marker {height: 40px; margin: 0 auto -20px;}
+	.box-header .stop-name {font-size:20px;letter-spacing:1px;}
+	.box-header-num {font-size: 46px;}
+	#camp-ca .animateblock.btm.animated img {margin-left: 0;}
+	#camp-ca .col-md-6 img {margin-top: 0;}
+	#camp-ca .scroll-list-box {border: 2px solid rgba(5,187,255,1); padding: 0; width: 100%;margin-bottom: 25px;}
+	#camp-ca .scroll-list-box p {padding-right: 0;}
 }
 
 
