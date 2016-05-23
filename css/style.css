@@ -1009,19 +1009,6 @@ a.read-more {
 	position: relative;
 	z-index: 50!important;
 }
-.section-marker .bg-shape{fill:#EB0478;}
-.section-marker .letter {
-	fill:#FFFFFF;
-	font-family:'BrandonGrotesque-BlackItalic';
-	letter-spacing:1;
-	font-size:13.1307px;
-}
-.section-marker .line {
-	fill:none;
-	stroke:#FFFFFF;
-	stroke-width:0.25;
-	stroke-miterlimit:10;
-}
 .bg-img-container-wrap.northern {
 	background-image: url("../images/fpo-nrthrn-region-header-image.jpg");
 }
