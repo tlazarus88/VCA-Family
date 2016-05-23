@@ -1242,9 +1242,6 @@ ul.scroll-list {
 	background-image: url(../images/article_roadtrip/road_map_1.gif);
 }
 
-
-
-
 /* Article Eats */
 
 #article-eats .col-md-6 {
@@ -1361,6 +1358,7 @@ ul.scroll-list {
     -moz-background-size: cover;
     -o-background-size: cover;
     box-shadow: inset 0 0 1em #111;
+    background-position: center;
 }
 
 .surf-skate-wrap#surf-bg {
@@ -1408,6 +1406,7 @@ ul.scroll-list {
 }
 .mobile-skate {
 	background-image: url("../images/surf-skate/skate_1.jpg");
+	background-position: +75%;
 }
 .mobile-surf p,
 .mobile-skate p {
