@@ -961,6 +961,9 @@ a.read-more {
 	padding-top: 0;
 	margin-left: 0;
 }
+.caption p.inline.no-left-margin {
+	padding-top: 12px;
+}
 .cred.no-left-margin {
 	margin-left: 0;
 }
