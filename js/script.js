@@ -110,6 +110,7 @@ function progressBar() {
   var topThemeParks = $('#theme-parks').offset().top;
   var topSurfSkate = $('#article-surf-skate').offset().top;
   var topKidBeaches = $('#kid-beaches').offset().top;
+  var topVideoBella = $('#video-bella').offset().top;
 
   if ($(window).scrollTop() >= (topNCA)) {
     $('.nav-status-bar').addClass('status-width-0');
@@ -196,6 +197,11 @@ function progressBar() {
     $('.nav-status-bar').addClass('status-width-14');
   } else {
     $('.nav-status-bar').removeClass('status-width-14');
+  };
+  if ($(window).scrollTop() >= (topVideoBella)) {
+    $('.nav-status-bar').addClass('status-width-15');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-15');
   };
   
 };
