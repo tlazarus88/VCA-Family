@@ -143,8 +143,11 @@ body {
 	line-height: 44px;
 }
 
+.sticky-nav .btn:active {
+ 	color: rgba(255,255,255,1);
+}
+
 .sticky-nav .btn:hover {
-	background-attachment: none;
 	color: rgba(255,255,255,1);
 }
 
@@ -205,7 +208,7 @@ body {
 
 .dropdown-menu li a {
 	color: rgba(255,255,255,1);
-	white-space:normal;
+	white-space: normal;
 }
 
 .dropdown-menu li a:hover {
@@ -217,7 +220,6 @@ body {
 	width: 50px;
 	height: 50px;
 	margin: 0 auto;
-	background-color: black;
 	background-size: 100%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -335,6 +337,86 @@ body {
 
 .status-width-15 {
 	width: 100%;
+}
+
+/* Mobile Nav */
+ 
+.sticky-nav #mobile-nav {
+	height: 22px;
+}
+ 
+#mobile-nav {
+ 	visibility: hidden;
+ 	position: absolute;
+ 	top: 0;
+	left: 0;
+ 	width: 100%;
+}
+ 
+#mobile-nav .nav-california,
+#mobile-nav .nav-explore {
+ 	width: 20%;
+ 	display: inline-block;
+ 	float: left;
+ 	font-weight: 500;
+ 	font-size: 7px;
+ 	letter-spacing: .2em;
+ 	line-height: 20px;
+ 	background-color: rgba(5,187,255,.8);
+}
+ 
+#mobile-nav .dropdown {
+ 	width: 20%;
+}
+ 
+#mobile-nav .btn {
+	font-size: 8px;
+	line-height: 20px;
+	background-color: rgba(5,187,255,.8);
+	margin-top: 0;
+}
+ 
+#mobile-nav .dropdown-menu {
+	position: absolute;
+	top: 23px;
+	margin: 0;
+	text-align: center;
+	font-size: 10px;
+	margin-left: 0px;
+	transform: translateX(-25%);
+	margin-top: 0px;
+}
+
+#mobile-nav .dropdown-menu li.btn {
+	background-color: rgba(5,187,255,0);
+	height: 20px;
+	padding: 0px;
+ 	color: rgba(0,0,0,0);
+}
+
+#mobile-nav .invisible-hover {
+	background-color: rgba(0,0,0,0);
+	height: 6px;
+	margin-top: -20px;
+}
+
+#mobile-nav .dropdown-menu li {
+	padding: 10px 5px;
+}
+ 
+#mobile-nav .dropdown-menu .blogger-circle {
+ 	width: 40px;
+ 	height: 40px;
+ 	margin-bottom: 10px;
+}
+ 
+#mobile-nav .dropdown-menu li .blogger-name {
+ 	margin-top: 10px;
+ 	font-size: 10px;
+}
+ 
+#mobile-nav .dropdown-menu .divider {
+ 	margin: -20px 10% 0px 10%;
 }
 
 
@@ -1654,6 +1736,8 @@ ul.scroll-list {
 	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
 	.indicator {line-height: 90px; left:18px;}
 	.indicator img {width: 18px; height: 18px;}
+	#desktop-nav {visibility: hidden;}
+	#mobile-nav {visibility: visible;}
 }
 
 
