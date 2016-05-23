@@ -1733,6 +1733,7 @@ ul.scroll-list {
 	h2 {font-size: 21px; line-height: 24px;}
 	#desktop-nav {visibility: hidden;}
 	#mobile-nav {visibility: visible;}
+	.sticky-nav {height: 22px;}
 	.hideContentWrap {width: 90%;}
 	.hideContentWrap .hideContentHeader {height: 90px;padding: 0 50px;}
 	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
