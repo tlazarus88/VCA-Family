@@ -33,24 +33,24 @@ $(function() {
 
 // Nav Stickiness Swap
 
-scrollIntervalID = setInterval(stickIt, 10);
+// scrollIntervalID = setInterval(stickIt, 10);
 
-function stickIt() {
-  $("#sticky-nav").hide();
+// function stickIt() {
+//   $("#sticky-nav").hide();
 
-  var $orgToC = $('#toc');
-  var bottomToC = $orgToC.offset().top + $orgToC.outerHeight(true);
+//   var $orgToC = $('#toc');
+//   var bottomToC = $orgToC.offset().top + $orgToC.outerHeight(true);
 
-  if ($(window).scrollTop() >= (bottomToC)) {
-    // scrolled past the original position; now only show the cloned, sticky element.
-    $('#sticky-nav').show();
-    $('#toc').css('visibility','hidden');
-  } else {
-    // not scrolled past the menu; only show the original menu.
-    $('#sticky-nav').hide();
-    $('#toc').css('visibility','visible');
-  }
-};
+//   if ($(window).scrollTop() >= (bottomToC)) {
+//     // scrolled past the original position; now only show the cloned, sticky element.
+//     $('#sticky-nav').show();
+//     $('#toc').css('visibility','hidden');
+//   } else {
+//     // not scrolled past the menu; only show the original menu.
+//     $('#sticky-nav').hide();
+//     $('#toc').css('visibility','visible');
+//   }
+// };
 
 // Image Animations 
 
@@ -74,7 +74,7 @@ $(function(){
       
       topcoords = $elm.offset().top; // element's distance from top of page in pixels
       
-      if(wintop > (topcoords - (winheight*.95))) {
+      if(wintop > (topcoords - (winheight*.75))) {
         // animate when top of the window is 3/4 above the element
         $elm.addClass('animated');
       }
@@ -235,6 +235,12 @@ function circleBg() {
 
   var $roadtrip1 = $('#list-roadtrip');
   var roadtrip1 = $roadtrip1.offset().top;
+  var $roadtrip1a = $('#roadtrip-1a');
+  var roadtrip1a = $roadtrip1a.offset().top;
+  var $roadtrip1b = $('#roadtrip-1b');
+  var roadtrip1b = $roadtrip1b.offset().top;
+  var $roadtrip1c = $('#roadtrip-1c');
+  var roadtrip1c = $roadtrip1c.offset().top;
   var $roadtrip2 = $('#roadtrip-2');
   var roadtrip2 = $roadtrip2.offset().top;
   var $roadtrip3 = $('#roadtrip-3');
@@ -244,43 +250,46 @@ function circleBg() {
   var $roadtrip5 = $('#last-roadtrip');
   var roadtrip5 = $roadtrip5.offset().top;
 
-
-  if ($(window).scrollTop() >= (roadtrip1)) {
-    $('.roadtrip-circle').addClass('circle-bg-2');
+  if ($(window).scrollTop() >= (roadtrip1a)) {
+    $('.roadtrip-circle').removeClass('circle-bg-1');
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-2');
+    $('.roadtrip-circle').addClass('circle-bg-1');
+  };
+  if ($(window).scrollTop() >= (roadtrip1b)) {
+    $('.roadtrip-circle').removeClass('circle-bg-1a');
+  } else {
+    $('.roadtrip-circle').addClass('circle-bg-1a');
+  };
+  if ($(window).scrollTop() >= (roadtrip1c)) {
+    $('.roadtrip-circle').removeClass('circle-bg-1b');
+  } else {
+    $('.roadtrip-circle').addClass('circle-bg-1b');
+  };
+  if ($(window).scrollTop() >= (roadtrip1)) {
+    $('.roadtrip-circle').removeClass('circle-bg-1c');
+  } else {
+    $('.roadtrip-circle').addClass('circle-bg-1c');
   };
   if ($(window).scrollTop() >= (roadtrip2)) {
-    $('.roadtrip-circle').addClass('circle-bg-3');
+    $('.roadtrip-circle').removeClass('circle-bg-2')
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-3');
+    $('.roadtrip-circle').addClass('circle-bg-2');
   };
   if ($(window).scrollTop() >= (roadtrip3)) {
-    $('.roadtrip-circle').addClass('circle-bg-4');
+    $('.roadtrip-circle').removeClass('circle-bg-3')
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-4');
+    $('.roadtrip-circle').addClass('circle-bg-3');
   };
   if ($(window).scrollTop() >= (roadtrip4)) {
-    $('.roadtrip-circle').addClass('circle-bg-5');
+    $('.roadtrip-circle').removeClass('circle-bg-4')
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-5');
+    $('.roadtrip-circle').addClass('circle-bg-4');
   };
   if ($(window).scrollTop() >= (roadtrip5)) {
-    $('.roadtrip-circle').addClass('circle-bg-6');
+    $('.roadtrip-circle').removeClass('circle-bg-5')
   } else {
-    $('.roadtrip-circle').removeClass('circle-bg-6');
+    $('.roadtrip-circle').addClass('circle-bg-5');
   };
-
-  // function addBlue() = function(callback) {
-  //   $('.roadtrip-circle').addClass('circle-blue', function() {
-  //   callback();
-  //   });
-  // };
-
-  // function addRed() = function(){
-  //   $('.roadtrip-circle').addClass('circle-red');
-  // };
-
 
 };
 
@@ -318,9 +327,9 @@ $('[data-readmore-toggle]').click(function(e) {
   if(typeof close_text == 'undefined') {close_text = ""}
   
   if($(this).text() == open_text) {
-    $(this).html(close_text).next('div[data-readmore]').show(1000).after(this);
+    $(this).html(close_text).next('div[data-readmore]').show(500).after(this);
   } else {
-    $(this).html(open_text).prev('div[data-readmore]').hide(1000).before(this);
+    $(this).html(open_text).prev('div[data-readmore]').hide(500).before(this);
   }
   
 });
