@@ -31,6 +31,11 @@ $(function() {
   });
 });
 
+// Height of Legal Header
+
+var $legalHeader = $('#legal-header');
+var legalHeaderHeight = $legalHeader.outerHeight(true);
+
 // Nav Stickiness Swap
 
 scrollIntervalID = setInterval(stickIt, 10);
@@ -39,7 +44,7 @@ function stickIt() {
   $("#sticky-nav").hide();
 
   var $orgToC = $('#toc');
-  var bottomToC = $orgToC.offset().top + $orgToC.outerHeight(true);
+  var bottomToC = $orgToC.offset().top + $orgToC.outerHeight(true) - legalHeaderHeight;
 
   if ($(window).scrollTop() >= (bottomToC)) {
     // scrolled past the original position; now only show the cloned, sticky element.
