@@ -1154,15 +1154,27 @@ ul.scroll-list {
 
 #article-eats .col-md-6 {
 	position: relative;
+	margin-bottom: 38px;
+}
+
+#article-eats .col-md-6.no-pic {
+	margin-bottom: 0px;
+}
+
+#article-eats p {
+	padding: 0px;
 }
 
 #article-eats .animateblock.btm.animated img {
 	margin-left: 0%;
 }
 
+#article-eats .caption {
+	margin-top: 12px;
+}
+
 #article-eats #taco {
-	width: 50%;
-	margin-top: -65%;
+	margin-top: -50%;
 }
 
 #article-eats img {
@@ -1751,6 +1763,8 @@ ul.scroll-list {
 	#article-surf-skate .box-header {padding: 25px 0 0 0; border: none;}
 	#article-surf-skate .scroll-list-box p {padding: 25px 0;}
 	.parralax-credit {right: 5%; bottom: 98%;}
+	#article-eats img {width: 100%; margin: 0;}
+	#article-eats #taco {width: 100%; margin: 0;}
 }
 
 
