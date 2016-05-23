@@ -52,6 +52,14 @@ function stickIt() {
   }
 };
 
+// Legal Header Pop-up
+
+$(function(){
+  $('.info').click(function(){
+    $('#sponsored-by').toggle();
+  })
+})
+
 // Image Animations 
 
 $(function(){

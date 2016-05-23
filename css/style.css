@@ -68,6 +68,38 @@ body {
 	margin: -10px -55px 0 -103px;
 }
 
+#legal-header a {
+	color: rgba(255,255,255,1);
+}
+
+#legal-header a:hover {
+	color: rgba(235,4,120,1);
+}
+
+.info {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	margin-left: 5px;
+	transform: translateY(3px);
+}
+
+.info:hover {
+	cursor: pointer;
+}
+
+#sponsored-by {
+	display: none;
+	transform: translateY(-170%);
+}
+
+#sponsored-by p {
+	font-size: 9px;
+	line-height: 0px;
+	margin: 0;
+	letter-spacing: .1em;
+}
+
 /* MAIN HERO */
 
 .hero {
