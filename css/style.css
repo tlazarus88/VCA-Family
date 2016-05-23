@@ -82,7 +82,7 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 44px;
+	height: 45px;
 	z-index: 5000!important;
 	box-shadow: 0 7px 8px rgba(0,0,0,.12);
 	text-align: center;
@@ -1694,6 +1694,8 @@ ul.scroll-list {
 	.hideContentWrap {width:80%;}
 	.hideContentWrap .hideContent {height: 500px;}
 	.hideContentWrap .hideContent .text-box p {padding: 15px 22px 0px;}
+	.sticky-nav .btn {font-size: 16px;}
+	.nav-explore {font-size: 12px;}
 }
 
 @media screen and (max-width: 992px) {
@@ -1726,6 +1728,8 @@ ul.scroll-list {
 	.hideContentWrap .hideContentHeader {height: 85px;}
 	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
 	.indicator {line-height: 85px;}
+	.sticky-nav .btn {font-size: 14px;}
+	.nav-explore {font-size: 10px;}
 }
 
 /* ----------- Mobile ----------- */
