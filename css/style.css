@@ -1380,8 +1380,8 @@ ul.scroll-list {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 400;
-	font-size: 32px;
-	line-height: 34px;
+	font-size: 30px;
+	line-height: 32px;
 	letter-spacing: 2px;
 	display: table-cell; 
 	  vertical-align: middle; 
@@ -1425,7 +1425,7 @@ ul.scroll-list {
 	display: inline-block;
 }
 .hideContentWrap .hideContent .text-box p {
-	padding:15px 45px 0px 45px;
+	padding:15px 45px 0px;
 	font-size:17px;
 	line-height:22px;
 	font-weight: 400;
@@ -1636,6 +1636,12 @@ ul.scroll-list {
 
 /* ----------- Medium devices ----------- */
 
+@media screen and (max-width: 1100px) {
+	.hideContentWrap {width:80%;}
+	.hideContentWrap .hideContent {height: 500px;}
+	.hideContentWrap .hideContent .text-box p {padding: 15px 22px 0px;}
+}
+
 @media screen and (max-width: 992px) {
 	.hero img.main-title {height: 50%;}
 	.container-fluid.article {width:;}
@@ -1663,6 +1669,9 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 30px;line-height: 60px;}
 	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 26px;line-height: 60px;}
 	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:49px;}
+	.hideContentWrap .hideContentHeader {height: 85px;}
+	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
+	.indicator {line-height: 85px;}
 }
 
 /* ----------- Mobile ----------- */
@@ -1680,6 +1689,14 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:49px;}
 	h1 {font-size: 40px; line-height: 40px;}
 	h2 {font-size: 21px; line-height: 24px;}
+}
+
+@media screen and (max-width: 768px) {
+	.hideContentWrap {width: 90%;}
+	.hideContentWrap .hideContentHeader {height: 90px;padding: 0 50px;}
+	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
+	.indicator {line-height: 90px; left:18px;}
+	.indicator img {width: 18px; height: 18px;}
 }
 
 
