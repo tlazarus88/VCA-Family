@@ -18,6 +18,7 @@ body {
 	text-align: center;
 	position: relative;
 	overflow: hidden;
+	border-top: 6px solid rgba(235,4,120,1);
 }
 
 .hero#main-hero {
@@ -243,7 +244,7 @@ body {
 	width: 0%;
 	height: 4px;
 	background-color: rgba(235,4,120,1);
-	transition: width 1s ease-in-out;
+	transition: all 0.75s ease;
 }
 
 .status-width-0 {
@@ -397,7 +398,6 @@ body {
 	position: relative;
 	z-index: 1!important;
 	height: 100%;
-	border-bottom: 4px solid rgba(235,4,120,1);
 	background-color: rgba(241,251,255,1);
 }
 
