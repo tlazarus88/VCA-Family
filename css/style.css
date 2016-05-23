@@ -1359,37 +1359,49 @@ ul.scroll-list {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: #05bbff;
-	width: 950px;
+	width: 1000px;
 	margin: 0 auto 1px;
 	position: relative;
 	text-align: center;
 	overflow: hidden;
 }
 .hideContentWrap .hideContentHeader {
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 400;
-	font-size: 32px;
-	letter-spacing: 3px;
 	background-color: rgba(5,187,255,.8);
-	padding: 25px 25px 22px 25px;
+	padding: 0 75px;
 	position:relative;
 	z-index: 50!important;
 	text-shadow: 0px 2px 4px rgba(0,0,0,.4);
 	transition: all .5s ease-in-out;
+	height: 105px;
+	display: table;
+	width: 100%;
+}
+.hideContentWrap .hideContentHeader h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 34px;
+	letter-spacing: 2px;
+	display: table-cell; 
+	  vertical-align: middle; 
+	  text-align: center;
+	  transition: all .5s ease-in-out;
 }
 .hideContentWrap .hideContentHeader:hover {
 	cursor: pointer;
-	letter-spacing: 4px;
+}
+.hideContentWrap .hideContentHeader h1:hover {
+	letter-spacing: 3px;
 	color: #fff845;
 }
 .hideContentHeader.active {
     background-color: rgba(5,187,255,0);
+}
+.hideContentHeader.active h1 {
     text-shadow: 0px 1px 4px rgba(0,0,0,.8);
     color: #fff845;
-}
-.hideContentHeader.active:hover {
-	letter-spacing: 3px;
+    letter-spacing: 3px;
 }
 .hideContentWrap .hideContent {
 	height: 80vh;
@@ -1419,18 +1431,16 @@ ul.scroll-list {
 	font-weight: 400;
 }
 .indicator {
-    display: inline-block;
     position: absolute;
     left: 25px;
     text-align: center;
     font-size: 30px;
     font-weight: 100;
-    transition: all .5s ease-in-out;
-    width: 22px; height: 22px;
-    margin-right: 6px;
+    transition: all .5s ease-in-out; 
+  	line-height: 105px;
 }
 .indicator img {
-	height: auto;
+	width: 22px; height: 22px;
 }
 .indicator.rotate {
     transform: rotate(45deg);
