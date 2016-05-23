@@ -1161,15 +1161,27 @@ ul.scroll-list {
 
 #article-eats .col-md-6 {
 	position: relative;
+	margin-bottom: 38px;
+}
+
+#article-eats .col-md-6.no-pic {
+	margin-bottom: 0px;
+}
+
+#article-eats p {
+	padding: 0px;
 }
 
 #article-eats .animateblock.btm.animated img {
 	margin-left: 0%;
 }
 
+#article-eats .caption {
+	margin-top: 12px;
+}
+
 #article-eats #taco {
-	width: 50%;
-	margin-top: -65%;
+	margin-top: -50%;
 }
 
 #article-eats img {
@@ -1288,6 +1300,43 @@ ul.scroll-list {
 .surf-skate-title {
 	top: 15px;
 }
+
+.mobile-surf,
+.mobile-skate {
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+  	position: relative;
+  	min-width: 100%;
+  	height: 568px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    box-shadow: inset 0 0 1em #111;
+    visibility: hidden;
+}
+.mobile-surf {
+	background-image: url("../images/surf-skate/surf_1.jpg");
+	background-position: +75%;
+}
+.mobile-skate {
+	background-image: url("../images/surf-skate/skate_1.jpg");
+}
+.mobile-surf p,
+.mobile-skate p {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: rgba(255,255,255,1);
+	text-shadow: 0px 2px 4px rgba(0,0,0,.4);
+	text-align: center;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+
+}
+
 
 /* Animation Styles */
 
@@ -1706,13 +1755,26 @@ ul.scroll-list {
 	h2 {font-size: 21px; line-height: 24px;}
 	#desktop-nav {visibility: hidden;}
 	#mobile-nav {visibility: visible;}
+	.sticky-nav {height: 22px;}
 	.hideContentWrap {width: 90%;}
 	.hideContentWrap .hideContentHeader {height: 90px;padding: 0 50px;}
 	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
 	.indicator {line-height: 90px; left:18px;}
 	.indicator img {width: 18px; height: 18px;}
-	#desktop-nav {visibility: hidden;}
-	#mobile-nav {visibility: visible;}
+	.surf-skate-wrap#surf-bg {background-image: none; box-shadow: none}
+	.surf-skate-wrap#skate-bg {background-image: none; box-shadow: none}
+	.mobile-surf,.mobile-skate {visibility: visible}
+	.scroll-list-box {width: 90%; border:none; background-color: rgba(0,0,0,0); box-shadow: none; margin-left: 5%; margin-bottom: 0;  border-bottom: 4px solid rgba(5,187,255,1); padding: 5% 0;}
+	.scroll-list-box:first-of-type {margin-top: 0px}
+	#article-surf-skate .scroll-list-box:last-of-type {border-bottom: none}
+	#article-surf-skate .surf-skate-wrap .col-md-6.col-md-offset-1 {padding: 0 5%}
+	#article-surf-skate .scroll-list-box {margin-left: 5%; margin-top: 0px; margin-bottom: 0px; color: rgba(5,187,255,1);}
+	.best-for {color: rgba(0,0,0,1);}
+	#article-surf-skate .box-header {padding: 25px 0 0 0; border: none;}
+	#article-surf-skate .scroll-list-box p {padding: 25px 0;}
+	.parralax-credit {right: 5%; bottom: 98%;}
+	#article-eats img {width: 100%; margin: 0;}
+	#article-eats #taco {width: 100%; margin: 0;}
 }
 
 
