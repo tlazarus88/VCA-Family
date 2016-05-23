@@ -12,6 +12,94 @@ body {
 	overflow-x: hidden;
 }
 
+/* LEGAL HEADER */
+#legal-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 62px;
+	background-color: rgba(0,0,0,1);
+	z-index: 9999 !important;
+	padding: 10px 55px;
+	text-align: center;
+	font-family: 'Brandon Grotesque', sans-serif;
+
+}
+
+.people-logo {
+	float: left;
+	height: 42px;
+	width: 103px;
+	background-image: url("../assets/People_Logo.png");
+	background-size: cover;
+}
+
+.social {
+	list-style: none;
+	float: right;
+	width: auto;
+	padding-top: 7px;
+}
+
+.facebook {
+	margin-left: 0px;
+	display: inline-block;
+	float: left;
+	width: 25px;
+}
+
+.twitter {
+	margin-left: 5px;
+	display: inline-block;
+	float: left;
+	width: 25px;
+}
+
+#legal-header p {
+	font-size: 11px;
+	line-height: 62px;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+	float: none;
+	display: inline-block;
+	width: auto;
+	padding: 0; 
+	margin: -10px -55px 0 -103px;
+}
+
+#legal-header a {
+	color: rgba(255,255,255,1);
+}
+
+#legal-header a:hover {
+	color: rgba(235,4,120,1);
+}
+
+.info {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	margin-left: 5px;
+	transform: translateY(3px);
+}
+
+.info:hover {
+	cursor: pointer;
+}
+
+#sponsored-by {
+	display: none;
+	transform: translateY(-170%);
+}
+
+#sponsored-by p {
+	font-size: 9px;
+	line-height: 0px;
+	margin: 0;
+	letter-spacing: .1em;
+}
+
 /* MAIN HERO */
 
 .hero {
@@ -81,7 +169,7 @@ body {
 /* whole nav has bonus 1px height*/
 .sticky-nav {
 	position: fixed;
-	top: 0;
+	top: 62px;
 	width: 100%;
 	height: 45px;
 	z-index: 5000!important;
@@ -1154,9 +1242,6 @@ ul.scroll-list {
 	background-image: url(../images/article_roadtrip/road_map_1.gif);
 }
 
-
-
-
 /* Article Eats */
 
 #article-eats .col-md-6 {
@@ -1273,6 +1358,7 @@ ul.scroll-list {
     -moz-background-size: cover;
     -o-background-size: cover;
     box-shadow: inset 0 0 1em #111;
+    background-position: center;
 }
 
 .surf-skate-wrap#surf-bg {
@@ -1320,6 +1406,7 @@ ul.scroll-list {
 }
 .mobile-skate {
 	background-image: url("../images/surf-skate/skate_1.jpg");
+	background-position: +75%;
 }
 .mobile-surf p,
 .mobile-skate p {
@@ -1720,7 +1807,7 @@ ul.scroll-list {
 	ul.toc-menu li.toc-plus {margin-top: 18px;font-size:16px;}
 	ul.toc-menu li a {padding: 12px 0;}
 	.toc-with {font-size: 18px;margin-top: 12px;margin-bottom: -24px;}
-	p {font-size: 19px; line-height: 30px;}
+	p {font-size: 18px; line-height: 28px;}
 	.container-fluid.article h1 {padding-top: 60px;}
 	h1 {font-size: 48px; line-height: 50px;}
 	h2 {font-size: 22px;padding: 14px 0 40px;line-height: 27px;}
@@ -1746,7 +1833,7 @@ ul.scroll-list {
 
 @media screen and (max-width: 768px) {
 	.col-xs-10, .col-xs-6, .col-xs-5, .col-xs-7 {width: 100%;}
-	.col-xs-6 {padding: 0 14%;}
+	.col-xs-6 {padding: 0 5%;}
 	.container-fluid.article.blogger-post .col-md-offset-1 {margin-left: 0;}
 	.xs-display-none, .animateblock.btm.xs-display-none  {display: none;}
 	.animateblock.btm.sect-break, .animateblock.btm.animated.sect-break {margin-top: 0;}
@@ -1755,7 +1842,7 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 26px;padding-left: 20px;}
 	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 22px;line-height: 60px; padding: 4px 0 0 20px;}
 	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:49px;}
-	h1 {font-size: 40px; line-height: 40px;}
+	h1 {font-size: 38px; line-height: 38px;}
 	h2 {font-size: 21px; line-height: 24px;}
 	#desktop-nav {visibility: hidden;}
 	#mobile-nav {visibility: visible;}
@@ -1779,6 +1866,14 @@ ul.scroll-list {
 	.parralax-credit {right: 5%; bottom: 98%;}
 	#article-eats img {width: 100%; margin: 0;}
 	#article-eats #taco {width: 100%; margin: 0;}
+	p {line-height: 24px;}
+	.section-marker {height: 40px; margin: 0 auto -20px;}
+	.box-header .stop-name {font-size:20px;letter-spacing:1px;}
+	.box-header-num {font-size: 46px;}
+	#camp-ca .animateblock.btm.animated img {margin-left: 0;}
+	#camp-ca .col-md-6 img {margin-top: 0;}
+	#camp-ca .scroll-list-box {border: 2px solid rgba(5,187,255,1); padding: 0; width: 100%;margin-bottom: 25px;}
+	#camp-ca .scroll-list-box p {padding-right: 0;}
 }
 
 
