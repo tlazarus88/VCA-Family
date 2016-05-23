@@ -1027,49 +1027,47 @@ ul.scroll-list {
 	position: relative;
 	z-index: +1;
 }
-
 .scroll-list-box:first-of-type {
 	margin-top: 50%;
 }
-
 .article .col-md-12 .scroll-list-box p {
 	clear: both;
 	padding: 25px;
 	text-align: left;
 }
-
 .box-header {
 	width: 100%;
-	display: inline-block;
 	float: left;
 	font-weight: 500;
 	font-size: 25px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	border-bottom: 1px solid rgba(5,187,255,1);
+	display: table;
 }
-
-.one-line {
+/*.one-line {
 	line-height: 50px;
-}
+}*/
 .box-header-num {
 	float: left;
 	font-weight: 900;
 	font-size: 50px;
 	color: rgba(235,4,120,1);
-	padding: 25px;
-	margin-right: 25px;
+	padding: 20px 30px;
 	border-right: 1px solid rgba(5,187,255,1);
 }
 .box-header .stop-name {
 	display: block;
-	padding: 25px;
+	padding: 0 25px;
+	font-size: 23px;
+	display: table-cell; 
+  vertical-align: middle; 
+  text-align: left;
+  width: 100%;
 }
-
 .bold {
 	font-weight: 700;
 }
-
 .vca-logo-color {
 	width: 20%;
 	padding-top: 20px;
@@ -1373,37 +1371,45 @@ ul.scroll-list {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: #05bbff;
-	width: 950px;
+	width: 1000px;
 	margin: 0 auto 1px;
 	position: relative;
 	text-align: center;
 	overflow: hidden;
 }
 .hideContentWrap .hideContentHeader {
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 400;
-	font-size: 32px;
-	letter-spacing: 3px;
 	background-color: rgba(5,187,255,.8);
-	padding: 25px 25px 22px 25px;
+	padding: 0 75px;
 	position:relative;
 	z-index: 50!important;
 	text-shadow: 0px 2px 4px rgba(0,0,0,.4);
 	transition: all .5s ease-in-out;
+	height: 95px;
+	width: 100%;
+	 display: table; 
 }
-.hideContentWrap .hideContentHeader:hover {
+.hideContentWrap .hideContentHeader h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 32px;
+	letter-spacing: 1.5px;
+	transition: all .5s ease-in-out;
+	display: table-cell; 
+  vertical-align: middle; 
+  text-align: center;
+}
+.hideContentWrap .hideContentHeader:hover h1 {
 	cursor: pointer;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	color: #fff845;
 }
 .hideContentHeader.active {
     background-color: rgba(5,187,255,0);
     text-shadow: 0px 1px 4px rgba(0,0,0,.8);
     color: #fff845;
-}
-.hideContentHeader.active:hover {
-	letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .hideContentWrap .hideContent {
 	height: 80vh;
@@ -1418,7 +1424,6 @@ ul.scroll-list {
 	margin:0 10px 10px 10px;
 }
 .hideContentWrap .hideContent h4 {
-	/*background-color: rgba(235,4,120,1);*/
 	background-color: rgba(36,52,60,.9);
 	color: #FFF;
 	padding: 8px 40px 4px;
@@ -1427,7 +1432,7 @@ ul.scroll-list {
 	display: inline-block;
 }
 .hideContentWrap .hideContent .text-box p {
-	padding:15px 45px 0px 45px;
+	padding:15px 45px 0px;
 	font-size:17px;
 	line-height:22px;
 	font-weight: 400;
@@ -1440,11 +1445,10 @@ ul.scroll-list {
     font-size: 30px;
     font-weight: 100;
     transition: all .5s ease-in-out;
-    width: 22px; height: 22px;
-    margin-right: 6px;
+    line-height: 95px;
 }
 .indicator img {
-	height: auto;
+	width: 22px; height: 22px;
 }
 .indicator.rotate {
     transform: rotate(45deg);
@@ -1621,7 +1625,33 @@ ul.scroll-list {
 	.hero#main-hero .title-inner .hero-text-wrap {margin-top:1.4%;}
 }
 
+/* ----------- Medium Devices ----------- */
 
+@media screen and (max-width: 1100px) {
+	.hideContentWrap {width:80%;}
+	.hideContentWrap .hideContent {height: 500px;}
+	.hideContentWrap .hideContent .text-box p {padding: 15px 22px 0px;}
+}
+
+@media screen and (max-width: 992px) {
+	.hero img.main-title {height: 50%;}
+	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 30px;line-height: 60px;}
+	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 26px;line-height: 60px;}
+	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:49px;}
+	.hideContentWrap .hideContentHeader {height: 85px;}
+	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
+	.indicator {line-height: 85px;}
+}
+
+/* ----------- Mobile ----------- */
+
+@media screen and (max-width: 768px) {
+	.hideContentWrap {width: 90%;}
+	.hideContentWrap .hideContentHeader {height: 90px;padding: 0 50px;}
+	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
+	.indicator {line-height: 90px; left:18px;}
+	.indicator img {width: 18px; height: 18px;}
+}
 
 
 
