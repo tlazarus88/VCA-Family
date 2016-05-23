@@ -36,7 +36,7 @@
 
 <section class="container-fluid toc clearfix" id="toc">
 	<div class="row">
-		<div class="col-md-4 toc-nca">
+		<div class="col-xs-4 col-md-4 toc-nca">
 			<div class="toc-bg-container">
 				<div class="toc-nca-bg"></div>
 			</div>
@@ -57,7 +57,7 @@
 	    		<li><a href="#kid-attractions">8 Must-See Kid-Friendly Attractions</a></li>
 	  		</ul>
 		</div>
-		<div class="col-md-4 toc-cca">
+		<div class="col-xs-4 col-md-4 toc-cca">
 			<div class="toc-bg-container">
 				<div class="toc-cca-bg"></div>
 			</div>
@@ -78,7 +78,7 @@
 	    		<li><a href="#article-eats">#EEEEEATS: Family-Friendly Spots in Central California</a></li>
 	  		</ul>
 		</div>
-		<div class="col-md-4 toc-sca">
+		<div class="col-xs-4 col-md-4 toc-sca">
 			<div class="toc-bg-container">
 				<div class="toc-sca-bg"></div>
 			</div>
@@ -103,6 +103,7 @@
 </section>
 
 <section class="sticky-nav clearfix" id="sticky-nav">
+<div id="desktop-nav">
 	<div class="dropdown">
 	  <button class="btn dropdown-toggle nav-nca" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 	    <span class="nav-explore">EXPLORE</span> NORTHERN CALIFORNIA
@@ -176,6 +177,76 @@
 	</div>
 	<div class="nav-progress-bar"></div>
 	<div class="nav-status-bar"></div>
+</div>
+<div id="mobile-nav">
+	<div class="nav-explore">EXPLORE</div>
+	<div class="dropdown">
+	  <button class="btn dropdown-toggle nav-nca" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	    NORTHERN
+	    <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	  	<div class="invisible-hover"></div>
+	  	<li class="nav-blogger"><a href="#nrthrn-blog-post">
+	  		<div class="blogger-circle" id="brandi-nav"></div>
+	  		<span class="blogger-name">Brandi Riley's</span></br>
+	  		Guide to Northern California</a></li>
+	  	<li role="separator" class="divider"></li>
+	    <li><a href="#camp-ca">Camp California</a></li>
+	    <li role="separator" class="divider"></li>
+	    <li><a href="#photo-op">Photo Op: Share-Worthy Northern California Spots</a></li>
+	    <li role="separator" class="divider"></li>
+	    <li><a href="#article-roadtrip">The Anti “Are We There Yet?” Road Trip</a></li>
+	    <li role="separator" class="divider"></li> 
+	    <li><a href="#kid-attractions">8 Must-See Kid-Friendly Attractions</a></li>
+	  </ul>
+	</div>
+	<div class="dropdown">
+	  <button class="btn dropdown-toggle nav-cca" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	    CENTRAL
+	    <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	  	<div class="invisible-hover"></div>
+	  	<li class="nav-blogger"><a href="#cntrl-blog-post">
+	  		<div class="blogger-circle" id="pattie-nav"></div>
+	  		<span class="blogger-name">Pattie Cordova's</span></br>
+	  		Guide to Central California</a></li>
+	  	<li role="separator" class="divider"></li>
+	     <li><a href="#eduvacation">Edu(va)cation</a></li>
+	    <li role="separator" class="divider"></li>
+	    <li><a href="#article-meet-cca">Get to Know Central California</a></li>
+	    <li role="separator" class="divider"></li>
+	    <li><a href="#must-see-parks">4 Outdoor Adventures in Central California</a></li>
+	    <li role="separator" class="divider"></li>
+	    <li><a href="#article-eats">#EEEEEATS: Family-Friendly Spots in Central California</a></li>
+	  </ul>
+	</div>
+	<div class="dropdown">
+	  <button class="btn dropdown-toggle nav-sca" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	    SOUTHERN
+	    <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	  	<div class="invisible-hover"></div>
+	  	<li class="nav-blogger"><a href="#sthrn-blog-post">
+	  		<div class="blogger-circle" id="justine-nav"></div>
+	  		<span class="blogger-name">Justine Howell's</span></br>
+	  		Guide to Southern California</a></li>
+	  	<li role="separator" class="divider"></li>
+	  	<li><a href="#theme-parks">Thrills, Chills, and Enchantments</a></li>
+	    <li role="separator" class="divider"></li>
+	    <li><a href="#article-surf-skate">Surf ’n Skate</a></li>
+	    <li role="separator" class="divider"></li>
+	    <li><a href="#kid-beaches">6 Kid-Friendly Southern California Beaches</a></li>
+	    <li role="separator" class="divider"></li>
+	    <li><a href="#bella-video">Bella Video TK</a></li>
+	  </ul>
+	</div>
+	<div class="nav-california">CALIFORNIA</div>
+	<div class="nav-progress-bar"></div>
+	<div class="nav-status-bar"></div>
+</div>
 </section>
 
 <section class="hero region full-page" id="nca-hero">
@@ -191,7 +262,7 @@
 <section class="bg-img-container-wrap blog" id="nrthrn-blog-post">
 	<div class="container-fluid article blogger-post">
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-xs-10 col-md-9">
 				<h1>Brandi's Guide To Northern California</h1>
 				<h2>The mama behind <span class="italc">Mama Knows It All</span> shares her favorite places to play with her family.</h2>
 				<div class="blogger-profile-wrap clearfix">
@@ -214,7 +285,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<p>Thanks to my father’s military status, I was very fortunate to be able to travel the world when I was growing up. No place I’ve been, however, compares to Northern California. Friendly folks who feel like neighbors, the influence of many diverse cultures, and a chill vibe make it easy for anyone to feel comfortable here. Five years ago, when I first visited the region, I dreamed that I could one day call it home. Three years ago, that dream became a reality, and I’m so proud to raise my daughter here and call Oakland, California my forever home!</p>
 				<p>There’s nothing to not love about where I live. From the awesome weather year round to the abundance of fun family activities, it’s no wonder that my friends and family all start concocting plans to relocate after vacationing here. It doesn’t hurt that I know all of the best places to take them to make them fall in love with our neck of the woods (or beach, or city...more on that later!). Northern California, the Bay Area in particular, is the ultimate family playground. Whether you have one child like I do, or a whole group of them, there’s plenty to keep your entire family happy.</p>
 				<p>Because there’s so much to do here, it’s easy to be overwhelmed by the choices. Don’t worry, Mama Knows It All has you covered! If you’re visiting the area for the first time, or you live here but want to get out and explore more, here’s a three-day itinerary that will help you cover the most ground...and have the most fun in Northern California!</p>
@@ -223,7 +294,7 @@
 				<h3>Oakland and Berkeley</h3>
 				<p>I know, I know, everyone loves San Francisco. I do, too! You don’t have to rush into the city during your Northern California visit, though. In fact, it’s a good idea to pace yourself, especially if you’re traveling with children. Starting in San Francisco’s neighboring cities, Oakland and Berkeley, is a great way to start your vacation, and set the tone for the trip. Besides, they’re both extraordinarily family-friendly, with plenty to do and lots to keep the kiddos occupied and engaged.</p>
 			</div>
-			<div class="col-md-5 col-md-offset-1">
+			<div class="xs-display-none col-md-5 col-md-offset-1">
 				<img class="animateblock btm" src="images/brandi/oakland.jpg">
 				<div class="caption">
 					<p>Oakland at night. <span class="italc cred inline">Getty Images</span></p>
@@ -231,10 +302,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-xs-7 col-md-7">
 				<img class="over animateblock btm" src="images/brandi/Brandi1.jpg">
 			</div>
-			<div class="col-md-5">
+			<div class="col-xs-5 col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
 						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
@@ -254,7 +325,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<h5>Children’s Fairyland</h5>
 				<p>Our family first fell in love with Children’s Fairyland on our first visit to Oakland. Super-duper kid-friendly, this fairytale-themed amusement park will be loved by children of all ages. Ride the Jolly Trolly Train, sit in on a puppet show, or meet new animal friends in the menagerie. You can experience the entire park in just a couple of hours, which leaves plenty of time for you to keep exploring.</p>
 				<h5>Jack London Square</h5>
@@ -264,12 +335,12 @@
 				<h5>Shorebird Park Nature Center and Adventure Playground</h5>
 				<p>When you get your second wind, take the family to Shorebird Park Nature Center and Adventure Playground for another interesting experience.  A quintessentially Berkeley attraction, this park is unlike any playground you’ve ever been to. There's a zip line that kids and adults can ride on, and opportunities for children to build things with real hammers and nails, and to use paint to decorate their very own fort. The Shorebird Park Nature Center and Adventure Playground might be your kiddo’s favorite part of the entire day!</p>
 			</div>
-			<div class="col-md-5 col-md-offset-1">
+			<div class="col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
 				<img class="sect-break under animateblock btm" src="images/brandi/Brandi2.jpg">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<h4>Day 2</h4>
 				<h3>San Francisco</h3>
 				<p>The starlet of Northern California is obviously San Francisco. It’s one of the most visited cities in the world. If you’re in the region, you absolutely cannot miss it. If you start in Oakland, you can take the ferry from Jack London Square over to Fisherman’s Wharf for an exciting beginning to a day in the city. Even if you don't take the ferry, BART is a super affordable way to get into San Francisco, or you can leave the car at one of the many parking garages that are available.</p>
@@ -279,10 +350,10 @@
 	<div data-readmore>
 		<div class="container-fluid article blogger-post">
 			<div class="row">
-				<div class="col-md-7">
+				<div class="col-xs-7 col-md-7">
 					<img class="over animateblock btm" src="images/brandi/Brandi3.jpg">
 				</div>
-				<div class="col-md-5">
+				<div class="col-xs-5 col-md-5">
 					<div class="caption">
 						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
 							<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
@@ -302,7 +373,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-xs-6 col-md-6">
 					<h5>Fisherman’s Wharf</h5>
 					<p>No matter what your plans are, Fisherman’s Wharf has to be on your agenda. There’s so much to do there! You can see some ships, get a glimpse of Alcatraz, and watch the sea lions sunbathe or play. I have to warn you, though: It might be hard to drag the family to the next attraction after they see the sea lions! They’re just so darn interesting to watch!</p>
 					<h5>Chinatown</h5>
@@ -311,12 +382,12 @@
 					<p>Since it’s one of the most iconic bridges in the country, you have to go over the Golden Gate bridge if you’re in Northern California. Every few weeks I try to sweet-talk my husband into driving me over the bridge because I absolutely love the views! Not only will your kids be impressed by the sheer size and beauty of the bridge, but it takes you to one of the most lovely little cities in our area.</p>
 					<h5>Sausalito</h5>
 				</div>
-				<div class="col-md-5 col-md-offset-1">
-					<img class="sect-break under animateblock btm" src="images/brandi/Brandi4.jpg">
+				<div class="col-md-5 col-md-offset-1 col-xs-5 col-xs-offset-1">
+					<img class="xs-display-none sect-break under animateblock btm" src="images/brandi/Brandi4.jpg">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-xs-6 col-md-6">
 					<p>After you drive over the Golden Gate Bridge, make your way to the Bay Area Discovery Museum. With its focus on imagination, creativity, and STEM activities, even the adults in the family will be engaged at the museum. There are often special events going on, so make sure you check the museum calendar before you go. After you leave, check out some of the shops in downtown Sausalito, and sit down for lunch at one of the many family-friendly restaurants in the area.</p>
 					<h5>Treasure Island</h5>
 					<p>To end your day, head over to Treasure Island, right at the end of the Bay Bridge, to watch the sunset. You won’t find a better view of San Francisco anywhere else. It’ll be the perfect close to a fun-filled day, and a memory that you’ll never, ever forget!</p>
@@ -327,8 +398,8 @@
 					<h5>Yosemite National Park</h5>
 					<p>If you are coming to Northern California and you only have a few days, you MUST go to Yosemite National Park. It’s a 2.5-hour drive from Oakland, so if you start early in the morning, you'll have plenty of time to explore. One of the greatest parks in our country, Yosemite is absolutely breathtaking. When you and your family experience the amazing valley and beautiful waterfalls, you’ll be reminded of how beautiful our country truly is.</p>
 				</div>
-				<div class="col-md-5 col-md-offset-1">
-					<img class="animateblock btm" src="images/brandi/Supplied-Brandi5.jpg">
+				<div class="col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
+					<img class="animateblock btm xs-display-none" src="images/brandi/Supplied-Brandi5.jpg">
 					<div class="caption">
 						<p>Lorem ipsum dolor sit amet, eruditi scaevola temporibus ne eam, quo te quis feugait liberavisse.</p>
 						<p class="italc cred">Getty Images</p>
@@ -336,7 +407,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-7">
+				<div class="col-xs-7 col-md-7">
 					<img class="over animateblock btm" src="images/brandi/yosemite.jpg">
 					<div class="caption">
 						<p class="italc cred inline">Getty Images</p>
@@ -344,7 +415,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-xs-6 col-md-6">
 					<h6>Option #2: Santa Cruz</h6>
 					<h5>Santa Cruz Beach Boardwalk</h5>
 					<p>When I lived on the East Coast, one of my favorite things to do with my daughter was take a bus to the shore and hang out at the beach. Our version of that is the Santa Cruz Beach Boardwalk with its classic amusements, rides, and attractions. There’s a Ferris wheel, games, miniature golf, and great beach-themed foods. Your family will have the best time at the Santa Cruz Boardwalk!</p>
@@ -363,12 +434,7 @@
 </section> 
 
 <!-- CAMP CA -->
-<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 14.3925 16.241)" class="letter">N</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
+<img class="section-marker" src="images/nrthrn-sect-icon.svg">
 <section class="bg-img-container-wrap northern" id="camp-ca">
 	<div class="container-fluid article">
 		<div class="row">
@@ -377,7 +443,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2">
 				<h2>Northern California offers some of the most stunning and diverse campsites in the world—explore these six options.</h2>
 				<p>Whether you want to sleep at the feet of giants in Redwoods National Park or wake up at the water’s edge in Lake Tahoe, adventure seekers will marvel at Northern California’s options. From off-the-grid rustic sites to the ultimate glamping experience, here are six options for planning your next camping excursion.</p>
 			</div>
@@ -533,12 +599,7 @@
 </section>
 
 <!-- PHOTO OP -->
-<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 14.3925 16.241)" class="letter">N</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
+<img class="section-marker" src="images/nrthrn-sect-icon.svg">
 <section class="bg-img-container-wrap northern" id="photo-op">
 	<div class="container-fluid article">
 		<div class="row">
@@ -599,12 +660,7 @@
 </section>
 
 <!-- ROAD TRIP -->
-<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 14.3925 16.241)" class="letter">N</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
+<img class="section-marker" src="images/nrthrn-sect-icon.svg">
 <section class="bg-img-container-wrap northern" id="article-roadtrip">
 	<div class="container-fluid article">
 		<div class="row">
@@ -711,12 +767,7 @@
 </section>
 
 <!-- KID ATTRACTIONS -->
-<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 14.3925 16.241)" class="letter">N</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
+<img class="section-marker" src="images/nrthrn-sect-icon.svg">
 <section class="bg-img-container-wrap northern" id="kid-attractions">
 	<div class="container-fluid article">
 		<div class="row">
@@ -853,7 +904,7 @@
 <section class="bg-img-container-wrap" id="cntrl-blog-post">
 	<div class="container-fluid article blogger-post">
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-xs-10 col-md-9">
 				<h1>Pattie's Guide To Central California</h1>
 				<h2>The mama behind Living Mi Vida Loca shares her favorite Central California spots.</h2>
 				<div class="blogger-profile-wrap clearfix">
@@ -876,7 +927,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<p>We love visiting Central California because it gives us a beautiful mix of the ocean, the mountains, and farm life. It offers some of the best wineries on the West Coast, has little-known towns, and features fun little eateries sprinkled throughout the coast. Now that summer is coming up, we’ve started planning our next family road trip up to Central California, and it includes a handful of adventure-filled stops. The Central Valley and the Central Coast are where we’ll be spending the majority of our time because they’re both just a short drive away from Los Angeles. Want to plan your own Central California road trip and need ideas? Read on for our three-day family road trip itinerary!</p>
 				<h4>Day 1</h4>
 				<h3>Santa Barbara</h3>
@@ -887,7 +938,7 @@
 				<h3>Solvang</h3>
 				<p>About an hour away from Santa Barbara is a quaint little town called Solvang. Driving into Solvang will make you feel as though you’re stepping back in time. You will immediately get the small-town feel (it has a population of about 5,500) as you drive down its one major road and past its mom-and-pop shops and well-known bakeries. Founded by a group of Danes in 1911, the town gives you the feeling that it hasn’t changed much since then.</p>
 			</div>
-			<div class="col-md-5 col-md-offset-1">
+			<div class="xs-display-none col-md-5 col-md-offset-1">
 				<img class="animateblock btm" src="images/pattie/visiting-oceanside.jpg">
 				<div class="caption">
 					<p>Pattie and her crew strike a pose on a jetty.
@@ -896,10 +947,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-xs-7 col-md-7">
 				<img class="over animateblock btm" src="images/pattie/solvang.jpg">
 			</div>
-			<div class="col-md-5">
+			<div class="col-xs-5 col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
 						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
@@ -911,7 +962,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<p>Solvang is still home to bakeries, restaurants, and merchants who have continued to offer a taste of Denmark through its food, landscape, and museums.</p>
 				<h5>You can find us at...</h5>
 				<p>shoe store trying on a pair of clogs, the local bookstore peeking into the Hans Christian Andersen museum upstairs, and, of course, around Copenhagen replicas like the Little Mermaid statue and the Round Tower, taking family pictures. We’ll also be stopping by Old Mission Santa Inés near the center of town. Just outside of Solvang, we’ll stop by OstrichLand USA—a ranch where visitors can see ostriches, feed them, and even buy their eggs!</p>
@@ -923,7 +974,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-xs-7 col-md-7">
 				<img class="over animateblock btm" src="images/pattie/central-valley.jpg">
 			</div>
 			<div class="col-md-5">
@@ -946,10 +997,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<p>Central California is a wonderful region of the Golden State, with the ocean and mountains surrounding the family-owned farms and quaint towns that you’ll run into simply by driving down the scenic highways. Families can always find something that they enjoy doing. Whether we choose a day at the beach, a tour of historic missions, or fruit picking at a farm, Central California will give us three days of fun, great meals, and bonding moments that will carry us into our future California travels.</p>
 			</div>
-			<div class="col-md-5 col-md-offset-1">
+			<div class="col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
 				<img class="sect-break under animateblock btm" src="images/pattie/supplied_pattie_2.jpg">
 			</div>
 		</div>
@@ -957,12 +1008,7 @@
 </section> 
 
 <!-- Edu(va)cation -->
-<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 15.1928 16.241)" class="letter">C</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
+<img class="section-marker" src="images/cntrl-sect-icon.svg">
 <section class="bg-img-container-wrap central" id="eduvacation">
 	<div class="container-fluid article">
 		<div class="row">
@@ -1045,12 +1091,7 @@
 </section>
 
 <!-- Meet Central California -->
-<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 15.1928 16.241)" class="letter">C</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
+<img class="section-marker" src="images/cntrl-sect-icon.svg">
 <section class="bg-img-container-wrap central" id="article-meet-cca">
 	<div class="container-fluid article">
 		<div class="row">
@@ -1171,12 +1212,7 @@
 </section> 
 
 <!-- Must-See Parks -->
-<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 15.1928 16.241)" class="letter">C</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
+<img class="section-marker" src="images/cntrl-sect-icon.svg">
 <section class="bg-img-container-wrap central" id="must-see-parks">
 	<div class="container-fluid article">
 		<div class="row">
@@ -1241,12 +1277,7 @@
 </section>
 
 <!-- #EEATS -->
-<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 15.1928 16.241)" class="letter">C</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
+<img class="section-marker" src="images/cntrl-sect-icon.svg">
 <section class="bg-img-container-wrap central" id="article-eats">
 	<div class="container-fluid article">
 		<div class="row">
@@ -1325,7 +1356,7 @@
 <section class="bg-img-container-wrap" id="sthrn-blog-post">
 	<div class="container-fluid article blogger-post">
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-xs-10 col-md-9">
 				<h1>Justine’s Guide to Southern California</h1>
 				<h2>The mama behind The Typical Mom shares 25 of her favorite places to play with the family.</h2>
 				<div class="blogger-profile-wrap clearfix">
@@ -1348,7 +1379,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<p>I have lived in California almost my entire life, and I couldn’t imagine raising my kids anywhere else! Southern California is unique because you can visit the beach, go to Disneyland, or play in the snow, usually within a two hour drive….you really can’t find that anywhere else! If you haven’t visited the Golden State yet, let us show you around. Here are 25 of our favorite spots with a lot of hidden gems in between!</p>
 				<p>Let’s start with the fabulous amusement parks you will find here in Southern California. You can’t pass these by:</p>
 				<h4>1</h4>
@@ -1364,7 +1395,7 @@
 				<h3>Universal Studios Hollywood</h3>
 				<p>A really fun place for rides and live entertainment featuring your favorite movie characters, and their studio tour is amazing. We love seeing where some of our favorite movies were filmed!</p>
 			</div>
-			<div class="col-md-5 col-md-offset-1">
+			<div class="xs-display-none col-md-5 col-md-offset-1">
 				<img class="animateblock btm" src="images/justine/KnottsBerryFarm.jpg">
 				<div class="caption">
 					<p>Camp Snoopy at Knott's Berry Farm. <span class="italc cred inline">Getty Images</span></p>
@@ -1372,10 +1403,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-xs-7 col-md-7">
 				<img class="over animateblock btm" src="images/justine/simpsons-universal.jpg">
 			</div>
-			<div class="col-md-5">
+			<div class="col-xs-5 col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
 						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
@@ -1395,7 +1426,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<h4>5</h4>
 				<h3>LEGOLAND</h3>
 				<p>A fun place for younger kids, especially those who love building! There are not only fun rides at LEGOLAND but building stations, a great waterpark, and Sea Life Aquarium adjacent to the park as well. It’s fascinating what they’ve made out of LEGO bricks!</p>
@@ -1416,18 +1447,18 @@
 				<h3>Tide Pools</h3>
 				<p>We love visiting the many tide pools in Southern California! One of our favorite spots is in <a href="http://temeculablogs.com/la-jolla-tide-pools/">La Jolla, called Children’s Pool</a>. There’s a beach where you can look for small sea creatures and get up close and personal with the harbor seals and sea lions, who love to sun themselves!</p>
 			</div>
-			<div class="col-md-5 col-md-offset-1">
+			<div class="xs-display-none col-md-5 col-md-offset-1">
 				<img class="sect-break under animateblock btm" src="images/justine/legoland.jpg">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-xs-7 col-md-7">
 				<img class="over animateblock btm" src="images/justine/supplied_justine_2.jpg">
 			</div>
-			<div class="col-md-5 r-rail-above">
+			<div class="xs-display-none col-md-5 r-rail-above">
 				<img class="sect-break under animateblock btm" src="images/justine/supplied_justine_1.jpg">
 			</div>
-			<div class="col-md-5">
+			<div class="col-xs-5 col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
 						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
@@ -1447,7 +1478,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<h4>11</h4>
 				<h3>Ocean Institute</h3>
 				<p>If you’re coming to Southern California to visit the ocean and all it has to offer, this is a great place to visit in Dana Point! They offer hands-on exploration, and taking a whale-watching trip is a must, too…it’s amazing!</p>
@@ -1457,7 +1488,7 @@
 	<div data-readmore>
 	<div class="container-fluid article blogger-post">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<h4>12</h4>
 				<h3>Huntington Beach Adventure Playground</h3>
 				<p>This is a hidden gem! If your childhood included playing in mud puddles, sliding down slippery slopes with your friends, and not caring about how dirty you got….your kids will get to experience that kind of down-home fun here too!</p>
@@ -1470,10 +1501,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-xs-7 col-md-7">
 				<img class="animateblock btm" src="images/justine/san_clemente.jpg">
 			</div>
-			<div class="col-md-5">
+			<div class="col-xs-5 col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
 						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
@@ -1484,7 +1515,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<p class="italc">If you’re an animal lover and you’re looking for fun places in Southern California to visit them, there are several locations, both big and small.</p>
 				<h4>15</h4>
 				<h3>San Diego Zoo Safari Park</h3>
@@ -1495,7 +1526,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<h4>17</h4>
 				<h3>Bates Nut Farm</h3>
 				<p>Our favorite hidden gem!! My kids love feeding animals, seasonal festivals, and large fields where we can have a picnic and run free. Bates offers all of these things! Each season offers something new with a small-town feel, and it’s become our tradition each October to pick pumpkins right off the vine!</p>
@@ -1517,7 +1548,7 @@
 				<h3>Santa Rosa Plateau</h3>
 				<p>Our all-time favorite place to hike! Gorgeous isn’t a big enough word to describe this area. There are many trails to choose from and it’s fairly flat, so it’s easy for children to join the fun! We pack a picnic and head out for an afternoon together often, and we always see something new.</p>
 			</div>
-			<div class="col-md-5 col-md-offset-1">
+			<div class="xs-display-none col-md-5 col-md-offset-1">
 				<img class="sect-break under animateblock btm" src="images/justine/supplied_justine_6.jpg">
 				<div class="caption">
 					<p>Bates Nut Farm.<span class="italc cred inline">Getty Images</span></p>
@@ -1525,13 +1556,13 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-xs-7 col-md-7">
 				<img class="over animateblock btm" src="images/justine/supplied_justine_3.jpg">
 			</div>
-			<div class="col-md-5 r-rail-above">
+			<div class="xs-display-none col-md-5 r-rail-above">
 				<img class="sect-break under animateblock btm" src="images/justine/idyllwild.jpg">
 			</div>
-			<div class="col-md-5">
+			<div class="col-xs-5 col-md-5">
 				<div class="caption">
 					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
 						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
@@ -1551,7 +1582,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-md-6">
 				<h4>23</h4>
 				<h3>Julian</h3>
 				<p>Another hidden gem! We love finding small quaint towns like this one and just making a day trip of it. It’s a great little place to stay at a bed-and-breakfast, explore the beautiful woody area, visit their underground candy mine, and have a slice of their noteworthy apple pie!</p>
@@ -1570,12 +1601,7 @@
 </section> 
 
 <!-- Theme Parks -->
-<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 15.8559 16.241)" class="letter">S</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
+<img class="section-marker" src="images/sthrn-sect-icon.svg">
 <section class="bg-img-container-wrap southern" id="theme-parks">
 	<div class="container-fluid article">
 		<div class="row">
@@ -1690,12 +1716,7 @@
 </section>
 
 <!-- Surf 'n Skate' -->
-<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 15.8559 16.241)" class="letter">S</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
+<img class="section-marker" src="images/sthrn-sect-icon.svg">
 <section class="bg-img-container-wrap southern" id="article-surf-skate">
 	<div class="container-fluid article">
 		<div class="row">
@@ -1774,12 +1795,7 @@
 </section>
 
 <!-- Kid Beaches -->
-<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 15.8559 16.241)" class="letter">S</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
+<img class="section-marker" src="images/sthrn-sect-icon.svg">
 <section class="bg-img-container-wrap southern" id="kid-beaches">
 	<div class="container-fluid article">
 		<div class="row">
@@ -1868,12 +1884,7 @@
 </section>
 
 <!-- BELLA VIDEO -->
-<svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 15.8559 16.241)" class="letter">S</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
+<img class="section-marker" src="images/sthrn-sect-icon.svg">
 <section class="bg-img-container-wrap southern" id="video-bella">
 	<div class="container-fluid article">
 		<div class="row">
