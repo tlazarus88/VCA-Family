@@ -133,19 +133,18 @@ body {
 	transform: translate(-50%, -50%);
 	height: 65%;
 }
-.hero#main-hero img.main-title {
+.hero img#main-title-logo {
 	margin-top: -2%;
 }
-.hero#main-hero .vca-hero-logo {
-	position: absolute;
-	z-index: 350!important;
-	bottom: 12%;
-	width: 150px;
-	display: inline-block;
-	left:50%;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
+.hero#main-hero .title-logo {
+	position:relative;
+	z-index: 800!important;
+	border: 1px solid red;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+
 }
 .hero video {
 	position: absolute;
