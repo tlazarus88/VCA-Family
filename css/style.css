@@ -1883,12 +1883,16 @@ ul.scroll-list {
 	.hideContentWrap {width:80%;}
 	.hideContentWrap .hideContent {height: 500px;}
 	.hideContentWrap .hideContent .text-box p {padding: 15px 22px 0px;}
+	#legal-header p {font-size: 10px;}
+	#legal-header #sponsored-by p {font-size: 8px;}
 	.sticky-nav .btn {font-size: 16px;}
 	.nav-explore {font-size: 12px;}
 }
 
 @media screen and (max-width: 992px) {
 	.hero img.main-title {height: auto; width: 80%;}
+	#legal-header {padding: 10px 20px;}
+	#legal-header #sponsored-by p {font-size: 7px;}
 	ul.toc-menu .nav-explore {font-size: 18px;letter-spacing: .4em;}
 	ul.toc-menu .toc-region {font-size: 20px;letter-spacing:.5px;width:auto;padding:9px 14px 6px;}
 	.toc .row .toc-bg-container {height: 185px;}
@@ -1946,6 +1950,12 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:49px;}
 	h1 {font-size: 38px; line-height: 38px;}
 	h2 {font-size: 21px; line-height: 24px;}
+	#legal-header {height: 45px; padding: 10px 0;}
+	.people-logo {height: 24px; width: 60px; margin-left: 10px;}
+	#legal-header .social {padding-top: 2px; margin-right: 10px;}
+	li.twitter, li.facebook {width: 20px;}
+	#legal-header p {margin: -10px -45px 0 -50px; line-height: 45px;}
+	#legal-header #sponsored-by p {font-size: 7px; line-height: 8px; padding: 4px 10px; margin: 0; position: fixed; top: 0; left: 0; width: 100%; background-color: rgba(0,0,0,1)}
 	ul.toc-menu .nav-explore {font-size: 12px;}
 	ul.toc-menu .toc-region {font-size: 15px;}
 	ul.toc-menu .blogger-circle {box-shadow: 0px 0px 0px 4px rgba(235,4,120,1);}
@@ -1955,7 +1965,7 @@ ul.scroll-list {
 	ul.toc-menu li a {line-height: 16px;}
 	#desktop-nav {visibility: hidden;}
 	#mobile-nav {visibility: visible;}
-	.sticky-nav {height: 22px;}
+	.sticky-nav {height: 22px; top: 45px;}
 	.hideContentWrap {width: 90%;}
 	.hideContentWrap .hideContentHeader {height: 90px;padding: 0 50px;}
 	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
