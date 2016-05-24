@@ -114,7 +114,6 @@ body {
 }
 .hero#main-hero video {
 	z-index: 0!important;
-	display: none;
 }
 .hero#main-hero .main-title {
 	z-index: 100!important;
