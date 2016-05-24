@@ -1631,7 +1631,9 @@ ul.scroll-list {
 .hideContentHeader.active {
     background-color: rgba(5,187,255,0);
     text-shadow: 0px 1px 4px rgba(0,0,0,.8);
-    color: #fff845;
+}
+.hideContentHeader.active h1 {
+	color: #fff845;
     letter-spacing: 2px;
 }
 .hideContentWrap .hideContent {
@@ -1824,7 +1826,7 @@ ul.scroll-list {
      clear: both;
      height: 0;
 }
-.xs-display-none {display: inline;}
+.xs-display-none {display: none;}
 
 
 /* ----------- Laptop ----------- */
@@ -1873,7 +1875,7 @@ ul.scroll-list {
 
 @media screen and (max-width: 1100px) {
 	.hideContentWrap {width:80%;}
-	.hideContentWrap .hideContent {height: 500px;}
+	.hideContentWrap .hideContent {height: 500px;height: 65vh;}
 	.hideContentWrap .hideContent .text-box p {padding: 15px 22px 0px;}
 	.sticky-nav .btn {font-size: 16px;}
 	.nav-explore {font-size: 12px;}
@@ -1911,12 +1913,16 @@ ul.scroll-list {
 	.sticky-nav .btn {font-size: 14px;}
 	.nav-explore {font-size: 10px;}
 	.hero video {display: none;}
-	.hero#main-hero {background-image: url("../images/main-opt7.jpg");}
+	.hero#main-hero {background-image: url("../images/main-opt2.jpg");}
 	.hero#nca-hero {background-image: url("../images/nca.jpg");}
 	.hero#cca-hero {background-image: url("../images/cca.jpg");}
 	.hero#sca-hero {background-image: url("../images/sca.jpg"); margin-top: -50%;}
 	#article-eats img {width: 100%; margin: 0;}
 	#article-eats #taco {width: 100%; margin: 0;}
+	#camp-ca .animateblock.btm.animated img {margin-left: 0;margin-top: 40px;}
+	.hideContentWrap {height: 500px;height:65vh;margin-bottom: 40px;}
+	.hideContentWrap .hideContent {display: inline;}
+	.indicator {display: none;}
 }
 
 /* ----------- Mobile ----------- */
@@ -1947,8 +1953,6 @@ ul.scroll-list {
 	.hideContentWrap {width: 90%;}
 	.hideContentWrap .hideContentHeader {height: 90px;padding: 0 50px;}
 	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
-	.indicator {line-height: 90px; left:18px;}
-	.indicator img {width: 18px; height: 18px;}
 	.surf-skate-wrap#surf-bg {background-image: none; box-shadow: none}
 	.surf-skate-wrap#skate-bg {background-image: none; box-shadow: none}
 	.mobile-surf,.mobile-skate {visibility: visible}
