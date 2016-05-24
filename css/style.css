@@ -33,6 +33,7 @@ body {
 	width: 103px;
 	background-image: url("../assets/People_Logo.png");
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .social {
@@ -82,6 +83,8 @@ body {
 	width: 15px;
 	margin-left: 5px;
 	transform: translateY(3px);
+	opacity: .5;
+	transition: all 0.75s ease;
 }
 
 .info:hover {
@@ -90,7 +93,7 @@ body {
 
 #sponsored-by {
 	display: none;
-	transform: translateY(-170%);
+	transform: translateY(-170%); 
 }
 
 #sponsored-by p {
@@ -98,6 +101,10 @@ body {
 	line-height: 0px;
 	margin: 0;
 	letter-spacing: .1em;
+}
+
+.info-opaque {
+	opacity: 1;
 }
 
 /* MAIN HERO */
@@ -327,16 +334,17 @@ body {
 	width: 100%;
 	height: 4px;
 	background-color: rgba(255,255,255,1);
+	transition: all 0.75s ease;
 }
 
 .nav-status-bar {
+	transition: all 0.75s ease;
 	position: absolute;
 	z-index: +1;
 	bottom: -1px;
 	width: 0%;
 	height: 4px;
 	background-color: rgba(235,4,120,1);
-	transition: all 0.75s ease;
 }
 
 .status-width-0 {
@@ -447,8 +455,13 @@ body {
 	text-align: center;
 	font-size: 10px;
 	margin-left: 0px;
-	transform: translateX(-25%);
 	margin-top: 0px;
+	min-width: 20%;
+}
+
+#mobile-nav .dropdown-menu li {
+	padding: 10px 5px;
+	margin-top: 10px;
 }
 
 #mobile-nav .dropdown-menu li.btn {
@@ -458,14 +471,15 @@ body {
  	color: rgba(0,0,0,0);
 }
 
+#mobile-nav .dropdown-menu li a {
+	padding: 0;
+	font-size: 9px;
+}
+
 #mobile-nav .invisible-hover {
 	background-color: rgba(0,0,0,0);
 	height: 6px;
 	margin-top: -20px;
-}
-
-#mobile-nav .dropdown-menu li {
-	padding: 10px 5px;
 }
  
 #mobile-nav .dropdown-menu .blogger-circle {
@@ -1277,7 +1291,7 @@ ul.scroll-list {
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 8px rgba(235,4,120,1);
-	background-image: url(../images/article_roadtrip/map_1.jpg);
+	background-image: url(../images/article_roadtrip/road_map_1.gif);
 	transition: all .5s ease-in-out;
 }
 
@@ -1626,7 +1640,9 @@ ul.scroll-list {
 .hideContentHeader.active {
     background-color: rgba(5,187,255,0);
     text-shadow: 0px 1px 4px rgba(0,0,0,.8);
-    color: #fff845;
+}
+.hideContentHeader.active h1 {
+	color: #fff845;
     letter-spacing: 2px;
 }
 .hideContentWrap .hideContent {
@@ -1819,7 +1835,7 @@ ul.scroll-list {
      clear: both;
      height: 0;
 }
-.xs-display-none {display: inline;}
+.xs-display-none {display: none;}
 
 
 /* ----------- Laptop ----------- */
@@ -1867,14 +1883,18 @@ ul.scroll-list {
 
 @media screen and (max-width: 1100px) {
 	.hideContentWrap {width:80%;}
-	.hideContentWrap .hideContent {height: 500px;}
+	.hideContentWrap .hideContent {height: 500px;height: 65vh;}
 	.hideContentWrap .hideContent .text-box p {padding: 15px 22px 0px;}
+	#legal-header p {font-size: 10px;}
+	#legal-header #sponsored-by p {font-size: 8px;}
 	.sticky-nav .btn {font-size: 16px;}
 	.nav-explore {font-size: 12px;}
 }
 
 @media screen and (max-width: 992px) {
 	.hero img.main-title {height: auto; width: 80%;}
+	#legal-header {padding: 10px 20px;}
+	#legal-header #sponsored-by p {font-size: 7px;}
 	ul.toc-menu .nav-explore {font-size: 18px;letter-spacing: .4em;}
 	ul.toc-menu .toc-region {font-size: 20px;letter-spacing:.5px;width:auto;padding:9px 14px 6px;}
 	.toc .row .toc-bg-container {height: 185px;}
@@ -1905,10 +1925,20 @@ ul.scroll-list {
 	.sticky-nav .btn {font-size: 14px;}
 	.nav-explore {font-size: 10px;}
 	.hero video {display: none;}
-	.hero#main-hero {background-image: url("../images/main-opt7.jpg");}
+	.hero#main-hero {background-image: url("../images/main-opt2.jpg");}
 	.hero#nca-hero {background-image: url("../images/nca.jpg");}
 	.hero#cca-hero {background-image: url("../images/cca.jpg");}
-	.hero#sca-hero {background-image: url("../images/sca.jpg");}
+	.hero#sca-hero {background-image: url("../images/sca.jpg"); margin-top: -50%;}
+	#article-eats img {width: 100%; margin: 0;}
+	#article-eats #taco {width: 100%; margin: 0;}
+	#camp-ca .animateblock.btm.animated img {margin-left: 0;margin-top: 40px;}
+	.hideContentWrap {height: 500px;height:65vh;margin-bottom: 40px;}
+	.hideContentWrap .hideContent {display: inline;}
+	.indicator {display: none;}
+	#article-roadtrip .row:nth-of-type(3) {margin-top: -50px;}
+	#article-roadtrip .circle-container{top: 150px; width: 50%; transform: translateX(-50%)!important;}
+	#article-roadtrip .scroll-list-box {margin-top: 90%;}
+	#article-roadtrip .parralax-credit p {max-width: 100%;}
 }
 
 /* ----------- Mobile ----------- */
@@ -1925,6 +1955,12 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 22px;line-height: 60px; padding: 4px 0 0 18px;float: left;}
 	h1 {font-size: 38px; line-height: 38px;}
 	h2 {font-size: 21px; line-height: 24px;}
+	#legal-header {height: 45px; padding: 10px 0;}
+	.people-logo {height: 24px; width: 60px; margin-left: 10px;}
+	#legal-header .social {padding-top: 2px; margin-right: 10px;}
+	li.twitter, li.facebook {width: 20px;}
+	#legal-header p {margin: -10px -45px 0 -50px; line-height: 45px;}
+	#legal-header #sponsored-by p {font-size: 7px; line-height: 8px; padding: 4px 10px; margin: 0; position: fixed; top: 0; left: 0; width: 100%; background-color: rgba(0,0,0,1)}
 	ul.toc-menu .nav-explore {font-size: 12px;}
 	ul.toc-menu .toc-region {font-size: 15px;}
 	ul.toc-menu .blogger-circle {box-shadow: 0px 0px 0px 4px rgba(235,4,120,1);}
@@ -1934,16 +1970,15 @@ ul.scroll-list {
 	ul.toc-menu li a {line-height: 16px;}
 	#desktop-nav {visibility: hidden;}
 	#mobile-nav {visibility: visible;}
-	.sticky-nav {height: 22px;}
+	.sticky-nav {height: 22px; top: 45px;}
 	.hideContentWrap {width: 90%;}
 	.hideContentWrap .hideContentHeader {height: 90px;padding: 0 50px;}
 	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
-	.indicator {line-height: 90px; left:18px;}
-	.indicator img {width: 18px; height: 18px;}
 	.surf-skate-wrap#surf-bg {background-image: none; box-shadow: none}
 	.surf-skate-wrap#skate-bg {background-image: none; box-shadow: none}
 	.mobile-surf,.mobile-skate {visibility: visible}
 	.scroll-list-box {width: 90%; border:none; background-color: rgba(0,0,0,0); box-shadow: none; margin-left: 5%; margin-bottom: 0;  border-bottom: 4px solid rgba(5,187,255,1); padding: 5% 0;}
+	#article-roadtrip .scroll-list-box {border: 4px solid rgba(5,187,255,1); background-color: rgba(255,255,255,1); padding: 0;}
 	.scroll-list-box:first-of-type {margin-top: 0px}
 	#article-surf-skate .scroll-list-box:last-of-type {border-bottom: none}
 	#article-surf-skate .surf-skate-wrap .col-md-6.col-md-offset-1 {padding: 0 5%}
@@ -1952,8 +1987,7 @@ ul.scroll-list {
 	#article-surf-skate .box-header {padding: 25px 0 0 0; border: none;}
 	#article-surf-skate .scroll-list-box p {padding: 25px 0;}
 	.parralax-credit {right: 5%; bottom: 98%;}
-	#article-eats img {width: 100%; margin: 0;}
-	#article-eats #taco {width: 100%; margin: 0;}
+	.parralax-credit .italc.cred{font-size: 10px; text-shadow: none; color: #A9A7A7;}
 	p {line-height: 24px;}
 	.section-marker {height: 40px; margin: 0 auto -20px;}
 	.box-header .stop-name {font-size:20px;letter-spacing:1px;}
@@ -1995,12 +2029,31 @@ ul.scroll-list {
 	.box-header .stop-name {font-size: 18px;}
 	#camp-ca .scroll-list-box p {font-size: 17px;}
 	h5 {font-size: 20px;}
+	#legal-header p {font-size: 8px;}
+	#desktop-toc{display:none;}
+	#mobile-toc{display: block}
+	#camp-ca .scroll-list-box {border: none;margin-bottom: 0;}
+	#camp-ca .animateblock.btm.animated img, #camp-ca .animateblock.btm img {box-shadow: none; padding-bottom: 40px;border-bottom: 4px solid rgba(5,187,255,1);}
+	#camp-ca .caption {margin-bottom: 0;}
+	#camp-ca .scroll-list-box .text-wrapper {padding:20px 0 15px;}
+	.box-header-num {padding: 18px 15px 0 15px;border:none;}
+	.box-header .stop-name {padding: 0 15px 15px 15px;border-left:1px solid rgba(5,187,255,1)}
+	#article-roadtrip .circle-container {width:90%;}
+	#article-roadtrip .scroll-list .col-md-6 {margin-left: 0; margin-right: 0; padding: 0;}
+	#article-roadtrip .row:nth-of-type(2) {margin-bottom: -150px;}
+	#article-roadtrip .scroll-list-box {margin-top: 200%;}
+	#article-roadtrip li {height: 200%; margin-left: 0; margin-bottom: 100%}
+	.parallax-bg__myers, .parallax-bg__founders-grove, .parallax-bg__eternal-tree-house{background-image: none; box-shadow: none;}
+	#article-roadtrip .caption {display: none;}
+	#article-roadtrip .stop-name {padding: 0 25px;}
+	#article-roadtrip .box-header-num {padding: 20px 30px;}
 }
 
 @media screen and (max-width: 375px) {
 	#desktop-toc{display:none;}
 	#mobile-toc{display: block}
 }
+
 
 
 
