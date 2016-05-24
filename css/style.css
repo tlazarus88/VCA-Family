@@ -995,7 +995,7 @@ a.read-more {
 	width: 35px;
 	height: auto;
 	position: absolute;
-	bottom: 68px;
+	bottom: 22px;
 	left: 26px;
 	z-index: 100!important;
 }
@@ -1026,12 +1026,6 @@ a.read-more {
 	background-image: url("../images/justine/Justine_profile.jpg");
 }
 
-/* Arrow Icon SVG Styles */
-
-.arrow .bg-yellow {
-	fill:#FFF845;
-}
-
 /* Caption/SVG Styles */
 
 .caption {
@@ -1039,12 +1033,22 @@ a.read-more {
 }
 
 .caption .arrow {
-	width: 25px;
+	width: 35px;
 	height: auto;
 	float: left;
-	margin-bottom: 8px;
+	margin-bottom: 8px !important;
 	margin-top: 20px;
+	box-shadow: none !important;
 }
+
+img.arrow.rotate-left {
+	transform: rotate(-90deg);
+}
+
+img.arrow.rotate-down {
+	transform: rotate(180deg);
+}
+
 .caption h5 {
 	color: #eb0478;
 	padding-top: 5px;
@@ -1918,7 +1922,7 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .btm-row {height: 60px;}
 	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 30px;line-height: 60px;}
 	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 26px;line-height: 60px;}
-	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:49px;}
+	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:4px;}
 	.hideContentWrap .hideContentHeader {height: 85px;}
 	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
 	.indicator {line-height: 85px;}
@@ -1999,6 +2003,8 @@ ul.scroll-list {
 	#camp-ca .col-md-6 img {margin-top: 0;}
 	#camp-ca .scroll-list-box {border: 2px solid rgba(5,187,255,1); padding: 0; width: 100%;margin-bottom: 25px;}
 	#camp-ca .scroll-list-box p {padding-right: 0;}
+	#camp-ca .caption {margin-bottom: 0px;}
+	#camp-ca .col-xs-offset-1 {margin-left: 0}
 	.row.tout {margin-top: 80px;}
 	.caption .arrow {display: none;}
 	.caption {margin-bottom: 40px;}
@@ -2050,7 +2056,7 @@ ul.scroll-list {
 	#article-roadtrip li {height: 200%; margin-left: 0; margin-bottom: 100%}
 	.parallax-bg__myers, .parallax-bg__founders-grove, .parallax-bg__eternal-tree-house{background-image: none; box-shadow: none;}
 	#article-roadtrip .caption {display: none;}
-	#article-roadtrip .stop-name {padding: 0 25px;}
+	#article-roadtrip .stop-name {padding: 0 25px; font-size: 18px;}
 	#article-roadtrip .box-header-num {padding: 20px 30px;}
 }
 
