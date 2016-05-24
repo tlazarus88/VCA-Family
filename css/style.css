@@ -651,6 +651,82 @@ ul.toc-menu .divider {
 	background-image:  url('../images/toc_nav/Justine_toc.jpg');
 }
 
+/* Mobile TOC */
+#mobile-toc {
+	display: none;
+}
+#mobile-toc .col-xs-12.col-md-12 {
+	width: 100%;
+	float: left;
+	padding-bottom: 10px;
+}
+
+#mobile-toc .nav-explore {
+	display: inline-block;
+	font-size: 10px;
+}
+
+#mobile-toc ul.toc-menu .toc-region {
+	display: inline-block;
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+#mobile-toc ul.toc-menu .toc-blogger a {
+	display: block;
+	text-align: left;
+	font-size: 14px;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+#mobile-toc .blogger-circle {
+	display: inline-block;
+	float: left;
+	width: 75px;
+	height: 75px;
+	box-shadow: 0px 0px 0px 2px rgba(235,4,120,1);
+	margin-left: 40px;
+}
+
+#mobile-toc ul.toc-menu .toc-blogger .toc-with {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 700;
+	color: rgba(0,0,0,1);
+	margin-left: 10px;
+	margin-top: 20px;
+	text-shadow: 0px 0px 4px rgba(255,255,255,.5);
+}
+
+#mobile-toc .toc-bg-container {
+	height: 135px;
+}
+
+#mobile-toc .toc-bg-container .mobile-toc-bg {
+	background-size: 200%;
+	background-position: top;
+}
+
+#mobile-toc .toc-plus {
+	margin-top: 35px;
+	font-size: 18px;
+}
+
+#mobile-toc ul.toc-menu li a {
+	font-size: 12px;
+	padding: 5px 0;
+	margin: 0;
+}
+
+#mobile-toc ul.toc-menu .divider {
+	max-width: 95%;
+	margin: -10px auto 0 auto;
+	box-shadow: 0px 8px 14px 0px rgba(0,0,0,.05)
+}
+
+
 /* General Styles */
 
 h1 {
@@ -1844,6 +1920,13 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:49px;}
 	h1 {font-size: 38px; line-height: 38px;}
 	h2 {font-size: 21px; line-height: 24px;}
+	ul.toc-menu .nav-explore {font-size: 12px;}
+	ul.toc-menu .toc-region {font-size: 15px;}
+	ul.toc-menu .blogger-circle {box-shadow: 0px 0px 0px 4px rgba(235,4,120,1);}
+	ul.toc-menu .toc-blogger a {font-size: 20px; line-height: 24px;}
+	ul.toc-menu li.toc-plus {font-size: 12px;}
+	ul.toc-menu li {font-size: 14px;}
+	ul.toc-menu li a {line-height: 16px;}
 	#desktop-nav {visibility: hidden;}
 	#mobile-nav {visibility: visible;}
 	.sticky-nav {height: 22px;}
@@ -1874,6 +1957,11 @@ ul.scroll-list {
 	#camp-ca .col-md-6 img {margin-top: 0;}
 	#camp-ca .scroll-list-box {border: 2px solid rgba(5,187,255,1); padding: 0; width: 100%;margin-bottom: 25px;}
 	#camp-ca .scroll-list-box p {padding-right: 0;}
+}
+
+@media screen and (max-width: 375px) {
+	#desktop-toc{display:none;}
+	#mobile-toc{display: block}
 }
 
 
