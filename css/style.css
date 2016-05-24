@@ -455,8 +455,13 @@ body {
 	text-align: center;
 	font-size: 10px;
 	margin-left: 0px;
-	transform: translateX(-25%);
 	margin-top: 0px;
+	min-width: 20%;
+}
+
+#mobile-nav .dropdown-menu li {
+	padding: 10px 5px;
+	margin-top: 10px;
 }
 
 #mobile-nav .dropdown-menu li.btn {
@@ -466,14 +471,15 @@ body {
  	color: rgba(0,0,0,0);
 }
 
+#mobile-nav .dropdown-menu li a {
+	padding: 0;
+	font-size: 9px;
+}
+
 #mobile-nav .invisible-hover {
 	background-color: rgba(0,0,0,0);
 	height: 6px;
 	margin-top: -20px;
-}
-
-#mobile-nav .dropdown-menu li {
-	padding: 10px 5px;
 }
  
 #mobile-nav .dropdown-menu .blogger-circle {
@@ -2012,6 +2018,7 @@ ul.scroll-list {
 	h2, .container-fluid.article.blogger-post h2 {font-size: 20px;}
 	h3 {font-size: 24px;}
 	h4 {italic 700 18px/20px "abril-display",sans-serif}
+	#legal-header p {font-size: 8px;}
 	#desktop-toc{display:none;}
 	#mobile-toc{display: block}
 	#camp-ca .scroll-list-box {border: none;margin-bottom: 0;}
