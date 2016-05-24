@@ -1977,7 +1977,6 @@ ul.scroll-list {
 	.hideContentWrap .hideContent .text-box {margin: 0;}
 	.hideContentWrap .hideContent .text-box p {padding:15px 18px 0px;}
 	.hideContentWrap .hideContent h4 {padding: 8px 30px 4px;margin-top:16px;font-size: 16px;}
-
 	.surf-skate-wrap#surf-bg {background-image: none; box-shadow: none}
 	.surf-skate-wrap#skate-bg {background-image: none; box-shadow: none}
 	.mobile-surf,.mobile-skate {visibility: visible}
@@ -2012,6 +2011,8 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap img.mobile-blogger {display: block;}
 	#cntrl-blog-post .container-fluid.article .blogger-profile-wrap img.mobile-blogger {margin-top: -100px;}
 	.container-fluid.article .blogger-profile-wrap .mob-location {display: inline-block;}
+	#camp-ca .col-xs-offset-1 {margin-left: 0;}
+	a.read-more {font-size: 15px;margin-bottom: -18px;}
 }
 
 @media screen and (max-width: 414px) {
