@@ -1560,9 +1560,10 @@ ul.scroll-list {
     letter-spacing: 2px;
 }
 .hideContentWrap .hideContent {
-	height: 80vh;
+	height: 65vh;
 	display: none;
 	max-height: 750px;
+	overflow: hidden;
 }
 .hideContentWrap .hideContent .text-box {
 	background-color:rgba(255,255,255,.9);
@@ -1891,6 +1892,22 @@ ul.scroll-list {
 	.caption {margin-bottom: 40px;}
 	.container-fluid.article .r-rail-above {margin-left: 0;}
 	.bg-img-container-wrap {padding-bottom: 40px;}
+}
+
+@media screen and (max-width: 414px) {
+	.container-fluid.article, a.readmore {width: 95%;}
+	a.readmore {font-size:15px;line-height: 6px;}
+	p {font-size: 17px;}
+	h1 {font-size: 30px;line-height: 32px;}
+	h2, .container-fluid.article.blogger-post h2 {font-size: 20px;}
+	h3 {font-size: 24px;}
+	h4 {italic 700 18px/20px "abril-display",sans-serif}
+	#camp-ca .scroll-list-box {border: none;margin-bottom: 0;}
+	#camp-ca .animateblock.btm.animated img, #camp-ca .animateblock.btm img {box-shadow: none; padding-bottom: 40px;border-bottom: 4px solid rgba(5,187,255,1);}
+	#camp-ca .caption {margin-bottom: 0;}
+	#camp-ca .scroll-list-box .text-wrapper {padding:20px 0 15px;}
+	.box-header-num {padding: 18px 15px 0 15px;border:none;}
+	.box-header .stop-name {padding: 0 15px 15px 15px;border-left:1px solid rgba(5,187,255,1)}
 }
 
 
