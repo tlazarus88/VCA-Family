@@ -1676,6 +1676,10 @@ ul.scroll-list {
 	line-height:22px;
 	font-weight: 400;
 }
+.hideContentWrap img.mob-slideshow {
+
+	display: none;
+}
 .indicator {
     display: inline-block;
     position: absolute;
@@ -1975,12 +1979,13 @@ ul.scroll-list {
 	#desktop-nav {visibility: hidden;}
 	#mobile-nav {visibility: visible;}
 	.sticky-nav {height: 22px; top: 45px;}
-	.hideContentWrap {width: 90%;height: 775px;}
+	.hideContentWrap img.mob-slideshow {display:inline-block;}
+	.hideContentWrap {width: 90%;height: auto;background-image: none;}
 	.hideContentWrap .hideContentHeader {height: 90px;padding: 0 50px;}
 	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
-	.hideContentWrap .hideContent .text-box {margin: 0;}
+	.hideContentWrap .hideContent .text-box {margin: 0;position: relative;}
 	.hideContentWrap .hideContent .text-box p {padding:15px 18px 0px;}
-	.hideContentWrap .hideContent h4 {padding: 8px 30px 4px;margin-top:16px;font-size: 16px;}
+	.hideContentWrap .hideContent h4 {padding: 8px 30px 4px;font-size: 16px;display:block;}
 	.surf-skate-wrap#surf-bg {background-image: none; box-shadow: none}
 	.surf-skate-wrap#skate-bg {background-image: none; box-shadow: none}
 	.mobile-surf,.mobile-skate {visibility: visible}
@@ -2019,6 +2024,43 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .mob-location {display: inline-block;}
 	#camp-ca .col-xs-offset-1 {margin-left: 0;}
 	a.read-more {font-size: 15px;margin-bottom: -18px;}
+	#photo-op a .hideContentWrap#burney, 
+	#photo-op a .hideContentWrap#shasta,
+	#photo-op a .hideContentWrap#mendocino,
+	#photo-op a .hideContentWrap#eureka,
+	#kid-attractions a .hideContentWrap#great-america,
+	#kid-attractions a .hideContentWrap#gilroy,
+	#kid-attractions a .hideContentWrap#discov-kingdom,
+	#kid-attractions a .hideContentWrap#chil-fairyland,
+	#kid-attractions a .hideContentWrap#safari-west,
+	#kid-attractions a .hideContentWrap#fairytale-town,
+	#kid-attractions a .hideContentWrap#sac-zoo,
+	#kid-attractions a .hideContentWrap#funderland,
+	#eduvacation a .hideContentWrap#chabot-space,
+	#eduvacation a .hideContentWrap#monterey-aquarium,
+	#eduvacation a .hideContentWrap#academy-sciences,
+	#eduvacation a .hideContentWrap#monterey-aquarium,
+	#eduvacation a .hideContentWrap#exploratorium,
+	#eduvacation a .hideContentWrap#tech-museum,
+	#eduvacation a .hideContentWrap#sb-natural-history,
+	#must-see-parks a .hideContentWrap#yosemite,
+	#must-see-parks a .hideContentWrap#mammoth-lakes,
+	#must-see-parks a .hideContentWrap#sequoia-kings,
+	#must-see-parks a .hideContentWrap#death-valley,
+	#theme-parks a .hideContentWrap#seaworld,
+	#theme-parks a .hideContentWrap#knotts-berry,
+	#theme-parks a .hideContentWrap#magic-mountain,
+	#theme-parks a .hideContentWrap#disneyland,
+	#theme-parks a .hideContentWrap#legoland,
+	#theme-parks a .hideContentWrap#castle-park,
+	#theme-parks a .hideContentWrap#raging-waters,
+	#theme-parks a .hideContentWrap#universal,
+	#kid-beaches a .hideContentWrap#coronado,
+	#kid-beaches a .hideContentWrap#mission-bay,
+	#kid-beaches a .hideContentWrap#la-jolla,
+	#kid-beaches a .hideContentWrap#carlsbad,
+	#kid-beaches a .hideContentWrap#crystal-cove,
+	#kid-beaches a .hideContentWrap#santa-monica {background-image: none;}
 }
 
 @media screen and (max-width: 414px) {
