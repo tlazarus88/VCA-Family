@@ -2027,13 +2027,12 @@ ul.scroll-list {
 	#camp-ca .animateblock.btm.animated img, #camp-ca .animateblock.btm img {box-shadow: none; padding-bottom: 40px;border-bottom: 4px solid rgba(5,187,255,1);}
 	#camp-ca .caption {margin-bottom: 0;}
 	#camp-ca .scroll-list-box .text-wrapper {padding:20px 0 15px;}
-	.box-header-num {padding:22px 15px 19px 15px;border:none;font-size: 40px;}
 	.box-header .stop-name {border-left:1px solid rgba(5,187,255,1)}
-	#camp-ca .scroll-list-box .box-header {border-top:1px solid rgba(5,187,255,1)}
+	#camp-ca .scroll-list-box .box-header {border-top:1px solid rgba(5,187,255,1);height:85px;}
 	#camp-ca .scroll-list-box.first {margin-top: 40px;}
 	.box-header .stop-name {font-size: 18px;}
 	#camp-ca .scroll-list-box p {font-size: 17px;}
-	h5 {font-size: 20px;}
+	h5 {font-size: 18px;}
 	#legal-header p {font-size: 8px;}
 	#desktop-toc{display:none;}
 	#mobile-toc{display: block}
@@ -2041,8 +2040,8 @@ ul.scroll-list {
 	#camp-ca .animateblock.btm.animated img, #camp-ca .animateblock.btm img {box-shadow: none; padding-bottom: 40px;border-bottom: 4px solid rgba(5,187,255,1);}
 	#camp-ca .caption {margin-bottom: 0;}
 	#camp-ca .scroll-list-box .text-wrapper {padding:20px 0 15px;}
-	.box-header-num {padding: 18px 15px 0 15px;border:none;}
-	.box-header .stop-name {padding: 0 15px 15px 15px;border-left:1px solid rgba(5,187,255,1)}
+	.box-header-num {padding: 0 15px;border:none;line-height:85px;font-size: 40px;}
+	.box-header .stop-name {padding: 0 15px;border-left:1px solid rgba(5,187,255,1);font-size: 16px;}
 	#article-roadtrip .circle-container {width:90%;}
 	#article-roadtrip .scroll-list .col-md-6 {margin-left: 0; margin-right: 0; padding: 0;}
 	#article-roadtrip .row:nth-of-type(2) {margin-bottom: -150px;}
