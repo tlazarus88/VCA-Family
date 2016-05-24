@@ -61,7 +61,8 @@ function stickIt() {
 
 $(function(){
   $('.info').click(function(){
-    $('#sponsored-by').toggle();
+    $('#sponsored-by').fadeToggle("slow", "linear");
+    $('.info').toggleClass('info-opaque');
   })
 })
 
