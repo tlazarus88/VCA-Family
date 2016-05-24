@@ -1914,7 +1914,9 @@ ul.scroll-list {
 	.hero#main-hero {background-image: url("../images/main-opt7.jpg");}
 	.hero#nca-hero {background-image: url("../images/nca.jpg");}
 	.hero#cca-hero {background-image: url("../images/cca.jpg");}
-	.hero#sca-hero {background-image: url("../images/sca.jpg");}
+	.hero#sca-hero {background-image: url("../images/sca.jpg"); margin-top: -50%;}
+	#article-eats img {width: 100%; margin: 0;}
+	#article-eats #taco {width: 100%; margin: 0;}
 }
 
 /* ----------- Mobile ----------- */
@@ -1959,8 +1961,6 @@ ul.scroll-list {
 	#article-surf-skate .box-header {padding: 25px 0 0 0; border: none;}
 	#article-surf-skate .scroll-list-box p {padding: 25px 0;}
 	.parralax-credit {right: 5%; bottom: 98%;}
-	#article-eats img {width: 100%; margin: 0;}
-	#article-eats #taco {width: 100%; margin: 0;}
 	p {line-height: 24px;}
 	.section-marker {height: 40px; margin: 0 auto -20px;}
 	.box-header .stop-name {font-size:20px;letter-spacing:1px;}
