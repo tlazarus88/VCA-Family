@@ -13,6 +13,11 @@ $('.full-page').height(vph);
 
 $(window).resize(function(){location.reload();});
 
+// Height of Legal Header
+
+var $legalHeader = $('#legal-header');
+var legalHeaderHeight = $legalHeader.outerHeight(true);
+
 // Smooth Scrolling
 // includes offset for #sticky-nav
 $(function() {
@@ -23,7 +28,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top-44
+          scrollTop: target.offset().top - 44 - legalHeaderHeight
         }, 1000);
         return false;
       }
@@ -39,7 +44,7 @@ function stickIt() {
   $("#sticky-nav").hide();
 
   var $orgToC = $('#toc');
-  var bottomToC = $orgToC.offset().top + $orgToC.outerHeight(true);
+  var bottomToC = $orgToC.offset().top + $orgToC.outerHeight(true) - legalHeaderHeight;
 
   if ($(window).scrollTop() >= (bottomToC)) {
     // scrolled past the original position; now only show the cloned, sticky element.
@@ -51,6 +56,14 @@ function stickIt() {
     $('#toc').css('visibility','visible');
   }
 };
+
+// Legal Header Pop-up
+
+$(function(){
+  $('.info').click(function(){
+    $('#sponsored-by').toggle();
+  })
+})
 
 // Image Animations 
 
@@ -93,23 +106,24 @@ scrollIntervalID = setInterval(progressBar, 10);
 
 function progressBar() {
 
-  var topNCA = $('#nca-hero').offset().top;
-  var topNBlog = $('#nrthrn-blog-post').offset().top;
-  var topCampCa = $('#camp-ca').offset().top;
-  var topPhotoOp = $('#photo-op').offset().top;
-  var topRoadtrip = $('#article-roadtrip').offset().top;
-  var topKidAttractions = $('#kid-attractions').offset().top;
-  var topCCA = $('#cca-hero').offset().top;
-  var topCBlog = $('#cntrl-blog-post').offset().top;
-  var topEdu = $('#eduvacation').offset().top;
-  var topMeetCCA = $('#article-meet-cca').offset().top;
-  var topParks = $('#must-see-parks').offset().top;
-  var topEats = $('#article-eats').offset().top;
-  var topSCA = $('#sca-hero').offset().top;
-  var topSBlog = $('#sthrn-blog-post').offset().top;
-  var topThemeParks = $('#theme-parks').offset().top;
-  var topSurfSkate = $('#article-surf-skate').offset().top;
-  var topKidBeaches = $('#kid-beaches').offset().top;
+  var topNCA = $('#nca-hero').offset().top - legalHeaderHeight;
+  var topNBlog = $('#nrthrn-blog-post').offset().top - legalHeaderHeight;
+  var topCampCa = $('#camp-ca').offset().top - legalHeaderHeight;
+  var topPhotoOp = $('#photo-op').offset().top - legalHeaderHeight;
+  var topRoadtrip = $('#article-roadtrip').offset().top - legalHeaderHeight;
+  var topKidAttractions = $('#kid-attractions').offset().top - legalHeaderHeight;
+  var topCCA = $('#cca-hero').offset().top - legalHeaderHeight;
+  var topCBlog = $('#cntrl-blog-post').offset().top - legalHeaderHeight;
+  var topEdu = $('#eduvacation').offset().top - legalHeaderHeight;
+  var topMeetCCA = $('#article-meet-cca').offset().top - legalHeaderHeight;
+  var topParks = $('#must-see-parks').offset().top - legalHeaderHeight;
+  var topEats = $('#article-eats').offset().top - legalHeaderHeight;
+  var topSCA = $('#sca-hero').offset().top - legalHeaderHeight;
+  var topSBlog = $('#sthrn-blog-post').offset().top - legalHeaderHeight;
+  var topThemeParks = $('#theme-parks').offset().top - legalHeaderHeight;
+  var topSurfSkate = $('#article-surf-skate').offset().top - legalHeaderHeight;
+  var topKidBeaches = $('#kid-beaches').offset().top - legalHeaderHeight;
+  var topVideoBella = $('#video-bella').offset().top - legalHeaderHeight;
 
   if ($(window).scrollTop() >= (topNCA)) {
     $('.nav-status-bar').addClass('status-width-0');
@@ -197,6 +211,11 @@ function progressBar() {
   } else {
     $('.nav-status-bar').removeClass('status-width-14');
   };
+  if ($(window).scrollTop() >= (topVideoBella)) {
+    $('.nav-status-bar').addClass('status-width-15');
+  } else {
+    $('.nav-status-bar').removeClass('status-width-15');
+  };
   
 };
 
@@ -208,10 +227,10 @@ function roadCirc() {
   $('#roadtrip-circle-2').css('visibility', 'hidden');
 
   var $roadList = $('#list-roadtrip');
-  var topRoadList = $roadList.offset().top;
+  var topRoadList = $roadList.offset().top - legalHeaderHeight;
 
   var $endRoadList = $('#last-roadtrip');
-  var bottomRoadList = $endRoadList.offset().top + $endRoadList.outerHeight(true);
+  var bottomRoadList = $endRoadList.offset().top + $endRoadList.outerHeight(true) - legalHeaderHeight;
 
   if ($(window).scrollTop() >= (topRoadList)) {
   	$('#roadtrip-circle-1').css('position', 'fixed');
@@ -234,21 +253,21 @@ scrollIntervalID = setInterval(circleBg, 10)
 function circleBg() {
 
   var $roadtrip1 = $('#list-roadtrip');
-  var roadtrip1 = $roadtrip1.offset().top;
+  var roadtrip1 = $roadtrip1.offset().top - legalHeaderHeight;
   var $roadtrip1a = $('#roadtrip-1a');
-  var roadtrip1a = $roadtrip1a.offset().top;
+  var roadtrip1a = $roadtrip1a.offset().top - legalHeaderHeight;
   var $roadtrip1b = $('#roadtrip-1b');
-  var roadtrip1b = $roadtrip1b.offset().top;
+  var roadtrip1b = $roadtrip1b.offset().top - legalHeaderHeight;
   var $roadtrip1c = $('#roadtrip-1c');
-  var roadtrip1c = $roadtrip1c.offset().top;
+  var roadtrip1c = $roadtrip1c.offset().top - legalHeaderHeight;
   var $roadtrip2 = $('#roadtrip-2');
-  var roadtrip2 = $roadtrip2.offset().top;
+  var roadtrip2 = $roadtrip2.offset().top - legalHeaderHeight;
   var $roadtrip3 = $('#roadtrip-3');
-  var roadtrip3 = $roadtrip3.offset().top;
+  var roadtrip3 = $roadtrip3.offset().top - legalHeaderHeight;
   var $roadtrip4 = $('#roadtrip-4');
-  var roadtrip4 = $roadtrip4.offset().top;
+  var roadtrip4 = $roadtrip4.offset().top - legalHeaderHeight;
   var $roadtrip5 = $('#last-roadtrip');
-  var roadtrip5 = $roadtrip5.offset().top;
+  var roadtrip5 = $roadtrip5.offset().top - legalHeaderHeight;
 
   if ($(window).scrollTop() >= (roadtrip1a)) {
     $('.roadtrip-circle').removeClass('circle-bg-1');
