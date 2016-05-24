@@ -1961,6 +1961,7 @@ ul.scroll-list {
 	#article-surf-skate .box-header {padding: 25px 0 0 0; border: none;}
 	#article-surf-skate .scroll-list-box p {padding: 25px 0;}
 	.parralax-credit {right: 5%; bottom: 98%;}
+	.parralax-credit .italc.cred{font-size: 10px; text-shadow: none; color: #A9A7A7;}
 	p {line-height: 24px;}
 	.section-marker {height: 40px; margin: 0 auto -20px;}
 	.box-header .stop-name {font-size:20px;letter-spacing:1px;}
