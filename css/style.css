@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-	font-family: 'Brandon Grotesque', sans-serif;
+	font-family: "brandon-grotesque",sans-serif;
 	overflow-x: hidden;
 }
 
@@ -23,7 +23,7 @@ body {
 	z-index: 9999 !important;
 	padding: 10px 55px;
 	text-align: center;
-	font-family: 'Brandon Grotesque', sans-serif;
+	font-family: "brandon-grotesque",sans-serif;
 
 }
 
@@ -179,7 +179,7 @@ body {
 	z-index: 5000!important;
 	box-shadow: 0 7px 8px rgba(0,0,0,.12);
 	text-align: center;
-	font-family: 'Brandon Grotesque', sans-serif;
+	font-family: "brandon-grotesque",sans-serif;
 }
 
 .sticky-nav:after {
@@ -201,7 +201,7 @@ body {
 	background-color: rgba(5,187,255,.8);
 	margin: 0;
 	padding: 0;
-	font-family: 'Brandon Grotesque', sans-serif;
+	font-family: "brandon-grotesque",sans-serif;
 	font-weight: 900;
 	font-size: 20px;
 	line-height: 44px;
@@ -773,7 +773,7 @@ h6 {
 	padding-bottom: 18px;
 }
 p {
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 34px;
 	padding: 0 0 38px 0;
 	font-weight: 300;
@@ -895,10 +895,7 @@ a.read-more {
 	width: 100%;
 	background-color: #fff;
 	height: 525px;
-<<<<<<< HEAD
 	max-width: 950px;
-=======
->>>>>>> master
 	margin-bottom: 70px;
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 	border: 2px solid #05bbff;
@@ -1105,19 +1102,6 @@ a.read-more {
 	margin: 0 auto -25px;
 	position: relative;
 	z-index: 50!important;
-}
-.section-marker .bg-shape{fill:#EB0478;}
-.section-marker .letter {
-	fill:#FFFFFF;
-	font-family:'BrandonGrotesque-BlackItalic';
-	letter-spacing:1;
-	font-size:13.1307px;
-}
-.section-marker .line {
-	fill:none;
-	stroke:#FFFFFF;
-	stroke-width:0.25;
-	stroke-miterlimit:10;
 }
 .bg-img-container-wrap.northern {
 	background-image: url("../images/fpo-nrthrn-region-header-image.jpg");
@@ -1988,12 +1972,17 @@ ul.scroll-list {
 	h2, .container-fluid.article.blogger-post h2 {font-size: 20px;}
 	h3 {font-size: 24px;}
 	h4 {italic 700 18px/20px "abril-display",sans-serif}
-	#camp-ca .scroll-list-box {border: none;margin-bottom: 0;}
+	#camp-ca .scroll-list-box {border: none;margin: 0;}
 	#camp-ca .animateblock.btm.animated img, #camp-ca .animateblock.btm img {box-shadow: none; padding-bottom: 40px;border-bottom: 4px solid rgba(5,187,255,1);}
 	#camp-ca .caption {margin-bottom: 0;}
 	#camp-ca .scroll-list-box .text-wrapper {padding:20px 0 15px;}
-	.box-header-num {padding: 18px 15px 0 15px;border:none;}
-	.box-header .stop-name {padding: 0 15px 15px 15px;border-left:1px solid rgba(5,187,255,1)}
+	.box-header-num {padding:22px 15px 19px 15px;border:none;font-size: 40px;}
+	.box-header .stop-name {border-left:1px solid rgba(5,187,255,1)}
+	#camp-ca .scroll-list-box .box-header {border-top:1px solid rgba(5,187,255,1)}
+	#camp-ca .scroll-list-box.first {margin-top: 40px;}
+	.box-header .stop-name {font-size: 18px;}
+	#camp-ca .scroll-list-box p {font-size: 17px;}
+	h5 {font-size: 20px;}
 }
 
 @media screen and (max-width: 375px) {
