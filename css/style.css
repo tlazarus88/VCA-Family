@@ -1835,7 +1835,7 @@ ul.scroll-list {
      clear: both;
      height: 0;
 }
-.xs-display-none {display: none;}
+.xs-display-none {display: inline;}
 
 
 /* ----------- Laptop ----------- */
@@ -1971,9 +1971,13 @@ ul.scroll-list {
 	#desktop-nav {visibility: hidden;}
 	#mobile-nav {visibility: visible;}
 	.sticky-nav {height: 22px; top: 45px;}
-	.hideContentWrap {width: 90%;}
+	.hideContentWrap {width: 90%;height: 775px;}
 	.hideContentWrap .hideContentHeader {height: 90px;padding: 0 50px;}
 	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
+	.hideContentWrap .hideContent .text-box {margin: 0;}
+	.hideContentWrap .hideContent .text-box p {padding:15px 18px 0px;}
+	.hideContentWrap .hideContent h4 {padding: 8px 30px 4px;margin-top:16px;font-size: 16px;}
+
 	.surf-skate-wrap#surf-bg {background-image: none; box-shadow: none}
 	.surf-skate-wrap#skate-bg {background-image: none; box-shadow: none}
 	.mobile-surf,.mobile-skate {visibility: visible}
@@ -2006,8 +2010,8 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .right-quadrant {display: none;}
 	.container-fluid.article .blogger-profile-wrap .left-quadrant {width: 100%;background-size: cover;}
 	.container-fluid.article .blogger-profile-wrap img.mobile-blogger {display: block;}
+	#cntrl-blog-post .container-fluid.article .blogger-profile-wrap img.mobile-blogger {margin-top: -100px;}
 	.container-fluid.article .blogger-profile-wrap .mob-location {display: inline-block;}
-	.container-fluid.article.blogger-post img {margin-bottom: 20px;}
 }
 
 @media screen and (max-width: 414px) {
