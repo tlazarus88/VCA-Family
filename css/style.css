@@ -131,15 +131,16 @@ body {
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	height: 65%;
+	height: 50%;
 }
-.hero img#main-title-logo {
+.hero#main-hero img {
 	margin-top: -2%;
+	height: 65%;
 }
 .hero#main-hero .title-logo {
 	position:relative;
 	z-index: 800!important;
-	border: 1px solid red;
+	border: 1px solid red;.hero img.main-title
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;
@@ -898,6 +899,11 @@ a.read-more {
 	margin-bottom: 70px;
 	box-shadow: 2px 4px 12px rgba(0,0,0,.2);
 	border: 2px solid #05bbff;
+	overflow: hidden;
+}
+.container-fluid.article .blogger-profile-wrap img.mobile-blogger,
+.container-fluid.article .blogger-profile-wrap .mob-location {
+	display: none;
 }
 .container-fluid.article.blogger-post .blogger-profile-wrap .right-quadrant img {
 	box-shadow: none;
@@ -956,13 +962,17 @@ a.read-more {
 	letter-spacing: 2px;
 	font-weight: 400;
 }
-.container-fluid.article .blogger-profile-wrap .btm-row h4 {
+.container-fluid.article .blogger-profile-wrap h4 {
 	color: #eb0478;
 	line-height: 80px;
 	font-size: 30px;
 	letter-spacing: 1px;
 	padding: 4px 0 0 26px;
 	text-align: left;
+}
+.container-fluid.article .blogger-profile-wrap .dvdr {
+	font-style: normal;
+	padding-right: 12px;
 }
 
 /*Blogger profile SVG Styles*/
@@ -990,7 +1000,6 @@ a.read-more {
 .bg-img-container-wrap#sthrn-blog-post .col-md-6 p.italc {
 	letter-spacing: .25px;
 }
-
 .bg-img-container-wrap#nrthrn-blog-post .blogger-profile-wrap .left-quadrant {
 	background-image: url("../images/brandi/Brandi-profile.jpg");
 }
@@ -1491,7 +1500,6 @@ ul.scroll-list {
 	text-transform: uppercase;
 	font-size: 30px;
 	font-weight: 700;
-
 }
 
 
@@ -1834,8 +1842,7 @@ ul.scroll-list {
 }
 
 @media screen and (min-width: 1600px) { 
-	.hero img.main-title {height: 50%;}
-	.hero#main-hero .vca-hero-logo {left: 50%;bottom: 12%;}
+	.hero#main-hero img.main-title {height: 60%;margin-top: -1%;}
 	.toc .row .toc-bg-container {height: 260px;}
 	ul.toc-menu .blogger-circle {width: 200px; height: 200px;}
 	ul.toc-menu li a {margin: 28px 0 30px 0;}
@@ -1914,9 +1921,8 @@ ul.scroll-list {
 	.animateblock.btm.sect-break, .animateblock.btm.animated.sect-break {margin-top: 0;}
 	.animateblock {opacity: 1;}
 	.container-fluid.article .blogger-profile-wrap {height: 405px;}
-	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 26px;padding-left: 20px;}
-	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 22px;line-height: 60px; padding: 4px 0 0 20px;}
-	.container-fluid.article .blogger-profile-wrap .right-quadrant .arrow {bottom:49px;}
+	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 22px;padding: 2px 0 0 18px;float: left;}
+	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 22px;line-height: 60px; padding: 4px 0 0 18px;float: left;}
 	h1 {font-size: 38px; line-height: 38px;}
 	h2 {font-size: 21px; line-height: 24px;}
 	ul.toc-menu .nav-explore {font-size: 12px;}
@@ -1961,6 +1967,13 @@ ul.scroll-list {
 	.caption {margin-bottom: 40px;}
 	.container-fluid.article .r-rail-above {margin-left: 0;}
 	.bg-img-container-wrap {padding-bottom: 40px;}
+	.hero#main-hero img {height: auto; width: 90%;}
+	.region .vca-hero-logo {width: 100px;}
+	.container-fluid.article .blogger-profile-wrap .right-quadrant {display: none;}
+	.container-fluid.article .blogger-profile-wrap .left-quadrant {width: 100%;background-size: cover;}
+	.container-fluid.article .blogger-profile-wrap img.mobile-blogger {display: block;}
+	.container-fluid.article .blogger-profile-wrap .mob-location {display: inline-block;}
+	.container-fluid.article.blogger-post img {margin-bottom: 20px;}
 }
 
 @media screen and (max-width: 414px) {
