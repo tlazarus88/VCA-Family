@@ -13,6 +13,11 @@ $('.full-page').height(vph);
 
 $(window).resize(function(){location.reload();});
 
+// Height of Legal Header
+
+var $legalHeader = $('#legal-header');
+var legalHeaderHeight = $legalHeader.outerHeight(true);
+
 // Smooth Scrolling
 // includes offset for #sticky-nav
 $(function() {
@@ -23,18 +28,13 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top-44
+          scrollTop: target.offset().top - 44 - legalHeaderHeight
         }, 1000);
         return false;
       }
     }
   });
 });
-
-// Height of Legal Header
-
-var $legalHeader = $('#legal-header');
-var legalHeaderHeight = $legalHeader.outerHeight(true);
 
 // Nav Stickiness Swap
 
