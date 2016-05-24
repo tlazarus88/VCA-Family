@@ -327,16 +327,17 @@ body {
 	width: 100%;
 	height: 4px;
 	background-color: rgba(255,255,255,1);
+	transition: all 0.75s ease;
 }
 
 .nav-status-bar {
+	transition: all 0.75s ease;
 	position: absolute;
 	z-index: +1;
 	bottom: -1px;
 	width: 0%;
 	height: 4px;
 	background-color: rgba(235,4,120,1);
-	transition: all 0.75s ease;
 }
 
 .status-width-0 {
@@ -1281,7 +1282,7 @@ ul.scroll-list {
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 8px rgba(235,4,120,1);
-	background-image: url(../images/article_roadtrip/map_1.jpg);
+	background-image: url(../images/article_roadtrip/road_map_1.gif);
 	transition: all .5s ease-in-out;
 }
 
@@ -1923,6 +1924,10 @@ ul.scroll-list {
 	.hideContentWrap {height: 500px;height:65vh;margin-bottom: 40px;}
 	.hideContentWrap .hideContent {display: inline;}
 	.indicator {display: none;}
+	#article-roadtrip .row:nth-of-type(3) {margin-top: -50px;}
+	#article-roadtrip .circle-container{top: 150px; width: 50%; transform: translateX(-50%)!important;}
+	#article-roadtrip .scroll-list-box {margin-top: 90%;}
+	#article-roadtrip .parralax-credit p {max-width: 100%;}
 }
 
 /* ----------- Mobile ----------- */
@@ -1957,6 +1962,7 @@ ul.scroll-list {
 	.surf-skate-wrap#skate-bg {background-image: none; box-shadow: none}
 	.mobile-surf,.mobile-skate {visibility: visible}
 	.scroll-list-box {width: 90%; border:none; background-color: rgba(0,0,0,0); box-shadow: none; margin-left: 5%; margin-bottom: 0;  border-bottom: 4px solid rgba(5,187,255,1); padding: 5% 0;}
+	#article-roadtrip .scroll-list-box {border: 4px solid rgba(5,187,255,1); background-color: rgba(255,255,255,1); padding: 0;}
 	.scroll-list-box:first-of-type {margin-top: 0px}
 	#article-surf-skate .scroll-list-box:last-of-type {border-bottom: none}
 	#article-surf-skate .surf-skate-wrap .col-md-6.col-md-offset-1 {padding: 0 5%}
@@ -1965,6 +1971,7 @@ ul.scroll-list {
 	#article-surf-skate .box-header {padding: 25px 0 0 0; border: none;}
 	#article-surf-skate .scroll-list-box p {padding: 25px 0;}
 	.parralax-credit {right: 5%; bottom: 98%;}
+	.parralax-credit .italc.cred{font-size: 10px; text-shadow: none; color: #A9A7A7;}
 	p {line-height: 24px;}
 	.section-marker {height: 40px; margin: 0 auto -20px;}
 	.box-header .stop-name {font-size:20px;letter-spacing:1px;}
@@ -1988,18 +1995,28 @@ ul.scroll-list {
 	h2, .container-fluid.article.blogger-post h2 {font-size: 20px;}
 	h3 {font-size: 24px;}
 	h4 {italic 700 18px/20px "abril-display",sans-serif}
+	#desktop-toc{display:none;}
+	#mobile-toc{display: block}
 	#camp-ca .scroll-list-box {border: none;margin-bottom: 0;}
 	#camp-ca .animateblock.btm.animated img, #camp-ca .animateblock.btm img {box-shadow: none; padding-bottom: 40px;border-bottom: 4px solid rgba(5,187,255,1);}
 	#camp-ca .caption {margin-bottom: 0;}
 	#camp-ca .scroll-list-box .text-wrapper {padding:20px 0 15px;}
 	.box-header-num {padding: 18px 15px 0 15px;border:none;}
 	.box-header .stop-name {padding: 0 15px 15px 15px;border-left:1px solid rgba(5,187,255,1)}
+	#article-roadtrip .circle-container {width:90%;}
+	#article-roadtrip .scroll-list .col-md-6 {margin-left: 0; margin-right: 0; padding: 0;}
+	#article-roadtrip .row:nth-of-type(2) {margin-bottom: -150px;}
+	#article-roadtrip .scroll-list-box {margin-top: 200%;}
+	#article-roadtrip li {height: 200%; margin-left: 0; margin-bottom: 100%}
+	.parallax-bg__myers, .parallax-bg__founders-grove, .parallax-bg__eternal-tree-house{background-image: none; box-shadow: none;}
+	#article-roadtrip .caption {display: none;}
+	#article-roadtrip .stop-name {padding: 0 25px;}
+	#article-roadtrip .box-header-num {padding: 20px 30px;}
 }
 
-@media screen and (max-width: 375px) {
-	#desktop-toc{display:none;}
-	#mobile-toc{display: block}
-}
+/*@media screen and (max-width: 375px) {
+	
+}*/
 
 
 
