@@ -2183,6 +2183,8 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 14px;padding: 2px 0 0 18px;letter-spacing: 1px;}
 	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 14px;padding: 4px 0 0 14px;}
 	.container-fluid.article .blogger-profile-wrap .dvdr {padding-right: 9px;}
+	#mobile-nav {visibility: hidden;}
+	.sticky-nav {box-shadow: none;}
 }
 
 @media screen and (max-width: 375px) {
