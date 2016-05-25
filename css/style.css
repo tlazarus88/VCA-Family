@@ -2141,6 +2141,7 @@ ul.scroll-list {
 	.hero#main-hero .title-trtmnt-mob {display: block;}
 	.hero#main-hero .title-trtmnt-mob h1 {font-size:36px;}
 	.hero#main-hero .title-trtmnt-mob h2 {font-size:13px;line-height: 20px;}
+	.mobile-surf, .mobile-skate {background-attachment: scroll;}
 }
 
 @media screen and (max-width: 414px) {
