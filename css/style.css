@@ -1175,7 +1175,7 @@ ul.scroll-list {
 	box-shadow: none;
 }
 
-/*.parallax-bg__myers {
+.parallax-bg__myers {
 	background-image: url(../images/article_roadtrip/alamy_RM_BP6AMT.jpg);
 }
 
@@ -1185,7 +1185,7 @@ ul.scroll-list {
 
 .parallax-bg__eternal-tree-house {
 	background-image: url(../images/article_roadtrip/gty_RF_545168913.jpg);
-}*/
+}
 
 .scroll-list-box {
 	width: 100%;
