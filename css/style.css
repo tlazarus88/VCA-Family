@@ -1175,7 +1175,7 @@ ul.scroll-list {
 	box-shadow: none;
 }
 
-/*.parallax-bg__myers {
+.parallax-bg__myers {
 	background-image: url(../images/article_roadtrip/alamy_RM_BP6AMT.jpg);
 }
 
@@ -1185,7 +1185,7 @@ ul.scroll-list {
 
 .parallax-bg__eternal-tree-house {
 	background-image: url(../images/article_roadtrip/gty_RF_545168913.jpg);
-}*/
+}
 
 .scroll-list-box {
 	width: 100%;
@@ -1676,6 +1676,10 @@ ul.scroll-list {
 	line-height:22px;
 	font-weight: 400;
 }
+.hideContentWrap img.mob-slideshow {
+
+	display: none;
+}
 .indicator {
     display: inline-block;
     position: absolute;
@@ -1975,12 +1979,13 @@ ul.scroll-list {
 	#desktop-nav {visibility: hidden;}
 	#mobile-nav {visibility: visible;}
 	.sticky-nav {height: 22px; top: 45px;}
-	.hideContentWrap {width: 90%;height: 775px;}
+	.hideContentWrap img.mob-slideshow {display:inline-block;}
+	.hideContentWrap {width: 90%;height: auto;background-image: none;}
 	.hideContentWrap .hideContentHeader {height: 90px;padding: 0 50px;}
 	.hideContentWrap .hideContentHeader h1 {font-size: 22px;line-height: 24px;}
-	.hideContentWrap .hideContent .text-box {margin: 0;}
+	.hideContentWrap .hideContent .text-box {margin: 0;position: relative;}
 	.hideContentWrap .hideContent .text-box p {padding:15px 18px 0px;}
-	.hideContentWrap .hideContent h4 {padding: 8px 30px 4px;margin-top:16px;font-size: 16px;}
+	.hideContentWrap .hideContent h4 {padding: 8px 30px 4px;font-size: 16px;display:block;}
 	.surf-skate-wrap#surf-bg {background-image: none; box-shadow: none}
 	.surf-skate-wrap#skate-bg {background-image: none; box-shadow: none}
 	.mobile-surf,.mobile-skate {visibility: visible}
@@ -2019,6 +2024,43 @@ ul.scroll-list {
 	.container-fluid.article .blogger-profile-wrap .mob-location {display: inline-block;}
 	#camp-ca .col-xs-offset-1 {margin-left: 0;}
 	a.read-more {font-size: 15px;margin-bottom: -18px;}
+	#photo-op a .hideContentWrap#burney, 
+	#photo-op a .hideContentWrap#shasta,
+	#photo-op a .hideContentWrap#mendocino,
+	#photo-op a .hideContentWrap#eureka,
+	#kid-attractions a .hideContentWrap#great-america,
+	#kid-attractions a .hideContentWrap#gilroy,
+	#kid-attractions a .hideContentWrap#discov-kingdom,
+	#kid-attractions a .hideContentWrap#chil-fairyland,
+	#kid-attractions a .hideContentWrap#safari-west,
+	#kid-attractions a .hideContentWrap#fairytale-town,
+	#kid-attractions a .hideContentWrap#sac-zoo,
+	#kid-attractions a .hideContentWrap#funderland,
+	#eduvacation a .hideContentWrap#chabot-space,
+	#eduvacation a .hideContentWrap#monterey-aquarium,
+	#eduvacation a .hideContentWrap#academy-sciences,
+	#eduvacation a .hideContentWrap#monterey-aquarium,
+	#eduvacation a .hideContentWrap#exploratorium,
+	#eduvacation a .hideContentWrap#tech-museum,
+	#eduvacation a .hideContentWrap#sb-natural-history,
+	#must-see-parks a .hideContentWrap#yosemite,
+	#must-see-parks a .hideContentWrap#mammoth-lakes,
+	#must-see-parks a .hideContentWrap#sequoia-kings,
+	#must-see-parks a .hideContentWrap#death-valley,
+	#theme-parks a .hideContentWrap#seaworld,
+	#theme-parks a .hideContentWrap#knotts-berry,
+	#theme-parks a .hideContentWrap#magic-mountain,
+	#theme-parks a .hideContentWrap#disneyland,
+	#theme-parks a .hideContentWrap#legoland,
+	#theme-parks a .hideContentWrap#castle-park,
+	#theme-parks a .hideContentWrap#raging-waters,
+	#theme-parks a .hideContentWrap#universal,
+	#kid-beaches a .hideContentWrap#coronado,
+	#kid-beaches a .hideContentWrap#mission-bay,
+	#kid-beaches a .hideContentWrap#la-jolla,
+	#kid-beaches a .hideContentWrap#carlsbad,
+	#kid-beaches a .hideContentWrap#crystal-cove,
+	#kid-beaches a .hideContentWrap#santa-monica {background-image: none;}
 }
 
 @media screen and (max-width: 414px) {
@@ -2033,13 +2075,12 @@ ul.scroll-list {
 	#camp-ca .animateblock.btm.animated img, #camp-ca .animateblock.btm img {box-shadow: none; padding-bottom: 40px;border-bottom: 4px solid rgba(5,187,255,1);}
 	#camp-ca .caption {margin-bottom: 0;}
 	#camp-ca .scroll-list-box .text-wrapper {padding:20px 0 15px;}
-	.box-header-num {padding:22px 15px 19px 15px;border:none;font-size: 40px;}
 	.box-header .stop-name {border-left:1px solid rgba(5,187,255,1)}
-	#camp-ca .scroll-list-box .box-header {border-top:1px solid rgba(5,187,255,1)}
+	#camp-ca .scroll-list-box .box-header {border-top:1px solid rgba(5,187,255,1);height:85px;}
 	#camp-ca .scroll-list-box.first {margin-top: 40px;}
 	.box-header .stop-name {font-size: 18px;}
 	#camp-ca .scroll-list-box p {font-size: 17px;}
-	h5 {font-size: 20px;}
+	h5 {font-size: 18px;}
 	#legal-header p {font-size: 8px;}
 	#desktop-toc{display:none;}
 	#mobile-toc{display: block}
@@ -2047,8 +2088,8 @@ ul.scroll-list {
 	#camp-ca .animateblock.btm.animated img, #camp-ca .animateblock.btm img {box-shadow: none; padding-bottom: 40px;border-bottom: 4px solid rgba(5,187,255,1);}
 	#camp-ca .caption {margin-bottom: 0;}
 	#camp-ca .scroll-list-box .text-wrapper {padding:20px 0 15px;}
-	.box-header-num {padding: 18px 15px 0 15px;border:none;}
-	.box-header .stop-name {padding: 0 15px 15px 15px;border-left:1px solid rgba(5,187,255,1)}
+	.box-header-num {padding: 0 15px;border:none;line-height:85px;font-size: 40px;}
+	.box-header .stop-name {padding: 0 15px;border-left:1px solid rgba(5,187,255,1);font-size: 16px;}
 	#article-roadtrip .circle-container {width:90%;}
 	#article-roadtrip .scroll-list .col-md-6 {margin-left: 0; margin-right: 0; padding: 0;}
 	#article-roadtrip .row:nth-of-type(2) {margin-bottom: -150px;}
