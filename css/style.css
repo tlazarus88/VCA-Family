@@ -1914,6 +1914,7 @@ ul.scroll-list {
      height: 0;
 }
 .xs-display-none {display: inline;}
+.superscript {font-size: .6em;}
 
 
 /* ----------- Laptop ----------- */
