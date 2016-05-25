@@ -2,16 +2,26 @@
 
 jQuery(document).ready(function($) {
 
+
+
+// Window CSS Resize Fix
+
+$(window).on('resize load', function(){
+  // Full Page
+  // vpw = $(window).width();
+  // vph = $(window).height();
+  
+  // $('.full-page').height(vph);
+  
+  //location.reload();
+});
+
 // Full Page
 
 vpw = $(window).width();
 vph = $(window).height();
 
 $('.full-page').height(vph);
-
-// Window CSS Resize Fix
-
-$(window).resize(function(){location.reload();});
 
 // Height of Legal Header
 
