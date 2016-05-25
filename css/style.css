@@ -1915,6 +1915,47 @@ ul.scroll-list {
 }
 .xs-display-none {display: inline;}
 .superscript {font-size: .6em;}
+.tout {
+	background-color: #05bbff;
+	padding:5px 20px;
+	/*margin-top:60px;*/
+	margin: 60px auto 0;
+	max-width: 750px;
+}
+.tout .vca-tout-text-wrap {
+	float:left;
+	width:75%;
+	height:85px;
+	display: table;
+
+}
+.tout p {
+	color: #fff;
+	text-align:left;
+	padding: 0;
+	line-height: 20px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.tout a {font-weight:700;color:#fff;opacity:.9;transition: all 0.25s ease;}
+.tout a:hover {opacity:1;}
+.tout .vca-tout-logo-wrap {
+	float: right;
+	width:25%;
+	height:85px;
+	display: table;
+	position: relative;
+}
+.tout .vca-tout-logo-wrap img {
+	padding-top:0;
+	padding-left:20px;
+	width:100%;
+	display: table-cell;
+	vertical-align: middle;
+	position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 
 /* ----------- Laptop ----------- */
