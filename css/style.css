@@ -130,6 +130,13 @@ body {
 	border: none;
 	z-index: 0!important;
 }
+.hero .parralax-credit {
+	bottom: 0%;
+	right: 1%;
+}
+.hero .parralax-credit p {
+	padding:0;
+}
 .hero img.main-title {
 	position:absolute;
 	z-index: 800!important;
@@ -949,6 +956,10 @@ a.read-more {
 	transform: scale(1);
 	cursor: pointer;
 }
+.container-fluid.article .blogger-profile-wrap .right-quadrant img.arrow:hover {
+	-webkit-transform:none;
+	transform:none;
+}
 .container-fluid.article .blogger-profile-wrap .right-quadrant img:hover {
 	-webkit-transform: scale(2);
 	transform: scale(2);
@@ -1033,7 +1044,7 @@ a.read-more {
 }
 
 .caption .arrow {
-	width: 35px;
+	width: 25px;
 	height: auto;
 	float: left;
 	margin-bottom: 8px !important;
@@ -1958,9 +1969,9 @@ ul.scroll-list {
 	.xs-display-none, .animateblock.btm.xs-display-none  {display: none;}
 	.animateblock.btm.sect-break, .animateblock.btm.animated.sect-break {margin-top: 0;}
 	.animateblock {opacity: 1;}
-	.container-fluid.article .blogger-profile-wrap {height: 405px;}
-	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 22px;padding: 2px 0 0 18px;float: left;}
-	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 22px;line-height: 60px; padding: 4px 0 0 18px;float: left;}
+	.container-fluid.article .blogger-profile-wrap {height: auto;margin-bottom: 40px;}
+	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 18px;padding: 2px 0 0 18px;float: left;}
+	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 18px;line-height: 60px; padding: 4px 0 0 18px;float: left;}
 	h1 {font-size: 38px; line-height: 38px;}
 	h2 {font-size: 21px; line-height: 24px;}
 	#legal-header {height: 45px; padding: 10px 0;}
@@ -2063,6 +2074,10 @@ ul.scroll-list {
 	#kid-beaches a .hideContentWrap#santa-monica {background-image: none;}
 }
 
+@media screen and (max-width: 768px) {
+	
+}
+
 @media screen and (max-width: 414px) {
 	.container-fluid.article, a.readmore {width: 95%;}
 	a.readmore {font-size:15px;line-height: 6px;}
@@ -2099,6 +2114,9 @@ ul.scroll-list {
 	#article-roadtrip .caption {display: none;}
 	#article-roadtrip .stop-name {padding: 0 25px; font-size: 18px;}
 	#article-roadtrip .box-header-num {padding: 20px 30px;}
+	.container-fluid.article .blogger-profile-wrap .btm-row h1 {font-size: 14px;padding: 2px 0 0 18px;letter-spacing: 1px;}
+	.container-fluid.article .blogger-profile-wrap .btm-row h4 {font-size: 14px;padding: 4px 0 0 14px;}
+	.container-fluid.article .blogger-profile-wrap .dvdr {padding-right: 9px;}
 }
 
 @media screen and (max-width: 375px) {
