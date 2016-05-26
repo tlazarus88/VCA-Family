@@ -148,8 +148,8 @@ body {
 	height: 50%;
 }
 .hero#main-hero img {
-	margin-top: -2%;
-	height: 65%;
+	/*margin-top: -2%;*/
+	height: 90%;
 }
 .hero#main-hero .title-logo {
 	position:relative;
@@ -208,6 +208,12 @@ body {
 	right: 25px;
 	width: 10%;
 	z-index: 200;
+ }
+ .height-wrap {
+ 	height: 78%;
+ 	position: relative;
+ 	z-index: 500!important;
+ 	margin-top:62px;
  }
  
 /* DROPDOWN */
@@ -548,7 +554,8 @@ body {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	transition: all 1s ease;
-	margin-top: -112px;
+	/*margin-top: -112px;*/
+	margin-top: -8%;
 }
 
 .toc .row .col-md-4:hover {
