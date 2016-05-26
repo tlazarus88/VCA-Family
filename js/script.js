@@ -22,6 +22,7 @@ vpw = $(window).width();
 vph = $(window).height();
 
 $('.full-page').height(vph);
+$('.main-full-page').height(vph) - 100;
 
 // Height of Legal Header
 
