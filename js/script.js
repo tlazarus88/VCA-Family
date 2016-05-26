@@ -24,6 +24,12 @@ vph = $(window).height();
 $('.full-page').height(vph);
 $('.main-full-page').height(vph - 112);
 
+if ($(window).width() > 992) {
+    $('.main-full-page').height(vph - 112);
+} else {
+    $('.main-full-page').height(vph);
+}
+
 // Height of Legal Header
 
 var $legalHeader = $('#legal-header');

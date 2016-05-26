@@ -125,8 +125,6 @@ body {
 .hero#main-hero {
 	border: none;
 	z-index: 0!important;
-}
-.main-full-page#main-hero {
 	position: relative;
 }
 .hero .parralax-credit {
@@ -1235,7 +1233,7 @@ ul.scroll-list {
 .scroll-list-box:first-of-type {
 	margin-top: 50%;
 }
-.article .col-md-12 .scroll-list-box p {
+#article-roadtrip .scroll-list-box p {
 	clear: both;
 	padding: 25px;
 	text-align: left;
@@ -1284,7 +1282,21 @@ ul.scroll-list {
 	padding-bottom: 0;
 	margin-bottom: -25px;
 }
-#article-roadtrip .container-fluid.article {
+
+#list-roadtrip {
+	margin-top: 0px;
+}
+
+#article-roadtrip .scroll-list .col-md-6 {
+	margin-left: 5%;
+	margin-right: 5%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: +2;
+}
+
+/*#article-roadtrip .container-fluid.article {
 	width: 100%;
 	padding-left: 0px;
 	padding-right: 0px;
@@ -1307,7 +1319,7 @@ ul.scroll-list {
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: +2;
-}
+}*/
 
 .circle-container {
 	position: absolute;
@@ -1891,6 +1903,10 @@ ul.scroll-list {
   top: 50%;
   transform: translateY(-50%);
 }
+img.lazy {
+    max-width: 100%;
+    height: auto;
+}
 
 
 /* ----------- Laptop ----------- */
@@ -1995,6 +2011,7 @@ ul.scroll-list {
 	#article-roadtrip .circle-container{top: 150px; width: 50%; transform: translateX(-50%)!important;}
 	#article-roadtrip .scroll-list-box {margin-top: 90%;}
 	#article-roadtrip .parralax-credit p {max-width: 100%;}
+	/*.main-full-page {padding-top:115px;}*/
 }
 
 /* ----------- Mobile ----------- */
