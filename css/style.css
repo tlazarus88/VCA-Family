@@ -122,14 +122,12 @@ body {
 .hero#main-hero video {
 	z-index: 0!important;
 }
-.hero#main-hero .main-title {
-	z-index: 100!important;
-	position: absolute;
-}
 .hero#main-hero {
 	border: none;
 	z-index: 0!important;
-	/*margin-top:62px;*/
+}
+.main-full-page#main-hero {
+	position: relative;
 }
 .hero .parralax-credit {
 	bottom: 0%;
@@ -148,20 +146,11 @@ body {
 	transform: translate(-50%, -50%);
 	height: 50%;
 }
-.hero#main-hero img {
-	margin-top: -2%;
-	height: 60%;
-	/*margin-top:100px;*/
-}
-.hero#main-hero .title-logo {
-	position:relative;
-	z-index: 800!important;
-	border: 1px solid red;.hero img.main-title
-	height: 100%;
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-
+.hero#main-hero .main-title {
+	z-index: 100!important;
+	position: absolute;
+	height: 70%;
+	margin-top: 26px;
 }
 .hero#main-hero .title-trtmnt-mob {
 	position:absolute;
@@ -215,7 +204,6 @@ body {
  	height: 100%;
  	position: relative;
  	z-index: 500!important;
- 	/*margin-top:62px;*/
  }
  
 /* DROPDOWN */
@@ -556,7 +544,7 @@ body {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	transition: all 1s ease;
-	margin-top: -112px;
+	/*margin-top: -112px;*/
 	/*margin-top: -8%;*/
 }
 
@@ -1987,7 +1975,7 @@ ul.scroll-list {
 }
 
 @media screen and (min-width: 1600px) { 
-	/*.hero#main-hero img.main-title {height: 60%;margin-top: -1%;}*/
+	.hero#main-hero .main-title {height: 55%;}
 	.toc .row .toc-bg-container {height: 260px;}
 	ul.toc-menu .blogger-circle {width: 200px; height: 200px;}
 	ul.toc-menu li a {margin: 28px 0 30px 0;}
