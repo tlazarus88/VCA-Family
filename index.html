@@ -72,6 +72,11 @@ b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=
 <script src="js/script.js"></script>
 <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $("img.lazy").lazyload();
+});
+</script>
 
 <section id="legal-header">
 	<p>Paid Content from <a href="http://www.visitcalifornia.com/california-family" target="_blank"><span class="bold">Visit California</span></a><img src="assets/info.gif" class="info"></p>
@@ -444,7 +449,7 @@ b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=
 				<p>I know, I know, everyone loves San Francisco. I do, too! You don't have to rush into the city during your Northern California visit, though. In fact, it's a good idea to pace yourself, especially if you're traveling with children. Starting in San Francisco's neighboring cities, Oakland and Berkeley, is a great way to start your vacation, and set the tone for the trip. Besides, they're both extraordinarily family-friendly, with plenty to do and lots to keep the kiddos occupied and engaged.</p>
 			</div>
 			<div class="xs-display-none col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
-				<img class="animateblock btm" src="images/brandi/oakland.jpg">
+				<img class="lazy animateblock btm" data-original="images/brandi/oakland.jpg" width="2000" height="1000">
 				<div class="caption">
 					<p>Oakland at night. <span class="italc cred inline">Silentfoto/Getty Images</span></p>
 				</div>
@@ -452,7 +457,7 @@ b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=
 		</div>
 		<div class="row">
 			<div class="col-xs-7 col-md-7">
-				<img class="over animateblock btm" src="images/brandi/Brandi1.jpg">
+				<img class="lazy over animateblock btm" data-original="images/brandi/Brandi1.jpg" width="2000" height="1000">
 			</div>
 			<div class="col-xs-5 col-md-5">
 				<div class="caption">
