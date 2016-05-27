@@ -1288,8 +1288,6 @@ ul.scroll-list {
 }
 
 #article-roadtrip .scroll-list .col-md-6 {
-	margin-left: 5%;
-	margin-right: 5%;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -1823,25 +1821,26 @@ ul.scroll-list {
 /* Footer Styles */
 
 #photo-disclaimer p {
-	font-size: 11px;
+	font-size: 15px;
+	text-align: center;
+	padding: 0 0 10px 0;
+	color: #ADADAD;
 }
 
 #footer {
 	width: 100%;
-	height:40px;
 	background-color: rgba(0,0,0,1);
-	padding: 10px;
-}
-#footer ul {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+	padding: 16px 55px 14px;
+	text-align: center;
+	position: relative;
+	top: 0;
 }
 
 #footer li {
 	display: inline-block;
 	font-family: "brandon-grotesque",sans-serif;
-	font-size: 20px;
+	font-size: 16px;
+	font-weight: 300;
 	margin: 0 10px;
 	cursor: pointer;
 }
@@ -1849,6 +1848,10 @@ ul.scroll-list {
 #footer li a {
 	color: rgba(255,255,255,1);
 	text-align: center;
+}
+#footer .dvdr {
+	color: #fff;
+	display: inline-block;
 }
 
 /* Utility Styles*/
@@ -1865,7 +1868,6 @@ ul.scroll-list {
 .tout {
 	background-color: #05bbff;
 	padding:5px 20px;
-	/*margin-top:60px;*/
 	margin: 60px auto 0;
 	max-width: 750px;
 }
