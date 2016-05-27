@@ -1288,8 +1288,6 @@ ul.scroll-list {
 }
 
 #article-roadtrip .scroll-list .col-md-6 {
-	margin-left: 5%;
-	margin-right: 5%;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
