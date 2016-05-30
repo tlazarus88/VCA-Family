@@ -650,7 +650,7 @@ ul.toc-menu .blogger-circle {
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
-	box-shadow: 0px 0px 0px 8px rgba(235,4,120,1);
+	box-shadow: 0px 0px 0px 6px rgba(235,4,120,1);
 }
 .toc-with {
 	color: rgba(235,4,120,1);
@@ -1293,31 +1293,6 @@ ul.scroll-list {
 	transform: translateY(-50%);
 	z-index: +2;
 }
-
-/*#article-roadtrip .container-fluid.article {
-	width: 100%;
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	max-width: none;
-}
-#article-roadtrip .col-md-8 {
-	text-align: center;
-}
-
-#list-roadtrip {
-	margin-top: 0px;
-}
-
-#article-roadtrip .scroll-list .col-md-6 {
-	margin-left: 5%;
-	margin-right: 5%;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: +2;
-}*/
 
 .circle-container {
 	position: absolute;
