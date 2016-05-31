@@ -93,7 +93,7 @@ $(function(){
     $(window).bind('scroll',upPos);
     
     //Move on click:
-    $('#next-prev a').click(function(e) {
+    $('#next-prev a').on('click touchstart', function(e) {
         if ($(this).hasClass('next') && pagePositon+1 <= pageMaxPosition) {
             pagePositon++;
             $('html, body').stop().animate({ 
