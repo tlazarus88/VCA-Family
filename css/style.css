@@ -640,6 +640,12 @@ ul.toc-menu .toc-region {
 	font-size: 20px;
 	color: rgba(235,4,120,1);
 }
+
+ul.toc-menu .toc-region a {
+	margin: 0;
+	padding: 0;
+}
+
 ul.toc-menu .blogger-circle {
 	width: 150px;
 	height: 150px;
@@ -652,6 +658,7 @@ ul.toc-menu .blogger-circle {
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 6px rgba(235,4,120,1);
 }
+
 .toc-with {
 	color: rgba(235,4,120,1);
 	font-weight: 300;
@@ -718,6 +725,10 @@ ul.toc-menu .divider {
 	display: inline-block;
 	font-size: 12px;
 	margin-bottom: 0;
+}
+
+#mobile-toc ul.toc-menu .toc-region a {
+	padding: 0;
 }
 
 #mobile-toc ul.toc-menu .toc-blogger a {
