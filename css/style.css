@@ -145,7 +145,7 @@ body {
 	height: 50%;
 }
 .hero#main-hero .main-title {
-	z-index: 100!important;
+	z-index: 1000!important;
 	position: absolute;
 	height: 70%;
 	margin-top: 26px;
