@@ -2150,8 +2150,9 @@ img.lazy {
 	#kid-beaches a .hideContentWrap#carlsbad,
 	#kid-beaches a .hideContentWrap#crystal-cove,
 	#kid-beaches a .hideContentWrap#santa-monica {background-image: none;}
-	#footer {height: 80px;}
-	#footer li {display:block; text-align: center;}
+	#footer {height: 124px;}
+	#footer li {display:block; text-align: center; margin-bottom: 10px;}
+	#footer .ftr-dvdr {display: none;}
 }
 
 @media screen and (max-width: 600px) {
