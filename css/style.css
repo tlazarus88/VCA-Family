@@ -128,11 +128,15 @@ body {
 	position: relative;
 }
 .hero .parralax-credit {
-	bottom: 0%;
-	right: 1%;
+	bottom: 0;
+	right: 10px;
+	display: none;
 }
 .hero .parralax-credit p {
 	padding:0;
+	font-style: italic;
+	opacity: .5;
+	font-size: 10px;
 }
 .hero img.main-title {
 	position:absolute;
@@ -167,6 +171,7 @@ body {
 	color: #fff;
 	letter-spacing: 1.5px;
 	font-size: 44px;
+	text-shadow: 0px 1px 4px rgba(0,0,0,.8);
 }
 .hero#main-hero .title-trtmnt-mob h2 {
 	font-weight: 300;
@@ -174,6 +179,7 @@ body {
 	color: #fff;
 	letter-spacing: 1px;
 	font-size: 14px;
+	text-shadow: 0px 1px 4px rgba(0,0,0,.8);
 }
 .hero#main-hero .title-trtmnt-mob img.vca-hero-logo {
 	width: 100px;
@@ -2012,7 +2018,7 @@ img.lazy {
 	#article-roadtrip .circle-container{top: 150px; width: 50%; transform: translateX(-50%)!important;}
 	#article-roadtrip .scroll-list-box {margin-top: 90%;}
 	#article-roadtrip .parralax-credit p {max-width: 100%;}
-	/*.main-full-page {padding-top:115px;}*/
+	.hero .parralax-credit {display: inline;}
 }
 
 /* ----------- Mobile ----------- */
@@ -2147,7 +2153,7 @@ img.lazy {
 	h1 {font-size: 30px;line-height: 32px;}
 	h2, .container-fluid.article.blogger-post h2 {font-size: 20px;}
 	h3 {font-size: 24px;}
-	h4 {italic 700 18px/20px "abril-display",sans-serif}
+	h4 {font:italic 700 18px/20px "abril-display",sans-serif;}
 	#camp-ca .scroll-list-box {border: none;margin: 0;}
 	#camp-ca .animateblock.btm.animated img, #camp-ca .animateblock.btm img {box-shadow: none; padding-bottom: 40px;border-bottom: 4px solid rgba(5,187,255,1);}
 	#camp-ca .caption {margin-bottom: 0;}
