@@ -638,12 +638,12 @@ ul.toc-menu .toc-region {
 	background-color: rgba(255,255,255,1);
 	font-weight: 900;
 	font-size: 20px;
-	color: rgba(235,4,120,1);
 }
 
 ul.toc-menu .toc-region a {
 	margin: 0;
 	padding: 0;
+	color: rgba(235,4,120,1);
 }
 
 ul.toc-menu .blogger-circle {
