@@ -750,11 +750,9 @@ ul.toc-menu .divider {
 
 #mobile-toc .blogger-circle {
 	display: inline-block;
-/*	float: left;
-*/	width: 75px;
+	width: 75px;
 	height: 75px;
 	box-shadow: 0px 0px 0px 2px rgba(235,4,120,1);
-/*	margin-left: 40px;*/
 }
 
 #mobile-toc ul.toc-menu .toc-blogger .toc-with {
@@ -793,6 +791,30 @@ ul.toc-menu .divider {
 	max-width: 95%;
 	margin: -10px auto 0 auto;
 	box-shadow: 0px 8px 14px 0px rgba(0,0,0,.05)
+}
+
+/* Next/Previous Section Buttons */
+
+.mobile-nav-buttons {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: +1000;
+}
+
+.mobile-nav-buttons li {
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+}
+
+#up-mobile-btn {
+	margin-bottom: 5px;
+}
+
+#down-mobile-btn {
+	transform: rotate(180deg);
 }
 
 
@@ -2181,6 +2203,7 @@ img.lazy {
 	.container-fluid.article .blogger-profile-wrap .dvdr {padding-right: 9px;}
 	#mobile-nav {visibility: hidden;}
 	.sticky-nav {box-shadow: none;}
+	.mobile-nav-buttons {display: block;}
 }
 
 @media screen and (max-width: 375px) {
