@@ -200,8 +200,10 @@ function progressBar() {
   };
   if ($(window).scrollTop() >= (topNBlog)) {
     $('.nav-status-bar').addClass('status-width-1');
+    $('.mobile-nav-buttons').css('visibility','visible');
   } else {
     $('.nav-status-bar').removeClass('status-width-1');
+      $('.mobile-nav-buttons').css('visibility','hidden');
   };
   if ($(window).scrollTop() >= (topCampCa)) {
     $('.nav-status-bar').addClass('status-width-2');
