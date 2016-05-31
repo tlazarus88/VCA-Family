@@ -10,6 +10,7 @@ html, body {
 body {
 	font-family: "brandon-grotesque",sans-serif;
 	overflow-x: hidden;
+	position: relative;
 }
 
 /* LEGAL HEADER */
@@ -1844,8 +1845,13 @@ ul.scroll-list {
 
 /* Footer Styles */
 
+#photo-disclaimer {
+	padding-bottom: 46px;
+}
+
 #photo-disclaimer p {
 	font-size: 15px;
+	line-height: 12px;
 	text-align: center;
 	padding: 0 0 10px 0;
 	color: #ADADAD;
@@ -1856,8 +1862,8 @@ ul.scroll-list {
 	background-color: rgba(0,0,0,1);
 	padding: 16px 55px 14px;
 	text-align: center;
-	position: relative;
-	top: 0;
+	position: absolute;
+	bottom: 0;
 }
 
 #footer li {
@@ -2159,6 +2165,7 @@ img.lazy {
 	#footer {height: 124px;}
 	#footer li {display:block; text-align: center; margin-bottom: 10px;}
 	#footer .ftr-dvdr {display: none;}
+	#photo-disclaimer {padding-bottom: 124px;}
 }
 
 @media screen and (max-width: 600px) {
@@ -2178,7 +2185,7 @@ img.lazy {
 	h3 {font-size: 24px;}
 	h4 {font:italic 700 18px/20px "abril-display",sans-serif;}
 	#camp-ca .scroll-list-box {border: none;margin: 0;}
-	#camp-ca .animateblock.btm.animated img, #camp-ca .animateblock.btm img {box-shadow: none; padding-bottom: 40px;border-bottom: 4px solid rgba(5,187,255,1);}
+	#camp-ca .animateblock.btm.animated img, #camp-ca .animateblock.btm img {box-shadow: none; padding-bottom: 40px;border-bottom: none;}
 	#camp-ca .caption {margin-bottom: 0;}
 	#camp-ca .scroll-list-box .text-wrapper {padding:20px 0 15px;}
 	.box-header .stop-name {border-left:1px solid rgba(5,187,255,1)}
@@ -2191,7 +2198,6 @@ img.lazy {
 	#desktop-toc{display:none;}
 	#mobile-toc{display: block}
 	#camp-ca .scroll-list-box {border: none;margin-bottom: 0;}
-	#camp-ca .animateblock.btm.animated img, #camp-ca .animateblock.btm img {box-shadow: none; padding-bottom: 40px;border-bottom: 4px solid rgba(5,187,255,1);}
 	#camp-ca .caption {margin-bottom: 0;}
 	#camp-ca .scroll-list-box .text-wrapper {padding:20px 0 15px;}
 	.box-header-num {padding: 0 15px;border:none;line-height:85px;font-size: 40px;}
