@@ -119,6 +119,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-color: #000;
 }
 .hero#main-hero video {
 	z-index: 0!important;
@@ -769,6 +770,8 @@ ul.toc-menu .divider {
 	font-weight: 700;
 	color: rgba(0,0,0,1);
 	margin-left: 10px;
+	-webkit-transform: translateY(-20px);
+	-ms-transform: translateY(-20px);
 	transform: translateY(-20px);
 	text-align: left;
 	text-shadow: 0px 0px 4px rgba(255,255,255,.5);
@@ -809,18 +812,17 @@ ul.toc-menu .divider {
 	right: 10px;
 	z-index: +1000;
 }
-
 .mobile-nav-buttons li {
 	width: 30px;
 	height: 30px;
 	background-size: cover;
 }
-
 #up-mobile-btn {
 	margin-bottom: 5px;
 }
-
 #down-mobile-btn {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
 	transform: rotate(180deg);
 }
 
@@ -1022,15 +1024,19 @@ a.read-more {
 .container-fluid.article .blogger-profile-wrap .right-quadrant img {
 	display: inline-block;
 	transition: transform 1s;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
 	transform: scale(1);
 	cursor: pointer;
 }
 .container-fluid.article .blogger-profile-wrap .right-quadrant img.arrow:hover {
 	-webkit-transform:none;
+	-ms-transform:none;
 	transform:none;
 }
 .container-fluid.article .blogger-profile-wrap .right-quadrant img:hover {
 	-webkit-transform: scale(2);
+	-ms-transform: scale(2);
 	transform: scale(2);
 	cursor: pointer;
 }
@@ -1122,10 +1128,14 @@ a.read-more {
 }
 
 img.arrow.rotate-left {
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
 	transform: rotate(-90deg);
 }
 
 img.arrow.rotate-down {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
 	transform: rotate(180deg);
 }
 
@@ -1340,6 +1350,8 @@ ul.scroll-list {
 #article-roadtrip .scroll-list .col-md-6 {
 	position: absolute;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 	z-index: +2;
 }
@@ -1347,6 +1359,8 @@ ul.scroll-list {
 .circle-container {
 	position: absolute;
 	top: 50%;
+	-webkit-transform: translateY(-50%) !important;
+	-ms-transform: translateY(-50%) !important;
 	transform: translateY(-50%) !important;
 	left: 50%;
 	width: 40%;
@@ -1520,6 +1534,8 @@ ul.scroll-list {
 	position: absolute;
 	bottom: 5%;
 	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
 	color: rgba(255,255,255,1);
 	text-shadow: 0px 2px 4px rgba(0,0,0,.4);
@@ -1705,9 +1721,7 @@ ul.scroll-list {
 .indicator.rotate {
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
-/* IE 9 */
     -webkit-transform: rotate(45deg);
-/* Safari and Chrome */
 }
 
 /* Specific Slideshow Styles */ 
@@ -1936,13 +1950,14 @@ ul.scroll-list {
 	vertical-align: middle;
 	position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 img.lazy {
     max-width: 100%;
     height: auto;
 }
-
 
 /* ----------- Laptop ----------- */
 
@@ -2043,7 +2058,7 @@ img.lazy {
 	.hideContentWrap .hideContent {display: inline;}
 	.indicator {display: none;}
 	#article-roadtrip .row:nth-of-type(3) {margin-top: -50px;}
-	#article-roadtrip .circle-container{top: 150px; width: 50%; transform: translateX(-50%)!important;}
+	#article-roadtrip .circle-container{top: 150px;width: 50%;-webkit-transform:-ms-translateX(-50%)!important;transform:translateX(-50%)!important;transform: translateX(-50%)!important;}
 	#article-roadtrip .scroll-list-box {margin-top: 90%;}
 	#article-roadtrip .parralax-credit p {max-width: 100%;}
 	.hero .parralax-credit {display: inline;}
