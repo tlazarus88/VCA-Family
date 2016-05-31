@@ -275,6 +275,7 @@ body {
 
 .dropdown:hover .dropdown-menu {
 	display: block;
+	margin-top: 1px; 
 }
 
 .dropdown-menu {
@@ -290,10 +291,16 @@ body {
 }
 
 .dropdown-menu li.btn {
-	margin-top: -83px;
+	margin-top: -85px;
 	background-color: rgba(5,187,255,1);
-	height: 41px;
+	height: 42px;
 	padding: 0px;
+}
+
+.dropdown-menu li.btn .region-link {
+	color: rgba(255,255,255,1);
+	font-weight: 700;
+	padding-top: 8px;
 }
 
 .invisible-hover {
