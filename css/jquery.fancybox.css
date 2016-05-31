@@ -21,7 +21,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 8020;
+	z-index: 10000!important;
 }
 
 .fancybox-skin {
@@ -183,7 +183,7 @@
 	left: 0;
 	overflow: hidden;
 	display: none;
-	z-index: 8010;
+	z-index: 10000!important;
 	background: url('../images/fancybox_overlay.png');
 }
 
