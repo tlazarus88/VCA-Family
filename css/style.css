@@ -301,6 +301,7 @@ body {
 	color: rgba(255,255,255,1);
 	font-weight: 700;
 	padding-top: 8px;
+	cursor: pointer;
 }
 
 .invisible-hover {
@@ -321,6 +322,7 @@ body {
 .dropdown-menu li a:hover {
 	color: rgba(0,0,0,1);
 	background-color: rgba(5,187,255,0);
+	cursor: pointer;
 }
 
 .dropdown-menu .blogger-circle {
@@ -1863,6 +1865,9 @@ ul.scroll-list {
 	padding:5px 20px;
 	margin: 60px auto 0;
 	max-width: 750px;
+}
+.tout:hover {
+	cursor: pointer;
 }
 .tout .vca-tout-text-wrap {
 	float:left;
