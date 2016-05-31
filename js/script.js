@@ -2,16 +2,33 @@
 
 jQuery(document).ready(function($) {
 
+
+
+// Window CSS Resize Fix
+
+$(window).on('resize load', function(){
+  // Full Page
+  // vpw = $(window).width();
+  // vph = $(window).height();
+  
+  // $('.full-page').height(vph);
+  
+  //location.reload();
+});
+
 // Full Page
 
 vpw = $(window).width();
 vph = $(window).height();
 
 $('.full-page').height(vph);
+$('.main-full-page').height(vph - 112);
 
-// Window CSS Resize Fix
-
-$(window).resize(function(){location.reload();});
+if ($(window).width() > 992) {
+    $('.main-full-page').height(vph - 112);
+} else {
+    $('.main-full-page').height(vph);
+}
 
 // Height of Legal Header
 
@@ -28,7 +45,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top - 44 - legalHeaderHeight
+          scrollTop: target.offset().top - 45 - legalHeaderHeight
         }, 1000);
         return false;
       }

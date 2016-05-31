@@ -1,9 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--MOAT-->
+<script type="text/javascript">(function(){var a=document,b=a.createElement("script"),a=a.getElementsByTagName("script")[0];b.type="text/javascript";b.async=!0;b.src="http://s.moatads.com/timeinccontent436vGWy49/moatcontent.js";a.parentNode.insertBefore(b,a)})();</script>
+<!--MOAT-->
+
+
+<!-- Simple Reach -->
+<script>
+__reach_config = {
+///pid: '544976bee79548dcfd0001e9',
+pid: ‘000000000000000000000000’,
+title: 'State of Play',
+url: 'http://sponsored.people.com/visitcalifornia',
+date: '2016-06-01 10:00:00',
+tags: ['sponsored::site::People’,’sponsored::Visit California’],
+ignore_errors: false,
+};
+(function(){
+var s = document.createElement('script');
+s.async = true;
+s.type = 'text/javascript';
+s.src = document.location.protocol + '//d8rk54i4mohrb.cloudfront.net/js/reach.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+})();
+</script>
+<!-- Simple Reach -->
+
+
+<!-- Begin Tealium Integration -->
+<script type="text/javascript">
+var utag_data = {"channel":"people","site_display_format":"desktop","page_name":"State of Play","site_section1":"native","site_section2":"visit california","template_type":"microsite"};
+</script>
+<script type="text/javascript">
+(function(a,b,c,d){
+a='//tags.tiqcdn.com/utag/timeinc/people.com/prod/utag.js';
+b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+ a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+})();
+</script>
+<!-- End Tealium Integration -->
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="description" content="">
+	<meta name="description" content="Discover why a trip to California makes the ultimate family vacation. Explore Northern, Central, and Southern California's places to play.">
+	<meta name = "viewport" content = "user-scalable=no, width=device-width">
+    <link rel="canonical" href="http://sponsored.people.com/visitcalifornia"/>
+    <meta property="og:title" content="State of Play" />
+    <meta property="og:url" content="http://sponsored.people.com/visitcalifornia"/>
+    <meta property="og:site_name" content="State of Play"/>
+    <meta property="og:image" content="http://sponsored.people.com/visitcalifornia"/>
+    <meta property="og:description" content="Discover why a trip to California makes the ultimate family vacation. Explore Northern, Central, and Southern California's places to play."/>
 	<meta name="keywords" content="">
 	<meta name="author" content="The Foundry @ Time Inc.">
 	<script src="https://use.typekit.net/sbn1noz.js"></script>
@@ -13,7 +61,7 @@
 	<link type="text/css"; rel="stylesheet"; href="css/reset.css">
 	<link type="text/css"; rel="stylesheet"; href="css/style.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
-	<!-- <link rel="icon" href="assets/favicon.png"> -->
+	<link rel="icon" href="assets/favicon.png">
 	<title>State of Play</title>
 </head>
 
@@ -23,20 +71,26 @@
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/script.js"></script>
 <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $("img.lazy").lazyload();
+});
+</script>
 
 <section id="legal-header">
 	<p>Paid Content from <a href="http://www.visitcalifornia.com/california-family" target="_blank"><span class="bold">Visit California</span></a><img src="assets/info.gif" class="info"></p>
 	<a href="http://www.people.com/people/" target="_blank"><div class="people-logo"></div></a>
 	<ul class="social">
 		<li class="facebook">
-			<a href="http://sponsored.travelandleisure.com/emirates/#bestsunsets?xid=12" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
+			<a href="http://sponsored.people.com/visitcalifornia" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
 				<img src="assets/fb.png">
 			</a>
 		</li>
 		<li class="twitter">
 			<script>
 				var shareURL=encodeURIComponent(location.href);
-				var shareText = encodeURIComponent('Discover Dubai\'s world-class golf, opulent cuisine, premier pampering, and more.');
+				var shareText = encodeURIComponent('Discover why a trip to California makes the ultimate family vacation. http://sponsored.people.com/visitcalifornia');
 				document.write('<a class="tweet" href="http://twitter.com/intent/tweet?url='+shareURL+'&text='+shareText+'" target="_blank" utag.link({click_id: share-twitter});><img src="assets/twitter.png" alt=""></a>'); 
 			</script>
 			<a class="tweet" href="http://sponsored.travelandleisure.com/emirates/#bestsunsets?xid=12" target="_blank" utag.link({click_id: share-twitter});>
@@ -48,8 +102,16 @@
 	</div>
 </section>
 
-<section class="hero full-page" id="main-hero">
-	<img src="images/title-svg-logo.svg" class="main-title" id="main-title-logo">
+<section class="hero main-full-page mobile-hero" id="main-hero">
+	<div class="height-wrap">
+		<div class="parralax-credit"><p>J. Andruckow/Getty Images</p></div>
+		<img src="images/title-svg-logo.svg" class="main-title">
+	</div>
+	<div class="title-trtmnt-mob">
+		<h1>State of Play</h1>
+		<h2>Discover why a trip to California makes the ultimate family vacation. Explore Northern, Central, and Southern California's places to play.</h2>
+		<img class="vca-hero-logo" src="assets/VCA_white_gold.png">
+	</div>
 	<video autoplay loop muted>
 		<source src="video/VCA_Family_Hero_General_v1.webmhd.webm" type="video/webm">
 		<source src="video/VCA_Family_Hero_General_v1.mp4" type="video/mp4">Your browser does not support the video tag.
@@ -65,7 +127,7 @@
 			</div>
 			<ul class="toc-menu">
 	  			<li class="nav-explore">EXPLORE</li>
-	  			<li class="toc-region">NORTHERN CALIFORNIA</li>
+	  			<li class="toc-region"><a href="#nca-hero">NORTHERN CALIFORNIA</li>
 	  			<li class="toc-blogger"><a href="#nrthrn-blog-post">
 	  				<div class="blogger-circle"></div>
 	  				<div class="toc-with">with</div></br>
@@ -86,7 +148,7 @@
 			</div>
 			<ul class="toc-menu">
 	  			<li class="nav-explore">EXPLORE</li>
-	  			<li class="toc-region">CENTRAL CALIFORNIA</li>
+	  			<li class="toc-region"><a href="#cca-hero">CENTRAL CALIFORNIA</li>
 	  			<li class="toc-blogger"><a href="#cntrl-blog-post">
 	  				<div class="blogger-circle"></div>
 	  				<div class="toc-with">with</div></br>
@@ -107,7 +169,7 @@
 			</div>
 			<ul class="toc-menu">
 	  			<li class="nav-explore">EXPLORE</li>
-	  			<li class="toc-region">SOUTHERN CALIFORNIA</li>
+	  			<li class="toc-region"><a href="#sca-hero">SOUTHERN CALIFORNIA</li>
 	  			<li class="toc-blogger"><a href="#sthrn-blog-post">
 	  				<div class="blogger-circle"></div>
 	  				<div class="toc-with">with</div></br>
@@ -132,7 +194,7 @@
 			</div>
 			<ul class="toc-menu">
 	  			<li class="nav-explore">EXPLORE</li>
-	  			<li class="toc-region">NORTHERN CALIFORNIA</li>
+	  			<a href="#nca-hero"><li class="toc-region"><a href="#nca-hero">NORTHERN CALIFORNIA</a></li>
 	  			<li class="toc-blogger"><a href="#nrthrn-blog-post">
 	  				<div class="blogger-circle"></div>
 	  				<div class="toc-with">with<br>
@@ -153,7 +215,7 @@
 			</div>
 			<ul class="toc-menu">
 	  			<li class="nav-explore">EXPLORE</li>
-	  			<li class="toc-region">CENTRAL CALIFORNIA</li>
+	  			<li class="toc-region"><a href="#cca-hero">CENTRAL CALIFORNIA</a></li>
 	  			<li class="toc-blogger"><a href="#cntrl-blog-post">
 	  				<div class="blogger-circle"></div>
 	  				<div class="toc-with">with</br>
@@ -174,7 +236,7 @@
 			</div>
 			<ul class="toc-menu">
 	  			<li class="nav-explore">EXPLORE</li>
-	  			<li class="toc-region">SOUTHERN CALIFORNIA</li>
+	  			<li class="toc-region"><a href="#sca-hero">SOUTHERN CALIFORNIA</a></li>
 	  			<li class="toc-blogger"><a href="#sthrn-blog-post">
 	  				<div class="blogger-circle"></div>
 	  				<div class="toc-with">with</br>
@@ -201,8 +263,8 @@
 	    <span class="caret"></span>
 	  </button>
 	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-	  	<li class="btn"><span class="nav-explore">EXPLORE</span> NORTHERN CALIFORNIA
-		<span class="caret"></span></li>
+	  	<li class="btn"><a href="#nca-hero" class="region-link"><span class="nav-explore">EXPLORE</span> NORTHERN CALIFORNIA
+		<span class="caret"></span></a></li>
 	  	<div class="invisible-hover"></div>
 	  	<li class="nav-blogger"><a href="#nrthrn-blog-post">
 	  		<div class="blogger-circle" id="brandi-nav"></div>
@@ -225,8 +287,8 @@
 	    <span class="caret"></span>
 	  </button>
 	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-	  	<li class="btn"><span class="nav-explore">EXPLORE</span> CENTRAL CALIFORNIA
-		<span class="caret"></span></li>
+	  	<li class="btn"><a href="#cca-hero" class="region-link"><span class="nav-explore">EXPLORE</span> CENTRAL CALIFORNIA
+		<span class="caret"></span></a></li>
 	  	<div class="invisible-hover"></div>
 	  	<li class="nav-blogger"><a href="#cntrl-blog-post">
 	  		<div class="blogger-circle" id="pattie-nav"></div>
@@ -249,8 +311,8 @@
 	    <span class="caret"></span>
 	  </button>
 	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-	  	<li class="btn"><span class="nav-explore">EXPLORE</span> SOUTHERN CALIFORNIA
-		<span class="caret"></span></li>
+	  	<li class="btn"><a href="#sca-hero" class="region-link"><span class="nav-explore">EXPLORE</span> SOUTHERN CALIFORNIA
+		<span class="caret"></span></a></li>
 	  	<div class="invisible-hover"></div>
 	  	<li class="nav-blogger"><a href="#sthrn-blog-post">
 	  		<div class="blogger-circle" id="justine-nav"></div>
@@ -341,7 +403,8 @@
 </section>
 
 <section class="hero region full-page" id="nca-hero">
-	<img src="assets/VCA_white.gif" class="vca-hero-logo">
+	<div class="parralax-credit"><p>Westend61/Getty Images</p></div>
+	<img src="assets/VCA_white_gold.png" class="vca-hero-logo">
 	<img src="images/northern-title.svg" class="main-title">
 	<video autoplay loop muted>
 		<source src="video/VCA_Family_Hero_Northern_v2.webmhd.webm" type="video/webm">
@@ -367,10 +430,7 @@
 						<img class="mobile-blogger" src="images/brandi/Brandi-profile.jpg">
 					</div>
 					<div class="right-quadrant">
-						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-							<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-							<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-						</svg>
+						<img class="arrow" src="assets/arrow.png">
 						<div class="btm-row">
 							<h4>Oakland, CA</h4>
 						</div>
@@ -389,8 +449,8 @@
 				<h3>Oakland and Berkeley</h3>
 				<p>I know, I know, everyone loves San Francisco. I do, too! You don't have to rush into the city during your Northern California visit, though. In fact, it's a good idea to pace yourself, especially if you're traveling with children. Starting in San Francisco's neighboring cities, Oakland and Berkeley, is a great way to start your vacation, and set the tone for the trip. Besides, they're both extraordinarily family-friendly, with plenty to do and lots to keep the kiddos occupied and engaged.</p>
 			</div>
-			<div class="xs-display-none col-md-5 col-md-offset-1">
-				<img class="animateblock btm" src="images/brandi/oakland.jpg">
+			<div class="xs-display-none col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
+				<img class="lazy animateblock btm" data-original="images/brandi/oakland.jpg" width="2000" height="1000">
 				<div class="caption">
 					<p>Oakland at night. <span class="italc cred inline">Silentfoto/Getty Images</span></p>
 				</div>
@@ -398,22 +458,16 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-7 col-md-7">
-				<img class="over animateblock btm" src="images/brandi/Brandi1.jpg">
+				<img class="lazy over animateblock btm" data-original="images/brandi/Brandi1.jpg" width="2000" height="1000">
 			</div>
 			<div class="col-xs-5 col-md-5">
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow rotate-left" src="assets/arrow.png">
 					<p>Brandi's daughter poses at Children's Fairyland.</p>
 					<p class="italc cred">Courtesy of Brandi Riley</p>
 				</div>
 				<div class="xs-display-none caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow rotate-down" src="assets/arrow.png">
 					<p>All aboard! Brandi and her daughter next to the steam train at Tilden Park.</p>
 					<p class="italc cred">Courtesy of Brandi Riley</p>
 				</div>
@@ -430,8 +484,8 @@
 				<h5>Shorebird Park Nature Center and Adventure Playground</h5>
 				<p>When you get your second wind, take the family to Shorebird Park Nature Center and Adventure Playground for another interesting experience.  A quintessentially Berkeley attraction, this park is unlike any playground you've ever been to. There's a zip line that kids and adults can ride on, and opportunities for children to build things with real hammers and nails, and to use paint to decorate their very own fort. The Shorebird Park Nature Center and Adventure Playground might be your kiddo's favorite part of the entire day!</p>
 			</div>
-			<div class="xs-display-none col-md-5 col-md-offset-1">
-				<img class="sect-break under animateblock btm" src="images/brandi/Brandi3.jpg">
+			<div class="xs-display-none col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
+				<img class="lazy sect-break under animateblock btm" data-original="images/brandi/Brandi2.jpg" width="2000" height="1000">
 			</div>
 		</div>
 		<div class="row">
@@ -446,22 +500,16 @@
 		<div class="container-fluid article blogger-post">
 			<div class="row">
 				<div class="col-xs-7 col-md-7">
-					<img class="over animateblock btm" src="images/brandi/Brandi4.jpg">
+					<img class="lazy over animateblock btm" data-original="images/brandi/Brandi4.jpg" width="2000" height="1000">
 				</div>
 				<div class="col-xs-5 col-md-5">
 					<div class="caption">
-						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-							<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-							<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-						</svg>
+						<img class="arrow rotate-left" src="assets/arrow.png">
 						<p>Don't miss the chance to drive across the iconic Golden Gate Bridge.</p>
 						<p class="italc cred">Narvikk/Getty Images</p>
 					</div>
 					<div class="caption">
-						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-							<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-							<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-						</svg>
+						<img class="arrow rotate-down" src="assets/arrow.png">
 						<p>Life on the water in Sausalito.</p>
 						<p class="italc cred">123/Getty Images</p>
 					</div>
@@ -477,8 +525,8 @@
 					<p>Since it's one of the most iconic bridges in the country, you have to go over the Golden Gate Bridge if you're in Northern California. Every few weeks I try to sweet-talk my husband into driving me over the bridge because I absolutely love the views! Not only will your kids be impressed by the sheer size and beauty of the bridge, but it takes you to one of the most lovely little cities in our area.</p>
 					<h5>Sausalito</h5>
 				</div>
-				<div class="col-md-5 col-md-offset-1 col-xs-5 col-xs-offset-1">
-					<img class="xs-display-none sect-break under animateblock btm" src="images/brandi/Brandi3.jpg">
+				<div class="xs-display-none col-md-5 col-xs-5 col-xs-offset-1 col-md-offset-1">
+					<img class="lazy sect-break under animateblock btm" data-original="images/brandi/Brandi3.jpg" width="2000" height="1000">
 				</div>
 			</div>
 			<div class="row">
@@ -493,8 +541,8 @@
 					<h5>Yosemite National Park</h5>
 					<p>If you are coming to Northern California and you only have a few days, you MUST go to Yosemite National Park. It's about a 2.5-hour drive from Oakland, so if you start early in the morning, you'll have plenty of time to explore. One of the greatest parks in our country, Yosemite is absolutely breathtaking. When you and your family experience the amazing valley and beautiful waterfalls, you'll be reminded of how beautiful our country truly is.</p>
 				</div>
-				<div class="col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
-					<img class="animateblock btm xs-display-none" src="images/brandi/Supplied-Brandi5.jpg">
+				<div class="xs-display-none col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
+					<img class="lazy animateblock btm" data-original="images/brandi/Supplied-Brandi5.jpg" width="2000" height="1000">
 					<div class="caption">
 						<p>A sunset snap at Treasure Island.</p>
 						<p class="italc cred">Courtesy of Brandi Riley</p>
@@ -503,7 +551,7 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-7 col-md-7">
-					<img class="over animateblock btm" src="images/brandi/yosemite.jpg">
+					<img class="lazy over animateblock btm" data-original="images/brandi/yosemite.jpg" width="2000" height="1000">
 					<div class="caption">
 						<p class="italc cred inline">Csondy/Getty Images</p>
 					</div>
@@ -521,7 +569,7 @@
 					<h6>Option #3: San Jose</h6>
 					<h5>San Jose</h5>
 					<p>You may know San Jose as the tech center of Northern California, but there's plenty for families to do there, too! Just about an hour away from Oakland, San Jose makes a fun and easy day trip. Start your morning at Happy Hollow Park and Zoo for a close up look at some really sweet animals. After that, head over to the Children's Discovery Museum for lunch and to play. You and your kiddos will love the gardens, imaginative exhibits, and opportunities to engage with science.</p>
-					<p>Now do you see why it was so easy for me to fall in love with Northern California? It's the very best of everything our great country has to offer, and there's no place I'd rather live, love, and have fun!</p>
+					<p>Now do you see why it was so easy for me to fall in love with Northern California? It's the very best of everything our great country has to offer, and there's no place I'd rather <a href="http://mamaknowsitall.com/" target="_blank">live, love, and have fun!</a></p>
 				</div>
 			</div>
 		</div>
@@ -538,7 +586,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+			<div class="col-xs-12 col-md-8 col-md-offset-2">
 				<h2>Northern California offers some of the most stunning and diverse campsites in the world. Explore these six options.</h2>
 				<p>Whether you want to sleep at the feet of giants in Redwoods National Park or wake up at the water's edge in Lake Tahoe, adventure seekers will marvel at Northern California's options. From off-the-grid rustic sites to the ultimate glamping experience, here are six options for planning your next camping excursion.</p>
 			</div>
@@ -563,7 +611,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12 col-md-6 col-md-offset-6 animateblock btm">
-				<a class="fancybox" href="images/camp-ca/steep-ravine.jpg"><img src="images/camp-ca/steep-ravine.jpg"></a>
+				<a class="fancybox" href="images/camp-ca/steep-ravine.jpg"><img class="lazy" data-original="images/camp-ca/steep-ravine.jpg" width="2000" height="1000"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -586,7 +634,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-md-6 col-md-offset-6 animateblock btm">
-				<a class="fancybox" href="images/camp-ca/mackerricher.jpg"><img src="images/camp-ca/mackerricher.jpg"></a>
+				<a class="fancybox" href="images/camp-ca/mackerricher.jpg"><img class="lazy" data-original="images/camp-ca/mackerricher.jpg" width="2000" height="1000"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -609,7 +657,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-md-6 col-md-offset-6 animateblock btm">
-				<a class="fancybox" href="images/camp-ca/beach.jpg"><img src="images/camp-ca/beach.jpg"></a>
+				<a class="fancybox" href="images/camp-ca/beach.jpg"><img class="lazy" data-original="images/camp-ca/beach.jpg" width="2000" height="1000"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -622,7 +670,7 @@
 					<div class="text-wrapper">
 						<h5>Point Reyes National Seashore</h5>
 						<p>Up for an adventure? First, buy some fresh oysters at the Marshall Store, rent a kayak at Blue Waters Kayaking, and load up your gear for a one-hour paddle to the boat-in only Tomales Bay campsites. After you set up camp on the beach, hike the steep hill for a breathtaking view of Tomales Bay.</p>
-						<p><span class="bold">What to do:</span> Check out Pierce Point Ranch, where you can catch a glimpse of the many tule elk in residence in residence at the Tule Elk Reserve.</p>
+						<p><span class="bold">What to do:</span> Check out Pierce Point Ranch, where you can catch a glimpse of the many tule elk in residence at the Tule Elk Reserve.</p>
 						<div class="caption">
 							<p class="italc cred">Yhelfman/Getty Images</p>
 						</div>
@@ -632,7 +680,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-md-6 col-md-offset-6 animateblock btm">
-				<a class="fancybox" href="images/camp-ca/tomales.jpg"><img src="images/camp-ca/tomales.jpg"></a>
+				<a class="fancybox" href="images/camp-ca/tomales.jpg"><img class="lazy" data-original="images/camp-ca/tomales.jpg" width="2000" height="1000"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -656,7 +704,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-md-6 col-md-offset-6">
 				<div class="animateblock btm">
-					<a class="fancybox" href="images/camp-ca/sequoia.jpg"><img src="images/camp-ca/sequoia.jpg"></a>
+					<a class="fancybox" href="images/camp-ca/sequoia.jpg"><img class="lazy" data-original="images/camp-ca/sequoia.jpg" width="2000" height="1000"></a>
 				</div>
 			</div>
 		</div>
@@ -681,16 +729,19 @@
 		<div class="row">
 			<div class="col-xs-12 col-md-6 col-md-offset-6">
 				<div class="animateblock btm">
-					<a class="fancybox" href="images/camp-ca/bigbasin.jpg"><img src="images/camp-ca/bigbasin.jpg"></a>
+					<a class="fancybox" href="images/camp-ca/bigbasin.jpg"><img class="lazy" data-original="images/camp-ca/bigbasin.jpg" width="2000" height="1000"></a>
 				</div>
 			</div>
 		</div>
-		<div class="row tout">
-			<div class="col-xs-12 col-md-8 col-md-offset-2">
-				<p>Check out eight more spots for adventurous kids <a href="http://www.visitcalifornia.com/feature/8-great-spots-take-adventurous-daughter" target="_blank">here</a>.</p>
-				<img src="assets/CA Logo_Dream Big_Color.png" class="vca-logo-color">
-			</div>
+	</div>
+	<div class="tout clearfix">
+		<div class="vca-tout-text-wrap">
+			<p>Check out eight more spots for adventurous kids <a href="http://www.visitcalifornia.com/feature/8-great-spots-take-adventurous-daughter" target="_blank">here</a>.</p>
 		</div>
+		<div class="vca-tout-logo-wrap">
+			<img src="assets/VCA_white_gold.png" class="vca-logo-color">
+		</div>
+	</div>
 </section>
 
 <!-- PHOTO OP -->
@@ -704,13 +755,14 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<p>Imagine a place where towering trees meet rugged coastline, and friendly locals greet visitors with open arms (holding cups of artisanal coffee and mason jars of craft beer). Northern California, with its massive scale and otherworldly beauty, gives off an almost mystical vibe—the yin to Southern California's yang. Here are four must-see spots for families looking to capture some of Northern California's charms.</p>
+				<h2>Imagine a place where towering trees meet rugged coastline, and friendly locals greet visitors with open arms (holding cups of artisanal coffee and mason jars of craft beer). Northern California, with its massive scale and otherworldly beauty, gives off an almost mystical vibe—the yin to Southern California's yang. Here are four must-see spots for families looking to capture some of Northern California's charms.</h2>
 			</div>
 		</div>
 	</div>
 	<a href="#burney">
 		<ul class="hideContentWrap" id="burney">
 			<li class="hideContentHeader"><h1>Burney Falls</h1></li>
+			<img class="mob-slideshow" src="images/photo-op/burney1.jpg">
 			<li class="hideContent">
 				<div class="text-box">
 					<p>This 129-foot-tall waterfall is one of the most jaw-dropping sights in North America. Located about 60 miles northeast of Redding, Burney Falls makes a delightful day trip. Take a hike around the falls to reach the optimum viewpoint, the overlook at McArthur-Burney Falls Memorial State Park, and you'll see why President Teddy Roosevelt referred to the falls as the "eighth wonder of the world."</p>
@@ -722,6 +774,7 @@
 	<a href="#shasta">
 		<ul class="hideContentWrap" id="shasta">
 			<li class="hideContentHeader"><h1>Shasta Lake</h1></li>
+			<img class="mob-slideshow" src="images/photo-op/shasta1.jpg">
 			<li class="hideContent">
 				<div class="text-box">
 					<p>The largest lake in California, Shasta, is awash in watery family fun. With a whopping 370 miles of shoreline, it makes it easy to find an activity that involves your favorite watersport—from jet skiing to boating to just plain ol' swimming. And one not-to-miss landmark is the Shasta Dam; at 602 feet high, it's the second largest of its kind in the country and the perfect spot for a group photo. If you're staying overnight, dine right on the water on a dinner cruise.</p>
@@ -733,6 +786,7 @@
 	<a href="#mendocino">
 		<ul class="hideContentWrap" id="mendocino">
 			<li class="hideContentHeader"><h1>Mendocino</h1></li>
+			<img class="mob-slideshow" src="images/photo-op/mendocino1.jpg">
 			<li class="hideContent">
 				<div class="text-box">
 					<p>Three hours north of San Francisco is the coastal cool town of Mendocino. Kids will love exploring Glass Beach, located about 10 miles north of the town of Mendocino, where deposits of colorful sea glass rest along the coves. One theory for the washed up treasure is that the sea glass is "mermaid tears," shed every time a sailor is lost at sea. Just be sure not to take any of the glass with you—it's best left on the beach for other visitors. On the way back to town, visit the Mendocino Coast Botanical Gardens to snap some pictures of its expansive collection of blooms, including its famous rhododendrons. Thirty miles south of town, check out the B. Bryan Preserve, where you can capture snaps of exotic animals like antelopes, kudus, zebras, and giraffes.</p>
@@ -744,6 +798,7 @@
 	<a href="#eureka">
 		<ul class="hideContentWrap" id="eureka">
 			<li class="hideContentHeader"><h1>Eureka</h1></li>
+			<img class="mob-slideshow" src="images/photo-op/eureka2.jpg">
 			<li class="hideContent">
 				<div class="text-box">
 					<p>After a drive north through towering redwood forests, you'll most definitely know when you've stumbled upon this Victorian-architecture-laden town along the coast. Eureka, 280 miles north of San Francisco, is not only worth a visit in and of itself—stroll along the seaside boardwalk and on the streets of old town, stopping at the intriguing Clarke Historical Museum. About an hour from Eureka on Highway 299 go hunting for Bigfoot at the Willow Creek-China Flat Museum. You'll find footprint casts, Bigfoot pictures, and a collection of other odds and ends.</p>
@@ -770,93 +825,114 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid article">
-		<div class="row">
-			<div class="col-md-12">
-				<ul class="scroll-list">
-					<li class="parallax-bg__empty full-page" id="list-roadtrip">
+	<div class="roadtrip-container">
+			<ul class="scroll-list">
+				<li class="parallax-bg__empty full-page" id="list-roadtrip">
+					<div class="container-fluid article">
 						<div class="circle-container" id="roadtrip-circle-1">
 							<div class="roadtrip-circle circle-bg-1 circle-bg-1a circle-bg-1b circle-bg-1c circle-bg-2 circle-bg-3 circle-bg-4 circle-bg-5 circle-bg-6"></div>
 						</div>
-						<div class="col-md-6">
-							<div class="scroll-list-box">
-								<div class="box-header">
-									<div class="box-header-num">1</div>
-									<span class="stop-name">First Stop:</br>Phillipsville</span>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="scroll-list-box">
+									<div class="box-header">
+										<div class="box-header-num">1</div>
+										<span class="stop-name">First Stop:</br>Phillipsville</span>
+									</div>
+									<p>Before you set out, fuel up on grass-fed-beef burgers, fresh baked goods, and soft-serve ice cream at the whimsical Chimney Tree Grill in the town of Phillipsville. The restaurant is next to the Living Chimney Tree, which was hollowed by a fire in 1914. Visitors can walk into the room-like space, entering through a front door, to check out the tree's interior.</p>
 								</div>
-								<p>Before you set out, fuel up on grass-fed-beef burgers, fresh baked goods, and soft-serve ice cream at the whimsical Chimney Tree Grill in the town of Phillipsville. The restaurant is next to the Living Chimney Tree, which was hollowed by a fire in 1914. Visitors can walk into the room-like space, entering through a front door, to check out the tree's interior.</p>
 							</div>
 						</div>
-					</li>
-					<li class="parallax-bg__myers full-page" id="roadtrip-2">
+					</div>
+				</li>
+				<li class="parallax-bg__myers full-page" id="roadtrip-2">
+					<div class="container-fluid article">
 						<div class="caption parralax-credit">
 							<p><span class="italc cred">Gary Crabbe/Getty Images</span></p>
 						</div>
-						<div class="col-md-6"> 
-							<div class="scroll-list-box">
-								<div class="box-header">
-									<div class="box-header-num">2</div>
-									<span class="stop-name">Myers Flat and</br>the Shrine Tree</span>
+						<div class="row">
+							<div class="col-md-6"> 
+								<div class="scroll-list-box">
+									<div class="box-header">
+										<div class="box-header-num">2</div>
+										<span class="stop-name">Myers Flat and</br>the Shrine Tree</span>
+									</div>
+									<p>There are three redwoods you can drive a car through in California. The Shrine Drive-Through Tree has the distinction of being the only one hollowed out by nature. Goose pens, as these interior spaces are known, are caused by fires, which burn out the interior of the tree but leave the exterior intact <span class="italc">and</span> alive. You'll pay a small fee to pass through this privately owned redwood. Stop off in Myers Flat for the locally lauded Daily Grind espresso house or a visit to Riverbend Cellars for a laid back local wine tasting. If you have young kids, venture a mile farther to the Williams Grove day use area where you'll access the Children's Forest trail. This quiet, pretty 2-mile loop has plenty of fun exploration opportunities for little ones.</p>
 								</div>
-								<p>There are three redwoods you can drive a car through in California. The Shrine Drive-Through Tree has the distinction of being the only one hollowed out by nature. Goose pens, as these interior spaces are known, are caused by fires, which burn out the interior of the tree but leave the exterior intact <span class="italc">and</span> alive. You'll pay a small fee to pass through this privately owned redwood. Stop off in Myers Flat for the locally lauded Daily Grind espresso house or a visit to Riverbend Cellars for a laid back local wine tasting. If you have young kids, venture a mile farther to the Williams Grove day use area where you'll access the Children's Forest trail. This quiet, pretty 2-mile loop has plenty of fun exploration opportunities for little ones.</p>
 							</div>
 						</div>
-					</li>
-					<li class="parallax-bg__empty full-page" id="roadtrip-3">
-						<div class="col-md-6">
-							<div class="scroll-list-box">
-								<div class="box-header">
-									<div class="box-header-num">3</div>
-									<span class="stop-name">The Humboldt Redwoods</br>State Park Visitor's Center</span>
+					</div>
+				</li>
+				<li class="parallax-bg__empty full-page" id="roadtrip-3">
+					<div class="container-fluid article">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="scroll-list-box">
+									<div class="box-header">
+										<div class="box-header-num">3</div>
+										<span class="stop-name">The Humboldt Redwoods</br>State Park Visitor's Center</span>
+									</div>
+									<p>This retro, 1930s visitor's center near the town of Weott is both kitschy and educational. Three of the world's remaining redwood species have been planted out front. Inside there's a substantial history museum, as well as the world's first RV, carved from a redwood trunk, which the owner drove around the country from 1917 to 1921 to raise awareness of the forests.</p>
 								</div>
-								<p>This retro, 1930s visitor's center near the town of Weott is both kitschy and educational. Three of the world's remaining redwood species have been planted out front. Inside there's a substantial history museum, as well as the world's first RV, carved from a redwood trunk, which the owner drove around the country from 1917 to 1921 to raise awareness of the forests.</p>
 							</div>
 						</div>
-					</li>
-					<li class="parallax-bg__founders-grove full-page" id="roadtrip-4">
+					</div>
+				</li>
+				<li class="parallax-bg__founders-grove full-page" id="roadtrip-4">
+					<div class="container-fluid article">
 						<div class="caption parralax-credit">
 							<p><span class="italc cred">Noppawat Tom Charoensinphon/Getty Images</span></p>
 						</div>
-						<div class="col-md-6">
-							<div class="scroll-list-box">
-								<div class="box-header one-line">
-									<div class="box-header-num">4</div>
-									<span class="stop-name">Founder's Grove</span>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="scroll-list-box">
+									<div class="box-header one-line">
+										<div class="box-header-num">4</div>
+										<span class="stop-name">Founder's Grove</span>
+									</div>
+									<p>Stop to explore the Dyerville Giant—estimated to be the world's tallest tree when it toppled 25 years ago. When it crashed, people in the area thought there had been a train accident because of the explosive reverberation. It's now a great opportunity to see a redwood root system, and there's plenty of signage to learn about the forest.</p>
 								</div>
-								<p>Stop to explore the Dyerville Giant—estimated to be the world's tallest tree when it toppled 25 years ago. When it crashed, people in the area thought there had been a train accident because of the explosive reverberation. It's now a great opportunity to see a redwood root system, and there's plenty of signage to learn about the forest.</p>
 							</div>
 						</div>
-					</li>
-					<li class="parallax-bg__empty full-page" id="last-roadtrip">
-						<div class="col-md-6">
-							<div class="scroll-list-box">
-								<div class="box-header one-line">
-									<div class="box-header-num">5</div>
-									<span class="stop-name">The Grieg-French-Bell Grove</span>
+					</div>
+				</li>
+				<li class="parallax-bg__empty full-page" id="last-roadtrip">
+					<div class="container-fluid article">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="scroll-list-box">
+									<div class="box-header one-line">
+										<div class="box-header-num">5</div>
+										<span class="stop-name">The Grieg-French-Bell Grove</span>
+									</div>
+									<p>Fairytale lovers will marvel at this grove, most famous for the redwood sorrel ground cover. The dense, bright green foliage resembles four-leaf clovers, and it blankets the forest floor, rising and falling with the terrain. Pathways twist and turn among the trees in an incredible enchanted setting.</p>
 								</div>
-								<p>Fairytale lovers will marvel at this grove, most famous for the redwood sorrel ground cover. The dense, bright green foliage resembles four-leaf clovers, and it blankets the forest floor, rising and falling with the terrain. Pathways twist and turn among the trees in an incredible enchanted setting.</p>
 							</div>
 						</div>
-					</li>
-					<li class="parallax-bg__eternal-tree-house full-page">
+					</div>
+				</li>
+				<li class="parallax-bg__eternal-tree-house full-page">
+					<div class="container-fluid article">
 						<div class="caption parralax-credit">
 							<p><span class="italc cred">Brad Wenner/Getty Images</span></p>
 						</div>
-						<div class="col-md-6">
-							<div class="scroll-list-box">
-								<div class="box-header one-line">
-									<div class="box-header-num">6</div>
-									<span class="stop-name">Eternal Tree House</span>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="scroll-list-box">
+									<div class="box-header one-line">
+										<div class="box-header-num">6</div>
+										<span class="stop-name">Eternal Tree House</span>
+									</div>
+									<p>About eight miles south of the Stafford end of the Avenue of the Giants sits the Eternal Tree House, a rustic roadside stop with a gift shop, restaurant, and a 20-square foot room located in the stump of one of the giants. Visitors to the house can leave their name in the guestbook before going back on the road.</p>
 								</div>
-								<p>About eight miles south of the Stafford end of the Avenue of the Giants sits the Eternal Tree House, a rustic roadside stop with a gift shop, restaurant, and a 20-square foot room located in the stump of one of the giants. Visitors to the house can leave their name in the guestbook before going back on the road.</p>
+							</div>
+							<div class="circle-container" id="roadtrip-circle-2">
+								<div class="roadtrip-circle" id="last-circle"></div>
 							</div>
 						</div>
-						<div class="circle-container" id="roadtrip-circle-2">
-							<div class="roadtrip-circle" id="last-circle"></div>
-						</div>
-					</li>
-				</ul>		
-			</div>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 </section>
@@ -872,13 +948,14 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<p>Some of the wider-known theme parks reside in the southern part of the state, but Northern California is home to wonder-filled theme parks, animal attractions, and summertime amusements. With so many exciting adventures to choose from, the only question is where to go first. So here, a few of the area's main enticements to get you started.</p>
+				<h2>Some of the wider-known theme parks reside in the southern part of the state, but Northern California is home to wonder-filled theme parks, animal attractions, and summertime amusements. With so many exciting adventures to choose from, the only question is where to go first. So here, a few of the area's main enticements to get you started.</h2>
 			</div>
 		</div>
 	</div>
 	<a href="#great-america">
 		<ul class="hideContentWrap" id="great-america">
 			<li class="hideContentHeader"><h1>Something for Everyone</h1></li>
+			<img class="mob-slideshow" src="images/kid-attractions/great-america.jpg">
 			<li class="hideContent">
 				<h4>California's Great America</h4>
 				<div class="text-box">
@@ -891,6 +968,7 @@
 	<a href="#gilroy">
 		<ul class="hideContentWrap" id="gilroy">
 			<li class="hideContentHeader"><h1>Natural Wonders</h1></li>
+			<img class="mob-slideshow" src="images/kid-attractions/gilroy2.jpg">
 			<li class="hideContent">
 				<h4>Gilroy Gardens Family Theme Park</h4>
 				<div class="text-box">
@@ -903,6 +981,7 @@
 	<a href="#discov-kingdom">
 		<ul class="hideContentWrap" id="discov-kingdom">
 			<li class="hideContentHeader"><h1>Animal Attractions</h1></li>
+			<img class="mob-slideshow" src="images/kid-attractions/discovery-kingdom.jpg">
 			<li class="hideContent">
 				<h4>Six Flags Discovery Kingdom</h4>
 				<div class="text-box">
@@ -915,6 +994,7 @@
 	<a href="#chil-fairyland">
 		<ul class="hideContentWrap" id="chil-fairyland">
 			<li class="hideContentHeader"><h1>Where Dreams Come True</h1></li>
+			<img class="mob-slideshow" src="images/kid-attractions/fairyland.jpg">
 			<li class="hideContent">
 				<h4>Children's Fairyland</h4>
 				<div class="text-box">
@@ -927,6 +1007,7 @@
 	<a href="#safari-west">
 		<ul class="hideContentWrap" id="safari-west">
 			<li class="hideContentHeader"><h1>Wild Things</h1></li>
+			<img class="mob-slideshow" src="images/kid-attractions/safari-west.jpg">
 			<li class="hideContent">
 				<h4>Safari West</h4>
 				<div class="text-box">
@@ -939,6 +1020,7 @@
 	<a href="#fairytale-town">
 		<ul class="hideContentWrap" id="fairytale-town">
 			<li class="hideContentHeader"><h1>Tall Tales for Tiny Tots</h1></li>
+			<img class="mob-slideshow" src="images/kid-attractions/fairytale-town.jpg">
 			<li class="hideContent">
 				<h4>Fairytale Town</h4>
 				<div class="text-box">
@@ -951,6 +1033,7 @@
 	<a href="#sac-zoo">
 		<ul class="hideContentWrap" id="sac-zoo">
 			<li class="hideContentHeader"><h1>Animal Instincts</h1></li>
+			<img class="mob-slideshow" src="images/kid-attractions/sac-zoo.jpg">
 			<li class="hideContent">
 				<h4>Sacramento Zoo</h4>
 				<div class="text-box">
@@ -963,6 +1046,7 @@
 	<a href="#funderland">
 		<ul class="hideContentWrap" id="funderland">
 			<li class="hideContentHeader"><h1>Toddler Town</h1></li>
+			<img class="mob-slideshow" src="images/kid-attractions/funderland2.jpg">
 			<li class="hideContent">
 				<h4>Funderland Amusement Park</h4>
 				<div class="text-box">
@@ -975,7 +1059,7 @@
 </section>
 
 <section class="hero region full-page" id="cca-hero">
-	<img src="assets/VCA_white.gif" class="vca-hero-logo">
+	<img src="assets/VCA_white_gold.png" class="vca-hero-logo">
 	<img src="images/central-title.svg" class="main-title">
 	<video autoplay loop muted>
 		<source src="video/VCA_Family_Hero_Central_v2.webmhd.webm" type="video/webm">
@@ -997,13 +1081,10 @@
 							<h1>Pattie Cordova</h1>
 							<h4 class="mob-location"><span class="dvdr">|</span> Los Angeles, CA</h4>
 						</div>
-						<img class="mobile-blogger" src="images/pattie/Pattie-profile.jpg">
+						<img class="mobile-blogger" src="images/pattie/Pattie_profile.jpg">
 					</div>
 					<div class="right-quadrant">
-						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-							<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-							<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-						</svg>
+						<img class="arrow" src="assets/arrow.png">
 						<div class="btm-row">
 							<h4>Los Angeles, CA</h4>
 						</div>
@@ -1024,8 +1105,8 @@
 				<h3>Solvang</h3>
 				<p>About an hour away from Santa Barbara is a quaint little town called Solvang. Driving into Solvang will make you feel as though you're stepping back in time. You will immediately get the small-town feel (it has a population of about 5,500) as you drive down its one major road and past its mom-and-pop shops and well-known bakeries. Founded by a group of Danes in 1911, the town gives you the feeling that it hasn't changed much since then.</p>
 			</div>
-			<div class="xs-display-none col-md-5 col-md-offset-1">
-				<img class="animateblock btm" src="images/pattie/visiting-oceanside.jpg">
+			<div class="xs-display-none col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
+				<img class="lazy animateblock btm" data-original="images/pattie/visiting-oceanside.jpg" width="2000" height="1000">
 				<div class="caption">
 					<p>Pattie and her crew strike a pose on a jetty.
 					</br><span class="italc cred inline no-left-margin">Courtesy of Pattie Cordova</span></p>
@@ -1034,14 +1115,11 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-7 col-md-7">
-				<img class="over animateblock btm" src="images/pattie/solvang.jpg">
+				<img class="lazy over animateblock btm" data-original="images/pattie/solvang.jpg" width="2000" height="1000">
 			</div>
 			<div class="col-xs-5 col-md-5">
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow rotate-left" src="assets/arrow.png">
 					<p>Experience a slice of history on the streets of Solvang.</p>
 					<p class="italc cred">Fox Lei/Shutterstock</p>
 				</div>
@@ -1061,22 +1139,16 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-7 col-md-7">
-				<img class="over animateblock btm" src="images/pattie/central-valley.jpg">
+				<img class="lazy over animateblock btm" data-original="images/pattie/central-valley.jpg" width="2000" height="1000">
 			</div>
-			<div class="col-md-5">
+			<div class="col-xs-5 col-md-5">
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow rotate-left" src="assets/arrow.png">
 					<p>Explore the family-owned farms California's Central Valley is known for.</p>
 					<p class="italc cred">Hal Bergman/Getty Images</p>
 				</div>
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow rotate-down" src="assets/arrow.png">
 					<p>Pattie's son learns to ride in the park.</p>
 					<p class="italc cred">Courtesy of Pattie Cordova</p>
 				</div>
@@ -1084,10 +1156,10 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-6 col-md-6">
-				<p>Central California is a wonderful region of the Golden State, with the ocean and mountains surrounding the family-owned farms and quaint towns that you'll run into simply by driving down the scenic highways. Families can always find something that they enjoy doing. Whether we choose a day at the beach, a tour of historic missions, or fruit picking at a farm, Central California will give us three days of fun, great meals, and bonding moments that will carry us into our future California travels.</p>
+				<p>Central California is a wonderful region of the Golden State, with the ocean and mountains surrounding the family-owned farms and quaint towns that you'll run into simply by driving down the scenic highways. Families can always find something that they enjoy doing. Whether we choose a day at the beach, a tour of historic missions, or fruit picking at a farm, Central California will give us <a href="http://livingmividaloca.com/" target="_blank">three days of fun</a>, great meals, and bonding moments that will carry us into our future California travels.</p>
 			</div>
 			<div class="col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
-				<img class="sect-break under animateblock btm" src="images/pattie/supplied_pattie_2.jpg">
+				<img class="lazy sect-break under animateblock btm" data-original="images/pattie/supplied_pattie_2.jpg" width="2000" height="1000">
 			</div>
 		</div>
 	</div>
@@ -1111,10 +1183,11 @@
 	<a href="#chabot-space">
 		<ul class="hideContentWrap" id="chabot-space">
 			<li class="hideContentHeader"><h1>Chabot Space &amp; Science Center</h1></li>
+			<img class="mob-slideshow" src="images/eduvacation/chabot1.jpg">
 			<li class="hideContent">
 				<div class="text-box">
 					<p>Ready for an out-of-this-world adventure? Head to Oakland to take a trip through outer space via Chabot's state-of-the-art planetarium, or see if you have the right stuff on a simulated space mission in the Challenger Learning Center. The center is great for all ages, including the littlest astronauts, who can enroll in the Tyke Explorers Workshop, which teaches children three to five years old about space, dinosaurs, the human body, and other science topics. Chabot is home to three telescopes open for public viewing—visit after sunset for a spectacular view of the night sky.</p>
-					<p class="italc cred">Courtesy of Great America</p>
+					<p class="italc cred">Courtesy of Chabot Space &amp; Science Center</p>
 				</div>
 			</li>
 		</ul>
@@ -1122,10 +1195,11 @@
 	<a href="#monterey-aquarium">
 		<ul class="hideContentWrap" id="monterey-aquarium">
 			<li class="hideContentHeader"><h1>Monterey Bay Aquarium</h1></li>
+			<img class="mob-slideshow" src="images/eduvacation/monterey1.jpg">
 			<li class="hideContent">
 				<div class="text-box">
 					<p>One of the most renowned aquariums on the planet, the Monterey Bay Aquarium will stun and amaze everyone from infants to the elderly. Located right on Cannery Row in historic Monterey, the aquarium features nearly 200 exhibits in 34 major galleries. Go for the eye-to-fins views of colorful sea creatures, and be sure to check out daily feedings of playful penguins and otters. Underwater enthusiast in the family? Schedule a family tour for a behind-the-scenes look at life at the aquarium.</p>
-					<p class="italc cred">Courtesy of Great America</p>
+					<p class="italc cred">© Monterey Bay Aquarium </p>
 				</div>
 			</li>
 		</ul>
@@ -1133,10 +1207,11 @@
 	<a href="#academy-sciences">
 		<ul class="hideContentWrap" id="academy-sciences">
 			<li class="hideContentHeader"><h1>California Academy of Sciences</h1></li>
+			<img class="mob-slideshow" src="images/eduvacation/academy-sciences1.jpg">
 			<li class="hideContent">
 				<div class="text-box">
 					<p>Housing nearly 46 million specimens, the California Academy of Sciences in San Francisco is one of the biggest attractions of its kind in the world. Between the planetarium, aquarium, and natural history museum, it's hard to know where to go first (and you can't go wrong). Don't miss the Osher Rainforest, a four-story neo-tropical rainforest where you'll encounter exotic birds and reptiles, amphibians, spiders, and Amazonian fish. Also, be sure to buy your tickets online in advance so you can skip the line when you arrive.</p>
-					<p class="italc cred">Courtesy of Great America</p>
+					<p class="italc cred">Courtesy of California Academy of Sciences</p>
 				</div>
 			</li>
 		</ul>
@@ -1144,10 +1219,11 @@
 	<a href="#exploratorium">
 		<ul class="hideContentWrap" id="exploratorium">
 			<li class="hideContentHeader"><h1>Exploratorium</h1></li>
+			<img class="mob-slideshow" src="images/eduvacation/exploratorium1.jpg">
 			<li class="hideContent">
 				<div class="text-box">
 					<p>A public learning laboratory, this San Francisco institution sits at the intersection of science and art. Often described as a mad scientist's penny arcade, a scientific funhouse, and an experimental laboratory all rolled into one, the center boasts more than 600 hands-on exhibits and displays—a tinkerer's paradise. You can also explore a dark maze using only your hands (discovering some interesting textures along the way), or channel your inner caveman (or cavewoman) and make your own cave petroglyph. A travel tip:  Schedule your visit on a weekday, as weekends are very popular with locals and tourists alike.</p>
-					<p class="italc cred">Courtesy of Great America</p>
+					<p class="italc cred">Esther Kutnick/©Exploratorium</p>
 				</div>
 			</li>
 		</ul>
@@ -1155,10 +1231,11 @@
 	<a href="#tech-museum">
 		<ul class="hideContentWrap" id="tech-museum">
 			<li class="hideContentHeader"><h1>The Tech Museum of Innovation</h1></li>
+			<img class="mob-slideshow" src="images/eduvacation/tech-museum1.jpg">
 			<li class="hideContent">
 				<div class="text-box">
 					<p>It seems perfectly fitting that Silicon Valley would have its own state-of-the-art, technology-centric museum that San Jose locals call "The Tech." Going beyond the usual science museum, The Tech empowers guests to explore biotech, cyber security, design and build their own robots, and play with hundreds of interactive exhibits and displays. When your brain is tuckered, sit back and enjoy films on 9,000-plus square feet of wraparound IMAX screen (the largest IMAX dome theater in the western United States), or check out one of the most geektacular gift shops around.</p>
-					<p class="italc cred">Courtesy of Great America</p>
+					<p class="italc cred">Courtesy of The Tech Museum of Innovation</p>
 				</div>
 			</li>
 		</ul>
@@ -1166,10 +1243,11 @@
 	<a href="#sb-natural-history">
 		<ul class="hideContentWrap" id="sb-natural-history">
 			<li class="hideContentHeader"><h1>Santa Barbara Museum of Natural History</h1></li>
+			<img class="mob-slideshow" src="images/eduvacation/sb-natural-history1.jpg">
 			<li class="hideContent">
 				<div class="text-box">
 					<p>Celebrating its 100th anniversary in 2016, the museum encourages adults and kids alike to reconnect with nature. Wear comfortable walking shoes on your visit—after gawking at the 74-foot blue whale skeleton, you can remind yourself that you're in subtropical California and head to the museum's backyard to play on the water course, build a fort, and search for critters. From there you can also hike the Nature Trail along Mission Creek.</p>
-					<p class="italc cred">Courtesy of Great America</p>
+					<p class="italc cred">Gary Robinson/Santa Barbara Museum of Natural History</p>
 				</div>
 			</li>
 		</ul>
@@ -1200,7 +1278,7 @@
 				<p>Hop back in the car and snake up the coast, passing historic and charming San Luis Obispo, stopping for a California history lesson at the Old Mission San Luis Obispo de Tolosa. Then veer onto The Pacific Coast Highway (Highway 1, or PCH as locals call it). Designate a family member as a photographer to capture the views.</p>
 			</div>
 			<div class="col-xs-5 col-md-5 col-md-offset-1">
-				<img class="animateblock btm" src="images/meet-cca/meet-cca1.jpg">
+				<img class="lazy animateblock btm" data-original="images/meet-cca/meet-cca1.jpg" width="2000" height="1000">
 				<div class="caption">
 					<p>Take a stroll in historic Santa Barbara.</p>
 					<p class="italc cred inline no-left-margin">Sashahaltam/Shutterstock</p>
@@ -1209,22 +1287,16 @@
 		</div>
 		<div class="row">
 			<div class="xs-display-none col-xs-7 col-md-7">
-				<img class="over animateblock btm" src="images/meet-cca/meet-cca2.jpg">
+				<img class="lazy over animateblock btm" data-original="images/meet-cca/meet-cca2.jpg" width="2000" height="1000">
 			</div>
-			<div class="xs-display-none col-md-5">
+			<div class="xs-display-none col-xs-5 col-md-5">
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow rotate-left" src="assets/arrow.png">
 					<p>Pull over at a turnout to snap a picture of the iconic Bixby Bridge.</p>
 					<p class="italc cred">Thomas Kurmeier/Getty Images</p>
 				</div>
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow rotate-down" src="assets/arrow.png">
 					<p>Watch the Pacific Ocean waves roll in against a backdrop of cliffs at Montaña De Oro State Park.</p>
 					<p class="italc cred">Ron Thomas/Getty Images</p>
 				</div>
@@ -1236,13 +1308,13 @@
 
 				<p>One cannot cruise up the PCH without stopping in Santa Cruz. Kids will love a trip to the Santa Cruz Beach Boardwalk, an amusement park (complete with the wooden Giant Dipper roller coaster, which first rolled out in 1924).</p>
 			</div>
-			<div class="xs-display-none col-md-5 col-md-offset-1">
-				<img class="sect-break under animateblock btm" src="images/meet-cca/meet-cca3.jpg">
+			<div class="xs-display-none col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
+				<img class="lazy sect-break under animateblock btm" data-original="images/meet-cca/meet-cca3.jpg" width="2000" height="1000">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-md-9">
-				<img class="over animateblock btm" src="images/meet-cca/meet-cca4.jpg">
+				<img class="lazy over animateblock btm" data-original="images/meet-cca/meet-cca4.jpg" width="2000" height="1000">
 				<div class="caption">
 					<p class="italc cred inline">Chris Hendrickson/Getty Images</p>
 				</div>
@@ -1257,26 +1329,20 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="xs-display-none col-md-7">
-				<img class="over animateblock btm" src="images/meet-cca/meet-cca6.jpg">
+			<div class="xs-display-none col-xs-7 col-md-7">
+				<img class="lazy over animateblock btm" data-original="images/meet-cca/meet-cca6.jpg" width="2000" height="1000">
 			</div>
 			<div class="col-xs-5 col-md-5 r-rail-above">
-				<img class="sect-break under animateblock btm" src="images/meet-cca/meet-cca5.jpg">
+				<img class="lazy sect-break under animateblock btm" data-original="images/meet-cca/meet-cca5.jpg" width="2000" height="1000">
 			</div>
-			<div class="xs-display-none col-md-5">
+			<div class="xs-display-none col-xs-5 col-md-5">
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow" src="assets/arrow.png">
 					<p>Yosemite National Park offers epic selfie opportunities.</p>
 					<p class="italc cred">Adam Hester/Getty Images</p>
 				</div>
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow rotate-left" src="assets/arrow.png">
 					<p>Yosemite has hiking trails for all skill levels.</p>
 					<p class="italc cred">Adam Hester/Getty Images</p>
 				</div>
@@ -1289,7 +1355,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-md-9">
-				<img class="over animateblock btm" src="images/meet-cca/meet-cca7.jpg">
+				<img class="lazy over animateblock btm" data-original="images/meet-cca/meet-cca7.jpg" width="2000" height="1000">
 				<div class="caption">
 					<p>Visit a different kind of beach, with cool rocks to boot, at Mono Lake.</p>
 					<p class="italc cred inline no-left-margin">Alan Levenson/Getty Images</p>
@@ -1317,6 +1383,7 @@
 	<a href="#yosemite">
 		<ul class="hideContentWrap" id="yosemite">
 			<li class="hideContentHeader"><h1>Towering Granite and Plummeting Waterfalls</h1></li>
+			<img class="mob-slideshow" src="images/must-see-parks/yosemite1.jpg">
 			<li class="hideContent">
 				<h4>Yosemite National Park</h4>
 				<div class="text-box">
@@ -1329,6 +1396,7 @@
 	<a href="#mammoth-lakes">
 		<ul class="hideContentWrap" id="mammoth-lakes">
 			<li class="hideContentHeader"><h1>Magnificent Mountains, Sparkling Lakes, and Fabulous Fairways</h1></li>
+			<img class="mob-slideshow" src="images/must-see-parks/mammoth-lakes1.jpg">
 			<li class="hideContent">
 				<h4>Mammoth Lakes</h4>
 				<div class="text-box">
@@ -1341,6 +1409,7 @@
 	<a href="#sequoia-kings">
 		<ul class="hideContentWrap" id="sequoia-kings">
 			<li class="hideContentHeader"><h1>Skyscraping Trees, Deep Canyons, and Thundering Rivers</h1></li>
+			<img class="mob-slideshow" src="images/must-see-parks/sequoia-kings1.jpg">
 			<li class="hideContent">
 				<h4>Sequoia and Kings Canyon National Parks</h4>
 				<div class="text-box">
@@ -1353,6 +1422,7 @@
 	<a href="#death-valley">
 		<ul class="hideContentWrap" id="death-valley">
 			<li class="hideContentHeader"><h1>Colossal Sand Dunes and Living Colors</h1></li>
+			<img class="mob-slideshow" src="images/must-see-parks/death-valley1.jpg">
 			<li class="hideContent">
 				<h4>Death Valley National Park</h4>
 				<div class="text-box">
@@ -1362,6 +1432,14 @@
 			</li>
 		</ul>
 	</a>
+	<div class="tout clearfix">
+		<div class="vca-tout-text-wrap">
+			<p>Unwind after a day of exploring at one of these <a href="http://www.visitcalifornia.com/feature/9-family-friendly-wineries-craft-breweries" target="_blank">family-friendly wineries and craft breweries</a>.</p>
+		</div>
+		<div class="vca-tout-logo-wrap">
+			<img src="assets/VCA_white_gold.png" class="vca-logo-color">
+		</div>
+	</div>
 </section>
 
 <!-- #EEATS -->
@@ -1394,7 +1472,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-6 animateblock btm">
-				<img class="img-responsive" src="images/eats/berries.png">
+				<img class="lazy img-responsive" data-original="images/eats/berries.png" width="2000" height="1000">
 			</div>
 		</div>
 		<div class="row">
@@ -1414,7 +1492,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-6 animateblock btm">
-				<img class="img-responsive" src="images/eats/taco.png" id="taco">
+				<img class="lazy img-responsive" data-original="images/eats/taco.png" id="taco" width="2000" height="1000">
 			</div>
 		</div>
 		<div class="row">
@@ -1434,14 +1512,14 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-6 animateblock btm">
-				<img class="img-responsive" src="images/eats/icecream.jpg">
+				<img class="lazy img-responsive" data-original="images/eats/icecream.jpg" width="2000" height="1000">
 			</div>
 		</div>
 	</div>
 </section>  
 
 <section class="hero region full-page" id="sca-hero">
-	<img src="assets/VCA_white.gif" class="vca-hero-logo">
+	<img src="assets/VCA_white_gold.png" class="vca-hero-logo">
 	<img src="images/southern-title.svg" class="main-title">
 	<video autoplay loop muted>
 		<source src="video/VCA_Family_Hero_Southern_v2.webmhd.webm" type="video/webm">
@@ -1465,10 +1543,7 @@
 						<img class="mobile-blogger" src="images/justine/Justine_profile.jpg">
 					</div>
 					<div class="right-quadrant">
-						<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-							<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-							<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-						</svg>
+						<img class="arrow" src="assets/arrow.png">
 						<div class="btm-row">
 							<h4>Temecula, CA</h4>
 						</div>
@@ -1494,8 +1569,8 @@
 				<h3>Universal Studios Hollywood</h3>
 				<p>A really fun place for rides and live entertainment featuring your favorite movie characters, and their studio tour is amazing. We love seeing where some of our favorite movies were filmed!</p>
 			</div>
-			<div class="xs-display-none col-md-5 col-md-offset-1">
-				<img class="animateblock btm" src="images/justine/KnottsBerryFarm.jpg">
+			<div class="xs-display-none col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
+				<img class="lazy animateblock btm" data-original="images/justine/KnottsBerryFarm.jpg" width="2000" height="1000">
 				<div class="caption">
 					<p>Camp Snoopy at Knott's Berry Farm. </br> <span class="italc cred inline no-left-margin">Courtesy of Knott's Berry Farm</span></p>
 				</div>
@@ -1503,22 +1578,16 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-7 col-md-7">
-				<img class="over animateblock btm" src="images/justine/simpsons-universal.jpg">
+				<img class="lazy over animateblock btm" data-original="images/justine/simpsons-universal.jpg" width="2000" height="1000">
 			</div>
 			<div class="col-xs-5 col-md-5">
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow rotate-left" src="assets/arrow.png">
 					<p>Homer and the gang outside the Kwik-E-Mart.</p>
 					<p class="italc cred">Courtesy of Universal Studios Hollywood</p>
 				</div>
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow rotate-down" src="assets/arrow.png">
 					<p>Characters at LEGOLAND pose outside the LEGOLAND Hotel.</p>
 					<p class="italc cred">LEGOLAND California Resort</p>
 				</div>
@@ -1528,7 +1597,7 @@
 			<div class="col-xs-6 col-md-6">
 				<h4>5</h4>
 				<h3>LEGOLAND</h3>
-				<p>A fun place for younger kids, especially those who love building! There are not only fun rides at LEGOLAND but building stations, a great waterpark, and Sea Life Aquarium adjacent to the park as well. It's fascinating what they've made out of LEGO® bricks!</p>
+				<p>A fun place for younger kids, especially those who love building! There are not only fun rides at LEGOLAND but building stations, a great waterpark, and Sea Life Aquarium adjacent to the park as well. It's fascinating what they've made out of LEGO<span class="superscript"><sup>&reg;</sup></span> bricks!</p>
 				<p class="italc">Let's move on to a few water locations we love in Southern California! Some of them you may have heard of, and others are hidden gems that are must-sees during your visit here.</p>
 				<h4>6</h4>
 				<h3>SeaWorld San Diego</h3>
@@ -1546,32 +1615,26 @@
 				<h3>Tide Pools</h3>
 				<p>We love visiting the many tide pools in Southern California! One of our favorite spots is in La Jolla, called Children's Pool. There's a beach where you can look for small sea creatures and get up close and personal with the harbor seals and sea lions, who love to sun themselves!</p>
 			</div>
-			<div class="xs-display-none col-md-5 col-md-offset-1">
-				<img class="sect-break under animateblock btm" src="images/justine/legoland.jpg">
+			<div class="xs-display-none col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
+				<img class="lazy sect-break under animateblock btm" data-original="images/justine/legoland.jpg" width="2000" height="1000">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-7 col-md-7">
-				<img class="over animateblock btm" src="images/justine/supplied_justine_2.jpg">
+				<img class="lazy over animateblock btm" data-original="images/justine/supplied_justine_2.jpg" width="2000" height="1000">
 			</div>
-			<div class="xs-display-none col-md-5 r-rail-above">
-				<img class="sect-break under animateblock btm" src="images/justine/supplied_justine_1.jpg">
+			<div class="xs-display-none col-xs-5 col-md-5 r-rail-above">
+				<img class="lazy sect-break under animateblock btm" data-original="images/justine/supplied_justine_1.jpg" width="2000" height="1000">
 			</div>
 			<div class="col-xs-5 col-md-5">
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
-					<p>Harbor seals and sea lions catch rays in La Jolla.</p>
+					<img class="arrow" src="assets/arrow.png">
+					<p>Getting up close and personal with fish at the Aquarium of the Pacific.</p>
 					<p class="italc cred">Courtesy of Justine Howell</p>
 				</div>
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
-					<p>Getting up close and personal with fish at the Aquarium of the Pacific.</p>
+					<img class="arrow rotate-left" src="assets/arrow.png">
+					<p>Harbor seals and sea lions catch rays in La Jolla.</p>
 					<p class="italc cred">Courtesy of Justine Howell</p>
 				</div>
 			</div>
@@ -1601,15 +1664,13 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-7 col-md-7">
-				<img class="animateblock btm" src="images/justine/san_clemente.jpg">
+				<img class="lazy animateblock btm" data-original="images/justine/san_clemente.jpg" width="2000" height="1000">
 			</div>
 			<div class="col-xs-5 col-md-5">
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
-					<p>San Clemente pier. <span class="italc cred inline">Compassandcamera/Getty Images</span></p>
+					<img class="arrow rotate-left" src="assets/arrow.png">
+					<p>San Clemente pier.<p>
+					<p class="italc cred">Compassandcamera/Getty Images</p>
 				</div>
 			</div>
 		</div>
@@ -1647,34 +1708,29 @@
 				<h3>Santa Rosa Plateau</h3>
 				<p>Our all-time favorite place to hike! Gorgeous isn't a big enough word to describe this area. There are many trails to choose from and it's fairly flat, so it's easy for children to join the fun! We pack a picnic and head out for an afternoon together often, and we always see something new.</p>
 			</div>
-			<div class="xs-display-none col-md-5 col-md-offset-1">
-				<img class="sect-break under animateblock btm" src="images/justine/supplied_justine_6.jpg">
+			<div class="xs-display-none col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
+				<img class="lazy sect-break under animateblock btm" data-original="images/justine/supplied_justine_6.jpg" width="2000" height="1000">
 				<div class="caption">
-					<p>Feeding the animals at Bates Nut Farm.<span class="italc cred inline">Courtesy of Justine Howell</span></p>
+					<p>Feeding the animals at Bates Nut Farm.</p>
+					<p class="italc cred">Courtesy of Justine Howell</p>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-7 col-md-7">
-				<img class="over animateblock btm" src="images/justine/supplied_justine_3.jpg">
+				<img class="lazy over animateblock btm" data-original="images/justine/supplied_justine_3.jpg" width="2000" height="1000">
 			</div>
-			<div class="xs-display-none col-md-5 r-rail-above">
-				<img class="sect-break under animateblock btm" src="images/justine/idyllwild.jpg">
+			<div class="xs-display-none col-xs-5 col-md-5 r-rail-above">
+				<img class="lazy sect-break under animateblock btm" data-original="images/justine/idyllwild.jpg" width="2000" height="1000">
 			</div>
 			<div class="col-xs-5 col-md-5">
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow" src="assets/arrow.png">
 					<p>A hiker pauses at Idyllwild.</p>
 					<p class="italc cred">Thomas Northcut/Getty Images</p>
 				</div>
 				<div class="caption">
-					<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2">
-						<circle class="bg-yellow" cx="9.6" cy="9.6" r="9.6"/>
-						<polygon points="13.9 8.1 9.6 4.3 5.3 8.1 9.2 8.1 9.2 14.9 10.1 14.9 10.1 8.1 "/>
-					</svg>
+					<img class="arrow rotate-left" src="assets/arrow.png">
 					<p>Follow the winding paths at the Santa Rosa Plateau Ecological Reserve.</p>
 					<p class="italc cred">Jack Goldfarb/Getty Images</p>
 				</div>
@@ -1717,6 +1773,7 @@
 	<a href="#seaworld">
 		<ul class="hideContentWrap" id="seaworld">
 			<li class="hideContentHeader"><h1>Make a Splash</h1></li>
+			<img class="mob-slideshow" src="images/theme-parks/seaworld1.jpg">
 			<li class="hideContent">
 				<h4>SeaWorld San Diego</h4>
 				<div class="text-box">
@@ -1729,6 +1786,7 @@
 	<a href="#knotts-berry">
 		<ul class="hideContentWrap" id="knotts-berry">
 			<li class="hideContentHeader"><h1>Go West</h1></li>
+			<img class="mob-slideshow" src="images/theme-parks/knotts-berry1.jpg">
 			<li class="hideContent">
 				<h4>Knott's Berry Farm</h4>
 				<div class="text-box">
@@ -1741,6 +1799,7 @@
 	<a href="#magic-mountain">
 		<ul class="hideContentWrap" id="magic-mountain">
 			<li class="hideContentHeader"><h1>Chase High Speeds</h1></li>
+			<img class="mob-slideshow" src="images/theme-parks/magic-mountain1.jpg">
 			<li class="hideContent">
 				<h4>Six Flags Magic Mountain</h4>
 				<div class="text-box">
@@ -1753,6 +1812,7 @@
 	<a href="#disneyland">
 		<ul class="hideContentWrap" id="disneyland">
 			<li class="hideContentHeader"><h1>Make Your Dreams Come True</h1></li>
+			<img class="mob-slideshow" src="images/theme-parks/magic-mountain1.jpg">
 			<li class="hideContent">
 				<h4>Disneyland Resort</h4>
 				<div class="text-box">
@@ -1765,10 +1825,11 @@
 	<a href="#legoland">
 		<ul class="hideContentWrap" id="legoland">
 			<li class="hideContentHeader"><h1>Entertain "Kids" of All Ages</h1></li>
+			<img class="mob-slideshow" src="images/theme-parks/legoland1.jpg">
 			<li class="hideContent">
 				<h4>LEGOLAND California</h4>
 				<div class="text-box">
-					<p>With over 60 rides, shows, a miniature golf course, hotel, and two water parks, LEGOLAND is hardly a vacation spot solely dedicated to plastic bricks. LEGO® fans can take in "The LEGO Movie 4D A New Adventure," scoot around in mini LEGO® cars, and even tour a LEGO® factory. Recently LEGOLAND unveiled LEGO® Ninjago Ride, an interactive attraction where you launch fireballs, shockwaves, and lightning bolts with your hands to defeat the Great Devourer and earn ninja status. Also be sure to check out Miniland USA, which recreates entire U.S. cities using millions of LEGO® bricks.</p>
+					<p>With over 60 rides, shows, a miniature golf course, hotel, and two water parks, LEGOLAND is hardly a vacation spot solely dedicated to plastic bricks. LEGO<span class="superscript"><sup>®</sup></span> fans can take in "The LEGO Movie 4D A New Adventure," scoot around in mini LEGO<span class="superscript"><sup>®</sup></span> cars, and even tour a LEGO<span class="superscript"><sup>®</sup></span> factory. Recently LEGOLAND unveiled LEGO<span class="superscript"><sup>®</sup></span> Ninjago Ride, an interactive attraction where you launch fireballs, shockwaves, and lightning bolts with your hands to defeat the Great Devourer and earn ninja status. Also be sure to check out Miniland USA, which recreates entire U.S. cities using millions of LEGO<span class="superscript"><sup>®</sup></span> bricks.</p>
 					<p class="italc cred">Courtesy of LEGOLAND California Resort</p>
 				</div>
 			</li>
@@ -1777,6 +1838,7 @@
 	<a href="#castle-park">
 		<ul class="hideContentWrap" id="castle-park">
 			<li class="hideContentHeader"><h1>Get in the Swing of Things</h1></li>
+			<img class="mob-slideshow" src="images/theme-parks/castle-park1.jpg">
 			<li class="hideContent">
 				<h4>Castle Park, Riverside</h4>
 				<div class="text-box">
@@ -1789,11 +1851,12 @@
 	<a href="#raging-waters">
 		<ul class="hideContentWrap" id="raging-waters">
 			<li class="hideContentHeader"><h1>Make Waves</h1></li>
+			<img class="mob-slideshow" src="images/theme-parks/raging-waters1.jpg">
 			<li class="hideContent">
 				<h4>Raging Waters, Los Angeles</h4>
 				<div class="text-box">
 					<p>Raging Waters is California's largest water theme park and features gallons of rides, slides, children's activity pools, and obstacle courses. The park's latest attraction is the Aqua Rocket, the country's first hydro-magnetic coaster that takes four people at a time on a high-thrills water ride. There's also Neptune's Fury, a 600-foot ride that plunges a four-man raft into total darkness down a 60-foot drop at 30 mph. When you want to unwind from an action-packed day, grab a raft and float lazily down the Amazon Adventure River.</p>
-					<p class="italc cred">Tk</p>
+					<p class="italc cred">Courtesy of Raging Waters</p>
 				</div>
 			</li>
 		</ul>
@@ -1801,13 +1864,12 @@
 	<a href="#universal">
 		<ul class="hideContentWrap" id="universal">
 			<li class="hideContentHeader"><h1>Turn Fantasy Into Reality</h1></li>
+			<img class="mob-slideshow" src="images/theme-parks/universal2.jpg">
 			<li class="hideContent">
 				<h4>Universal Studios Hollywood</h4>
 				<div class="text-box">
 					<p>Discover the excitement of movie-making magic at one of Southern California's most legendary theme parks, set on the grounds of an active film and television studio. In addition to spine-tingling rides that land you in the center of scenes from movies, you can see where those films were made on Universal's famed Studio Tour. The new Wizarding World of Harry Potter™ lets you explore the magic of Hogwarts™ Castle, peruse the shops in Hogsmeade™, and experience heart-pounding Harry Potter–themed rides. Meanwhile, Springfield, which opened last year, lets you visit the town made famous in the hit animated series The Simpsons™. Grab a bite at Krusty Burger, and rocket through Krustyland on the popular Simpsons™ ride.</p>
-					<p><span class="italc">HARRY POTTER characters, names and related indicia are &copy; &amp; ™ Warner Bros. Entertainment Inc. Harry Potter Publishing Rights © JKR. (s16) © 2016 Universal Studios. All rights reserved.</span>
-					<p class="italc cred">Tk</p>
-					</p>
+					<p class="italc cred">HARRY POTTER characters, names and related indicia are &copy; &amp; ™ Warner Bros. Entertainment Inc. Harry Potter Publishing Rights © JKR. (s16) © 2016 Universal Studios. All rights reserved.</p>
 				</div>
 			</li>
 		</ul>
@@ -1830,8 +1892,74 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid article">
-		<div class="row surf-skate-wrap" id="surf-bg">
+	<div class="surf-skate-wrap" id="surf-bg">
+		<div class="caption parralax-credit">
+			<p><span class="italc cred">Peathegee Inc./Getty Images</span></p>
+		</div>
+		<div class="mobile-surf">
+			<p>In The Water</p>
+		</div>
+		<div class="container-fluid article">
+			<div class="col-md-6 col-md-offset-1">
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>Wave newbies					
+					</div>
+					<p>The small waves and lack of rocks at Bolsa Chica State Beach make the <span class="bold">Huntington Beach Surf Camp</span> a safe, kid-friendly option for learning how to catch a wave. With a four-to-one student-to-teacher ratio, your son or daughter will get personalized attention during a week of 9 a.m. to 3 p.m. full-day sessions (half days also available). Head over to Main Street for the grilled fish taco from Wahoo's Fish Taco and wander through the surf shops and boutiques before picking your camper up at the end of the day.</p>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>A fun, relaxed atmosphere	
+					</div>
+					<p>Choose your ideal vacation location when signing your kids up for the <span class="bold">Perfect Day Surf Camp</span> at Santa Monica, Manhattan, Redondo, or Torrance Beaches. The camps offer flexible times and keep things fun by integrating beach dodgeball, capture the flag, and sandcastle time for the little ones. Each camp is located near the coastal bike path for riding or walking to beachfront restaurants. Or you could take a stand-up paddleboarding or surfing class while the kids catch waves.</p>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>The whole family 			
+					</div>
+					<p><span class="bold">Menehune Surf</span> in La Jolla or Del Mar serves up half- or full-day instruction. Youngsters (ages five to seven) start by playing in the shallow water and learning about the marine life, while the eight- to twelve-year-olds develop skills and learn about ocean ecosystems, and the teens focus on skills, etiquette, and learning about surf culture and how boards are designed. While the kids catch waves, parents can treat themselves to a sea stone massage or deep cleansing facial at L'Auberge in Del Mar.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="surf-skate-wrap" id="skate-bg">
+		<div class="caption parralax-credit">
+			<p><span class="italc cred">Tetra Images/Offset</span></p>
+		</div>
+		<div class="mobile-skate">
+			<p>On Land</p>
+		</div>
+		<div class="container-fluid article">
+			<div class="col-md-6 col-md-offset-1">
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>Flexible instruction
+					</div>
+					<p>Pick a Southern California destination from Irvine to Long Beach and it's likely that <span class="bold">Skatedog</span> has a camp location there. Summer camp sessions, run through the local Parks and Recreation Departments, teach kids ages six to 13 how to skate using ramps and rails from Skatedog's mobile skate park. Camp spots are located near attractions like the historic <span class="italc">Queen Mary</span> in Long Beach or the upscale, open-air Fashion Island in Newport Beach.</p>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>Advanced tricksters
+					</div>
+					<p>The legendary skate park at the <span class="bold">Magdalena Ecke YMCA</span> in Encinitas features a combination of street course, kidney-shaped bowl, and mix of ramp styles. It hosts three camps based on ability level: Technique for beginners, a tricks-focused intermediate/advanced camp, and a travel camp that takes skaters to other parks around San Diego. Parents can stay entertained in the quaint beachside town of Encinitas—simply relax on Moonlight Beach or grab a cup of house-roasted coffee at Lofty Coffee Co. and walk south down the 101 to browse gift shops and boutiques.</p>
+				</div>
+				<div class="scroll-list-box">
+					<div class="box-header">
+						<span class="best-for">Best for:</span>
+						</br>Multimedia skaters
+					</div>
+					<p>If you mastered tricks at skateboard camp but don't have it on video, did it really happen? For kids 10 and up, the <span class="bold">Etnies Video Production Skate Camp</span> in Lake Forest combines videography and photography with skateboarding during a weeklong camp. Etnies also offers a preschool skate camp for 4- and 5-year-olds. Lake Forest is just inland of Laguna Beach, where there are more than 100 galleries, sculpture gardens, and art studios within walking distance.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="container-fluid article">
+		<div class="surf-skate-wrap" id="surf-bg">
 			<div class="mobile-surf">
 				<p>In The Water</p>
 			</div>
@@ -1862,7 +1990,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row surf-skate-wrap" id="skate-bg">
+		<div class="surf-skate-wrap" id="skate-bg">
 			<div class="mobile-skate">
 				<p>On Land</p>
 			</div>
@@ -1893,7 +2021,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </section>
 
 <!-- Kid Beaches -->
@@ -1914,6 +2042,7 @@
 	<a href="#coronado">
 		<ul class="hideContentWrap" id="coronado">
 			<li class="hideContentHeader"><h1>Coronado Central Beach</h1></li>
+			<img class="mob-slideshow" src="images/kid-beaches/coronado1.jpg">
 			<li class="hideContent">
 				<h4>Coronado</h4>
 				<div class="text-box">
@@ -1926,6 +2055,7 @@
 	<a href="#mission-bay">
 		<ul class="hideContentWrap" id="mission-bay">
 			<li class="hideContentHeader"><h1>Mission Bay</h1></li>
+			<img class="mob-slideshow" src="images/kid-beaches/mission-bay1.jpg">
 			<li class="hideContent">
 				<h4>San Diego</h4>
 				<div class="text-box">
@@ -1938,6 +2068,7 @@
 	<a href="#la-jolla">
 		<ul class="hideContentWrap" id="la-jolla">
 			<li class="hideContentHeader"><h1>La Jolla Shores</h1></li>
+			<img class="mob-slideshow" src="images/kid-beaches/la-jolla1.jpg">
 			<li class="hideContent">
 				<h4>La Jolla</h4>
 				<div class="text-box">
@@ -1950,6 +2081,7 @@
 	<a href="#carlsbad">
 		<ul class="hideContentWrap" id="carlsbad">
 			<li class="hideContentHeader"><h1>South Carlsbad State Beach</h1></li>
+			<img class="mob-slideshow" src="images/kid-beaches/carlsbad1.jpg">
 			<li class="hideContent">
 				<h4>Carlsbad</h4>
 				<div class="text-box">
@@ -1962,6 +2094,7 @@
 	<a href="#crystal-cove">
 		<ul class="hideContentWrap" id="crystal-cove">
 			<li class="hideContentHeader"><h1>Crystal Cove</h1></li>
+			<img class="mob-slideshow" src="images/kid-beaches/crystal-cove1.jpg">
 			<li class="hideContent">
 				<h4>Laguna Beach</h4>
 				<div class="text-box">
@@ -1974,6 +2107,7 @@
 	<a href="#santa-monica">
 		<ul class="hideContentWrap" id="santa-monica">
 			<li class="hideContentHeader"><h1>Santa Monica Beach</h1></li>
+			<img class="mob-slideshow" src="images/kid-beaches/santa-monica1.jpg">
 			<li class="hideContent">
 				<h4>Santa Monica</h4>
 				<div class="text-box">
@@ -1983,20 +2117,19 @@
 			</li>
 		</ul>
 	</a>
+	<div class="tout clearfix">
+		<div class="vca-tout-text-wrap">
+			<p>After a day of fun in the sun, rest up at one of these <a href="http://www.visitcalifornia.com/feature/8-great-spots-take-adventurous-daughter" target="_blank">kid-friendly places to stay</a>.</p>
+		</div>
+		<div class="vca-tout-logo-wrap">
+			<img src="assets/VCA_white_gold.png" class="vca-logo-color">
+		</div>
+	</div>
 </section>
 
 <!-- BELLA VIDEO -->
-<!-- <svg class="section-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.2 22.8">
-	<polygon class="bg-shape" points="38.2 11.4 19.1 22.8 0 11.4 19.1 0 "/>
-	<text transform="matrix(1 0 0 1 15.8559 16.241)" class="letter">S</text>
-	<line class="line" x1="5.6" y1="11.4" x2="13.6" y2="11.4"/>
-	<line class="line" x1="24.6" y1="11.4" x2="32.6" y2="11.4"/>
-</svg>
-<section class="bg-img-container-wrap northern" id="video-bella">
-=======
 <img class="section-marker" src="images/sthrn-sect-icon.svg">
 <section class="bg-img-container-wrap southern" id="video-bella">
->>>>>>> master
 	<div class="container-fluid article">
 		<div class="row">
 			<div class="col-md-12">
@@ -2018,7 +2151,23 @@
 			</div>
 		</div>
 	</div>
-</section> -->
+</section>
+
+<div class="italc" id="photo-disclaimer">			
+	<p class="cred">Some photographs in this content are used for illustrative purposes only.</p>
+</div>
+
+<section id="footer">
+	<ul>
+		<li><a href="https://subscription.timeinc.com/storefront/privacy/people/generic_privacy_new.html?dnp-source=E" target="_blank">People Privacy Policy</a></li>
+		<li><span class="dvdr">|</span></li>
+		<li><a href="https://subscription.timeinc.com/storefront/privacy/people/generic_privacy_new.html?dnp-source=B#california" target="_blank">Your California Privacy Rights</a></li>
+		<li><span class="dvdr">|</span></li>
+		<li><a href="https://subscription.timeinc.com/storefront/privacy/people/privacy_terms_service.html" target="_blank">Terms of Service</a></li>
+		<li><span class="dvdr">|</span></li>
+		<li><a href="http://www.visitcalifornia.com/privacy-policy" target="_blank">Visit California Privacy Policy</a></li>
+	</ul>
+</section>
 
 <script src="js/bootstrap.min.js"></script>
 
