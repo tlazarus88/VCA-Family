@@ -291,7 +291,9 @@ function roadCirc() {
 
   if ($(window).scrollTop() >= (bottomRoadList)) {
   	$('#roadtrip-circle-1').css('position', 'absolute');
-  	$('#roadtrip-circle-2').css('visibility', 'visible');
+  	$('#last-circle').css('visibility', 'visible');
+  } else {
+    $('#last-circle').css('visibility', 'hidden');
   };
 
 };
