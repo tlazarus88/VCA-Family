@@ -275,7 +275,7 @@ function progressBar() {
 scrollIntervalID = setInterval(roadCirc, 1)
 
 function roadCirc() {
-  $('#roadtrip-circle-2').css('visibility', 'hidden');
+  $('#roadtrip-circle-2').css('visibility', 'visible');
 
   var $roadList = $('#list-roadtrip');
   var topRoadList = $roadList.offset().top - legalHeaderHeight;

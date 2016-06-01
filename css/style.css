@@ -2125,6 +2125,7 @@ img.lazy {
 	.hideContentWrap .hideContent {display: inline;}
 	.indicator {display: none;}
 	#article-roadtrip .row:nth-of-type(3) {margin-top: -50px;}
+	#article-roadtrip .col-md-6 {padding-right: 8%}
 	#article-roadtrip .circle-container{top: 150px;width: 50%;-webkit-transform:-ms-translateX(-50%)!important;transform:translateX(-50%)!important;transform: translateX(-50%)!important;}
 	#article-roadtrip .scroll-list-box {margin-top: 90%;}
 	#article-roadtrip .parralax-credit p {max-width: 100%;}
@@ -2248,6 +2249,7 @@ img.lazy {
 	#footer li {display:block; text-align: center; margin-bottom: 10px;}
 	#footer .ftr-dvdr {display: none;}
 	#photo-disclaimer {padding-bottom: 124px;}
+	#last-circle {margin-bottom: 0;}
 }
 
 @media screen and (max-width: 600px) {
@@ -2288,7 +2290,9 @@ img.lazy {
 	#article-roadtrip .scroll-list .col-md-6 {margin-left: 0; margin-right: 0; padding: 0;}
 	#article-roadtrip .row:nth-of-type(2) {margin-bottom: -150px;}
 	#article-roadtrip .scroll-list-box {margin-top: 200%;}
+	#article-roadtrip .scroll-list-box:last-of-type {margin-top: 90%;}
 	#article-roadtrip li {height: 200%; margin-left: 0; margin-bottom: 100%}
+	#article-roadtrip li:last-of-type {margin-bottom: 0}
 	.parallax-bg__myers, .parallax-bg__founders-grove, .parallax-bg__eternal-tree-house{background-image: none; box-shadow: none;}
 	#article-roadtrip .caption {display: none;}
 	#article-roadtrip .stop-name {padding: 0 25px; font-size: 18px;}
