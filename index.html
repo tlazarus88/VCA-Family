@@ -80,6 +80,11 @@ b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=
 	});
 </script>
 
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">&nbsp;</div>
+</div>
+
 <section id="legal-header">
 	<p>Paid Content from <a href="http://www.visitcalifornia.com/california-family" target="_blank"><span class="bold">Visit California</span></a><img src="assets/info.gif" class="info"></p>
 	<a href="http://www.people.com/people/" target="_blank"><div class="people-logo"></div></a>
@@ -2143,6 +2148,17 @@ b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=
 </section>
 
 <script src="js/bootstrap.min.js"></script>
+
+<!-- Preloader -->
+<script type="text/javascript">
+	//<![CDATA[
+		$(window).load(function() { // makes sure the whole site is loaded
+			$('#status').fadeOut(); // will first fade out the loading animation
+			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+			$('body').delay(350).css({'overflow':'visible'});
+		})
+	//]]>
+</script>
 
 </body>
 </html>
