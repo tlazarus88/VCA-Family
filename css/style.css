@@ -1237,10 +1237,12 @@ img.arrow.rotate-down {
 
 .article h1 {
 	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255,255,255,.5);
 }
 
 .article h2 {
 	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255,255,255,.5);
 }
 
 .article .col-md-12 p {
@@ -1709,6 +1711,7 @@ ul.scroll-list {
     letter-spacing: 2px;
 }
 .hideContentWrap .hideContent {
+	height: 525px;
 	height: 65vh;
 	display: none;
 	max-height: 750px;
