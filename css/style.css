@@ -1360,7 +1360,7 @@ ul.scroll-list {
 
 .circle-container {
 	position: absolute;
-	top: 50%;
+	top: 25%;
 	-webkit-transform: translateY(-50%) !important;
 	-ms-transform: translateY(-50%) !important;
 	transform: translateY(-50%) !important;
@@ -1371,6 +1371,7 @@ ul.scroll-list {
 
 .roadtrip-circle {
 	display: block;
+	position: absolute;
 	background-size: cover;
 	width: 100%;
 	height: 0;
@@ -1381,42 +1382,52 @@ ul.scroll-list {
 	box-shadow: 0px 0px 0px 8px rgba(235,4,120,1);
 	background-image: url(../images/article_roadtrip/road_map_1.gif);
 	transition: all .5s ease-in-out;
+	margin-bottom: -100%;
 }
 
 #last-circle {
 	background-image: url(../images/article_roadtrip/road_map_7.gif);
+	margin-bottom: 0;
 }
 
 .circle-bg-6 {
 	background-image: url(../images/article_roadtrip/road_map_6.gif);
+	z-index: +3;
 }
 
 .circle-bg-5 {
 	background-image: url(../images/article_roadtrip/road_map_5.gif);
+	z-index: +4;
 }
 
 .circle-bg-4 {
 	background-image: url(../images/article_roadtrip/road_map_4.gif);
+	z-index: +5;
 }
 
 .circle-bg-3 {
 	background-image: url(../images/article_roadtrip/road_map_3.gif);
+	z-index: +6;
 }
 
 .circle-bg-2 {
 	background-image: url(../images/article_roadtrip/road_map_2.gif);
+	z-index: +7;
 }
 
 .circle-bg-1b {
 	background-image: url(../images/article_roadtrip/road_map_1b.gif);
+	z-index: +8;
 }
 
 .circle-bg-1a {
 	background-image: url(../images/article_roadtrip/road_map_1a.gif);
+	z-index: +9;
 }
 
 .circle-bg-1 {
 	background-image: url(../images/article_roadtrip/road_map_1.gif);
+	z-index: +10;
 }
 
 /* Article Eats */

@@ -291,7 +291,9 @@ function roadCirc() {
 
   if ($(window).scrollTop() >= (bottomRoadList)) {
   	$('#roadtrip-circle-1').css('position', 'absolute');
-  	$('#roadtrip-circle-2').css('visibility', 'visible');
+  	$('#last-circle').css('visibility', 'visible');
+  } else {
+    $('#last-circle').css('visibility', 'hidden');
   };
 
 };
@@ -317,39 +319,39 @@ function circleBg() {
   var roadtrip5 = $roadtrip5.offset().top - legalHeaderHeight;
 
   if ($(window).scrollTop() >= (roadtrip1a)) {
-    $('.roadtrip-circle').removeClass('circle-bg-1');
+    $('.circle-bg-1').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-1');
+    $('.circle-bg-1').css('visibility','visible');
   };
   if ($(window).scrollTop() >= (roadtrip1b)) {
-    $('.roadtrip-circle').removeClass('circle-bg-1a');
+    $('.circle-bg-1a').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-1a');
+    $('.circle-bg-1a').css('visibility','visible');
   };
   if ($(window).scrollTop() >= (roadtrip1)) {
-    $('.roadtrip-circle').removeClass('circle-bg-1b');
+    $('.circle-bg-1b').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-1b');
+    $('.circle-bg-1b').css('visibility','visible');
   };
   if ($(window).scrollTop() >= (roadtrip2)) {
-    $('.roadtrip-circle').removeClass('circle-bg-2')
+    $('.circle-bg-2').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-2');
+    $('.circle-bg-2').css('visibility','visible');
   };
   if ($(window).scrollTop() >= (roadtrip3)) {
-    $('.roadtrip-circle').removeClass('circle-bg-3')
+    $('.circle-bg-3').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-3');
+    $('.circle-bg-3').css('visibility','visible');
   };
   if ($(window).scrollTop() >= (roadtrip4)) {
-    $('.roadtrip-circle').removeClass('circle-bg-4')
+    $('.circle-bg-4').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-4');
+    $('.circle-bg-4').css('visibility','visible');
   };
   if ($(window).scrollTop() >= (roadtrip5)) {
-    $('.roadtrip-circle').removeClass('circle-bg-5')
+    $('.circle-bg-5').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-5');
+    $('.circle-bg-5').css('visibility','visible');
   };
 
 };
