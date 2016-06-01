@@ -1383,7 +1383,7 @@ ul.scroll-list {
 	transition: all .5s ease-in-out;
 }
 
-.circle-bg-7 {
+#last-circle {
 	background-image: url(../images/article_roadtrip/road_map_7.gif);
 }
 
@@ -1405,10 +1405,6 @@ ul.scroll-list {
 
 .circle-bg-2 {
 	background-image: url(../images/article_roadtrip/road_map_2.gif);
-}
-
-.circle-bg-1c {
-	background-image: url(../images/article_roadtrip/road_map_1c.gif);
 }
 
 .circle-bg-1b {
