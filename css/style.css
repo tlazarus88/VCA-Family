@@ -1345,8 +1345,16 @@ ul.scroll-list {
 	margin-bottom: -25px;
 }
 
+#article-roadtrip .container-fluid {
+	max-width: 1600px;
+}
+
 #list-roadtrip {
 	margin-top: 0px;
+}
+
+#article-roadtrip .scroll-list-box {
+	max-width: 850px;
 }
 
 #article-roadtrip .scroll-list .col-md-6 {
@@ -2063,7 +2071,7 @@ img.lazy {
 	h5 {font-size: 23px;}
 	.hideContentWrap {width: 1250px;}
 	.container-fluid.article h1 {padding-top: 250px;}
-	
+	.circle-container {width: 32%;}
 }
 
 
