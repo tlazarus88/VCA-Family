@@ -272,7 +272,7 @@ function progressBar() {
 
 // Roadtrip Stickiness
 
-scrollIntervalID = setInterval(roadCirc, 10)
+scrollIntervalID = setInterval(roadCirc, 1)
 
 function roadCirc() {
   $('#roadtrip-circle-2').css('visibility', 'hidden');
@@ -412,6 +412,16 @@ $('[data-readmore-toggle]').click(function(e) {
   }
   
 });
+
+// Pre-loader
+
+$(window).load(function() { // makes sure the whole site is loaded
+  $('#status').fadeOut(); // will first fade out the loading animation
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+  $('body').delay(350).css({
+    'overflow': 'visible'
+  });
+})
 
 });
 
