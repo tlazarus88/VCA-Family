@@ -35,24 +35,6 @@ if ($(window).width() > 992) {
 var $legalHeader = $('#legal-header');
 var legalHeaderHeight = $legalHeader.outerHeight(true);
 
-// Smooth Scrolling
-// includes offset for #sticky-nav
-$(function() {
-
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top - 45 - legalHeaderHeight
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-
 // Nav Stickiness Swap
 
 scrollIntervalID = setInterval(stickIt, 10);
@@ -73,6 +55,55 @@ function stickIt() {
     $('#toc').css('visibility','visible');
   }
 };
+
+// Mobile Next/Previous Section
+
+$(function(){
+    
+    var pagePositon = 0,
+        sectionsSelector = 'section',
+        $scrollItems = $(sectionsSelector),
+        offsetTolorence = 30,
+        pageMaxPosition = $scrollItems.length - 1;
+    
+    //Map the sections:
+    $scrollItems.each(function(index,ele) {
+      $(ele).attr("debog",index).data("pos",index);
+    });
+
+    // Bind to scroll
+    $(window).bind('scroll',upPos);
+    
+    //Move on click:
+    $('#next-prev a').on('click touchstart', function(e) {
+        if ($(this).hasClass('next') && pagePositon+1 <= pageMaxPosition) {
+            pagePositon++;
+            $('html, body').stop().animate({ 
+                  scrollTop: $scrollItems.eq(pagePositon).offset().top - 45
+            }, 300);
+        }
+        if ($(this).hasClass('previous') && pagePositon-1 >= 0) {
+            pagePositon--;
+            $('html, body').stop().animate({ 
+                  scrollTop: $scrollItems.eq(pagePositon).offset().top - 45
+              }, 300);
+            return false;
+        }
+    });
+    
+    //Update position func:
+    function upPos(){
+       var fromTop = $(this).scrollTop();
+       var $cur = null;
+        $scrollItems.each(function(index,ele){
+            if ($(ele).offset().top < fromTop + offsetTolorence) $cur = $(ele);
+        });
+       if ($cur != null && pagePositon != $cur.data('pos')) {
+           pagePositon = $cur.data('pos');
+       }                   
+    }
+    
+});
 
 // Legal Header Pop-up
 
@@ -151,8 +182,10 @@ function progressBar() {
   };
   if ($(window).scrollTop() >= (topNBlog)) {
     $('.nav-status-bar').addClass('status-width-1');
+    $('.mobile-nav-buttons').css('visibility','visible');
   } else {
     $('.nav-status-bar').removeClass('status-width-1');
+      $('.mobile-nav-buttons').css('visibility','hidden');
   };
   if ($(window).scrollTop() >= (topCampCa)) {
     $('.nav-status-bar').addClass('status-width-2');
@@ -239,10 +272,10 @@ function progressBar() {
 
 // Roadtrip Stickiness
 
-scrollIntervalID = setInterval(roadCirc, 10)
+scrollIntervalID = setInterval(roadCirc, 1)
 
 function roadCirc() {
-  $('#roadtrip-circle-2').css('visibility', 'hidden');
+  $('#roadtrip-circle-2').css('visibility', 'visible');
 
   var $roadList = $('#list-roadtrip');
   var topRoadList = $roadList.offset().top - legalHeaderHeight;
@@ -258,8 +291,9 @@ function roadCirc() {
 
   if ($(window).scrollTop() >= (bottomRoadList)) {
   	$('#roadtrip-circle-1').css('position', 'absolute');
-  	$('#roadtrip-circle-2').css('visibility', 'visible');
-    $('#last-circle').addClass('circle-bg-7');
+  	$('#last-circle').css('visibility', 'visible');
+  } else {
+    $('#last-circle').css('visibility', 'hidden');
   };
 
 };
@@ -274,10 +308,7 @@ function circleBg() {
   var roadtrip1 = $roadtrip1.offset().top - legalHeaderHeight;
   var $roadtrip1a = $('#roadtrip-1a');
   var roadtrip1a = $roadtrip1a.offset().top - legalHeaderHeight;
-  var $roadtrip1b = $('#roadtrip-1b');
-  var roadtrip1b = $roadtrip1b.offset().top - legalHeaderHeight;
-  var $roadtrip1c = $('#roadtrip-1c');
-  var roadtrip1c = $roadtrip1c.offset().top - legalHeaderHeight;
+  var roadtrip1b = $roadtrip1a.offset().top - legalHeaderHeight + ($roadtrip1a.outerHeight(true)*.5);
   var $roadtrip2 = $('#roadtrip-2');
   var roadtrip2 = $roadtrip2.offset().top - legalHeaderHeight;
   var $roadtrip3 = $('#roadtrip-3');
@@ -288,47 +319,60 @@ function circleBg() {
   var roadtrip5 = $roadtrip5.offset().top - legalHeaderHeight;
 
   if ($(window).scrollTop() >= (roadtrip1a)) {
-    $('.roadtrip-circle').removeClass('circle-bg-1');
+    $('.circle-bg-1').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-1');
+    $('.circle-bg-1').css('visibility','visible');
   };
   if ($(window).scrollTop() >= (roadtrip1b)) {
-    $('.roadtrip-circle').removeClass('circle-bg-1a');
+    $('.circle-bg-1a').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-1a');
-  };
-  if ($(window).scrollTop() >= (roadtrip1c)) {
-    $('.roadtrip-circle').removeClass('circle-bg-1b');
-  } else {
-    $('.roadtrip-circle').addClass('circle-bg-1b');
+    $('.circle-bg-1a').css('visibility','visible');
   };
   if ($(window).scrollTop() >= (roadtrip1)) {
-    $('.roadtrip-circle').removeClass('circle-bg-1c');
+    $('.circle-bg-1b').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-1c');
+    $('.circle-bg-1b').css('visibility','visible');
   };
   if ($(window).scrollTop() >= (roadtrip2)) {
-    $('.roadtrip-circle').removeClass('circle-bg-2')
+    $('.circle-bg-2').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-2');
+    $('.circle-bg-2').css('visibility','visible');
   };
   if ($(window).scrollTop() >= (roadtrip3)) {
-    $('.roadtrip-circle').removeClass('circle-bg-3')
+    $('.circle-bg-3').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-3');
+    $('.circle-bg-3').css('visibility','visible');
   };
   if ($(window).scrollTop() >= (roadtrip4)) {
-    $('.roadtrip-circle').removeClass('circle-bg-4')
+    $('.circle-bg-4').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-4');
+    $('.circle-bg-4').css('visibility','visible');
   };
   if ($(window).scrollTop() >= (roadtrip5)) {
-    $('.roadtrip-circle').removeClass('circle-bg-5')
+    $('.circle-bg-5').css('visibility','hidden');
   } else {
-    $('.roadtrip-circle').addClass('circle-bg-5');
+    $('.circle-bg-5').css('visibility','visible');
   };
 
 };
+
+// Smooth Scrolling
+// includes offset for #sticky-nav
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - (45 + legalHeaderHeight)
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 
 // Accordion
 
@@ -370,6 +414,16 @@ $('[data-readmore-toggle]').click(function(e) {
   }
   
 });
+
+// Pre-loader
+
+$(window).load(function() { // makes sure the whole site is loaded
+  $('#status').fadeOut(); // will first fade out the loading animation
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+  $('body').delay(350).css({
+    'overflow': 'visible'
+  });
+})
 
 });
 

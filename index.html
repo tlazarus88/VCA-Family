@@ -73,17 +73,34 @@ b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=
 <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
 <script type="text/javascript">
-$(function() {
-    $("img.lazy").lazyload();
-});
+	$(function() {
+	    $("img.lazy").lazyload({
+		    threshold : 200
+		});
+	});
 </script>
+
+<!-- Preloader -->
+<div id="preloader">
+	<div class="preloader-inner full-page">
+	<div id="status">
+		<!-- <img src="images/preloader.svg"> -->
+		<p>loading</p>
+		<div class="bounce">
+	      <div></div>
+	      <div></div>
+	      <div></div>
+	    </div>
+	</div>
+	</div>
+</div>
 
 <section id="legal-header">
 	<p>Paid Content from <a href="http://www.visitcalifornia.com/california-family" target="_blank"><span class="bold">Visit California</span></a><img src="assets/info.gif" class="info"></p>
 	<a href="http://www.people.com/people/" target="_blank"><div class="people-logo"></div></a>
 	<ul class="social">
 		<li class="facebook">
-			<a href="http://sponsored.people.com/visitcalifornia" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
+			<a href="http://sponsored.people.com/visitcalifornia" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://sponsored.people.com/visitcalifornia', 'facebook-share-dialog', 'width=626,height=436'); return false;">
 				<img src="assets/fb.png">
 			</a>
 		</li>
@@ -102,6 +119,14 @@ $(function() {
 	</div>
 </section>
 
+<!-- Mobile Nav Buttons -->
+<div class="mobile-nav-buttons">
+	<ul id="next-prev">
+		<li id="up-mobile-btn"><a class="previous"><img src="assets/mobile_arrow.png"></a></li>
+		<li id="down-mobile-btn"><a class="next"><img src="assets/mobile_arrow.png"></a></li>
+	</ul>
+</div>
+
 <section class="hero main-full-page mobile-hero" id="main-hero">
 	<div class="height-wrap">
 		<div class="parralax-credit"><p>J. Andruckow/Getty Images</p></div>
@@ -114,7 +139,8 @@ $(function() {
 	</div>
 	<video autoplay loop muted>
 		<source src="video/VCA_Family_Hero_General_v1.webmhd.webm" type="video/webm">
-		<source src="video/VCA_Family_Hero_General_v1.mp4" type="video/mp4">Your browser does not support the video tag.
+		<source src="video/VCA_Family_Hero_General_v1.mp4" type="video/mp4">
+		Your browser does not support the video tag.
 	</video>
 </section>
 
@@ -403,6 +429,7 @@ $(function() {
 </section>
 
 <section class="hero region full-page" id="nca-hero">
+	<div class="parralax-credit"><p>Westend61/Getty Images</p></div>
 	<img src="assets/VCA_white_gold.png" class="vca-hero-logo">
 	<img src="images/northern-title.svg" class="main-title">
 	<video autoplay loop muted>
@@ -568,7 +595,7 @@ $(function() {
 					<h6>Option #3: San Jose</h6>
 					<h5>San Jose</h5>
 					<p>You may know San Jose as the tech center of Northern California, but there's plenty for families to do there, too! Just about an hour away from Oakland, San Jose makes a fun and easy day trip. Start your morning at Happy Hollow Park and Zoo for a close up look at some really sweet animals. After that, head over to the Children's Discovery Museum for lunch and to play. You and your kiddos will love the gardens, imaginative exhibits, and opportunities to engage with science.</p>
-					<p>Now do you see why it was so easy for me to fall in love with Northern California? It's the very best of everything our great country has to offer, and there's no place I'd rather live, love, and have fun!</p>
+					<p>Now do you see why it was so easy for me to fall in love with Northern California? It's the very best of everything our great country has to offer, and there's no place I'd rather <a href="http://mamaknowsitall.com/" target="_blank">live, love, and have fun!</a></p>
 				</div>
 			</div>
 		</div>
@@ -610,7 +637,12 @@ $(function() {
 		</div>
 		<div class="row">
 			<div class="col-sm-12 col-md-6 col-md-offset-6 animateblock btm">
-				<a class="fancybox" href="images/camp-ca/steep-ravine.jpg"><img class="lazy" data-original="images/camp-ca/steep-ravine.jpg" width="2000" height="1000"></a>
+				<a class="fancybox" href="images/camp-ca/steep-ravine.jpg">
+					<div class="full-screen">
+						<div class="full-screen-wrap"><img src="assets/full-screen.png"></div>
+					</div>
+					<img class="lazy" data-original="images/camp-ca/steep-ravine.jpg" width="2000" height="1000">
+				</a>
 			</div>
 		</div>
 		<div class="row">
@@ -633,7 +665,12 @@ $(function() {
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-md-6 col-md-offset-6 animateblock btm">
-				<a class="fancybox" href="images/camp-ca/mackerricher.jpg"><img class="lazy" data-original="images/camp-ca/mackerricher.jpg" width="2000" height="1000"></a>
+				<a class="fancybox" href="images/camp-ca/mackerricher.jpg">
+					<div class="full-screen">
+						<div class="full-screen-wrap"><img src="assets/full-screen.png"></div>
+					</div>
+					<img class="lazy" data-original="images/camp-ca/mackerricher.jpg" width="2000" height="1000">
+				</a>
 			</div>
 		</div>
 		<div class="row">
@@ -656,7 +693,12 @@ $(function() {
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-md-6 col-md-offset-6 animateblock btm">
-				<a class="fancybox" href="images/camp-ca/beach.jpg"><img class="lazy" data-original="images/camp-ca/beach.jpg" width="2000" height="1000"></a>
+				<a class="fancybox" href="images/camp-ca/beach.jpg">
+					<div class="full-screen">
+						<div class="full-screen-wrap"><img src="assets/full-screen.png"></div>
+					</div>
+					<img class="lazy" data-original="images/camp-ca/beach.jpg" width="2000" height="1000">
+				</a>
 			</div>
 		</div>
 		<div class="row">
@@ -679,7 +721,12 @@ $(function() {
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-md-6 col-md-offset-6 animateblock btm">
-				<a class="fancybox" href="images/camp-ca/tomales.jpg"><img class="lazy" data-original="images/camp-ca/tomales.jpg" width="2000" height="1000"></a>
+				<a class="fancybox" href="images/camp-ca/tomales.jpg">
+					<div class="full-screen">
+						<div class="full-screen-wrap"><img src="assets/full-screen.png"></div>
+					</div>
+					<img class="lazy" data-original="images/camp-ca/tomales.jpg" width="2000" height="1000">
+				</a>
 			</div>
 		</div>
 		<div class="row">
@@ -701,10 +748,13 @@ $(function() {
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 col-md-6 col-md-offset-6">
-				<div class="animateblock btm">
-					<a class="fancybox" href="images/camp-ca/sequoia.jpg"><img class="lazy" data-original="images/camp-ca/sequoia.jpg" width="2000" height="1000"></a>
-				</div>
+			<div class="col-xs-12 col-md-6 col-md-offset-6 animateblock btm">
+				<a class="fancybox" href="images/camp-ca/sequoia.jpg">
+					<div class="full-screen">
+						<div class="full-screen-wrap"><img src="assets/full-screen.png"></div>
+					</div>
+					<img class="lazy" data-original="images/camp-ca/sequoia.jpg" width="2000" height="1000">
+				</a>
 			</div>
 		</div>
 		<div class="row">
@@ -726,10 +776,13 @@ $(function() {
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 col-md-6 col-md-offset-6">
-				<div class="animateblock btm">
-					<a class="fancybox" href="images/camp-ca/bigbasin.jpg"><img class="lazy" data-original="images/camp-ca/bigbasin.jpg" width="2000" height="1000"></a>
-				</div>
+			<div class="col-xs-12 col-md-6 col-md-offset-6 animateblock btm">
+				<a class="fancybox" href="images/camp-ca/bigbasin.jpg">
+					<div class="full-screen">
+						<div class="full-screen-wrap"><img src="assets/full-screen.png"></div>
+					</div>
+					<img class="lazy" data-original="images/camp-ca/bigbasin.jpg" width="2000" height="1000">
+				</a>
 			</div>
 		</div>
 	</div>
@@ -754,7 +807,7 @@ $(function() {
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<p>Imagine a place where towering trees meet rugged coastline, and friendly locals greet visitors with open arms (holding cups of artisanal coffee and mason jars of craft beer). Northern California, with its massive scale and otherworldly beauty, gives off an almost mystical vibe—the yin to Southern California's yang. Here are four must-see spots for families looking to capture some of Northern California's charms.</p>
+				<h2>Imagine a place where towering trees meet rugged coastline, and friendly locals greet visitors with open arms (holding cups of artisanal coffee and mason jars of craft beer). Northern California, with its massive scale and otherworldly beauty, gives off an almost mystical vibe—the yin to Southern California's yang. Here are four must-see spots for families looking to capture some of Northern California's charms.</h2>
 			</div>
 		</div>
 	</div>
@@ -814,13 +867,13 @@ $(function() {
 	<div class="container-fluid article">
 		<div class="row">
 			<div class="col-md-12">
-				<h1 id="roadtrip-1a">The Anti<br>"Are We There Yet?"<br>Road Trip</h1>
+				<h1>The Anti<br>"Are We There Yet?"<br>Road Trip</h1>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2">
-				<h2 id="roadtrip-1b">The Avenue of the Giants, a 30-mile stretch of Highway 101, is arguably one of America's coolest drives.</h2>
-				<p id="roadtrip-1c">For a slice of Americana, complete with trees you can drive right through, take the family on a road trip along Highway 101. The route, starting from Phillipsville (roughly 225 miles north of San Francisco on the 101) and going north to Stafford, cuts through California's Humboldt Redwoods State Park, home to the densest concentration of old-growth redwoods in the world. Here's a guide for where to roam along this iconic stretch of road. It's a drive so spectacular you may not hear an "Are we there yet?" the whole time.</p>
+			<div class="col-xs-12 col-md-8 col-md-offset-2">
+				<h2>The Avenue of the Giants, a 30-mile stretch of Highway 101, is arguably one of America's coolest drives.</h2>
+				<p id="roadtrip-1a">For a slice of Americana, complete with trees you can drive right through, take the family on a road trip along Highway 101. The route, starting from Phillipsville (roughly 225 miles north of San Francisco on the 101) and going north to Stafford, cuts through California's Humboldt Redwoods State Park, home to the densest concentration of old-growth redwoods in the world. Here's a guide for where to roam along this iconic stretch of road. It's a drive so spectacular you may not hear an "Are we there yet?" the whole time.</p>
 			</div>
 		</div>
 	</div>
@@ -829,7 +882,15 @@ $(function() {
 				<li class="parallax-bg__empty full-page" id="list-roadtrip">
 					<div class="container-fluid article">
 						<div class="circle-container" id="roadtrip-circle-1">
-							<div class="roadtrip-circle circle-bg-1 circle-bg-1a circle-bg-1b circle-bg-1c circle-bg-2 circle-bg-3 circle-bg-4 circle-bg-5 circle-bg-6"></div>
+							<div class="roadtrip-circle circle-bg-1"></div>
+							<div class="roadtrip-circle circle-bg-1a"></div>
+							<div class="roadtrip-circle circle-bg-1b"></div>
+							<div class="roadtrip-circle circle-bg-2"></div>
+							<div class="roadtrip-circle circle-bg-2"></div>
+							<div class="roadtrip-circle circle-bg-3"></div>
+							<div class="roadtrip-circle circle-bg-4"></div>
+							<div class="roadtrip-circle circle-bg-5"></div>
+							<div class="roadtrip-circle circle-bg-6"></div>
 						</div>
 						<div class="row">
 							<div class="col-md-6">
@@ -847,7 +908,7 @@ $(function() {
 				<li class="parallax-bg__myers full-page" id="roadtrip-2">
 					<div class="container-fluid article">
 						<div class="caption parralax-credit">
-							<p><span class="italc cred">Gary Crabbe/Getty Images</span></p>
+							<p><span class="italc cred">Gary Crabbe/Alamy</span></p>
 						</div>
 						<div class="row">
 							<div class="col-md-6"> 
@@ -947,7 +1008,7 @@ $(function() {
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<p>Some of the wider-known theme parks reside in the southern part of the state, but Northern California is home to wonder-filled theme parks, animal attractions, and summertime amusements. With so many exciting adventures to choose from, the only question is where to go first. So here, a few of the area's main enticements to get you started.</p>
+				<h2>Some of the wider-known theme parks reside in the southern part of the state, but Northern California is home to wonder-filled theme parks, animal attractions, and summertime amusements. With so many exciting adventures to choose from, the only question is where to go first. So here, a few of the area's main enticements to get you started.</h2>
 			</div>
 		</div>
 	</div>
@@ -1155,7 +1216,7 @@ $(function() {
 		</div>
 		<div class="row">
 			<div class="col-xs-6 col-md-6">
-				<p>Central California is a wonderful region of the Golden State, with the ocean and mountains surrounding the family-owned farms and quaint towns that you'll run into simply by driving down the scenic highways. Families can always find something that they enjoy doing. Whether we choose a day at the beach, a tour of historic missions, or fruit picking at a farm, Central California will give us three days of fun, great meals, and bonding moments that will carry us into our future California travels.</p>
+				<p>Central California is a wonderful region of the Golden State, with the ocean and mountains surrounding the family-owned farms and quaint towns that you'll run into simply by driving down the scenic highways. Families can always find something that they enjoy doing. Whether we choose a day at the beach, a tour of historic missions, or fruit picking at a farm, Central California will give us <a href="http://livingmividaloca.com/" target="_blank">three days of fun</a>, great meals, and bonding moments that will carry us into our future California travels.</p>
 			</div>
 			<div class="col-xs-5 col-xs-offset-1 col-md-5 col-md-offset-1">
 				<img class="lazy sect-break under animateblock btm" data-original="images/pattie/supplied_pattie_2.jpg" width="2000" height="1000">
@@ -1210,7 +1271,7 @@ $(function() {
 			<li class="hideContent">
 				<div class="text-box">
 					<p>Housing nearly 46 million specimens, the California Academy of Sciences in San Francisco is one of the biggest attractions of its kind in the world. Between the planetarium, aquarium, and natural history museum, it's hard to know where to go first (and you can't go wrong). Don't miss the Osher Rainforest, a four-story neo-tropical rainforest where you'll encounter exotic birds and reptiles, amphibians, spiders, and Amazonian fish. Also, be sure to buy your tickets online in advance so you can skip the line when you arrive.</p>
-					<p class="italc cred">Courtesy of California Academy of Sciences</p>
+					<p class="italc cred">© 2012 California Academy of Sciences. All rights reserved.</p>
 				</div>
 			</li>
 		</ul>
@@ -1583,12 +1644,12 @@ $(function() {
 				<div class="caption">
 					<img class="arrow rotate-left" src="assets/arrow.png">
 					<p>Homer and the gang outside the Kwik-E-Mart.</p>
-					<p class="italc cred">Courtesy of Universal Studios Hollywood</p>
+					<p class="italc cred">TM & ©2016 FOX</p>
 				</div>
 				<div class="caption">
 					<img class="arrow rotate-down" src="assets/arrow.png">
 					<p>Characters at LEGOLAND pose outside the LEGOLAND Hotel.</p>
-					<p class="italc cred">LEGOLAND California Resort</p>
+					<p class="italc cred">Courtesy of LEGOLAND® California Resort</p>
 				</div>
 			</div>
 		</div>
@@ -1808,7 +1869,7 @@ $(function() {
 			</li>
 		</ul>
 	</a>
-	<a href="#disneyland">
+	<!-- <a href="#disneyland">
 		<ul class="hideContentWrap" id="disneyland">
 			<li class="hideContentHeader"><h1>Make Your Dreams Come True</h1></li>
 			<img class="mob-slideshow" src="images/theme-parks/magic-mountain1.jpg">
@@ -1820,7 +1881,7 @@ $(function() {
 				</div>
 			</li>
 		</ul>
-	</a>
+	</a> -->
 	<a href="#legoland">
 		<ul class="hideContentWrap" id="legoland">
 			<li class="hideContentHeader"><h1>Entertain "Kids" of All Ages</h1></li>
@@ -1829,7 +1890,7 @@ $(function() {
 				<h4>LEGOLAND California</h4>
 				<div class="text-box">
 					<p>With over 60 rides, shows, a miniature golf course, hotel, and two water parks, LEGOLAND is hardly a vacation spot solely dedicated to plastic bricks. LEGO<span class="superscript"><sup>®</sup></span> fans can take in "The LEGO Movie 4D A New Adventure," scoot around in mini LEGO<span class="superscript"><sup>®</sup></span> cars, and even tour a LEGO<span class="superscript"><sup>®</sup></span> factory. Recently LEGOLAND unveiled LEGO<span class="superscript"><sup>®</sup></span> Ninjago Ride, an interactive attraction where you launch fireballs, shockwaves, and lightning bolts with your hands to defeat the Great Devourer and earn ninja status. Also be sure to check out Miniland USA, which recreates entire U.S. cities using millions of LEGO<span class="superscript"><sup>®</sup></span> bricks.</p>
-					<p class="italc cred">Courtesy of LEGOLAND California Resort</p>
+					<p class="italc cred">Courtesy of LEGOLAND® California Resort</p>
 				</div>
 			</li>
 		</ul>
@@ -1957,70 +2018,6 @@ $(function() {
 			</div>
 		</div>
 	</div>
-	<!-- <div class="container-fluid article">
-		<div class="surf-skate-wrap" id="surf-bg">
-			<div class="mobile-surf">
-				<p>In The Water</p>
-			</div>
-			<div class="caption parralax-credit">
-				<p><span class="italc cred">Peathegee Inc./Getty Images</span></p>
-			</div>
-			<div class="col-md-6 col-md-offset-1">
-				<div class="scroll-list-box">
-					<div class="box-header">
-						<span class="best-for">Best for:</span>
-						</br>Wave newbies					
-					</div>
-					<p>The small waves and lack of rocks at Bolsa Chica State Beach make the <span class="bold">Huntington Beach Surf Camp</span> a safe, kid-friendly option for learning how to catch a wave. With a four-to-one student-to-teacher ratio, your son or daughter will get personalized attention during a week of 9 a.m. to 3 p.m. full-day sessions (half days also available). Head over to Main Street for the grilled fish taco from Wahoo's Fish Taco and wander through the surf shops and boutiques before picking your camper up at the end of the day.</p>
-				</div>
-				<div class="scroll-list-box">
-					<div class="box-header">
-						<span class="best-for">Best for:</span>
-						</br>A fun, relaxed atmosphere	
-					</div>
-					<p>Choose your ideal vacation location when signing your kids up for the <span class="bold">Perfect Day Surf Camp</span> at Santa Monica, Manhattan, Redondo, or Torrance Beaches. The camps offer flexible times and keep things fun by integrating beach dodgeball, capture the flag, and sandcastle time for the little ones. Each camp is located near the coastal bike path for riding or walking to beachfront restaurants. Or you could take a stand-up paddleboarding or surfing class while the kids catch waves.</p>
-				</div>
-				<div class="scroll-list-box">
-					<div class="box-header">
-						<span class="best-for">Best for:</span>
-						</br>The whole family 			
-					</div>
-					<p><span class="bold">Menehune Surf</span> in La Jolla or Del Mar serves up half- or full-day instruction. Youngsters (ages five to seven) start by playing in the shallow water and learning about the marine life, while the eight- to twelve-year-olds develop skills and learn about ocean ecosystems, and the teens focus on skills, etiquette, and learning about surf culture and how boards are designed. While the kids catch waves, parents can treat themselves to a sea stone massage or deep cleansing facial at L'Auberge in Del Mar.</p>
-				</div>
-			</div>
-		</div>
-		<div class="surf-skate-wrap" id="skate-bg">
-			<div class="mobile-skate">
-				<p>On Land</p>
-			</div>
-			<div class="caption parralax-credit">
-				<p><span class="italc cred">Tetra Images/Offset</span></p>
-			</div>
-			<div class="col-md-6 col-md-offset-1">
-				<div class="scroll-list-box">
-					<div class="box-header">
-						<span class="best-for">Best for:</span>
-						</br>Flexible instruction
-					</div>
-					<p>Pick a Southern California destination from Irvine to Long Beach and it's likely that <span class="bold">Skatedog</span> has a camp location there. Summer camp sessions, run through the local Parks and Recreation Departments, teach kids ages six to 13 how to skate using ramps and rails from Skatedog's mobile skate park. Camp spots are located near attractions like the historic <span class="italc">Queen Mary</span> in Long Beach or the upscale, open-air Fashion Island in Newport Beach.</p>
-				</div>
-				<div class="scroll-list-box">
-					<div class="box-header">
-						<span class="best-for">Best for:</span>
-						</br>Advanced tricksters
-					</div>
-					<p>The legendary skate park at the <span class="bold">Magdalena Ecke YMCA</span> in Encinitas features a combination of street course, kidney-shaped bowl, and mix of ramp styles. It hosts three camps based on ability level: Technique for beginners, a tricks-focused intermediate/advanced camp, and a travel camp that takes skaters to other parks around San Diego. Parents can stay entertained in the quaint beachside town of Encinitas—simply relax on Moonlight Beach or grab a cup of house-roasted coffee at Lofty Coffee Co. and walk south down the 101 to browse gift shops and boutiques.</p>
-				</div>
-				<div class="scroll-list-box">
-					<div class="box-header">
-						<span class="best-for">Best for:</span>
-						</br>Multimedia skaters
-					</div>
-					<p>If you mastered tricks at skateboard camp but don't have it on video, did it really happen? For kids 10 and up, the <span class="bold">Etnies Video Production Skate Camp</span> in Lake Forest combines videography and photography with skateboarding during a weeklong camp. Etnies also offers a preschool skate camp for 4- and 5-year-olds. Lake Forest is just inland of Laguna Beach, where there are more than 100 galleries, sculpture gardens, and art studios within walking distance.</p>
-				</div>
-			</div>
-		</div>
-	</div> -->
 </section>
 
 <!-- Kid Beaches -->
@@ -2159,11 +2156,11 @@ $(function() {
 <section id="footer">
 	<ul>
 		<li><a href="https://subscription.timeinc.com/storefront/privacy/people/generic_privacy_new.html?dnp-source=E" target="_blank">People Privacy Policy</a></li>
-		<li><span class="dvdr">|</span></li>
+		<li class="ftr-dvdr"><span class="dvdr">|</span></li>
 		<li><a href="https://subscription.timeinc.com/storefront/privacy/people/generic_privacy_new.html?dnp-source=B#california" target="_blank">Your California Privacy Rights</a></li>
-		<li><span class="dvdr">|</span></li>
+		<li class="ftr-dvdr"><span class="dvdr">|</span></li>
 		<li><a href="https://subscription.timeinc.com/storefront/privacy/people/privacy_terms_service.html" target="_blank">Terms of Service</a></li>
-		<li><span class="dvdr">|</span></li>
+		<li class="ftr-dvdr"><span class="dvdr">|</span></li>
 		<li><a href="http://www.visitcalifornia.com/privacy-policy" target="_blank">Visit California Privacy Policy</a></li>
 	</ul>
 </section>

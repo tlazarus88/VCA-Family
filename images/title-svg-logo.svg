@@ -7,7 +7,7 @@
 	.st1{fill:#FFD100;}
 	.st2{opacity:0.9;fill:#FFFFFF;}
 	.st3{fill:#EE258A;}
-	#shadow {filter:url('#blur');opacity:.3;}
+	#shadow {-webkit-filter:url('#blur');filter:url('#blur');opacity:.3;}
 </style>
 <g id="shadow">
 	<filter id="blur">
