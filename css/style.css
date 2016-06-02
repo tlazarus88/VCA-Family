@@ -1914,7 +1914,6 @@ ul.scroll-list {
 #photo-disclaimer {
 	padding-bottom: 46px;
 }
-
 #photo-disclaimer p {
 	font-size: 15px;
 	line-height: 12px;
@@ -1922,7 +1921,6 @@ ul.scroll-list {
 	padding: 0 0 10px 0;
 	color: #ADADAD;
 }
-
 #footer {
 	width: 100%;
 	background-color: rgba(0,0,0,1);
@@ -1931,7 +1929,6 @@ ul.scroll-list {
 	position: absolute;
 	bottom: 0;
 }
-
 #footer li {
 	display: inline-block;
 	font-family: "brandon-grotesque",sans-serif;
@@ -1951,6 +1948,7 @@ ul.scroll-list {
 }
 
 /* Preloader */
+
 #preloader {
 	position: fixed;
 	top:0;
@@ -1959,18 +1957,85 @@ ul.scroll-list {
 	bottom:0;
 	background-color: #57c1e9; /* change if the mask should be a color other than white */
 	z-index: 9999 !important;
+	text-align: center;
+}
+.preloader-inner {
+	position: relative;
+	height: 100%;
+	width: 100%;
 }
 
-#status {
+/*#status {
 	width:200px;
 	height:200px;
 	position:absolute;
-	left:50%; /* centers the loading animation horizontally on the screen */
-	top:50%; /* centers the loading animation vertically on the screen */
-	background-image:url(../assets/status.gif); /* path to your loading animation */
+	left:50%; 
+	top:50%; 
+	background-image:url(../assets/status.gif); 
 	background-repeat:no-repeat;
 	background-position:center;
-	margin:-100px 0 0 -100px; /* is width and height divided by two */
+	margin:-100px 0 0 -100px;
+}*/
+
+#status {
+	position:absolute;
+	left:50%; 
+	top:50%;
+	width:450px;
+	height:275px;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	  text-align: center;
+	  background-image: url("../assets/preloader-diamond.png");
+	  background-repeat:no-repeat;
+	background-position:center;
+	background-size: 100%;
+}
+#status p {
+	font-size: 30px;
+	color: #fff;
+	letter-spacing: 1px;
+	margin-top: 95px;
+	padding: 0 0 30px 0;
+}
+@keyframes bounce
+{
+  50%  {transform: translatey(-20px);}
+  100% {transform: translatey( 20px);}
+}
+.bounce {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	left: -6px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.bounce div {
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+  background-color: hsl(0, 0%, 100%);
+  animation: bounce 1s ease-in-out infinite;
+  position: absolute;
+  top: 0;
+  transform: translatey(20px);
+  
+}
+
+.bounce div:first-of-type {
+  left: -20px;
+  animation-delay: 0.20s;
+}
+
+.bounce div:nth-of-type(2) {
+  animation-delay: 0.10s;
+}
+
+.bounce div:last-of-type {
+  left: 20px;
 }
 
 /* Utility Styles*/
