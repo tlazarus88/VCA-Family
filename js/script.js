@@ -284,14 +284,14 @@ function roadCirc() {
   var bottomRoadList = $endRoadList.offset().top + $endRoadList.outerHeight(true) - legalHeaderHeight;
 
   if ($(window).scrollTop() >= (topRoadList)) {
-  	$('#roadtrip-circle-1').css('position', 'fixed');
+    $('#roadtrip-circle-1').css('position', 'fixed');
   } else {
-  	$('#roadtrip-circle-1').css('position', 'absolute');
+    $('#roadtrip-circle-1').css('position', 'absolute');
   };
 
   if ($(window).scrollTop() >= (bottomRoadList)) {
-  	$('#roadtrip-circle-1').css('position', 'absolute');
-  	$('#last-circle').css('visibility', 'visible');
+    $('#roadtrip-circle-1').css('position', 'absolute');
+    $('#last-circle').css('visibility', 'visible');
   } else {
     $('#last-circle').css('visibility', 'hidden');
   };
@@ -364,9 +364,15 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $('html, body').animate({
+      $('html, body').animate({
+        scrollTop: target.offset().top - (45 + legalHeaderHeight)
+      }, 1000);
+      setTimeout(function(){
+         $('html, body').animate({
           scrollTop: target.offset().top - (45 + legalHeaderHeight)
         }, 1000);
+        },2200);
+       
         return false;
       }
     }
