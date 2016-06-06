@@ -577,39 +577,39 @@ body {
 }
 .toc .row .toc-nca-bg {
 	height: 100%;
-	background-image: url("../images/nav/770x388/gettyimages-517877952_screen.png");
+	background-image: url("../images/navigation/770x388/gettyimages-517877952_screen.png");
 	background-size: cover;
 	background-position: bottom;
 	transition: all 1s ease;
 }
 
 .toc .row .toc-nca:hover .toc-nca-bg {
-	background-image: url("../images/nav/770x388/gettyimages-517877952.png");
+	background-image: url("../images/navigation/770x388/gettyimages-517877952.png");
 	
 }
 
 .toc .row .toc-cca-bg {
 	height: 100%;
-	background-image: url("../images/nav/770x388/gettyimages-184084521_screen.png");
+	background-image: url("../images/navigation/770x388/gettyimages-184084521_screen.png");
 	background-size: cover;
 	background-position: bottom;
 	transition: all 1s ease;
 }
 
 .toc .row .toc-cca:hover .toc-cca-bg {
-	background-image: url("../images/nav/770x388/gettyimages-184084521.png");
+	background-image: url("../images/navigation/770x388/gettyimages-184084521.png");
 }
 
 .toc .row .toc-sca-bg {
 	height: 100%;
-	background-image: url("../images/nav/770x388/gettyimages-152627362_screen.png");
+	background-image: url("../images/navigation/770x388/gettyimages-152627362_screen.png");
 	background-size: cover;
 	background-position: bottom;
 	transition: all 1s ease;
 }
 
 .toc .row .toc-sca:hover .toc-sca-bg {
-	background-image: url("../images/nav/770x388/gettyimages-152627362.png");
+	background-image: url("../images/navigation/770x388/gettyimages-152627362.png");
 }
 
 ul.toc-menu {
@@ -1092,7 +1092,7 @@ a.read-more {
 	background-image: url("../images/brandi/fpo-northern_blogger_bg_img.jpg");
 }
 .bg-img-container-wrap#cntrl-blog-post {
-	background-image: url("../images/pattie/fpo-central_blogger_bg_img.jpg");
+	background-image: url("../images/pattieblog/fpo-central_blogger_bg_img.jpg");
 }
 .bg-img-container-wrap#sthrn-blog-post {
 	background-image: url("../images/justine/fpo-southern_blogger_bg_img.jpg");
@@ -1104,7 +1104,7 @@ a.read-more {
 	background-image: url("../images/brandi/Brandi-profile.jpg");
 }
 .bg-img-container-wrap#cntrl-blog-post .blogger-profile-wrap .left-quadrant {
-	background-image: url("../images/pattie/Pattie_profile.jpg");
+	background-image: url("../images/pattieblog/Pattie_profile.jpg");
 	background-size: 100%;
 	background-position: center top;
 }
@@ -1269,15 +1269,15 @@ ul.scroll-list {
 }
 
 .parallax-bg__myers {
-	background-image: url(../images/article_roadtrip/alamy_rm_bp6amt.jpg);
+	background-image: url(../images/article_roadtrip_map_map/alamy_rm_bp6amt.jpg);
 }
 
 .parallax-bg__founders-grove {
-	background-image: url(../images/article_roadtrip/gty_rf_587244505.jpg);
+	background-image: url(../images/article_roadtrip_map_map/gty_rf_587244505.jpg);
 }
 
 .parallax-bg__eternal-tree-house {
-	background-image: url(../images/article_roadtrip/gty_rf_545168913.jpg);
+	background-image: url(../images/article_roadtrip_map_map/gty_rf_545168913.jpg);
 }
 
 .scroll-list-box {
@@ -1388,53 +1388,53 @@ ul.scroll-list {
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 8px rgba(235,4,120,1);
-	background-image: url(../images/article_roadtrip/road_map_1.gif);
+	background-image: url(../images/article_roadtrip_map/road_map_1.gif);
 	transition: all .5s ease-in-out;
 	margin-bottom: -100%;
 }
 
 #last-circle {
-	background-image: url(../images/article_roadtrip/road_map_7.gif);
+	background-image: url(../images/article_roadtrip_map/road_map_7.gif);
 	margin-bottom: 0;
 }
 
 .circle-bg-6 {
-	background-image: url(../images/article_roadtrip/road_map_6.gif);
+	background-image: url(../images/article_roadtrip_map/road_map_6.gif);
 	z-index: +3;
 }
 
 .circle-bg-5 {
-	background-image: url(../images/article_roadtrip/road_map_5.gif);
+	background-image: url(../images/article_roadtrip_map/road_map_5.gif);
 	z-index: +4;
 }
 
 .circle-bg-4 {
-	background-image: url(../images/article_roadtrip/road_map_4.gif);
+	background-image: url(../images/article_roadtrip_map/road_map_4.gif);
 	z-index: +5;
 }
 
 .circle-bg-3 {
-	background-image: url(../images/article_roadtrip/road_map_3.gif);
+	background-image: url(../images/article_roadtrip_map/road_map_3.gif);
 	z-index: +6;
 }
 
 .circle-bg-2 {
-	background-image: url(../images/article_roadtrip/road_map_2.gif);
+	background-image: url(../images/article_roadtrip_map/road_map_2.gif);
 	z-index: +7;
 }
 
 .circle-bg-1b {
-	background-image: url(../images/article_roadtrip/road_map_1b.gif);
+	background-image: url(../images/article_roadtrip_map/road_map_1b.gif);
 	z-index: +8;
 }
 
 .circle-bg-1a {
-	background-image: url(../images/article_roadtrip/road_map_1a.gif);
+	background-image: url(../images/article_roadtrip_map/road_map_1a.gif);
 	z-index: +9;
 }
 
 .circle-bg-1 {
-	background-image: url(../images/article_roadtrip/road_map_1.gif);
+	background-image: url(../images/article_roadtrip_map/road_map_1.gif);
 	z-index: +10;
 }
 
