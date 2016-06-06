@@ -2108,6 +2108,7 @@ img.lazy {
 	.sticky-nav .btn {font-size: 16px;}
 	.nav-explore {font-size: 12px;}
 	#footer li a {font-size: 14px;}
+	#status {width: 50%;}
 }
 
 @media screen and (max-width: 992px) {
@@ -2280,6 +2281,8 @@ img.lazy {
 	#footer .ftr-dvdr {display: none;}
 	#photo-disclaimer {padding-bottom: 124px;}
 	#last-circle {margin-bottom: 0;}
+	#status {width: 70%;} 
+	#loader-icon {margin-top: 5%;}
 }
 
 @media screen and (max-width: 600px) {
@@ -2333,6 +2336,8 @@ img.lazy {
 	#mobile-nav {visibility: hidden;}
 	.sticky-nav {box-shadow: none;}
 	.mobile-nav-buttons {display: block;}
+	#status {width: 85%;} 
+	#loader-icon {width: 40px;margin-top: 5%;}
 }
 
 @media screen and (max-width: 375px) {
