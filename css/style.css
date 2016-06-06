@@ -1269,15 +1269,15 @@ ul.scroll-list {
 }
 
 .parallax-bg__myers {
-	background-image: url(../images/article_roadtrip_map_map/alamy_rm_bp6amt.jpg);
+	background-image: url(../images/article_roadtrip_map/alamy_rm_bp6amt.jpg);
 }
 
 .parallax-bg__founders-grove {
-	background-image: url(../images/article_roadtrip_map_map/gty_rf_587244505.jpg);
+	background-image: url(../images/article_roadtrip_map/gty_rf_587244505.jpg);
 }
 
 .parallax-bg__eternal-tree-house {
-	background-image: url(../images/article_roadtrip_map_map/gty_rf_545168913.jpg);
+	background-image: url(../images/article_roadtrip_map/gty_rf_545168913.jpg);
 }
 
 .scroll-list-box {
@@ -2108,6 +2108,7 @@ img.lazy {
 	.sticky-nav .btn {font-size: 16px;}
 	.nav-explore {font-size: 12px;}
 	#footer li a {font-size: 14px;}
+	#status {width: 50%;}
 }
 
 @media screen and (max-width: 992px) {
@@ -2280,6 +2281,8 @@ img.lazy {
 	#footer .ftr-dvdr {display: none;}
 	#photo-disclaimer {padding-bottom: 124px;}
 	#last-circle {margin-bottom: 0;}
+	#status {width: 70%;} 
+	#loader-icon {margin-top: 5%;}
 }
 
 @media screen and (max-width: 600px) {
@@ -2332,6 +2335,8 @@ img.lazy {
 	#mobile-nav {visibility: hidden;}
 	.sticky-nav {box-shadow: none;}
 	.mobile-nav-buttons {display: block;}
+	#status {width: 85%;} 
+	#loader-icon {width: 40px;margin-top: 5%;}
 }
 
 @media screen and (max-width: 375px) {
