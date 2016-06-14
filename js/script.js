@@ -423,13 +423,20 @@ $('[data-readmore-toggle]').click(function(e) {
 
 // Pre-loader
 
-$(window).load(function() { // makes sure the whole site is loaded
-  $('#status').fadeOut(); // will first fade out the loading animation
-  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-  $('body').delay(350).css({
-    'overflow': 'visible'
-  });
-})
+//$(window).load(function() { // makes sure the whole site is loaded
+  //$('#status').fadeOut(); // will first fade out the loading animation
+  //$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+  //$('body').delay(350).css({'overflow': 'visible'});
+//})
+
+//Changes 8-June-2016 Starts
+    setTimeout(function() {
+		$('#status').fadeOut();
+        $("#preloader").fadeOut();
+		$('body').css({'overflow': 'visible'});
+    }, 3000);
+//Changes 8-June-2016 Ends
+
 
 });
 
