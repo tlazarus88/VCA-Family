@@ -580,6 +580,7 @@ body {
 	background-image: url("../images/navigation/770x388/gettyimages-517877952_screen.png");
 	background-size: cover;
 	background-position: bottom;
+	background-repeat: no-repeat;
 	transition: all 1s ease;
 }
 
@@ -593,6 +594,7 @@ body {
 	background-image: url("../images/navigation/770x388/gettyimages-184084521_screen.png");
 	background-size: cover;
 	background-position: bottom;
+	background-repeat: no-repeat;
 	transition: all 1s ease;
 }
 
@@ -605,6 +607,7 @@ body {
 	background-image: url("../images/navigation/770x388/gettyimages-152627362_screen.png");
 	background-size: cover;
 	background-position: bottom;
+	background-repeat: no-repeat;
 	transition: all 1s ease;
 }
 
@@ -684,8 +687,8 @@ ul.toc-menu .blogger-circle {
 	margin-bottom: -20px;
 }
 
-ul.toc-menu .toc-blogger a{
-	margin: 20px 0px 0px 0px;
+ul.toc-menu .toc-blogger a {
+	margin: 10px 0px 0px 0px;
 	font-weight: 500;
 	font-size: 40px;
 	padding-bottom: 0px;
@@ -2061,7 +2064,7 @@ img.lazy {
 	.hero#main-hero .vca-hero-logo {left: 8%;bottom: 18%;}
 	.toc .row .toc-bg-container {height: 225px;}
 	ul.toc-menu .toc-region {width: 300px; margin: 10px 0; display: inline-block; font-size: 22px;}
-	ul.toc-menu .toc-blogger a {margin: 10px 0 0 0;}
+	ul.toc-menu .toc-blogger a {margin: 0 0 0 0;}
 	.toc-plus {margin-top: 25px;}
 }
 
@@ -2072,7 +2075,7 @@ img.lazy {
 	.toc .row .toc-bg-container {height: 260px;}
 	ul.toc-menu .blogger-circle {width: 200px; height: 200px;}
 	ul.toc-menu li a {margin: 28px 0 30px 0;}
-	ul.toc-menu .toc-blogger a {margin: 45px 0 0 0;}
+	ul.toc-menu .toc-blogger a {margin: 15px 0 0 0;}
 	.toc-with {margin-top: 20px;margin-bottom: -10px}
 	.bg-img-container-wrap {background-position: 0 -100px;}
 	.container-fluid.article .blogger-profile-wrap {height: 600px;}
