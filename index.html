@@ -27,17 +27,23 @@ s.src = document.location.protocol + '//d8rk54i4mohrb.cloudfront.net/js/reach.js
 </script>
 <!-- Simple Reach -->
 
-
 <!-- Begin Tealium Integration -->
 <script type="text/javascript">
-var utag_data = {"channel":"people","site_display_format":"desktop","page_name":"State of Play","site_section1":"native","site_section2":"visit california","template_type":"microsite"};
+	var utag_data = {
+	  channel : "people", // Brand name of the web property (channel)
+	  page_name : "", // Unique page name or article title. This value will need to be dynamic
+	  site_section1 : "native", // Used to determine the hierarchy level of the page within the site's ecosystem
+	  site_section2 : "", // Used to determine the hierarchy level of the page within the site's ecosystem
+	  template_type : "native" // Template type for the current page
+	};
 </script>
+<!-- Loading script asynchronously -->
 <script type="text/javascript">
-(function(a,b,c,d){
-a='//tags.tiqcdn.com/utag/timeinc/people.com/prod/utag.js';
-b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
- a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
-})();
+	    (function(a,b,c,d){
+	    a='//tags.tiqcdn.com/utag/timeinc/people.com/prod/utag.js';
+	    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+	    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+	    })();
 </script>
 <!-- End Tealium Integration -->
 
